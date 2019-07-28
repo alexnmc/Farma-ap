@@ -59,6 +59,7 @@ class Home extends Component {
             return(
                 <div className = 'home'>
                     <div className='bookingContainer'>
+                        <h1 className = 'cauta'>Cãutati produsul dorit:</h1>
                         <form className = 'bookingForm' onSubmit={this.handleSubmit}  >
                             <input 
                                 type='text'
