@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom'
 const Navbar = (props) => {
     return (
         <div className="navbar">
-            <Link to="/">Utilizator</Link>
+            <Link to="/">Cautã</Link>
             <Link to="/contact">Contact</Link>
-            <Link to = "/pharma">Pentru farmacii</Link>
+            <Link to = "/pharma">Farmacie</Link>
         </div>
     )
 }
