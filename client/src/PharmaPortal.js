@@ -45,7 +45,7 @@ class PharmaPortal extends Component {
                 <h1 className= 'h1'>{this.state.messages.length === 1 ? '1 mesaj' : this.state.messages.length + ' mesaje în ' + this.props.city}</h1>
                     {messages}
                 </div>
-                <button onClick = {this.props.logout}>Log out </button>
+                <button className = "logout" onClick = {this.props.logout}>Log out </button>
             </div>
         )
     }
