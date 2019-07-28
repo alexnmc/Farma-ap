@@ -18,7 +18,7 @@ html, body {
     font-size: 17px;
     font-family:'helvetica';
     font-weight: 600;
-    border-bottom: 12px solid rgb(34, 253, 63);
+    border-bottom: 12px solid rgb(25, 243, 54);
     display:flex;
     justify-content: space-around;
    
@@ -91,7 +91,7 @@ button{
     justify-content: center;
     width: 220pt;
     height: 40pt;
-    background-color: rgb(0, 179, 0);
+    background-color: rgba(0, 165, 22, 0.918);
     font-size: 14pt;
     color: white;
     cursor: pointer;
@@ -185,7 +185,7 @@ h4{
 
 .cauta{
     font-family: 'helvetica';
-    color:  rgb(20, 192, 43);
+    color:  rgba(0, 165, 22, 0.918);
     font-size: 17pt;
     text-align: center;
    
@@ -442,7 +442,7 @@ h4{
 
     .cauta{
         font-family: 'helvetica';
-        color:  rgb(20, 192, 43);
+        color: rgba(0, 165, 22, 0.918); 
         font-size: 15pt;
         text-align: center;
        
