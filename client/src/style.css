@@ -34,7 +34,7 @@ html, body {
 
 .link{
     text-decoration: none;
-    color: blue;
+    color: rgb(0, 0, 250);
     cursor: pointer;
     margin-left:10pt;
 }
