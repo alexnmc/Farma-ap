@@ -263,7 +263,7 @@ h4{
         font-size: 17px;
         font-family:'helvetica';
         font-weight: 600;
-        border-bottom: 12px solid rgb(34, 253, 63);
+        border-bottom: 12px solid  rgb(25, 243, 54);
         display:flex;
         justify-content: space-around;
     }
@@ -304,7 +304,7 @@ h4{
         justify-content: center;
         width: 75vw;
         height: 40pt;
-        background-color: rgb(0, 197, 0);
+        background-color: rgba(0, 165, 22, 0.918);
         font-size: 15pt;
         color: white;
         cursor: pointer;
