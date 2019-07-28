@@ -89,7 +89,7 @@ button{
     display:flex;
     align-items: center;
     justify-content: center;
-    width: 220pt;
+    width: 250pt;
     height: 40pt;
     background-color: rgba(0, 165, 22, 0.918);
     font-size: 14pt;
@@ -188,7 +188,6 @@ h4{
     color:  rgba(0, 165, 22, 0.918);
     font-size: 17pt;
     text-align: center;
-   
 }
 
 .img1{
