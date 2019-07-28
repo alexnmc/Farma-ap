@@ -4,6 +4,7 @@ import {withPharma} from './PharmaProvider'
 
 
 
+
 class Home extends Component {
     constructor(props){
         super(props)
@@ -59,7 +60,10 @@ class Home extends Component {
             return(
                 <div className = 'home'>
                     <div className='bookingContainer'>
+                        <div className = "imgWrap">
+                        <div  className = 'img1'></div>
                         <h1 className = 'cauta'>Cãutati produsul dorit:</h1>
+                        </div>
                         <form className = 'bookingForm' onSubmit={this.handleSubmit}  >
                             <input 
                                 type='text'

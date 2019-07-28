@@ -185,12 +185,28 @@ h4{
 
 .cauta{
     font-family: 'helvetica';
-    color:  rgb(0, 219, 29);
+    color:  rgb(20, 192, 43);
     font-size: 17pt;
-    width:100vw;
     text-align: center;
-    margin-bottom:2%
+   
+}
 
+.img1{
+    width: 65pt;
+    height: 65pt;
+    background-image: url('./Photos/farmacie.svg');
+    background-size: cover;
+    background-position: center;
+    margin-right: 20pt;
+}
+
+.imgWrap{
+    width: 100vh;
+    margin-top: -5%;
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -253,16 +269,7 @@ h4{
         justify-content: space-around;
     }
 
-    .cauta{
-        font-family: 'helvetica';
-        color:  rgb(0, 219, 29);
-        font-size: 17pt;
-        width:100vw;
-        text-align: center;
-        margin-bottom:2%
-
-    }
-
+    
     .bookingContainer{
         display: flex;
         flex-direction: column;
