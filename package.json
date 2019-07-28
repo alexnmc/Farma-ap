@@ -22,7 +22,8 @@
     "moment": "^2.24.0",
     "mongoose": "^5.6.7",
     "morgan": "^1.9.1",
-    "json-parser": "^1.1.5"
+    "json-parser": "^1.1.5",
+    "node-open-geocoder": "^3.0.0"
 
   }
 }
