@@ -157,8 +157,6 @@ h4{
     justify-content: center;
     margin:auto;
     background-color: white;
-   
-
 }
 
 .loginWrap{
@@ -175,7 +173,16 @@ h4{
    font-family: 'arial';
    font-size: 10pt;
    font-weight: 900
-  
+}
+
+.cauta{
+    font-family: 'helvetica';
+    color:  rgb(0, 219, 29);
+    font-size: 17pt;
+    width:100vw;
+    text-align: center;
+    margin-bottom:2%
+
 }
 
 
