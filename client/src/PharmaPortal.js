@@ -14,7 +14,6 @@ class PharmaPortal extends Component {
 }
 
     
-    
     getMessages = () => {
             axios.get(`/message//${this.props.city}`).then(res => {  // get request to the database to display all the bookings on the AdminPortal page
                 this.setState({
@@ -24,7 +23,6 @@ class PharmaPortal extends Component {
     }
 
 
-    
     componentDidMount(){
         this.getMessages()
         setInterval(this.getMessages, 60000);
