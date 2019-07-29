@@ -465,7 +465,7 @@ h4{
     .h2{
         font-family: 'arial';
         font-size:14pt;
-        color: rgb(0, 71, 236);
+        color: rgba(0, 64, 212, 0.897);
         margin-bottom: 24%
     }
 
@@ -493,12 +493,12 @@ h4{
     }
 
     .h3{
-        font-family: 'helvetica';
+        font-family: 'arial';
         color:  rgb(0, 138, 18);
-        font-size: 12pt;
+        font-size: 12.5pt;
         text-align: center;
         margin-bottom:5pt;
-        width: 95vw;
+        width: 90vw;
     }
 
     .farmaup{
@@ -516,7 +516,7 @@ h4{
         background-image: url('./Photos/farmacie.svg');
         background-size: cover;
         background-position: center;
-        margin-right: 30pt;
+        margin-right: 20pt;
     }
 
     .imgWrap{
@@ -531,8 +531,8 @@ h4{
 
     .imgWrap2{
         width: 100vh;
-        margin-bottom: 25pt;
-        margin-top: 7vh;
+        margin-bottom: 30pt;
+        margin-top: 9vh;
         display: flex;
         align-items: center;
         justify-content: center;
