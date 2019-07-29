@@ -26,6 +26,7 @@ class PharmaPortal extends Component {
     componentDidMount(){
         this.getMessages()
         setInterval(this.getMessages, 60000);
+        this.props.getLocation()
     }
     
 
@@ -47,10 +48,12 @@ class PharmaPortal extends Component {
         return(
             <div className = 'pharmaport'>
                 <div className = 'messageWrap'>
-                <h1 className= 'h1'>{this.state.messages.length === 1 ? '1 mesaj' : this.state.messages.length + this.props.city ? ' mesaje în ' + this.props.city : 'mesaje' }</h1>
+                <div className = 'portalWrap'>
+                    <h1 className= 'h1'>{this.state.messages.length === 1 ? '1 mesaj' : this.state.messages.length + ' mesaje în ' + this.props.city }</h1>
+                    <button className = "logout" onClick = {this.props.logout}>Log out </button>
+                </div>
                     {messages}
                 </div>
-                <button className = "logout" onClick = {this.props.logout}>Log out </button>
             </div>
         )
     }

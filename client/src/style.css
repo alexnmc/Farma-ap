@@ -108,11 +108,27 @@ button{
 }
 
 .logout{
-   width: 100pt;
-   height: 30pt;
-   font-size:12pt;
+   width: 80pt;
+   height: 22pt;
+   font-size:10pt;
    background-color: blue;
-   margin-top:-5pt;
+   margin:auto
+}
+
+.portalWrap{
+    width: 100vw;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:auto;
+}
+
+.h1{
+    font-family: 'arial';
+    font-size:14pt;
+    color: rgb(0, 71, 236);
+    margin:auto;
+    width:auto;
 }
 
 
@@ -272,12 +288,6 @@ h4{
     margin-top: 50pt;
 }
 
-.h1{
-    font-family: 'arial';
-    font-size:14pt;
-    color: rgb(0, 71, 236);
-    margin-left: 30pt
-}
 
 .h2{
     font-family: 'arial';
