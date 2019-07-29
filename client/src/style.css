@@ -532,11 +532,14 @@ h4{
     .imgWrap2{
         width: 100vh;
         margin-bottom: 25pt;
-        margin-top:5vh;
+        margin-top: 7vh;
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
+    .h2{
+        font-size: 13pt;
+    }
 
 }
