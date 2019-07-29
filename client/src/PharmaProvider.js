@@ -12,7 +12,6 @@ class PharmaProvider extends Component {
         this.state = {
             user: JSON.parse(localStorage.getItem("user")) || {},
             token: localStorage.getItem("token") || "",
-            bookings:[],
             toggle: true,
             username: '',
             password: '',

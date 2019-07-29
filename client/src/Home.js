@@ -51,9 +51,12 @@ class Home extends Component {
     }
     
     
+    
+    
+    
+    
     componentDidMount(){
        this.props.getLocation()
-       console.log(this.state.city)
     }
     
         render(){
