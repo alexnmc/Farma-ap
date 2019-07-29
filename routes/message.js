@@ -12,7 +12,6 @@ messageRouter.get('/', (req, res) => {    // get all for testing with postman
         }
         return res.status(200).send(data)
     })
-    
 })
 
 
