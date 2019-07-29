@@ -562,4 +562,12 @@ h4{
         font-size: 13pt;
     }
 
+    .logout{
+        width: 65pt;
+        height: 20pt;
+        font-size: 9pt;
+        background-color: blue;
+        margin:auto
+     }
+
 }
