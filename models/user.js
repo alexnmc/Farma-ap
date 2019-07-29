@@ -16,16 +16,6 @@ const userSchema = new Schema({
         required: true
     },
     
-    city: {
-        type: String,
-        required: true
-    },
-
-    county: {
-        type: String,
-        required: true
-    },
-
 })
    
 
