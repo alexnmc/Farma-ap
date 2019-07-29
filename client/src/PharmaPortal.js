@@ -9,13 +9,14 @@ class PharmaPortal extends Component {
     constructor(props){
         super(props)
         this.state = {
-           messages: []
+           messages: [],
+           city3: ''
         }
     }
 
     
     getMessages = () => {
-        axios.get(`/message//${this.props.city}`).then(res => {  
+        axios.get('/message').then(res => {  
             this.setState({
                  messages: res.data 
             })
@@ -49,8 +50,9 @@ class PharmaPortal extends Component {
             <div className = 'pharmaport'>
                 <div className = 'messageWrap'>
                 <div className = 'portalWrap'>
-                    <h1 className= 'h1'>{this.state.messages.length + ' mesaje ' + (this.props.city.length ? 'în ' + this.props.city : '')}</h1>
+                    <h1 className= 'h1'>{this.state.messages.length + ' mesaje '}</h1>
                     <button className = "logout" onClick = {this.props.logout}>Log out </button>
+                    
                 </div>
                     {messages}
                 </div>

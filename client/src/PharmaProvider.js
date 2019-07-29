@@ -17,8 +17,15 @@ class PharmaProvider extends Component {
             password: '',
             password2: '',
             pharmaCode: '',
-            city: JSON.parse(localStorage.getItem("city")) || {},
-            county: JSON.parse(localStorage.getItem("county")) || {},
+            city:  JSON.parse(localStorage.getItem("city")) || '',
+            county: localStorage.getItem("county") || '',
+            city2: '',
+            date: new Date(),
+            name: '',
+            email: '',
+            phone: '',
+            time:'',
+            medication: '',
 
         }
     }
@@ -36,22 +43,7 @@ class PharmaProvider extends Component {
         }
     }
 
-    showMessages = () => {
-        axios.get('/bookings').then(res => {  // get request to the database to display all the bookings on the AdminPortal page
-            this.setState({
-                bookings: res.data 
-            })
-        })
-    }
     
-    handleDelete = (id) => {
-        axios.delete(`/bookings/${id}`).then(res => {
-                this.setState(prevState=>({//we use prevState so the requested booking gets deleted without refreshing
-                    bookings: prevState.bookings.filter(item => item._id !== id)
-    // filters the bookings array in state, updates state with a new array with all the items in the array which does NOT have the item._id ....
-            }))
-        })
-    }
     
     signup = userInfo => {
         axios.post('/user/signup', userInfo).then(res => {
@@ -159,7 +151,26 @@ class PharmaProvider extends Component {
     }
 
 
+    handleSubmit = (e) => {  // on submit we are sending a new booking object to the database
+        e.preventDefault()
+        const {date, name, email, phone, medication, county} = this.state
 
+        const city = this.state.city.length ? this.state.city : this.state.city2
+       
+        
+        axios.post('/message', {date, name, email, phone, medication, city, county}).then(res => {
+            alert(res.data +' Nume: '+ name +'  medicament: '+ medication)
+        })
+        
+        this.setState({
+            name: '',
+            email: '',
+            phone: '',
+            date:'',
+            medication: ''
+        })
+    }
+    
     
     render() {
         return (
@@ -178,7 +189,8 @@ class PharmaProvider extends Component {
                     pharmaSignup: this.pharmaSignup,
                     handleSignup: this.handleSignup,
                     handleChange: this.handleChange,
-                    getLocation: this.getLocation
+                    getLocation: this.getLocation,
+                    handleSubmit: this.handleSubmit
                 }}>
                 {this.props.children}
             </PharmaContext.Provider>
