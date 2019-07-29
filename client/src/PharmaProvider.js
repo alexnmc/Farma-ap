@@ -136,7 +136,8 @@ class PharmaProvider extends Component {
     }
 
     getLocation = () => {
-        navigator.geolocation.getCurrentPosition(function(position) {
+        navigator.geolocation.getCurrentPosition(
+        function(position) {
             openGeocoder().reverse(position.coords.longitude, position.coords.latitude)
                 .end((err, res) => {       
                         if(err){
@@ -146,9 +147,14 @@ class PharmaProvider extends Component {
                             localStorage.setItem("city", JSON.stringify(res.address.city))
                             localStorage.setItem("county", JSON.stringify(res.address.county))
                         }
-                             
                 })
-            }
+            },
+            function(msg){
+
+                alert('Please enable your GPS position future.');  
+            },
+            
+            {maximumAge:600000, timeout:5000, enableHighAccuracy: false}
         )
     }
 
