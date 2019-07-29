@@ -15,7 +15,7 @@ class PharmaPortal extends Component {
 
     
     getMessages = () => {
-        axios.get(`/message//${this.props.city}`).then(res => {  // get request to the database to display all the bookings on the AdminPortal page
+        axios.get(`/message//${this.props.city}`).then(res => {  
             this.setState({
                  messages: res.data 
             })
@@ -49,7 +49,7 @@ class PharmaPortal extends Component {
             <div className = 'pharmaport'>
                 <div className = 'messageWrap'>
                 <div className = 'portalWrap'>
-                    <h1 className= 'h1'>{this.state.messages.length === 1 ? '1 mesaj din ' + this.props.city : this.state.messages.length + ' mesaje în ' + this.props.city }</h1>
+                    <h1 className= 'h1'>{this.state.messages.length + ' mesaje ' + (this.props.city.length ? 'în ' + this.props.city : '')}</h1>
                     <button className = "logout" onClick = {this.props.logout}>Log out </button>
                 </div>
                     {messages}

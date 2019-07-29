@@ -62,7 +62,7 @@ class Home extends Component {
                     <div className='bookingContainer'>
                         <div className = "imgWrap">
                             <div  className = 'img1'></div>
-                            <h1 className = 'cauta'>Cãutati produsul dorit {this.state.city ? 'în ' + this.state.city : ':'}:</h1>
+                            <h1 className = 'cauta'>Cãutati produsul dorit {this.state.city.length ? 'în ' + this.state.city + ':' : ':'}</h1>
                         </div>
                         <form className = 'bookingForm' onSubmit={this.handleSubmit}  >
                             <input 
