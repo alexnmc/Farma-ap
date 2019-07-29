@@ -10,8 +10,8 @@ class Home extends Component {
         super(props)
         this.state = {
            
-            city: JSON.parse(localStorage.getItem("city")) || {},
-            county: JSON.parse(localStorage.getItem("county")) || {},
+            city: JSON.parse(localStorage.getItem("city")) || '',
+            county: JSON.parse(localStorage.getItem("county")) || '',
             name: '',
             email: '',
             phone: '',
@@ -65,6 +65,19 @@ class Home extends Component {
                             <h1 className = 'cauta'>Cãutati produsul dorit {this.state.city.length ? 'în ' + this.state.city + ':' : ':'}</h1>
                         </div>
                         <form className = 'bookingForm' onSubmit={this.handleSubmit}  >
+                            {!this.state.city.length ?
+                                <input 
+                                    type='text'
+                                    name='city'
+                                    placeholder='Oras'
+                                    value={this.state.city}
+                                    onChange={this.handleChange}
+                                    required
+                                />
+                            :
+                            null
+                            }
+                            
                             <input 
                                 type='text'
                                 name='name'
