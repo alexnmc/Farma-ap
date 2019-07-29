@@ -63,7 +63,6 @@ class PharmaProvider extends Component {
         .catch(err => alert(err.response.data.errMsg))
     }
 
-    
     login = userInfo => {
         axios.post('/user/login', userInfo).then(res => {
             const { token, user } = res.data          // when the token and user comes back from the database we store it in local storage
@@ -128,7 +127,6 @@ class PharmaProvider extends Component {
         alert('Parolele nu sint identice!')
     }
 
-    
     handleChange = (e) => {
         e.preventDefault()
         const { name, value } = e.target
@@ -137,7 +135,6 @@ class PharmaProvider extends Component {
         })
     }
 
-    
     getLocation = () => {
         navigator.geolocation.getCurrentPosition(function(position) {
             openGeocoder().reverse(position.coords.longitude, position.coords.latitude)

@@ -47,7 +47,7 @@ class PharmaPortal extends Component {
         return(
             <div className = 'pharmaport'>
                 <div className = 'messageWrap'>
-                <h1 className= 'h1'>{this.state.messages.length === 1 ? '1 mesaj' : this.state.messages.length + ' mesaje în ' + this.props.city}</h1>
+                <h1 className= 'h1'>{this.state.messages.length === 1 ? '1 mesaj' : this.state.messages.length + this.props.city ? ' mesaje în ' + this.props.city : 'mesaje' }</h1>
                     {messages}
                 </div>
                 <button className = "logout" onClick = {this.props.logout}>Log out </button>
