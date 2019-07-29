@@ -21,8 +21,8 @@ html, body {
     border-bottom: 12px solid rgba(0, 236, 31, 0.863);
     display:flex;
     justify-content: space-around;
-   
 }
+
 
 .navbar::before {
     content: " ";
@@ -30,7 +30,7 @@ html, body {
     bottom: -25px;
     border: 7px solid #0358f6;
     width: 100%
-  }
+}
 
 .link{
     text-decoration: none;
@@ -138,7 +138,7 @@ h4{
     font-size:14pt;
     margin-bottom: 30pt;
     text-align: center;
- }
+}
 
 
 .login1{
@@ -205,6 +205,14 @@ h4{
     color:  rgba(0, 165, 22, 0.918);
     font-size: 17pt;
     text-align: center;
+}
+
+.oras{
+    font-family: 'helvetica';
+    color:  rgba(0, 165, 22, 0.918);
+    font-size: 14pt;
+    text-align: end;
+   
 }
 
 .h3{
