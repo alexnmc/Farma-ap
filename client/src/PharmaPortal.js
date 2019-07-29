@@ -11,15 +11,15 @@ class PharmaPortal extends Component {
         this.state = {
            messages: []
         }
-}
+    }
 
     
     getMessages = () => {
-            axios.get(`/message//${this.props.city}`).then(res => {  // get request to the database to display all the bookings on the AdminPortal page
-                this.setState({
-                    messages: res.data 
-                })
+        axios.get(`/message//${this.props.city}`).then(res => {  // get request to the database to display all the bookings on the AdminPortal page
+            this.setState({
+                 messages: res.data 
             })
+        })
     }
 
 
@@ -31,7 +31,7 @@ class PharmaPortal extends Component {
 
     render(){
         const messages = this.state.messages.map(item =>{
-               return(
+            return(
                 <div className = "messageContainer" key = {item._id}>
                     <p className = "p2"> {`Nume: ${item.name.toUpperCase()}`}</p>  
                     <p className = "p2"> {`Telefon: ${item.phone}`}</p>   
@@ -40,7 +40,7 @@ class PharmaPortal extends Component {
                     <p className = "p2"> {`Judet: ${item.county}`}</p>
                     <p className = "p2"> {`Produs: ${item.medication}`}</p>
                 </div>
-               )
+            )
         })
         
         
