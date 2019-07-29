@@ -229,8 +229,8 @@ h4{
 
 .imgWrap{
     width: 100vh;
-    margin-top: -5%;
-    margin-bottom: 5%;
+    margin-bottom: 25pt;
+    margin-top: -60pt;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -483,5 +483,34 @@ h4{
         background-position: center;
         margin-right:4vw;
     }
+
+    .h3{
+        font-family: 'helvetica';
+        color:  rgb(0, 138, 18);
+        font-size: 12pt;
+        text-align: center;
+        margin-bottom:5pt;
+        width: 95vw;
+    }
+
+    .farmaup{
+        font-family: 'helvetica';
+        color:  rgba(0, 165, 22, 0.918);
+        font-size: 23pt;
+        text-align: center;
+        margin-bottom:5pt;
+        font-weight:900;
+    }
+    
+    .img2{
+        width: 70pt;
+        height: 70pt;
+        background-image: url('./Photos/farmacie.svg');
+        background-size: cover;
+        background-position: center;
+        margin-right: 30pt;
+    }
+
+
 
 }
