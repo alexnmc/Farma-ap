@@ -229,13 +229,21 @@ h4{
 
 .imgWrap{
     width: 100vh;
-    margin-bottom: 25pt;
-    margin-top: -60pt;
+    margin-bottom: 30pt;
+    margin-top: -9vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.imgWrap2{
+    width: 100vh;
+    margin-bottom: 50pt;
+    margin-top:-9vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .pharmaport{
     display: flex;
@@ -511,6 +519,24 @@ h4{
         margin-right: 30pt;
     }
 
+    .imgWrap{
+        width: 100vh;
+        margin-bottom: 25pt;
+        margin-top: -8vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .imgWrap2{
+        width: 100vh;
+        margin-bottom: 25pt;
+        margin-top:5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
 
 }

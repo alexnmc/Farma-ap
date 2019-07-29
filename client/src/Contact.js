@@ -16,7 +16,7 @@ class Home extends Component {
 render(){
     return(
         <div className = "home">
-            <div className = "imgWrap">
+            <div className = "imgWrap2">
                 <div  className = 'img2'></div>
                 <h1 className = 'farmaup'>Farma - up</h1>
             </div>
