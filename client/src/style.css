@@ -142,7 +142,7 @@ button{
     font-size:14pt;
     color: rgb(0, 71, 236);
     margin:auto;
-    width:auto;
+    
 }
 
 
@@ -579,14 +579,14 @@ h4{
         justify-content: center;
     }
 
-    
-
     .logout{
         width: 65pt;
         height: 19pt;
         font-size: 8pt;
         background-color: blue;
         border-radius: 5px;
+        margin: auto
+        
      }
 
      .input2{
@@ -594,21 +594,20 @@ h4{
         height: 25pt;
         font-size: 11pt;
         border: 2px solid blue;
+        margin:auto
+        
     }
 
     .h1{
         font-family: 'arial';
-        font-size:12.5pt;
+        font-size:11pt;
         color: rgb(0, 71, 236);
-        width:105;
-    }
-
-    .filler{
-        width: 95pt;
-        height:20pt;
+        margin:auto;
+       
        
     }
 
+    
     .portalWrap{
         width: 100vw;
         display:flex;
