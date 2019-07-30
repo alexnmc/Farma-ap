@@ -605,29 +605,31 @@ h4{
     }
 
     .logout{
-        width: 65pt;
-        height: 19pt;
+        width: 60pt;
+        height: 22pt;
         font-size: 8pt;
         background-color: blue;
         border-radius: 5px;
-        margin: auto
+        margin:5pt;
         
      }
 
      .input2{
-        width: 95pt;
+        width:35vw;
         height: 25pt;
         font-size: 11pt;
         border: 2px solid blue;
-        margin:auto
-        
+        margin:5pt;
     }
 
     .h1{
         font-family: 'arial';
-        font-size:11pt;
+        font-size: 10pt;
         color: rgb(0, 71, 236);
-        margin:auto;
+        margin: 5pt;
+        font-weight: 900;
+        text-align: center;
+
     }
 
     .portalWrap{
@@ -636,6 +638,7 @@ h4{
         justify-content: space-evenly;
         align-items: center;
         margin-bottom: 20pt;
+        
     }
 
     
