@@ -8,6 +8,7 @@ const PharmaLogin = props=>  {
         return(
             
             <div className="admin">
+                <div className = 'shadow'></div>
                 <div className = "loginContainer">
                     { props.toggle ?
                             <div  className='loginForm'>
