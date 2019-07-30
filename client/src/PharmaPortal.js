@@ -46,7 +46,7 @@ class PharmaPortal extends Component {
     
 
     render(){
-        const messages = this.state.messages.map(item =>{
+        const messages = this.state.messages.lenght && this.getMessages.messages.map(item =>{
             return(
                 <div className = "messageContainer" key = {item._id}>
                     <p className = "p3"> {`Produs: ${item.medication}`}</p>
