@@ -344,20 +344,7 @@ h4{
 
 @media only screen and (max-width: 600px) {
 
-    .navbar {
-        width: 100vw;
-        height: 50pt;
-        background-color:#fcfcfc; 
-        display:flex;
-        position: relative;
-        align-items: center;
-        font-size: 17px;
-        font-family:'helvetica';
-        font-weight: 600;
-        border-bottom: 12px solid  rgb(25, 243, 54);
-        display:flex;
-        justify-content: space-around;
-    }
+    
 
     
     .bookingContainer{
