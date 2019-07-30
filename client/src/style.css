@@ -37,7 +37,7 @@ html, body {
     content: " ";
     position: absolute;
     bottom: 0px;
-    border: 3px solid #0358f6;
+    border: 3px solid rgb(0, 97, 207);
     width: 100%
 }
 
@@ -46,7 +46,7 @@ html, body {
 
 .link{
     text-decoration: none;
-    color: rgb(0, 0, 250);
+    color: rgb(0, 97, 207);
     cursor: pointer;
     margin-left:10pt;
 }
