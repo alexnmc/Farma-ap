@@ -26,8 +26,10 @@ class Home extends Component {
                     <div className='bookingContainer'>
                         <div className = "imgWrap">
                             <div  className = 'img1'></div>
-                            <h1 className = 'cauta'>Cãutati produsul dorit {this.props.city.length ? 'în ' + this.state.city + ':' : ':'}</h1>
+                            <h1 className = 'cauta'>Cãutati produsul dorit:</h1>
                         </div>
+                           
+                        
                         <form className = 'bookingForm' onSubmit={this.props.handleSubmit}  >
                             {!this.props.city.length ?
                                 <select 
@@ -41,7 +43,8 @@ class Home extends Component {
                                 {this.state.cities.map((city, index) => <option key={city} value={city} className = {index}>{city}</option>)}
                                 </select>
                             :
-                            null
+                            
+                            <h1 className = 'oras'>{ this.state.city}</h1>
                             }
                             
                             <input 

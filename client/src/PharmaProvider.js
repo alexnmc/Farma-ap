@@ -149,7 +149,6 @@ class PharmaProvider extends Component {
 
         const city = this.state.city.length ? this.state.city : this.state.city2
        
-        
         axios.post('/message', {date, name, email, phone, medication, city, county}).then(res => {
             alert(res.data +' Nume: '+ name +'  medicament: '+ medication)
         })
