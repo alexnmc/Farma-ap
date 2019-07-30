@@ -39,11 +39,11 @@ html, body {
     margin-left:10pt;
 }
 
-a{
+ a{
     text-decoration: none;
     color: blue;
     cursor: pointer;
-}
+  }
 
 
 .home{
@@ -54,6 +54,7 @@ a{
     align-items: center;
     justify-content: center;
 }
+
 
 
 .bookingContainer{
@@ -124,7 +125,7 @@ button{
     height: 25pt;
     font-size: 12pt;
     margin:auto;
-    border: 2px solid rgba(0, 0, 255, 0.911);
+    border: 2px solid blue;
 }
 
 .portalWrap{
@@ -138,10 +139,11 @@ button{
 
 .h1{
     font-family: 'arial';
-    font-size:13pt;
+    font-size:12pt;
     color: rgb(0, 71, 236);
     margin:auto;
-    font-weight: 900
+    font-weight:900;
+    width:150pt;
     
 }
 
@@ -629,6 +631,7 @@ h4{
         margin: 5pt;
         font-weight: 900;
         text-align: center;
+        width:auto;
     }
 
     .portalWrap{
