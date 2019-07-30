@@ -170,6 +170,9 @@ h4{
 
 .admin{
     background-color: #ebebebf1;
+    background-image: url('./Photos/bkg2.jpeg');
+    background-size: cover;
+     background-position: center;
     height: 100vh;
     width: 100%;
     display:flex;
@@ -196,7 +199,8 @@ h4{
     align-items: center;
     justify-content: center;
     margin:auto;
-    background-color: white;
+    background-color: rgba(250, 250, 250, 0.972);
+    border-radius:3px;
 }
 
 .loginWrap{
@@ -267,14 +271,14 @@ h4{
 }
 
 .loginLogo{
-    width: 45pt;
-    height: 47pt;
+    width: 28pt;
+    height: 32pt;
     background-image: url('./Photos/login3.jpg');
     background-size: cover;
     background-position: center;
     position: absolute;
-    margin-left: -21vw;
-    margin-top: 6pt;
+    margin-left: -23vw;
+    margin-top: 3pt;
 }
 
 .imgWrap{
@@ -403,6 +407,7 @@ h4{
        font-size:12pt;
        background-color: blue;
        margin-top:20pt;
+       margin-bottom:25pt;
     }
     
     
@@ -412,12 +417,13 @@ h4{
         font-size:14pt;
         margin-bottom: 20pt;
         text-align: center;
+        margin-top:5pt
      }
     
     
     .login1{
-        width: 80%;
-        height: 32pt;
+        width: 75%;
+        height: 30pt;
         border: 1px solid  rgba(2, 2, 2, 0.74);
         background-color:  rgb(253, 252, 251);
         color:black;
@@ -448,8 +454,8 @@ h4{
     
     
     .loginContainer{
-        height: 90vh;
-        width: 90vw;
+        height: auto;
+        width: 85vw;
         display:flex;
         flex-direction: column;
         align-items: center;
@@ -634,14 +640,14 @@ h4{
     }
     
     .loginLogo{
-        width: 35pt;
-        height: 37pt;
+        width: 26pt;
+        height: 28pt;
         background-image: url('./Photos/login3.jpg');
         background-size: cover;
         background-position: center;
         position: absolute;
-        margin-left: -65%;
-        margin-top: 6pt;
+        margin-left: -67vw;
+       
     }
 
 }
