@@ -40,10 +40,13 @@ class PharmaPortal extends Component {
             [name]: value,
             
         })
+        
+        if(e.target.value.length){
         this.setState({
             city3: e.target.value
         },
             this.getMessages)
+        }
     }
     
 

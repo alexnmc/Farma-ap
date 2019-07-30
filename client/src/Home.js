@@ -44,7 +44,7 @@ class Home extends Component {
                                 </select>
                             :
                             
-                            <h1 className = 'oras'>{ this.state.city}</h1>
+                            <h1 className = 'oras'>{this.state.city}</h1>
                             }
                             
                             <input 
