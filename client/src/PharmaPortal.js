@@ -26,8 +26,7 @@ class PharmaPortal extends Component {
 
 
     componentDidMount(){
-        this.getMessages()
-        setInterval(this.getMessages, 60000);
+       setInterval(this.getMessages, 60000);
         this.props.getLocation()
     }
 
@@ -37,7 +36,7 @@ class PharmaPortal extends Component {
         const { name, value } = e.target
         this.setState({
             [name]: value,
-            city3: e.target.value
+            
         })
         this.setState({
             city3: e.target.value
@@ -55,7 +54,7 @@ class PharmaPortal extends Component {
                     <p className = "p2"> {`Tel: ${item.phone}`}</p>   
                     <p className = "p2"> {`Oras: ${item.city}`}</p>
                     <p className = "p2"> {`Judet: ${item.county || 'necunoscut'}`}</p>
-                    <p className = "p4"> {` ${moment(item.date).format('MMMM Do YYYY, h:mm:ss a')}`}</p>
+                    <p className = "p4"> {`${moment(item.date).format('MMMM Do YYYY, h:mm:ss a')}`}</p>
                 </div>
             )
         })
