@@ -12,6 +12,7 @@ const PharmaLogin = props=>  {
                     { props.toggle ?
                             <div  className='loginForm'>
                                 <div className = "loginWrap">
+                                    <div className = "loginLogo"></div>
                                     <p className = 'cont'>Nu ai cont?<span className = 'link' onClick={props.editToggler}>Înregistreazã-te</span></p>
                                 </div>
                                 <h4>Intrã in cont:</h4>
@@ -39,6 +40,7 @@ const PharmaLogin = props=>  {
 
                             <div className='loginForm'>
                                     <div className = "loginWrap">
+                                        <div className = "loginLogo"></div>
                                         <p className = 'cont'>Ai deja cont? <span className = 'link' onClick={props.editToggler}>Login</span></p>
                                     </div>
                             <h4> Creeazã cont nou:</h4>

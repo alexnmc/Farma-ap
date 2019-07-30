@@ -151,6 +151,7 @@ h4{
     font-family: 'arial';
     font-size:14pt;
     margin-bottom: 30pt;
+    margin-top: 30pt;
     text-align: center;
 }
 
@@ -227,7 +228,6 @@ h4{
     font-size: 14pt;
     text-align: center;
     margin-bottom: 20pt;
-
 }
 
 .h3{
@@ -264,6 +264,17 @@ h4{
     background-size: cover;
     background-position: center;
     margin-right: 40pt;
+}
+
+.loginLogo{
+    width: 45pt;
+    height: 47pt;
+    background-image: url('./Photos/login3.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    margin-left: -21vw;
+    margin-top: 6pt;
 }
 
 .imgWrap{
@@ -316,7 +327,6 @@ h4{
     width: 0 !important ;
     background-color: transparent;
 }
-
 
 
 .h2{
@@ -623,5 +633,15 @@ h4{
         margin-top: -5pt;
     }
     
+    .loginLogo{
+        width: 35pt;
+        height: 37pt;
+        background-image: url('./Photos/login3.jpg');
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        margin-left: -65%;
+        margin-top: 6pt;
+    }
 
 }
