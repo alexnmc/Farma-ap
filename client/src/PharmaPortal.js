@@ -17,7 +17,7 @@ class PharmaPortal extends Component {
 
     
     getMessages = (city) => {
-        axios.get(`/message/2/${city}`).then(res => {  
+        axios.get(`/message/2/${this.state.city3}`).then(res => {  
             this.setState({
                  messages: res.data 
             })
@@ -36,10 +36,13 @@ class PharmaPortal extends Component {
         e.preventDefault()
         const { name, value } = e.target
         this.setState({
-            [name]: value
+            [name]: value,
+            city3: e.target.value
         })
-       
-        this.getMessages(e.target.value)
+        this.setState({
+            city3: e.target.value
+        },
+           this.getMessages)
     }
     
 
