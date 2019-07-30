@@ -22,7 +22,6 @@ class PharmaPortal extends Component {
                  messages: res.data 
             })
         })
-        
     }
 
 

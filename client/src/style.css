@@ -322,7 +322,7 @@ h4{
 .h2{
     font-family: 'arial';
     font-size:14pt;
-    color: rgb(0, 71, 236);
+    color: rgba(0, 124, 41, 0.842);
     margin:4%
 }
 
@@ -502,7 +502,7 @@ h4{
     
     .h2{
         font-family: 'arial';
-        font-size:14pt;
+        font-size:12pt;
         margin-bottom: 24%
     }
 
@@ -575,9 +575,7 @@ h4{
         justify-content: center;
     }
 
-    .h2{
-        font-size: 13pt;
-    }
+    
 
     .logout{
         width: 65pt;
@@ -599,8 +597,6 @@ h4{
         font-size:12.5pt;
         color: rgb(0, 71, 236);
         width:105;
-        
-
     }
 
     .filler{
