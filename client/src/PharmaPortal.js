@@ -10,17 +10,19 @@ class PharmaPortal extends Component {
         super(props)
         this.state = {
            messages: [],
-           city3: ''
+           city3: '',
+           cities: ["Oradea" , "Carei" , "Timisoara", "Bucuresti"]
         }
     }
 
     
-    getMessages = () => {
-        axios.get('/message').then(res => {  
+    getMessages = (city) => {
+        axios.get(`/message/2/${city}`).then(res => {  
             this.setState({
                  messages: res.data 
             })
         })
+        
     }
 
 
@@ -29,6 +31,17 @@ class PharmaPortal extends Component {
         setInterval(this.getMessages, 60000);
         this.props.getLocation()
     }
+
+   
+    handleChange = (e) => {
+        e.preventDefault()
+        const { name, value } = e.target
+        this.setState({
+            [name]: value
+        })
+       
+        this.getMessages(e.target.value)
+    }
     
 
     render(){
@@ -36,11 +49,11 @@ class PharmaPortal extends Component {
             return(
                 <div className = "messageContainer" key = {item._id}>
                     <p className = "p2"> {`Nume: ${item.name.toUpperCase()}`}</p>  
-                    <p className = "p2"> {`Telefon: ${item.phone}`}</p>   
-                    <p className = "p2"> {`Data: ${moment(item.date).format('MMMM Do YYYY, h:mm:ss a')}`}</p>
+                    <p className = "p2"> {`Tel: ${item.phone}`}</p>   
                     <p className = "p2"> {`Oras: ${item.city}`}</p>
-                    <p className = "p2"> {`Judet: ${item.county}`}</p>
+                    <p className = "p2"> {`Judet: ${item.county || 'necunoscut'}`}</p>
                     <p className = "p2"> {`Produs: ${item.medication}`}</p>
+                    <p className = "p2"> {` ${moment(item.date).format('MMMM Do YYYY, h:mm:ss a')}`}</p>
                 </div>
             )
         })
@@ -50,8 +63,19 @@ class PharmaPortal extends Component {
             <div className = 'pharmaport'>
                 <div className = 'messageWrap'>
                 <div className = 'portalWrap'>
-                    <h1 className= 'h1'>{this.state.messages.length + ' mesaje '}</h1>
+                    { this.state.city3 ?  <h1 className= 'h1'>{this.state.messages.length + ' mesaje'}</h1> : <div className = 'filler'></div> }
+                    <select 
+                        required 
+                        className = 'input2'
+                        aria-required="true" 
+                        name='city3'
+                        value = {this.state.city3}
+                        onChange={this.handleChange}>
+                    <option value = ''>Alege orasul:</option>
+                    {this.state.cities.map((city, index) => <option key={city} value={city} className = {index}>{city}</option>)}
+                    </select>
                     <button className = "logout" onClick = {this.props.logout}>Log out </button>
+
                     
                 </div>
                     {messages}

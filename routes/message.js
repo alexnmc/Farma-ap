@@ -16,7 +16,7 @@ messageRouter.get('/', (req, res) => {    // get all for testing with postman
 
 
 
-messageRouter.get('/:city', (req, res, next) => {    
+messageRouter.get('/2/:city', (req, res, next) => {    
     Message.find({city: req.params.city}, (err, data) => {
         if(err) {
             res.status(500)

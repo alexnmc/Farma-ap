@@ -17,8 +17,8 @@ class PharmaProvider extends Component {
             password: '',
             password2: '',
             pharmaCode: '',
-            city:  JSON.parse(localStorage.getItem("city")) || '',
-            county: localStorage.getItem("county") || '',
+            city:  '', //JSON.parse(localStorage.getItem("city")) || '',
+            county:'',// localStorage.getItem("county") || '',
             city2: '',
             date: new Date(),
             name: '',
@@ -43,8 +43,6 @@ class PharmaProvider extends Component {
         }
     }
 
-    
-    
     signup = userInfo => {
         axios.post('/user/signup', userInfo).then(res => {
             const { token, user } = res.data

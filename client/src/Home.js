@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import axios from 'axios'
 import {withPharma} from './PharmaProvider'
 
 
@@ -9,15 +8,15 @@ class Home extends Component {
     constructor(props){
         super(props)
         this.state = {
-           city: this.props.city
+           city: this.props.city,
+           cities: ["Oradea" , "Carei" , "Timisoara", "Bucuresti"]
            
         }
     }
 
 
-    
     componentDidMount(){
-       this.props.getLocation()
+       //this.props.getLocation()
     }
     
     
@@ -31,14 +30,16 @@ class Home extends Component {
                         </div>
                         <form className = 'bookingForm' onSubmit={this.props.handleSubmit}  >
                             {!this.props.city.length ?
-                                <input 
-                                    type='text'
+                                <select 
+                                    required 
+                                    className = 'input'
+                                    aria-required="true" 
                                     name='city2'
-                                    placeholder='Oras'
                                     value={this.props.city2}
-                                    onChange={this.props.handleChange}
-                                    required
-                                />
+                                    onChange={this.props.handleChange}>
+                                <option value = ''>Alege orasul:</option>
+                                {this.state.cities.map((city, index) => <option key={city} value={city} className = {index}>{city}</option>)}
+                                </select>
                             :
                             null
                             }
