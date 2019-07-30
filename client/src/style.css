@@ -646,12 +646,9 @@ h4{
     .loginLogo{
         width: 28pt;
         height: 28pt;
-        background-image: url('./Photos/foto.png');
-        background-size: cover;
-        background-position: center;
         position: absolute;
         margin-left: -67vw;
-       
+        margin-top:1pt;
     }
 
 }
