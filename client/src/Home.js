@@ -16,7 +16,7 @@ class Home extends Component {
 
 
     componentDidMount(){
-       //this.props.getLocation()
+       this.props.getLocation()
     }
     
     
