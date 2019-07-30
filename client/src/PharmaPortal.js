@@ -57,6 +57,7 @@ class PharmaPortal extends Component {
                     <p className = "p3"> {`Produs: ${item.medication}`}</p>
                     <p className = "p2"> {`Nume: ${item.name.toUpperCase()}`}</p>  
                     <p className = "p2"> {`Tel: ${item.phone}`}</p>   
+                    <p className = "p2"> {`Email: ${item.email}`}</p>
                     <p className = "p4"> {`${moment(item.date).format('MMMM Do YYYY, h:mm:ss a')}`}</p>
                 </div>
             )
@@ -69,7 +70,7 @@ class PharmaPortal extends Component {
             <div className = 'pharmaport'>
                 <div className = 'messageWrap'>
                 <div className = 'portalWrap'>
-                     <div className= 'h1' style = {this.state.city3 ? {opacity: 1} : {opacity:0}}>{this.state.messages.length === 1 ? ' 1 mesaj' : this.state.messages.length + ' mesaje'}</div>
+                     <div className= 'h1' style = {this.state.city3 ? {opacity: 1} : {opacity:0}}>{this.state.messages.length === 1 ?  this.state.city3 + ': 1 mesaj' : `${this.state.city3 +': '+ this.state.messages.length + ' mesaje'}`}</div>
                     <select 
                         required 
                         className = 'input2'
