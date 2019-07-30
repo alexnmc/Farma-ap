@@ -466,7 +466,7 @@ h4{
     
     
     .loginContainer{
-        height: 70vh;
+        height: 90vh;
         width: 90vw;
         display:flex;
         flex-direction: column;
@@ -647,8 +647,8 @@ h4{
         width: 28pt;
         height: 28pt;
         position: absolute;
-        margin-left: -67vw;
-        margin-top:1pt;
+        margin-left: -65vw;
+        margin-top: -2pt;
     }
 
 }
