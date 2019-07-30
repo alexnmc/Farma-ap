@@ -138,13 +138,7 @@ class PharmaProvider extends Component {
                             localStorage.setItem("county", JSON.stringify(res.address.county))
                         }
                 })
-            },
-            function(msg){
-
-                alert('Please enable your GPS position future.');  
-            },
-            
-            {maximumAge:600000, timeout:5000, enableHighAccuracy: false}
+            }
         )
     }
 
