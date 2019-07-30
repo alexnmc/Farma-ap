@@ -17,11 +17,13 @@ class PharmaPortal extends Component {
 
     
     getMessages = (city) => {
-        axios.get(`/message/2/${this.state.city3}`).then(res => {  
-            this.setState({
-                 messages: res.data 
+        if (this.state.city3.length){
+                axios.get(`/message/2/${this.state.city3}`).then(res => {  
+                this.setState({
+                    messages: res.data 
+                })
             })
-        })
+        }
     }
 
 
@@ -41,13 +43,12 @@ class PharmaPortal extends Component {
         this.setState({
             city3: e.target.value
         },
-           this.getMessages)
+            this.getMessages)
     }
     
 
     render(){
-        const messages = this.state.messages.length ?
-            this.state.messages.map(item =>{
+        const messages = this.state.messages.map(item =>{
             return(
                 <div className = "messageContainer" key = {item._id}>
                     <p className = "p3"> {`Produs: ${item.medication}`}</p>
@@ -60,9 +61,7 @@ class PharmaPortal extends Component {
             )
         })
 
-        : 
-
-        null
+       
         
         
         return(
