@@ -67,7 +67,6 @@ a{
     align-items: center;
     justify-content: center;
     position:fixed;
-    
 }
 
  
@@ -398,22 +397,6 @@ h4{
 
 @media only screen and (max-width: 600px) {
 
-    .home::before {
-        content: ' ';
-        display: block;
-        background-image: url('./Photos/bkg3.jpg');
-        background-position: center;
-        background-size: cover;
-        height: 100vh;
-        width: 100vw;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: -10; 
-    }
-
-    
     .bookingContainer{
         display: flex;
         flex-direction: column;
