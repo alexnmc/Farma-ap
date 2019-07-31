@@ -18,7 +18,7 @@ html, body {
     font-size: 17px;
     font-family:'helvetica';
     font-weight: 600;
-    border-bottom: 12px solid #fffb00ea;
+    border-bottom: 12px solid #fcff51e7;
     display:flex;
     justify-content: space-around;
     
@@ -41,9 +41,6 @@ html, body {
     width: 100%
 }
 
-
-
-
 .link{
     text-decoration: none;
     color: rgba(0, 77, 165, 0.863);
@@ -57,8 +54,10 @@ html, body {
     cursor: pointer;
   }
 
-
 .home{
+    background-image: url('./Photos/bkg3.jpg');
+    background-size: cover;
+    background-position: center;
     height: 100vh;
     width: 100vw;
     display:flex;
@@ -67,7 +66,14 @@ html, body {
     justify-content: center;
 }
 
-
+.contact{
+    height: 100vh;
+    width: 100vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 .bookingContainer{
     display: flex;
@@ -76,7 +82,7 @@ html, body {
     justify-content: flex-start;
     height: 100%;
     width: 40vw;
-    background-color: rgba(255, 255, 255, 0.705);
+    background-color: rgba(255, 255, 255, 0);
     padding-bottom: 5pt;
     padding-top: 5px;
     margin-top:10%
@@ -91,9 +97,10 @@ input{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid rgba(0, 0, 255, 0.562);
+    border: 2px solid  rgb(0, 97, 207);
     border-radius: 4px;
     padding-left:5pt;
+    
 }
 
 
@@ -156,9 +163,7 @@ button{
     margin:auto;
     font-weight:900;
     width:150pt;
-    
 }
-
 
 h4{
     color:blue;
@@ -168,7 +173,6 @@ h4{
     margin-top: 30pt;
     text-align: center;
 }
-
 
 .login1{
     width: 80%;
@@ -229,7 +233,7 @@ h4{
    display: flex;
    width:auto;
    font-family: 'arial';
-   font-size: 10pt;
+   font-size: 12pt;
    font-weight: 900;
    color: rgb(97, 97, 97);
 }
@@ -385,7 +389,7 @@ h4{
         justify-content: flex-start;
         height: 100%;
         width: 40vw;
-        background-color: rgba(255, 255, 255, 0.705);
+        background-color: rgba(255, 255, 255, 0);
         padding-bottom: 5pt;
         padding-top: 5px;
         margin-top:30%
@@ -400,7 +404,7 @@ h4{
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 1px solid rgba(0, 0, 255, 0.562);
+        border: 2px solid  rgb(0, 97, 207);
         border-radius: 4px;
         padding-left:7pt;
     }
@@ -439,7 +443,6 @@ h4{
         margin-top:5pt
      }
     
-    
     .login1{
         width: 75%;
         height: 30pt;
@@ -452,8 +455,6 @@ h4{
         font-size:11pt;
     }
     
-    
-    
     .loginForm{
         height: auto;
         width:80vw;
@@ -461,9 +462,7 @@ h4{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-       
     }
-    
     
     .loginContainer{
         height:auto;
@@ -473,10 +472,9 @@ h4{
         align-items: center;
         justify-content: center;
         margin:auto;
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.972);
     }
 
-    
     .cont{
        display: flex;
        width:auto;
@@ -635,10 +633,12 @@ h4{
         
     }
 
-    
     .oras{
         font-size: 14pt;
         text-align: center;
+        background-color: rgba(214, 214, 214, 0.493);
+        width:100pt;
+        margin:auto;
         margin-bottom: 20pt;
         margin-top: -5pt;
     }
@@ -647,8 +647,8 @@ h4{
         width: 28pt;
         height: 28pt;
         position: absolute;
-        margin-left: -65vw;
-        margin-top: -2pt;
+        margin-left: -69vw;
+        margin-top: 0pt;
     }
 
 }
