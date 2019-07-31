@@ -259,6 +259,14 @@ h4{
     color: rgb(0, 97, 207);
     font-size: 20pt;
     text-align: center;
+    animation: move2 1s;
+    margin-top: -40pt;
+    margin-right: -30pt;
+}
+
+@keyframes move2{
+    from{margin-right: -100vw}
+    to{margin-right: -30pt}
 }
 
 .oras{
@@ -285,7 +293,14 @@ h4{
     background-size: cover;
     background-position: center;
     margin-right: 20pt;
+    animation: move1 1s;
 }
+
+@keyframes move1{
+    from{margin-left: -100vw}
+    to{margin-left: 0pt}
+}
+
 
 .farmaup{
     font-family: 'helvetica-neue';
@@ -315,12 +330,10 @@ h4{
 }
 
 .imgWrap{
-    width: 100vh;
-    margin-bottom: 10pt;
-    margin-top: -9vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width:30vw;
+    margin-bottom: 20pt;
+    margin-top: -10vh;
+    display: inline;
 }
 
 .imgWrap2{
@@ -442,7 +455,6 @@ h4{
        width: 80%;
        height: 30pt;
        font-size:12pt;
-     
        margin-top:20pt;
        margin-bottom:25pt;
     }
@@ -541,12 +553,17 @@ h4{
         font-size: 17pt;
         text-align: center;
         color: rgb(0, 86, 184);
+        margin-right: 0pt;
+        margin-top:0pt;
+        animation: none !important;
     }
     
     .img1{
         width: 45pt;
         height: 45pt;
         margin-right:4vw;
+        margin-right:20pt;
+        animation: none !important;
     }
 
     .h3{
@@ -638,7 +655,15 @@ h4{
     .loginLogo{
         width: 28pt;
         height: 28pt;
-        
+    }
+
+    .imgWrap{
+        margin-bottom: 20pt;
+        margin-top: -8vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: none !important;
     }
 
 }
