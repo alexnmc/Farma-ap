@@ -15,8 +15,8 @@ html, body {
     display:flex;
     position: relative;
     align-items: center;
-    font-size: 17px;
-    font-family:'helvetica';
+    font-size: 19px;
+    font-family:'helvetica-neue';
     font-weight: 600;
     border-bottom: 12px solid #fcff68cc;
     display:flex;
@@ -66,6 +66,8 @@ a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position:fixed;
+    
 }
 
  
@@ -110,6 +112,7 @@ input{
     border: 1px solid  rgba(0, 67, 144, 0.335);
     border-radius: 4px;
     padding-left:5pt;
+    font-family: 'Helvetica-Neue'
 }
 
 
@@ -242,21 +245,21 @@ h4{
 .cont{
    display: flex;
    width:auto;
-   font-family: 'arial';
-   font-size: 12pt;
+   font-family: 'Helvetica Neue ,Helvetica,Arial,sans-serif';
+   font-size: 11pt;
    font-weight: 900;
    color: rgb(97, 97, 97);
 }
 
 .cauta{
-    font-family: 'arial';
+    font-family: 'Helvetica-Neue';
     color: rgb(0, 97, 207);
-    font-size: 19pt;
+    font-size: 20pt;
     text-align: center;
 }
 
 .oras{
-    font-family: 'helvetica';
+    font-family: 'Helvetica-Neue ';
     color: rgb(0, 97, 207) ;
     font-size: 14pt;
     text-align: center;
@@ -366,6 +369,11 @@ h4{
     font-weight: 900;
 }
 
+.link{
+    color: blue;
+    margin-left: 7pt;
+}
+
 
 .messageWrap{
     width: 100%;
@@ -402,7 +410,6 @@ h4{
         bottom: 0;
         left: 0;
         right: 0;
-        position: fixed;
         z-index: -10; 
     }
 
@@ -560,7 +567,7 @@ h4{
 
    
     .cauta{
-        font-size: 14pt;
+        font-size: 17pt;
         text-align: center;
        
     }
