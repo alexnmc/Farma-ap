@@ -68,6 +68,7 @@ a{
     justify-content: center;
 }
 
+ 
 .cover{
     height:100vh;
     width:100vw;
@@ -106,7 +107,7 @@ input{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid  rgb(0, 97, 207);
+    border: 1px solid  rgba(0, 67, 144, 0.335);
     border-radius: 4px;
     padding-left:5pt;
 }
@@ -389,6 +390,22 @@ h4{
 
 @media only screen and (max-width: 600px) {
 
+    .home::before {
+        content: ' ';
+        display: block;
+        background-image: url('./Photos/bkg3.jpg');
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: fixed;
+        z-index: -10; 
+    }
+
     
     .bookingContainer{
         display: flex;
@@ -400,8 +417,8 @@ h4{
     
     .input,
     input{
-        width: 70vw;
-        height: 37pt;
+        width: 69vw;
+        height: 38pt;
         margin:10pt;
         font-size: 12pt;
         display: flex;
@@ -418,8 +435,8 @@ h4{
         display:flex;
         align-items: center;
         justify-content: center;
-        width: 70vw;
-        height: 35pt;
+        width: 69vw;
+        height: 36pt;
         background-color:rgb(0, 97, 207);
         font-size: 15pt;
         color: white;
@@ -582,7 +599,7 @@ h4{
     }
 
     .imgWrap{
-        width: 100vh;
+        width: 100vw;
         margin-bottom: 15pt;
         margin-top: -9vh;
         display: flex;
