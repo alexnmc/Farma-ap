@@ -647,8 +647,7 @@ h4{
     .oras{
         font-size: 14pt;
         text-align: center;
-        background-color: rgba(214, 214, 214, 0.493);
-        width:100pt;
+        width: auto;
         margin:auto;
         margin-bottom: 20pt;
         margin-top: -5pt;
