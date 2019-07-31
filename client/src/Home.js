@@ -23,6 +23,7 @@ class Home extends Component {
     render(){
             return(
                 <div className = 'home'>
+                    <div className = 'cover'></div>
                     <div className='bookingContainer'>
                         <div className = "imgWrap">
                             <div  className = 'img1'></div>

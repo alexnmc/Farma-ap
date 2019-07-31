@@ -66,6 +66,13 @@ html, body {
     justify-content: center;
 }
 
+.cover{
+    height:100vh;
+    width:100vw;
+    background-color: rgba(250, 250, 250, 0.719);
+    position:absolute;
+}
+
 .contact{
     height: 100vh;
     width: 100vw;
@@ -84,7 +91,8 @@ html, body {
     width: auto;
     padding-bottom: 5pt;
     padding-top: 5px;
-    margin-top:10%
+    margin-top:10%;
+    position: absolute;
 }
 
 .input,
@@ -96,7 +104,7 @@ input{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid  rgb(0, 97, 207);
+    border: 1px solid  rgb(0, 97, 207);
     border-radius: 4px;
     padding-left:5pt;
     
@@ -379,8 +387,6 @@ h4{
 @media only screen and (max-width: 600px) {
 
     
-
-    
     .bookingContainer{
         display: flex;
         flex-direction: column;
@@ -398,7 +404,7 @@ h4{
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 2px solid  rgb(0, 97, 207);
+        border: 1px solid  rgb(0, 97, 207);
         border-radius: 4px;
         padding-left:7pt;
     }
