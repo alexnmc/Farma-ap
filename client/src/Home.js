@@ -29,8 +29,7 @@ class Home extends Component {
                             <h1 className = 'cauta'>Cãutati produsul dorit:</h1>
                         </div>
                            
-                        
-                        <form className = 'bookingForm' onSubmit={this.props.handleSubmit}  >
+                         <form className = 'bookingForm' onSubmit={this.props.handleSubmit}  >
                             {!this.props.city.length ?
                                 <select 
                                     required 
