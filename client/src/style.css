@@ -54,6 +54,15 @@ html, body {
     cursor: pointer;
   }
 
+   p,
+  .p3,
+  .p4{
+    width:200pt;
+    text-align: start;
+    margin:2pt;
+   
+}
+
 .home{
     background-image: url('./Photos/bkg3.jpg');
     background-size: cover;
@@ -107,7 +116,6 @@ input{
     border: 1px solid  rgb(0, 97, 207);
     border-radius: 4px;
     padding-left:5pt;
-    
 }
 
 
@@ -137,8 +145,9 @@ button{
    width: 70pt;
    height: 20pt;
    font-size: 9pt;
-   background-color: blue;
-   margin:auto
+   margin:auto;
+   border-radius:5px;
+   
 }
 
 .filler{
@@ -495,7 +504,7 @@ h4{
         display: flex;
         align-items: center;
         justify-content: space-around;
-        width: 99%;
+        width: 97%;
         height: auto;
         padding:2pt;
         font-family: 'helvetica';
@@ -526,18 +535,19 @@ h4{
 
     .p2{
         font-family: helvetica;
-        text-align: center;
-        margin: 2pt
+        margin: 2pt;
+        text-align:center
     }
 
     .p3{
         
         font-family: helvetica;
-        text-align: center;
         margin: 2pt;
         color: rgba(223, 0, 0, 0.972);
+        text-align: center
     }
 
+   
     .cauta{
         font-size: 14pt;
         text-align: center;
