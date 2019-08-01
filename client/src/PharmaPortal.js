@@ -10,25 +10,27 @@ class PharmaPortal extends Component {
         super(props)
         this.state = {
            messages: [],
-           city3: '',
-           cities: ["Oradea" , "Carei" , "Timisoara", "Bucuresti"]
+           city3: this.props.user.city,
+           cities: ['Oradea','Salonta','Marghita','Sacueni','Beius','Valea lui Mihai','Alesd','Stei','Vascau','Nucet']
         }
     }
 
     
     getMessages = (city) => {
-        if (this.state.city3.length){
-                axios.get(`/message/2/${this.state.city3}`).then(res => {  
+       
+       
+                axios.get(`/message/2/${city}`).then(res => {  
                 this.setState({
                     messages: res.data 
                 })
             })
-        }
+        
     }
 
 
     componentDidMount(){
-       setInterval(this.getMessages, 60000);
+        this.getMessages(this.state.city3)
+        setInterval(this.getMessages, 60000);
         this.props.getLocation()
     }
 
@@ -38,14 +40,10 @@ class PharmaPortal extends Component {
         const { name, value } = e.target
         this.setState({
             [name]: value,
-            
         })
         
         if(e.target.value.length){
-        this.setState({
-            city3: e.target.value
-        },
-            this.getMessages)
+          this.getMessages(e.target.value)
         }
     }
     
@@ -82,8 +80,6 @@ class PharmaPortal extends Component {
                     {this.state.cities.map((city, index) => <option key={city} value={city} className = {index}>{city}</option>)}
                     </select>
                     <button className = "logout" onClick = {this.props.logout}>Log out </button>
-
-                    
                 </div>
                     {messages}
                 </div>

@@ -9,8 +9,7 @@ class Home extends Component {
         super(props)
         this.state = {
            city: this.props.city,
-           cities: ["Oradea" , "Carei" , "Timisoara", "Bucuresti"]
-           
+           cities: ['Oradea','Salonta','Marghita','Sacueni','Beius','Valea lui Mihai','Alesd','Stei','Vascau','Nucet']
         }
     }
 

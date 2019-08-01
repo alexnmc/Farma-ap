@@ -55,6 +55,18 @@ const PharmaLogin = props=>  {
                                     onChange={props.handleChange}
                                 />
 
+                                <select 
+                                    required 
+                                    className = 'login11'
+                                    aria-required="true" 
+                                    name='city4'
+                                    value={props.city4}
+                                    onChange={props.handleChange}>
+                                <option value = ''>oras:</option>
+                                {props.cities.map((city, index) => <option key={city} value={city} className = {index}>{city}</option>)}
+                                </select>
+
+
                                 <input
                                     className = "login1"
                                     type='text'

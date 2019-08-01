@@ -17,15 +17,17 @@ class PharmaProvider extends Component {
             password: '',
             password2: '',
             pharmaCode: '',
-            city: JSON.parse(localStorage.getItem("city")) || '',
+            city: JSON.parse(localStorage.getItem("city")) || '', // from geolocation..
             county: localStorage.getItem("county") || '',
             city2: '',
+            city4:'',
             date: new Date(),
             name: '',
             email: '',
             phone: '',
             time:'',
             medication: '',
+            cities:['Oradea','Salonta','Marghita','Sacueni','Beius','Valea lui Mihai','Alesd','Stei','Vascau','Nucet']
 
         }
     }
@@ -79,7 +81,8 @@ class PharmaProvider extends Component {
         e.preventDefault()
         const newUser = {
             username: this.state.username,
-            password: this.state.password
+            password: this.state.password,
+            
         }
         this.login(newUser) // we are receiving this function from the context and we call it here 
         this.setState({
@@ -92,14 +95,16 @@ class PharmaProvider extends Component {
         this.getLocation()
         const newUser = {
             username: this.state.username,
-            password: this.state.password
+            password: this.state.password,
+            city: this.state.city4
         }
         this.signup(newUser)
         this.setState({
             username: '',
             password: '',
             password2:'',
-            pharmaCode:''
+            pharmaCode:'',
+            city: ''
         })
     }
     
@@ -148,7 +153,7 @@ class PharmaProvider extends Component {
         const {date, name, email, phone, medication, county} = this.state
 
         const city = this.state.city.length ? this.state.city : this.state.city2
-       
+
         axios.post('/message', {date, name, email, phone, medication, city, county}).then(res => {
             alert(res.data +' Nume: '+ name +'  medicament: '+ medication)
         })
