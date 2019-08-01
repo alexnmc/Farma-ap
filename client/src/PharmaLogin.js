@@ -66,7 +66,6 @@ const PharmaLogin = props=>  {
                                 {props.cities.map((city, index) => <option key={city} value={city} className = {index}>{city}</option>)}
                                 </select>
 
-
                                 <input
                                     className = "login1"
                                     type='text'

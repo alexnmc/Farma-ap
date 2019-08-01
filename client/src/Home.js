@@ -43,6 +43,7 @@ class Home extends Component {
                             :
                             
                             <h1 className = 'oras'>{this.state.city}</h1>
+                            
                             }
                             
                             <input 

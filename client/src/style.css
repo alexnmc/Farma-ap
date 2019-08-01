@@ -103,7 +103,22 @@ a{
     justify-content: flex-start;
 }
 
-.input,
+.input{
+    width:250pt;
+    height: 47pt;
+    margin:10pt;
+    font-size: 15pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid  rgba(0, 67, 144, 0.335);
+    color:  rgb(0, 88, 189);
+    padding-left:5pt;
+    font-family: 'Helvetica-Neue';
+   
+}
+
+
 input{
     width:250pt;
     height: 47pt;
@@ -162,7 +177,9 @@ button{
     height: 25pt;
     font-size: 12pt;
     margin:auto;
-    border: 2px solid blue;
+    border: 2px solid rgba(0, 0, 255, 0.007);
+    background-color: white;
+    color: rgb(0, 0, 236);
 }
 
 .portalWrap{
@@ -379,9 +396,9 @@ h4{
     width: 99%;
     height: 25pt;
     font-family: 'helvetica-neue';
-    border: 1px solid rgba(0, 17, 255, 0.739);
+    border: 1px solid rgba(0, 17, 255, 0.24);
     margin:auto;
-    margin-top: 10pt;
+    margin-top: 5pt;
 }
 
 .p3{
@@ -398,6 +415,7 @@ h4{
     margin: 2pt;
     color: rgb(0, 0, 204);
     font-weight: 900;
+    font-size: 11pt;
 }
 
 .link{
