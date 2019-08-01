@@ -7,7 +7,7 @@ const Navbar = (props) => {
         <div className="navbar">
             <Link to="/">Cautã</Link>
             <Link to="/contact">Despre</Link>
-            <Link to = "/pharma">Farmacie</Link>
+            <Link to = "/pharma">Parteneri</Link>
         </div>
     )
 }
