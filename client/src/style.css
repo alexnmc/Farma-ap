@@ -111,7 +111,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid  rgba(0, 67, 144, 0.335);
+    border: 2px solid  rgba(0, 67, 144, 0.164);
     color:  rgb(0, 88, 189);
     padding-left:5pt;
     font-family: 'Helvetica-Neue';
@@ -127,7 +127,7 @@ input{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid  rgba(0, 67, 144, 0.335);
+    border: 1px solid  rgba(0, 67, 144, 0.164);
     border-radius: 7px;
     padding-left:5pt;
     font-family: 'Helvetica-Neue';
