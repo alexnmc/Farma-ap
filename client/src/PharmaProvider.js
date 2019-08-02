@@ -1,9 +1,12 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import ring from './Sound/Sound.mp3'
 
 
 const openGeocoder = require('node-open-geocoder');
 const PharmaContext = React.createContext()
+const sound = new Audio(ring)
+
 
 
 class PharmaProvider extends Component {
@@ -26,8 +29,9 @@ class PharmaProvider extends Component {
             phone: '',
             time:'',
             medication: '',
-            cities:['Oradea','Salonta','Marghita','Sacueni','Beius','Valea lui Mihai','Alesd','Stei','Vascau','Nucet']
-
+            cities:['Oradea','Salonta','Marghita','Sacueni','Beius','Valea lui Mihai','Alesd','Stei','Vascau','Nucet'],
+            messages: [],
+            currentCity: JSON.parse(localStorage.getItem("user")).city || ''
         }
     }
 
@@ -121,14 +125,6 @@ class PharmaProvider extends Component {
         alert('Parolele nu sint identice!')
     }
 
-    handleChange = (e) => {
-        e.preventDefault()
-        const { name, value } = e.target
-        this.setState({
-            [name]: value
-        })
-    }
-
     getLocation = () => {
         navigator.geolocation.getCurrentPosition(
         function(position) {
@@ -150,7 +146,6 @@ class PharmaProvider extends Component {
     handleSubmit = (e) => {  // on submit we are sending a new booking object to the database
         e.preventDefault()
         const {name, email, phone, medication, county} = this.state
-
         const city = this.state.city.length ? this.state.city : this.state.city2
         const date = new Date()
 
@@ -163,6 +158,51 @@ class PharmaProvider extends Component {
             email: '',
             phone: '',
             medication: ''
+        })
+    }
+
+    handleChange = (e) => {
+        e.preventDefault()
+        const { name, value } = e.target
+        this.setState({
+            [name]: value,
+        }, this.getMessages(e.target.value))
+        
+    }  
+
+    
+    handleChange2 = (e) => {
+        e.preventDefault()
+        const { name, value } = e.target
+        this.setState({
+            [name]: value,
+        })
+    }  
+    
+    getMessages = (city) => {
+        this.setState({currentCity:city}, this.getMessage2)   
+    }
+
+
+    getMessage2 = () => {
+        console.log(this.state.currentCity)
+        axios.get(`/message/2/${this.state.currentCity}`).then(res => {  
+            this.setState({
+                messages: res.data 
+            })
+        })
+    }
+
+
+    updateMessage = () => {
+        axios.get(`/message/2/${this.state.currentCity}`).then(res => {  
+            console.log(res.data.length, this.state.messages.length)
+            if(res.data.length > this.state.messages.length){
+                sound.play()
+            }
+            this.setState({
+                messages: res.data 
+            })
         })
     }
     
@@ -184,8 +224,11 @@ class PharmaProvider extends Component {
                     pharmaSignup: this.pharmaSignup,
                     handleSignup: this.handleSignup,
                     handleChange: this.handleChange,
+                    handleChange2: this.handleChange2,
                     getLocation: this.getLocation,
-                    handleSubmit: this.handleSubmit
+                    handleSubmit: this.handleSubmit,
+                    getMessages: this.getMessages,
+                    updateMessage: this.updateMessage
                 }}>
                 {this.props.children}
             </PharmaContext.Provider>

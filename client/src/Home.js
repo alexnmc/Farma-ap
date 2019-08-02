@@ -9,7 +9,6 @@ class Home extends Component {
         super(props)
         this.state = {
            city: this.props.city,
-           cities: ['Oradea','Salonta','Marghita','Sacueni','Beius','Valea lui Mihai','Alesd','Stei','Vascau','Nucet']
         }
     }
 
@@ -36,9 +35,9 @@ class Home extends Component {
                                     aria-required="true" 
                                     name='city2'
                                     value={this.props.city2}
-                                    onChange={this.props.handleChange}>
+                                    onChange={this.props.handleChange2}>
                                 <option value = ''>Alege orasul:</option>
-                                {this.state.cities.map((city, index) => <option key={city} value={city} className = {index}>{city}</option>)}
+                                {this.props.cities.map((city, index) => <option key={city} value={city} className = {index}>{city}</option>)}
                                 </select>
                             :
                             
@@ -51,7 +50,7 @@ class Home extends Component {
                                 name='name'
                                 placeholder='Nume'
                                 value={this.props.name}
-                                onChange={this.props.handleChange}
+                                onChange={this.props.handleChange2}
                                 required
                             />
                             <input 
@@ -59,7 +58,7 @@ class Home extends Component {
                                 name='email'
                                 placeholder='Email'
                                 value={this.props.email}
-                                onChange={this.props.handleChange}
+                                onChange={this.props.handleChange2}
                                 required
                             />
                             <input 
@@ -67,7 +66,7 @@ class Home extends Component {
                                 name='phone'
                                 placeholder='Telefon'
                                 value={this.props.phone}
-                                onChange={this.props.handleChange}
+                                onChange={this.props.handleChange2}
                                 required
                             />
 
@@ -76,7 +75,7 @@ class Home extends Component {
                                 name='medication'
                                 placeholder='Produsul dorit'
                                 value={this.props.medication}
-                                onChange={this.props.handleChange}
+                                onChange={this.props.handleChange2}
                                 required
                             />
                             <button className = "button1">Trimite</button>
