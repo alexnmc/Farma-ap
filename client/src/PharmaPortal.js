@@ -28,9 +28,11 @@ class PharmaPortal extends Component {
 
     updateMessage = () => {
         axios.get(`/message/2/${this.props.user.city}`).then(res => {  
+            
             if(this.state.messages.length < res.data.length){
                 var sound = new Audio(ring)
                 sound.play()
+                sound.pause()
             }
             this.setState({
                 messages: res.data 
@@ -58,7 +60,13 @@ class PharmaPortal extends Component {
     
 
     render(){
-        const messages = this.state.messages.map(item =>{
+        
+        let arr = this.state.messages
+        arr.sort(function (a, b) {
+            return new Date(a.date) - new Date(b.date)
+        })  
+        
+        const messages = this.arr.map(item =>{
             return(
                 <div className = "messageContainer" key = {item._id}>
                     <p className = "p2"> {`Nume: ${item.name.toUpperCase()}`}</p>  
