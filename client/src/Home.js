@@ -92,7 +92,7 @@ class Home extends Component {
                                 required
                             />
                             <button onClick = {() => this.toggle()}>Poza</button>
-                            <button className = "button1">Trimite</button>
+                            <button >Trimite</button>
                             </div>
                            
                             :
@@ -102,7 +102,7 @@ class Home extends Component {
                                 idealFacingMode = {FACING_MODES.ENVIRONMENT}
                                 onTakePhoto = { (dataUri) => { this.props.onTakePhoto(dataUri); } }
                                 />
-                                <button onClick = {() => this.toggle()}>înapoi</button>
+                                <button className = 'button2' onClick = {() => this.toggle()}>înapoi</button>
                             </div>
                                
                             }

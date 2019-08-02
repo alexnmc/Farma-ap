@@ -469,6 +469,7 @@ span{
         align-items: center;
         justify-content: flex-start;
         margin-top:2%;
+        height: 100%;
     }
     
     .input,
@@ -506,6 +507,10 @@ span{
         color: white;
         cursor: pointer;
         margin-top: 12%;
+    }
+
+    .button2{
+        margin-bottom: 10vh;
     }
 
     a{
@@ -664,8 +669,6 @@ span{
     }
 
    
-
-
     .imgWrap2{
         width: 100vh;
         margin-bottom: 50pt;
@@ -734,14 +737,5 @@ span{
         animation: none !important;
     }
 
-    home{
-        height: auto;
-        width: 100vw;
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: rgba(250, 250, 250, 0.719);
-    }
-
+    
 }
