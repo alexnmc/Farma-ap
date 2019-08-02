@@ -31,7 +31,7 @@ class PharmaProvider extends Component {
             medication: '',
             cities:['Oradea','Salonta','Marghita','Sacueni','Beius','Valea lui Mihai','Alesd','Stei','Vascau','Nucet'],
             messages: [],
-            currentCity: JSON.parse(localStorage.getItem("user")).city || '',
+            currentCity: '',
             picture: ''
         }
     }
@@ -108,7 +108,7 @@ class PharmaProvider extends Component {
             password: '',
             password2:'',
             pharmaCode:'',
-            city: ''
+            city4: ''
         })
     }
     
