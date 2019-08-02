@@ -26,6 +26,12 @@ body::before {
 }
   
 
+.myImg{
+    width:40pt;
+    height: 20pt;
+   
+}
+
 .navbar {
     width: 100vw;
     height: 50pt;
@@ -66,13 +72,17 @@ a{
     }
 
    p,
-  .p3,
-  .p4{
-    width:200pt;
+  .p3{
+    width: 120pt;
     text-align: start;
-    margin:2pt;
-   
-}
+    margin:1pt;
+   }
+
+   .p4{
+    width: 160pt;
+    text-align: start;
+    margin:1pt;
+   }
 
 .home{
     height: 100vh;
@@ -440,7 +450,7 @@ span{
 .link{
     color: rgb(0, 74, 160);
     margin-left: 7pt;
-    font-size: 3.5vw
+    font-size: 12pt;
 }
 
 .messageWrap{
@@ -489,12 +499,10 @@ span{
     }
     
     .cameraDiv{
-        height: 150pt;
+        height: 140pt;
         width: 69vw;
         margin: auto;
     }
-   
-   
    
    
     button{
@@ -747,6 +755,12 @@ span{
         align-items: center;
         justify-content: center;
         background-color: rgba(248, 248, 248, 0.849);
+    }
+
+    .link{
+        color: rgb(0, 74, 160);
+        margin-left: 7pt;
+        font-size: 3.5vw;
     }
     
 }

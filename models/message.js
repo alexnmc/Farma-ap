@@ -39,6 +39,15 @@ const messageSchema = new Schema({
         
     },
 
+    img: {
+        type:String,
+    },
+
+    toggle: {
+        type: Boolean,
+        default: true
+    }
+
    
 })
 

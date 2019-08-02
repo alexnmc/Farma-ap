@@ -29,10 +29,11 @@ class PharmaProvider extends Component {
             phone: '',
             time:'',
             medication: '',
+            img:'',
             cities:['Oradea','Salonta','Marghita','Sacueni','Beius','Valea lui Mihai','Alesd','Stei','Vascau','Nucet'],
             messages: [],
             currentCity: '',
-            picture: ''
+            
         }
     }
 
@@ -146,11 +147,13 @@ class PharmaProvider extends Component {
 
     handleSubmit = (e) => {  // on submit we are sending a new booking object to the database
         e.preventDefault()
-        const {name, email, phone, medication, county} = this.state
+        const {name, email, phone, medication, img, county} = this.state
         const city = this.state.city.length ? this.state.city : this.state.city2
         const date = new Date()
+        console.log(this.state.img)
 
-        axios.post('/message', {date, name, email, phone, medication, city, county}).then(res => {
+        axios.post('/message', {date, name, email, phone, medication, img, city, county}).then(res => {
+            console.log(res.data)
             alert(res.data +' Nume: '+ name +'  medicament: '+ medication)
         })
         
@@ -158,7 +161,8 @@ class PharmaProvider extends Component {
             name: '',
             email: '',
             phone: '',
-            medication: ''
+            medication: '',
+            img: ''
         })
     }
 
@@ -205,9 +209,15 @@ class PharmaProvider extends Component {
 
     onTakePhoto = (dataUri) => {
         this.setState({
-           picture: dataUri
+           img: dataUri
         })
     }
+
+    enlarge = (id) => {
+        
+        this.state.messages.map(item => item._id === id ? item.toggle = true : item.toggle = false) 
+         console.log(this.state.messages)
+     }
     
     
     render() {
@@ -232,7 +242,8 @@ class PharmaProvider extends Component {
                     handleSubmit: this.handleSubmit,
                     getMessages: this.getMessages,
                     updateMessage: this.updateMessage,
-                    onTakePhoto: this.onTakePhoto
+                    onTakePhoto: this.onTakePhoto,
+                    enlarge: this.enlarge
                 }}>
                 {this.props.children}
             </PharmaContext.Provider>
