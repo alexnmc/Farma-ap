@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import {withPharma} from './PharmaProvider'
 import moment from 'moment'
 import axios from 'axios'
+import ring from './Sound/Sound.mp3'
 
 
 
@@ -17,21 +18,29 @@ class PharmaPortal extends Component {
 
     
     getMessages = (city) => {
-       
-       
-                axios.get(`/message/2/${city}`).then(res => {  
-                this.setState({
-                    messages: res.data 
-                })
+        axios.get(`/message/2/${city}`).then(res => {  
+            this.setState({
+                messages: res.data 
             })
-        
+        })
     }
 
 
+    updateMessage = () => {
+        axios.get(`/message/2/${this.props.user.city}`).then(res => {  
+            if(this.state.messages.length < res.data.length){
+                var sound = new Audio(ring)
+                sound.play()
+            }
+            this.setState({
+                messages: res.data 
+            })
+        })
+    }
+    
     componentDidMount(){
         this.getMessages(this.state.city3)
-        setInterval(this.getMessages(this.state.city3), 80000);
-        this.props.getLocation()
+        setInterval(this.updateMessage, 15000);
     }
 
    

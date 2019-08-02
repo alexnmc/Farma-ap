@@ -39,7 +39,7 @@ messageRouter.delete('/', (req, res, next) => {
 
 
 messageRouter.post('/',  (req, res, next) => {   
-    Message.findOne({name: req.body.name, phone:req.body.phone, medication:req.body.medication, city: req.body.city}, (err, message) => {
+    Message.findOne({name: req.body.name, phone:req.body.phone, medication:req.body.medication, city: req.body.city, date: req.body.date}, (err, message) => {
         if (err) {
             res.status(500)
             return next(err)
