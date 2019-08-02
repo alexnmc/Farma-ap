@@ -485,7 +485,15 @@ span{
         padding-left:7pt;
     }
     
-    
+    .cameraDiv{
+        height: 210pt;
+        width: 69vw;
+        margin: auto;
+    }
+   
+   
+   
+   
     button{
         margin: auto;
         display:flex;
