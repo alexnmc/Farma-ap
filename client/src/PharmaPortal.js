@@ -66,7 +66,7 @@ class PharmaPortal extends Component {
             return new Date(a.date) - new Date(b.date)
         })  
         
-        const messages = this.arr.map(item =>{
+        const messages = arr.map(item =>{
             return(
                 <div className = "messageContainer" key = {item._id}>
                     <p className = "p2"> {`Nume: ${item.name.toUpperCase()}`}</p>  
