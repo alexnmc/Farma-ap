@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {withPharma} from './PharmaProvider'
-import Camera from 'react-html5-camera-photo';
+import Camera, { FACING_MODES }from 'react-html5-camera-photo';
 import 'react-html5-camera-photo/build/css/index.css';
 
 
@@ -99,6 +99,7 @@ class Home extends Component {
                                 
                             <div className = "cameraDiv">
                                 <Camera
+                                idealFacingMode = {FACING_MODES.ENVIRONMENT}
                                 onTakePhoto = { (dataUri) => { this.props.onTakePhoto(dataUri); } }
                                 />
                                 <button onClick = {() => this.toggle()}>înapoi</button>
