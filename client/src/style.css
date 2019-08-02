@@ -486,7 +486,7 @@ span{
     }
     
     .cameraDiv{
-        height: 210pt;
+        height: 150pt;
         width: 69vw;
         margin: auto;
     }
@@ -663,14 +663,7 @@ span{
         margin-right: 20pt;
     }
 
-    .imgWrap{
-        width: 100vw;
-        margin-bottom: 15pt;
-        margin-top: -9vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+   
 
 
     .imgWrap2{
@@ -734,7 +727,7 @@ span{
 
     .imgWrap{
         margin-bottom: 20pt;
-        margin-top: -8vh;
+        margin-top: 10vh;
         display: flex;
         align-items: center;
         justify-content: center;
