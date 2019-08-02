@@ -215,7 +215,7 @@ class PharmaProvider extends Component {
 
     enlarge = (id) => {
         
-        this.state.messages.map(item => item._id === id ? item.toggle = true : item.toggle = false) 
+        this.state.messages.map(item => item._id === id ? item.toggle = false : item.toggle = true) 
          console.log(this.state.messages)
      }
     

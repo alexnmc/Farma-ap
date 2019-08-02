@@ -39,24 +39,14 @@ class PharmaPortal extends Component {
         
         const messages = arr.map(item =>{
             return(
-                <div  key = {item._id}>
-                {item.toggle ?
+                <div className = "messageContainer" key = {item._id}>
                 
-                <div  className = "messageContainer"   >
                     <p className = "p2"> {`Nume: ${item.name.toUpperCase() || ''}`}</p>  
                     <p className = "p3"><span>Cautã: </span>{item.medication}</p>
-                    <img  onClick = {() => this.props.enlarge(item._id)} className = 'myImg' alt = '' src = {item.img}/>
+                    {item.toggle ? <img  onClick = {() => this.props.enlarge(item._id)} className = 'myImg' alt = '' src = {item.img}/>  : <img  style = {{width: '30vw' , height: '30vh'}}  onClick = {() => this.props.enlarge(item._id)} className = 'myImg' alt = '' src = {item.img}/>}
                     <p className = "p2"> {`Tel: ${item.phone}`}</p>   
                     <p className = "p2"> {`Email: ${item.email}`}</p>
                     <p className = "p4"> {`${moment(item.date).format('MMMM Do YYYY, h:mm:ss a')}`}</p>
-                </div>   
-                    
-                    :
-
-                <div className = "messageContainer" >
-                    <img  style = {{width: '20vw' , height: '20vh'}}  onClick = {() => this.props.enlarge(item._id)} className = 'myImg' alt = '' src = {item.img}/>
-                </div>
-                }
                 </div>
             )
         })
