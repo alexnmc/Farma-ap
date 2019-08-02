@@ -91,7 +91,7 @@ class Home extends Component {
                                 onChange={this.props.handleChange2}
                                 required
                             />
-                            <button onClick = {() => this.toggle()}>Photo</button>
+                            <button onClick = {() => this.toggle()}>Poza</button>
                             <button className = "button1">Trimite</button>
                             </div>
                            
