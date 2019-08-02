@@ -55,7 +55,7 @@ class Home extends Component {
                             <h1 className = 'oras'>{this.state.city}</h1>
                             }
                            
-                            {!this.state.toggle ?
+                            {this.state.toggle ?
                             <div>
                             <input 
                                 type='text'
