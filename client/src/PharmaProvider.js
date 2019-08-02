@@ -31,7 +31,8 @@ class PharmaProvider extends Component {
             medication: '',
             cities:['Oradea','Salonta','Marghita','Sacueni','Beius','Valea lui Mihai','Alesd','Stei','Vascau','Nucet'],
             messages: [],
-            currentCity: JSON.parse(localStorage.getItem("user")).city || ''
+            currentCity: JSON.parse(localStorage.getItem("user")).city || '',
+            picture: ''
         }
     }
 
@@ -170,7 +171,6 @@ class PharmaProvider extends Component {
         
     }  
 
-    
     handleChange2 = (e) => {
         e.preventDefault()
         const { name, value } = e.target
@@ -183,7 +183,6 @@ class PharmaProvider extends Component {
         this.setState({currentCity:city}, this.getMessage2)   
     }
 
-
     getMessage2 = () => {
         console.log(this.state.currentCity)
         axios.get(`/message/2/${this.state.currentCity}`).then(res => {  
@@ -192,7 +191,6 @@ class PharmaProvider extends Component {
             })
         })
     }
-
 
     updateMessage = () => {
         axios.get(`/message/2/${this.state.currentCity}`).then(res => {  
@@ -206,9 +204,10 @@ class PharmaProvider extends Component {
         })
     }
 
-    onTakePhoto (dataUri) {
-        // Do stuff with the dataUri photo...
-        console.log('takePhoto');
+    onTakePhoto = (dataUri) => {
+        this.setState({
+           picture: dataUri
+        })
     }
     
     

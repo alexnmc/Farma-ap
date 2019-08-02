@@ -11,7 +11,8 @@ class Home extends Component {
         super(props)
         this.state = {
            city: this.props.city,
-           toggle: true
+           toggle: true,
+          
         }
     }
 
