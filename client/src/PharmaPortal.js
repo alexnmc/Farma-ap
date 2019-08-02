@@ -79,7 +79,6 @@ class PharmaPortal extends Component {
         })
 
        
-        
         return(
             <div className = 'pharmaport'>
                 <div className = 'messageWrap'>
