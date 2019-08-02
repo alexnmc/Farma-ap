@@ -184,7 +184,6 @@ class PharmaProvider extends Component {
     }
 
     getMessage2 = () => {
-        console.log(this.state.currentCity)
         axios.get(`/message/2/${this.state.currentCity}`).then(res => {  
             this.setState({
                 messages: res.data 
