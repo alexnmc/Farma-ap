@@ -21,7 +21,6 @@ class PharmaProvider extends Component {
             county: localStorage.getItem("county") || '',
             city2: '',
             city4:'',
-            date: new Date(),
             name: '',
             email: '',
             phone: '',
@@ -150,9 +149,10 @@ class PharmaProvider extends Component {
 
     handleSubmit = (e) => {  // on submit we are sending a new booking object to the database
         e.preventDefault()
-        const {date, name, email, phone, medication, county} = this.state
+        const {name, email, phone, medication, county} = this.state
 
         const city = this.state.city.length ? this.state.city : this.state.city2
+        const date = new Date()
 
         axios.post('/message', {date, name, email, phone, medication, city, county}).then(res => {
             alert(res.data +' Nume: '+ name +'  medicament: '+ medication)
@@ -162,7 +162,6 @@ class PharmaProvider extends Component {
             name: '',
             email: '',
             phone: '',
-            date:'',
             medication: ''
         })
     }

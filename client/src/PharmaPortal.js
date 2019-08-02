@@ -4,11 +4,14 @@ import moment from 'moment'
 import axios from 'axios'
 import ring from './Sound/Sound.mp3'
 
+var sound = new Audio(ring)
+
 
 
 class PharmaPortal extends Component {
     constructor(props){
         super(props)
+        
         this.state = {
            messages: [],
            city3: this.props.user.city,
@@ -16,6 +19,7 @@ class PharmaPortal extends Component {
         }
     }
 
+    
     
     getMessages = (city) => {
         axios.get(`/message/2/${city}`).then(res => {  
@@ -26,24 +30,32 @@ class PharmaPortal extends Component {
     }
 
 
+
+
     updateMessage = () => {
+        if(this.mounted){
         axios.get(`/message/2/${this.props.user.city}`).then(res => {  
-            
-            if(this.state.messages.length < res.data.length){
-                var sound = new Audio(ring)
+            console.log(res.data.length, this.state.messages.length)
+            if(res.data.length > this.state.messages.length){
                 sound.play()
-                sound.pause()
             }
             this.setState({
                 messages: res.data 
             })
         })
+        }
     }
     
     componentDidMount(){
+        this.mounted = true;
         this.getMessages(this.state.city3)
         setInterval(this.updateMessage, 15000);
     }
+    
+      
+      componentWillUnmount() {
+         this.mounted = false;
+      }
 
    
     handleChange = (e) => {
@@ -62,8 +74,13 @@ class PharmaPortal extends Component {
     render(){
         
         let arr = this.state.messages
+
         arr.sort(function (a, b) {
-            return new Date(a.date) - new Date(b.date)
+            return new Date(b.time) - new Date(a.time)
+        })  
+
+        arr.sort(function (a, b) {
+            return new Date(b.date) - new Date(a.date)
         })  
         
         const messages = arr.map(item =>{
