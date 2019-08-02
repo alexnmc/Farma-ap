@@ -92,7 +92,7 @@ class Home extends Component {
                                 required
                             />
                             <button onClick = {() => this.toggle()}>Poza</button>
-                            <button >Trimite</button>
+                            <button className = 'button2'>Trimite</button>
                             </div>
                            
                             :
