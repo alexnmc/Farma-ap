@@ -205,6 +205,11 @@ class PharmaProvider extends Component {
             })
         })
     }
+
+    onTakePhoto (dataUri) {
+        // Do stuff with the dataUri photo...
+        console.log('takePhoto');
+    }
     
     
     render() {
@@ -228,7 +233,8 @@ class PharmaProvider extends Component {
                     getLocation: this.getLocation,
                     handleSubmit: this.handleSubmit,
                     getMessages: this.getMessages,
-                    updateMessage: this.updateMessage
+                    updateMessage: this.updateMessage,
+                    onTakePhoto: this.onTakePhoto
                 }}>
                 {this.props.children}
             </PharmaContext.Provider>

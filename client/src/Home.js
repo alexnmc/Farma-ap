@@ -1,5 +1,7 @@
 import React, {Component} from 'react'
 import {withPharma} from './PharmaProvider'
+import Camera from 'react-html5-camera-photo';
+import 'react-html5-camera-photo/build/css/index.css';
 
 
 
@@ -9,6 +11,7 @@ class Home extends Component {
         super(props)
         this.state = {
            city: this.props.city,
+           toggle: true
         }
     }
 
@@ -16,8 +19,15 @@ class Home extends Component {
     componentDidMount(){
        this.props.getLocation()
     }
-    
-    
+
+
+    toggle = () => {
+        this.setState({
+            toggle: !this.state.toggle
+        })
+    }
+
+
     render(){
             return(
                 <div className = 'home'>
@@ -28,6 +38,7 @@ class Home extends Component {
                         </div>
                            
                          <form className = 'bookingForm' onSubmit={this.props.handleSubmit}  >
+                            
                             {!this.props.city.length ?
                                 <select 
                                     required 
@@ -42,9 +53,10 @@ class Home extends Component {
                             :
                             
                             <h1 className = 'oras'>{this.state.city}</h1>
-                            
                             }
-                            
+                           
+                            {!this.state.toggle ?
+                            <div>
                             <input 
                                 type='text'
                                 name='name'
@@ -78,7 +90,22 @@ class Home extends Component {
                                 onChange={this.props.handleChange2}
                                 required
                             />
+                            <button onClick = {() => this.toggle()}>Photo</button>
                             <button className = "button1">Trimite</button>
+                            </div>
+                           
+                            :
+                                
+                            <div className = "cameraDiv">
+                                <Camera
+                                onTakePhoto = { (dataUri) => { this.props.onTakePhoto(dataUri); } }
+                                />
+                                <button onClick = {() => this.toggle()}>înapoi</button>
+                            </div>
+                               
+                            }
+                            
+                            
                         </form>
                     </div>
                  </div>              

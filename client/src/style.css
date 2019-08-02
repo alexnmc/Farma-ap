@@ -144,7 +144,21 @@ button{
     font-size: 14pt;
     color: white;
     cursor: pointer;
-    margin-top: 50pt;
+    margin-bottom : 20pt;
+}
+
+.cameraDiv{
+    height: 250pt;
+    width: 250pt;
+    margin: auto;
+}
+
+.react-html5-camera-photo>video {
+    width: 100%;
+    height: 100%;
+    border:2px solid white;
+    margin: auto;
+
 }
 
 .loginButton{
