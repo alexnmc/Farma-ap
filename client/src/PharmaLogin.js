@@ -6,17 +6,16 @@ import { withPharma } from './PharmaProvider'
 const PharmaLogin = props=>  {
     
         return(
-            
             <div className="admin">
-                <div className = 'shadow'></div>
+                
                 <div className = "loginContainer">
                     { props.toggle ?
                             <div  className='loginForm'>
                                 <div className = "loginWrap">
                                     <div className = "loginLogo"></div>
-                                    <p className = 'cont'>Nu ai cont?<span className = 'link' onClick={props.editToggler}>Înregistreazã-te</span></p>
+                                    <p className = 'cont'>Alãturati-vã retelei noastre - <span className = 'link' onClick={props.editToggler}>Înregistrare</span></p>
                                 </div>
-                                <h4>Intrã in cont:</h4>
+                                <h4>Intrare in cont:</h4>
                                 <input
                                     className = "login1"
                                     type='text'
@@ -42,7 +41,7 @@ const PharmaLogin = props=>  {
                             <div className='loginForm'>
                                     <div className = "loginWrap">
                                         <div className = "loginLogo"></div>
-                                        <p className = 'cont'>Ai deja cont? <span className = 'link' onClick={props.editToggler}>Login</span></p>
+                                        <p className = 'cont'>Aveti deja cont? <span className = 'link' onClick={props.editToggler}>Login</span></p>
                                     </div>
                             <h4> Creeazã cont nou:</h4>
                         

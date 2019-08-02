@@ -30,7 +30,7 @@ class PharmaPortal extends Component {
 
     componentDidMount(){
         this.getMessages(this.state.city3)
-        setInterval(this.getMessages, 60000);
+        setInterval(this.getMessages(this.state.city3), 80000);
         this.props.getLocation()
     }
 
@@ -52,8 +52,8 @@ class PharmaPortal extends Component {
         const messages = this.state.messages.map(item =>{
             return(
                 <div className = "messageContainer" key = {item._id}>
-                    <p className = "p3"> {`Produs: ${item.medication}`}</p>
                     <p className = "p2"> {`Nume: ${item.name.toUpperCase()}`}</p>  
+                    <p className = "p3"><span>Cautã: </span>{item.medication}</p>
                     <p className = "p2"> {`Tel: ${item.phone}`}</p>   
                     <p className = "p2"> {`Email: ${item.email}`}</p>
                     <p className = "p4"> {`${moment(item.date).format('MMMM Do YYYY, h:mm:ss a')}`}</p>
@@ -62,7 +62,6 @@ class PharmaPortal extends Component {
         })
 
        
-        
         
         return(
             <div className = 'pharmaport'>

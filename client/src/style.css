@@ -22,8 +22,7 @@ body::before {
     right: 0;
     position: fixed;
     z-index: -10; 
-    
-  }
+}
   
 
 .navbar {
@@ -111,11 +110,10 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid  rgba(0, 67, 144, 0.164);
+    border: 2px solid  rgba(0, 67, 144, 0.205);
     color:  rgb(0, 88, 189);
     padding-left:5pt;
     font-family: 'Helvetica-Neue';
-   
 }
 
 
@@ -127,7 +125,7 @@ input{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid  rgba(0, 67, 144, 0.164);
+    border: 1px solid  rgba(0, 67, 144, 0.281);
     border-radius: 7px;
     padding-left:5pt;
     font-family: 'Helvetica-Neue';
@@ -236,15 +234,14 @@ h4{
 }
 
 .admin{
-    background-image: url('./Photos/bkg3.jpg');
-    background-size: cover;
-    background-position: center;
+    background-color:rgba(116, 116, 116, 0.246);
     height: 100vh;
     width: 100vw;
     display:flex;
     align-items: center;
     justify-content: center;
 }
+
 
 .loginForm{
     height:auto;
@@ -255,7 +252,6 @@ h4{
     justify-content: center;
     margin:auto;
 }
-
 
 .loginContainer{
     height:auto;
@@ -283,7 +279,7 @@ h4{
    display: flex;
    width:auto;
    font-family: 'Helvetica Neue ,Helvetica,Arial,sans-serif';
-   font-size: 11pt;
+   font-size: 12pt;
    font-weight: 900;
    color: rgb(97, 97, 97);
 }
@@ -297,6 +293,7 @@ h4{
     margin-top: -40pt;
     margin-right: -30pt;
 }
+
 
 @keyframes move2{
     from{margin-right: -100vw}
@@ -360,7 +357,6 @@ h4{
     background-image: url('./Photos/foto.png');
     background-size: cover;
     background-position: center;
-    
 }
 
 .imgWrap{
@@ -393,33 +389,39 @@ h4{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 99%;
+    width: 94%;
     height: 25pt;
     font-family: 'helvetica-neue';
-    border: 1px solid rgba(0, 17, 255, 0.24);
+    border: 1px solid rgba(0, 17, 255, 0.287);
     margin:auto;
     margin-top: 5pt;
+    padding-left:20pt;
 }
 
+
 .p3{
-    font-family: arial;
-    text-align: center;
+    font-family: 'helvetica-neue';
+    text-align: start;
     margin: 2pt;
     color: red;
-    font-weight: 900;
+    font-size: 14.5pt;
+}
+
+span{
+    color: rgb(0, 0, 0);
+    font-size: 12pt;
 }
 
 .p4{
     font-family: arial;
-    text-align: center;
     margin: 2pt;
-    color: rgb(0, 0, 204);
+    color:rgb(0, 74, 160);
     font-weight: 900;
     font-size: 11pt;
 }
 
 .link{
-    color: rgb(0, 74, 160);;
+    color: rgb(0, 74, 160);
     margin-left: 7pt;
 }
 
@@ -559,7 +561,7 @@ h4{
         display: flex;
         align-items: center;
         justify-content: space-around;
-        width: 90%;
+        width: 230pt;
         height: auto;
         padding:2pt;
         font-family: 'helvetica-neue';
@@ -589,13 +591,13 @@ h4{
 
     .p2{
         margin: 2pt;
-        text-align:center
+       
     }
 
     .p3{
         margin: 2pt;
         color: rgba(223, 0, 0, 0.972);
-        text-align: center
+        
     }
 
     .cauta{
