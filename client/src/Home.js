@@ -40,7 +40,7 @@ class Home extends Component {
                            
                          <form className = 'bookingForm' onSubmit={this.props.handleSubmit}  >
                             
-                            {!this.props.city.length ?
+                            { !this.props.city.length ?
                                 <select 
                                     required 
                                     className = 'input'
@@ -56,7 +56,7 @@ class Home extends Component {
                             <h1 className = 'oras'>{this.state.city}</h1>
                             }
                            
-                            {this.state.toggle ?
+                            { this.state.toggle ?
                             <div>
                             <input 
                                 type='text'
@@ -105,10 +105,7 @@ class Home extends Component {
                                 />
                                 <button className = 'button2' onClick = {() => this.toggle()}>înapoi</button>
                             </div>
-                               
                             }
-                            
-                            
                         </form>
                     </div>
                  </div>              
