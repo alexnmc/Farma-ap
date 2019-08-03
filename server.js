@@ -16,16 +16,9 @@ app.use("/api", expressJwt({secret})) //req.user === {username, password, _id}
 app.use(express.static(path.join(__dirname, "client", "build")))
 
 
-
-
-
-
-
+//routes
 app.use("/user", require("./routes/user"))
 app.use("/message", require("./routes/message"))
-
-
-
 
 
 
