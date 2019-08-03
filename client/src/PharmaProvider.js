@@ -184,7 +184,9 @@ class PharmaProvider extends Component {
     }  
     
     getMessages = (city) => {
-        this.setState({currentCity:city}, this.getMessage2)   
+        if(city.length){
+            this.setState({currentCity:city}, this.getMessage2)
+        }   
     }
 
     getMessage2 = () => {
