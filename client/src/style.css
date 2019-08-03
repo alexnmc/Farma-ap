@@ -444,7 +444,7 @@ span{
     margin: 2pt;
     color:rgb(0, 74, 160);
     font-weight: 900;
-    font-size: 11pt;
+    font-size: 10pt;
 }
 
 .link{
@@ -598,11 +598,11 @@ span{
     
     .messageContainer{
         display: flex;
-        align-items: center;
-        justify-content: space-around;
+        align-items: flex-start;
+        justify-content: flex-start;
         width: 230pt;
         height: auto;
-        padding:2pt;
+        padding:3pt;
         font-family: 'helvetica-neue';
         border: 1px solid rgba(0, 38, 255, 0.486);
         margin-top: 10pt;
@@ -654,6 +654,12 @@ span{
         margin-right:4vw;
         margin-right:20pt;
         animation: none !important;
+    }
+
+    .myImg{
+        width:30pt;
+        height: 20pt;
+        margin: auto;
     }
 
     .h3{
