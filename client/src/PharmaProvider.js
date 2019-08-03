@@ -33,6 +33,7 @@ class PharmaProvider extends Component {
             cities:['Oradea','Salonta','Marghita','Sacueni','Beius','Valea lui Mihai','Alesd','Stei','Vascau','Nucet'],
             messages: [],
             currentCity: '',
+            send: true
             
         }
     }
@@ -127,6 +128,7 @@ class PharmaProvider extends Component {
         alert('Parolele nu sint identice!')
     }
 
+    
     getLocation = () => {
         navigator.geolocation.getCurrentPosition(
         function(position) {
@@ -150,8 +152,7 @@ class PharmaProvider extends Component {
         const {name, email, phone, medication, img, county} = this.state
         const city = this.state.city.length ? this.state.city : this.state.city2
         const date = new Date()
-        console.log(this.state.img)
-
+        
         axios.post('/message', {date, name, email, phone, medication, img, city, county}).then(res => {
             console.log(res.data)
             alert(res.data +' Nume: '+ name +'  medicament: '+ medication)
@@ -217,8 +218,12 @@ class PharmaProvider extends Component {
 
     enlarge = (id) => {
         
-        this.state.messages.map(item => item._id === id ? item.toggle = false : item.toggle = true) 
-         console.log(this.state.messages)
+        this.state.messages.map(item => item._id === id ? item.toggle = !item.toggle : item.toggle = true) 
+        this.setState({
+            send: !this.state.send
+        })
+        
+        console.log(this.state.messages)
      }
     
     
