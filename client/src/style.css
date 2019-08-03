@@ -71,9 +71,10 @@ a{
     cursor: pointer;
     }
 
+.p2,
    p,
   .p3{
-    width: 120pt;
+    width: 160pt;
     text-align: start;
     margin:1pt;
    }
@@ -498,7 +499,7 @@ span{
     
     .cameraDiv{
         height: 160pt;
-        width: 90vw;
+        width: 95vw;
         margin: auto;
     }
    
@@ -533,7 +534,6 @@ span{
        margin-bottom:25pt;
     }
     
-    
     h4{
         font-size:14pt;
         margin-bottom: 20pt;
@@ -564,7 +564,6 @@ span{
         padding-left:3.5pt;
         font-size:11pt;
         margin-bottom: 8pt
-    
     }
     
     .loginForm{
@@ -602,7 +601,7 @@ span{
         height: auto;
         padding:3pt;
         font-family: 'helvetica-neue';
-        border: 1px solid rgba(0, 38, 255, 0.486);
+        border: 1px solid rgba(0, 38, 255, 0.171);
         margin-top: 10pt;
         font-size: 11pt;
         font-weight:900;
