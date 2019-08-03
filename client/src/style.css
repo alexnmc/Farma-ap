@@ -752,7 +752,7 @@ span{
     }
 
     .home{
-        min-height: 120vh;
+        min-height: auto;
         width: 100vw;
         display:flex;
         flex-direction: column;
