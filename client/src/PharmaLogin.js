@@ -43,6 +43,7 @@ const PharmaLogin = props=>  {
                                 <div>
                                 {props.confirmed !== 'Confirmed' ?
                                     <div className = "loginForm">
+                                        <h4 className = 'h4'>Introduceti adresa de email cu care ati creat contul:</h4>
                                         <input
                                             className = "login33"
                                             type='text'
@@ -57,6 +58,7 @@ const PharmaLogin = props=>  {
                                 :
 
                                     <div className = "loginForm">
+                                        <h4 className = "h4">Introduceti parola nouã:</h4>
                                         <input
                                             className = "login33"
                                             type='text'

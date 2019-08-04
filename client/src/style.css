@@ -248,6 +248,15 @@ h4{
     text-align: center;
 }
 
+.h4{
+    color: rgb(0, 79, 170);;
+    font-family: 'helvetica-neue';
+    font-size:14pt;
+    margin-bottom: -18pt;
+    margin-top: 30pt;
+    text-align: center; 
+}
+
 .login1{
     width: 80%;
     height: 32pt;
@@ -575,10 +584,19 @@ span{
     
     h4{
         font-size: 4vw;
-        margin-bottom: 20pt;
+        margin-bottom: 15pt;
         text-align: center;
-        margin-top:5pt
-     }
+        margin-top:15pt
+    }
+
+    .h4{
+        font-size: 4vw;
+        margin-bottom: -38pt;
+        text-align: center;
+        margin-top:25pt
+       
+
+    }
     
     .login1{
         width: 75%;

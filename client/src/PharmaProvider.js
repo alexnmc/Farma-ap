@@ -82,7 +82,10 @@ class PharmaProvider extends Component {
                 username: '',
                 password: '',
                 password2: '',
-                pharmaCode: ''
+                pharmaCode: '',
+                forgotEmail: '',
+                confirmed:'',
+                toggle2: true      
             }
         })
     }
@@ -91,7 +94,8 @@ class PharmaProvider extends Component {
         this.setState(prevState => {
             return {
                 toggle2: !prevState.toggle2,
-                forgotEmail: ''                //toggle from login to reset password
+                forgotEmail: '',
+                confirmed:''               //toggle from login to reset password
                 
             }
         })
