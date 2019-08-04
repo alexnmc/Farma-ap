@@ -39,7 +39,7 @@ body::before {
     display:flex;
     position: relative;
     align-items: center;
-    font-size: 19px;
+    font-size: 20px;
     font-family:'helvetica-neue';
     font-weight: 600;
     border-bottom: 5px solid #fcff68cc;
@@ -360,7 +360,7 @@ h4{
 
 .cauta{
     font-family: 'Helvetica-Neue';
-    color: rgb(0, 97, 207);
+    color: rgb(0, 79, 168);
     font-size: 20pt;
     text-align: center;
     animation: move2 1s;
@@ -376,7 +376,7 @@ h4{
 
 .oras{
     font-family: 'Helvetica-Neue ';
-    color: rgb(0, 97, 207) ;
+    color: rgb(0, 79, 168);
     font-size: 14pt;
     text-align: center;
     margin-bottom: 20pt;
@@ -699,7 +699,6 @@ span{
     .cauta{
         font-size: 17pt;
         text-align: center;
-        color: rgb(0, 86, 184);
         margin-right: 0pt;
         margin-top:0pt;
         animation: none !important;
@@ -793,7 +792,6 @@ span{
         margin:auto;
         margin-bottom: 20pt;
         margin-top: -5pt;
-        color: rgb(0, 86, 184);
     }
     
     .loginLogo{
