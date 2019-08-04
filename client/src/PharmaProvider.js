@@ -15,24 +15,28 @@ class PharmaProvider extends Component {
         this.state = {
             user: JSON.parse(localStorage.getItem("user")) || {},
             token: localStorage.getItem("token") || "",
+            city: JSON.parse(localStorage.getItem("city")) || '', // from geolocation..
+            county: localStorage.getItem("county") || '',
             toggle: true,
+            toggle2: true,
             username: '',
             password: '',
             password2: '',
             pharmaCode: '',
-            city: JSON.parse(localStorage.getItem("city")) || '', // from geolocation..
-            county: localStorage.getItem("county") || '',
             city2: '',
             city4:'',
             name: '',
             email: '',
+            forgotEmail: '',
+            newPassword: '',
             phone: '',
             time:'',
             medication: '',
             img:'',
             cities:['Oradea','Salonta','Marghita','Sacueni','Beius','Valea lui Mihai','Alesd','Stei','Vascau','Nucet'],
             messages: [],
-            currentCity: ''
+            currentCity: '',
+            confirmed: ''
         }
     }
 
@@ -69,6 +73,7 @@ class PharmaProvider extends Component {
         .catch(err => alert(err.response.data.errMsg))
     }
 
+    
     editToggler = () => {
         this.setState(prevState => {
             return {
@@ -81,12 +86,20 @@ class PharmaProvider extends Component {
         })
     }
 
+    editToggler2 = () => {
+        this.setState(prevState => {
+            return {
+                toggle2: !prevState.toggle2, //toggle from login to signin
+                
+            }
+        })
+    }
+
     handleLogin = (e) => {   // login method, we send the username and password entered in the input fields to the database 
         e.preventDefault()
         const newUser = {
             username: this.state.username,
             password: this.state.password,
-            
         }
         this.login(newUser) // we are receiving this function from the context and we call it here 
         this.setState({
@@ -127,6 +140,33 @@ class PharmaProvider extends Component {
     }
 
     
+    handleReset = () => {
+        axios.get(`/user/reset/${this.state.forgotEmail}`).then(res => {  
+            this.setState({
+                confirmed: res.data
+            })
+        })
+    }
+
+
+    resetPassword = () => {
+        const newUser = {
+            password: this.state.newPassword,
+        }
+        axios.put(`/user/reset/${this.state.forgotEmail}`, newUser).then(res => {  
+            console.log(res.data)
+            if(res.data === "Parola a fost schimbatã!" ){
+                this.setState({
+                    toggle2: true,
+                    confirmed: '',
+                    newPassword: ''
+                })
+            }
+        })
+    }
+
+
+
     getLocation = () => {
         navigator.geolocation.getCurrentPosition(
         function(position) {
@@ -145,8 +185,7 @@ class PharmaProvider extends Component {
     }
 
 
-    handleSubmit = (e) => {  // on submit we are sending a new booking object to the database
-        e.preventDefault()
+    handleSubmit = () => {  // on submit we are sending a new message object to the database
         const {name, email, phone, medication, img, county} = this.state
         const city = this.state.city.length ? this.state.city : this.state.city2
         const date = new Date()
@@ -210,7 +249,6 @@ class PharmaProvider extends Component {
 
     onTakePhoto = (dataUri) => {
         let uri = decodeURIComponent(dataUri)
-        console.log(uri)
         this.setState({
            img: uri
         })
@@ -237,7 +275,10 @@ class PharmaProvider extends Component {
                     handleDelete: this.handleDelete,
                     signup: this.signup,
                     login: this.login,
+                    handleReset: this.handleReset,
+                    resetPassword: this.resetPassword,
                     editToggler: this.editToggler,
+                    editToggler2: this.editToggler2,
                     handleLogin: this.handleLogin,
                     pharmaSignup: this.pharmaSignup,
                     handleSignup: this.handleSignup,

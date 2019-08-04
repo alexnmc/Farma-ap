@@ -18,13 +18,9 @@ class PharmaPortal extends Component {
     
     componentDidMount(){
         this.props.getMessages(this.state.userCity)
-        setInterval(this.props.updateMessage, 70000)
+        setInterval(this.props.updateMessage, 100000)
     }
 
-    
-    
-      
-    
     render(){
         
         let arr = this.props.messages

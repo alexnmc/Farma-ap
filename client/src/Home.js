@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {withPharma} from './PharmaProvider'
-import Camera, { FACING_MODES }from 'react-html5-camera-photo';
-import 'react-html5-camera-photo/build/css/index.css';
+import Camera, { FACING_MODES } from 'react-html5-camera-photo'
+import 'react-html5-camera-photo/build/css/index.css'
 
 
 
@@ -16,12 +16,18 @@ class Home extends Component {
         }
     }
 
-
     componentDidMount(){
        this.props.getLocation()
     }
 
 
+    sendEmail = (e) => {
+        e.preventDefault()
+        
+        this.props.handleSubmit() 
+    }
+    
+    
     toggle = () => {
         this.setState({
             toggle: !this.state.toggle
@@ -34,11 +40,11 @@ class Home extends Component {
                 <div className = 'home'>
                     <div className='bookingContainer'>
                         <div className = "imgWrap">
-                            <div  className = 'img1'></div>
+                            <div className = 'img1'></div>
                             <h1 className = 'cauta'>Cãutati produsul dorit:</h1>
                         </div>
                            
-                         <form className = 'bookingForm' onSubmit={this.props.handleSubmit}  >
+                         <form className = 'bookingForm' onSubmit={this.sendEmail}  >
                             
                             { !this.props.city.length ?
                                 <select 

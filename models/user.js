@@ -37,6 +37,8 @@ userSchema.pre("save", function(next) {
 })
 
 
+
+
 // Decrypts and compares password on login
 userSchema.methods.checkPassword = function(passwordAttempt, callback){
     bcrypt.compare(passwordAttempt, this.password, (err, isMatch) => {

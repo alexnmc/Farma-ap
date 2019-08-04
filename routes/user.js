@@ -2,6 +2,7 @@ const express = require("express")
 const User = require("../models/user");
 const authRouter = express.Router();
 const jwt = require("jsonwebtoken");
+const bcrypt = require('bcrypt')
 
 //post a new user to user collection (signing up)
 authRouter.post("/signup", (req, res, next) => {
@@ -71,7 +72,7 @@ authRouter.post("/login", (req, res, next) => {
 
 
 
-authRouter.get('/', (req, res) => {    // get all for testing with postman 
+authRouter.get('/', (req, res, next) => {    // get all for testing with postman 
     
     User.find((err, data) => {
         if(err) {
@@ -83,6 +84,39 @@ authRouter.get('/', (req, res) => {    // get all for testing with postman
     })
 })
 
+
+authRouter.get('/reset/:email', (req, res, next) => {    // get all for testing with postman 
+    
+    User.findOne({username: req.params.email} ,(err, data) => {
+        if(err) {
+            res.status(500)
+            return next(err)
+        }
+        return res.status(200).send("Confirmed")
+
+    })
+})
+
+
+authRouter.put('/reset/:email', (req, res, next) => {    // reset password
+    bcrypt.hash(req.body.password, 10, (err, hash) => {// encrypts the new password
+        if (err) return next(err)
+        req.body.password = hash
+        
+        User.findOneAndUpdate(
+        {username: req.params.email},
+         req.body,                           
+        {new: true},                
+        (err, updatedUser) => {
+            if (err) {
+                res.status(500)
+                return next(err)
+            }
+            return res.status(201).send("Parola a fost schimbatã!")
+        }
+    )
+    })
+})
 
 
 

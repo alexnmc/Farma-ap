@@ -15,25 +15,66 @@ const PharmaLogin = props=>  {
                                     <div className = "loginLogo"></div>
                                     <p className = 'cont'>Alãturati-vã retelei noastre - <span className = 'link' onClick={props.editToggler}>Înregistrare</span></p>
                                 </div>
-                                <h4>Intrare in cont:</h4>
-                                <input
-                                    className = "login1"
-                                    type='text'
-                                    name='username'
-                                    placeholder='Email'
-                                    value={props.username}
-                                    onChange={props.handleChange}
-                                />
+                                { props.toggle2 ?
+                                <div className = "loginForm">
+                                    <h4>Intrare in cont:</h4>
+                                    <input
+                                        className = "login1"
+                                        type='text'
+                                        name='username'
+                                        placeholder='Email'
+                                        value={props.username}
+                                        onChange={props.handleChange}
+                                    />
 
-                                <input
-                                    className = "login1"   
-                                    type='text'
-                                    name='password'
-                                    placeholder='Parola'
-                                    value={props.password}
-                                    onChange={props.handleChange}
-                                />
-                                <button className = 'loginButton' onClick={props.handleLogin}>Autentificare</button>
+                                    <input
+                                        className = "login1"   
+                                        type='text'
+                                        name='password'
+                                        placeholder='Parola'
+                                        value={props.password}
+                                        onChange={props.handleChange}
+                                    />
+                                    <button className = 'loginButton' onClick={props.handleLogin}>Autentificare</button>
+                                </div>
+                                
+                                :
+                                
+                                <div>
+                                {props.confirmed !== 'Confirmed' ?
+                                    <div className = "loginForm">
+                                        <input
+                                            className = "login1"
+                                            type='text'
+                                            name='forgotEmail'
+                                            placeholder='Email'
+                                            value={props.forgotEmail}
+                                            onChange={props.handleChange}
+                                        />
+                                        <button className = 'loginButton' onClick={props.handleReset}>Continuati</button>
+                                    </div>
+                                
+                                :
+
+                                    <div className = "loginForm">
+                                        <input
+                                            className = "login1"
+                                            type='text'
+                                            name='newPassword'
+                                            placeholder='Parola nouã'
+                                            value={props.newPassword}
+                                            onChange={props.handleChange}
+                                        />
+                                        <button className = 'loginButton' onClick={props.resetPassword}>Trimite</button>
+                                    </div>
+                                }
+                                </div>
+                                }
+                                { props.toggle2?
+                                 <p className = 'cont'>Ai uitat parola? <span className = 'link' onClick={props.editToggler2}>Reseteazã</span></p>
+                                :
+                                 <p className = 'cont'>Ti-ai amintit parola? <span className = 'link' onClick={props.editToggler2}>Login</span></p>
+                                }
                             </div>
                    
                             :     
@@ -93,6 +134,7 @@ const PharmaLogin = props=>  {
                                 />
                                 <button className = 'loginButton'  onClick={props.handleSignup} >înregistare</button>
                             </div>
+                            
                     }
                 </div>
             </div>
