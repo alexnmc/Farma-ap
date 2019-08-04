@@ -134,7 +134,7 @@ a{
 
 .input{
     width:250pt;
-    height: 47pt;
+    height: 45pt;
     margin:10pt;
     font-size: 15pt;
     display: flex;
@@ -148,7 +148,7 @@ a{
 
 input{
     width:250pt;
-    height: 47pt;
+    height: 45pt;
     margin:10pt;
     font-size: 15pt;
     display: flex;
@@ -320,9 +320,9 @@ h4{
    display: flex;
    width:auto;
    font-family: 'Helvetica Neue ,Helvetica,Arial,sans-serif';
-   font-size: 12pt;
+   font-size: 12.5pt;
    font-weight: 900;
-   color: rgb(97, 97, 97);
+   color:rgb(255, 159, 34);
 }
 
 .cauta{
