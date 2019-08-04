@@ -13,22 +13,36 @@ class Home extends Component {
         this.state = {
            city: this.props.city,
            toggle: true,
-          
+           sendTo:[],
         }
     }
 
     componentDidMount(){
        this.props.getLocation()
+       this.getFarmacies()
     }
 
 
+    getFarmacies = () => {
+        let yourCity = this.state.city || this.props.city2
+        axios.get(`/user/${yourCity}`).then(res => { 
+            let newArr = res.data.map(item =>  item = item.username) 
+            this.setState({
+                sendTo: newArr
+            })
+        })
+    }
+    
+    
     sendEmail = (e) => {
         e.preventDefault()
         this.props.handleSubmit() 
 
         const newMail = {
-            name: 'Alex',
-            phone: '123123'
+            name: this.props.name,
+            phone: this.props.phone,
+            medication: this.props.medication,
+            sendTo: this.state.sendTo
         }
         axios.post('/mail', newMail).then(res => {
            console.log(res.data)

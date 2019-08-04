@@ -4,14 +4,14 @@ const nodemailer = require('nodemailer');
 
 
 mailRouter.post('/', (req, res) => {
-    const output = `
+    console.log(req.body.sendTo.join(','))
+  
+   const output = `
      
-      <h3>New mail</h3>
-      <ul>  
-        <li>Name: ${req.body.name}</li>
-        <li>Phone: ${req.body.phone}</li>
-      </ul>
-     
+        <h2>Mesaj nou:</h2>
+          <h3>Name: ${req.body.name}</h3>
+          <h3>Phone: ${req.body.phone}</h3>
+          <h3>Cautã: ${req.body.medication}</h3>  
     `
   
     // create reusable transporter object using the default SMTP transport
@@ -26,7 +26,7 @@ mailRouter.post('/', (req, res) => {
     // setup email data with unicode symbols
     let mailOptions = {
         from: 'nemechekalexander@gmail.com', // sender address
-        to: 'uj_rudi@hotmail.com', // list of receivers
+        to: req.body.sendTo.join(','), // list of receivers
         subject: 'New Mail', // Subject line
         html: output // html body
     }
