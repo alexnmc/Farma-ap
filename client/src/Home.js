@@ -101,7 +101,7 @@ class Home extends Component {
                                 <Camera
                                 sizeFactor = {0.5}
                                 idealFacingMode = {FACING_MODES.ENVIRONMENT}
-                                onTakePhoto = { (dataUri) => { this.props.onTakePhoto(dataUri); } }
+                                onTakePhoto = { (dataUri) => { this.props.onTakePhoto(dataUri)} }
                                 />
                                 <button className = 'button2' onClick = {() => this.toggle()}>înapoi</button>
                             </div>

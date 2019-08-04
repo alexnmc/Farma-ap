@@ -29,6 +29,7 @@ body::before {
 .myImg{
     width:30pt;
     height: 20pt;
+    cursor: pointer;
 }
 
 .navbar {
@@ -70,19 +71,39 @@ a{
     cursor: pointer;
 }
 
- .p2,
-   p,
-  .p3{
-    width: 160pt;
+.p2{
+    width: 200pt;
     text-align: start;
     margin:1pt;
-   }
+}
+   
+.p1{
+    width: 240pt;
+    text-align: start;
+    margin:1pt;
+}
 
-   .p4{
-    width: 160pt;
+.p5{
+    width: 110pt;
     text-align: start;
     margin:1pt;
-   }
+}
+
+.p3{
+    width: 260pt;
+    text-align: start;
+    margin:1pt;
+}
+
+.p4{
+    width: 150pt;
+    text-align: start;
+    margin:1pt;
+}
+
+.p33{
+    width: 38pt;
+}
 
 .home{
     height: 100vh;
@@ -415,7 +436,7 @@ h4{
     border: 1px solid rgba(0, 17, 255, 0.287);
     margin:auto;
     margin-top: 4pt;
-    padding-left:20pt;
+    padding-left:5pt;
     font-size: 12pt;
 }
 
@@ -627,6 +648,7 @@ span{
     .p3{
         margin: 2pt;
         color: rgba(223, 0, 0, 0.972);
+        font-size: 11pt
         
     }
 

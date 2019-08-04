@@ -32,9 +32,7 @@ class PharmaProvider extends Component {
             img:'',
             cities:['Oradea','Salonta','Marghita','Sacueni','Beius','Valea lui Mihai','Alesd','Stei','Vascau','Nucet'],
             messages: [],
-            currentCity: '',
-            send: true
-            
+            currentCity: ''
         }
     }
 
@@ -211,20 +209,20 @@ class PharmaProvider extends Component {
     }
 
     onTakePhoto = (dataUri) => {
+        let uri = decodeURIComponent(dataUri)
+        console.log(uri)
         this.setState({
-           img: dataUri
+           img: uri
         })
     }
 
     enlarge = (id) => {
-        
-        this.state.messages.map(item => item._id === id ? item.toggle = !item.toggle : item.toggle = true) 
+        let newArr = this.state.messages // not mutating state
+        newArr.map(item => item._id === id ? item.toggle = !item.toggle : item.toggle = true) 
         this.setState({
-            send: !this.state.send
+            messages: newArr
         })
-        
-        console.log(this.state.messages)
-     }
+    }
     
     
     render() {
