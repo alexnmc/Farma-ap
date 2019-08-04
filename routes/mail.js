@@ -33,9 +33,9 @@ mailRouter.post('/', (req, res) => {
 
     transporter.sendMail(mailOptions, function(error, info){
     if (error) {
-        console.log(error);
+        res.status(201).send(error)
     } else {
-        console.log('Email sent: ' + info.response);
+        res.status(201).send('Email sent: ' + info.response);
     }
     })
 

@@ -31,7 +31,7 @@ class Home extends Component {
             phone: '123123'
         }
         axios.post('/mail', newMail).then(res => {
-          
+           console.log(res.data)
         })
         .catch(err => alert(err))
     }
