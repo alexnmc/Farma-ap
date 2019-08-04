@@ -44,7 +44,7 @@ const PharmaLogin = props=>  {
                                 {props.confirmed !== 'Confirmed' ?
                                     <div className = "loginForm">
                                         <input
-                                            className = "login1"
+                                            className = "login33"
                                             type='text'
                                             name='forgotEmail'
                                             placeholder='Email'
@@ -58,7 +58,7 @@ const PharmaLogin = props=>  {
 
                                     <div className = "loginForm">
                                         <input
-                                            className = "login1"
+                                            className = "login33"
                                             type='text'
                                             name='newPassword'
                                             placeholder='Parola nouã'
@@ -71,9 +71,9 @@ const PharmaLogin = props=>  {
                                 </div>
                                 }
                                 { props.toggle2?
-                                 <p className = 'cont'>Ai uitat parola? <span className = 'link' onClick={props.editToggler2}>Reseteazã</span></p>
+                                 <p className = 'cont2'>Ai uitat parola? <span className = 'link' onClick={props.editToggler2}>Reseteazã</span></p>
                                 :
-                                 <p className = 'cont'>Ti-ai amintit parola? <span className = 'link' onClick={props.editToggler2}>Login</span></p>
+                                 <p className = 'cont2'>Ti-ai amintit parola? <span className = 'link' onClick={props.editToggler2}>Login</span></p>
                                 }
                             </div>
                    

@@ -89,7 +89,8 @@ class PharmaProvider extends Component {
     editToggler2 = () => {
         this.setState(prevState => {
             return {
-                toggle2: !prevState.toggle2, //toggle from login to signin
+                toggle2: !prevState.toggle2,
+                forgotEmail: ''                //toggle from login to reset password
                 
             }
         })

@@ -305,7 +305,7 @@ h4{
     background-color: rgb(255, 255, 255);
     border-radius:3px;
     margin-top: 50pt;
-    padding-bottom: 50pt;
+    padding-bottom: 10pt;
 }
 
 .loginWrap{
@@ -323,6 +323,28 @@ h4{
    font-size: 12.5pt;
    font-weight: 900;
    color:rgb(255, 159, 34);
+}
+
+.cont2{
+   display: flex;
+   width:auto;
+   font-family: 'Helvetica Neue ,Helvetica,Arial,sans-serif';
+   font-size: 12.5pt;
+   font-weight: 900;
+   color:rgb(255, 159, 34);
+   margin-top:40pt;
+}
+
+.login33{
+    width: 80%;
+    height: 32pt;
+    border: 1px solid  rgba(100, 100, 100, 0.74);
+    background-color:  rgb(253, 252, 251);
+    color:black;
+    border-radius: 3px;
+    margin-top:70pt;
+    padding-left:3.5pt;
+    font-size:11pt;
 }
 
 .cauta{
@@ -601,12 +623,17 @@ span{
         background-color: rgba(255, 255, 255, 0.972);
     }
 
+    
+    
+    .cont2,
     .cont{
        display: flex;
        width:auto;
        font-size: 3.5vw;
        font-weight: 900;
     }
+
+    
     
     .messageContainer{
         display: flex;
