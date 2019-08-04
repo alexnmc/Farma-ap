@@ -8,7 +8,7 @@ mailRouter.post('/', (req, res) => {
   
    const output = `
      
-        <h2>Mesaj nou:</h2>
+       
           <h3>Name: ${req.body.name}</h3>
           <h3>Phone: ${req.body.phone}</h3>
           <h3>Cautã: ${req.body.medication}</h3>  
@@ -18,16 +18,16 @@ mailRouter.post('/', (req, res) => {
     let transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: 'nemechekalexander@gmail.com', // generated ethereal user
-        pass: 'Panerai1'  // generated ethereal password
+        user: 'farmacieup@gmail.com', // generated ethereal user
+        pass: 'farmaup123'  // generated ethereal password
       }
     })
   
     // setup email data with unicode symbols
     let mailOptions = {
-        from: 'nemechekalexander@gmail.com', // sender address
+        from: 'farmacieup@gmail.com', // sender address
         to: req.body.sendTo.join(','), // list of receivers
-        subject: 'New Mail', // Subject line
+        subject: 'Mesaj Nou!', // Subject line
         html: output // html body
     }
 
