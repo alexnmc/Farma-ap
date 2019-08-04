@@ -252,7 +252,7 @@ h4{
     color: rgb(0, 79, 170);;
     font-family: 'helvetica-neue';
     font-size:14pt;
-    margin-bottom: -18pt;
+    margin-bottom: -4pt;
     margin-top: 30pt;
     text-align: center; 
 }
@@ -260,7 +260,7 @@ h4{
 .login1{
     width: 80%;
     height: 32pt;
-    border: 1px solid  rgba(100, 100, 100, 0.74);
+    border: 2px solid  rgba(0, 0, 0, 0.253);
     background-color:  rgb(253, 252, 251);
     color:black;
     border-radius: 3px;
@@ -272,7 +272,7 @@ h4{
 .login11{
     width: 80%;
     height: 32pt;
-    border: 1px solid  rgba(100, 100, 100, 0.74);
+    border: 2px solid  rgba(0, 0, 0, 0.253);
     background-color:  rgb(253, 252, 251);
     color: rgb(0, 0, 221);
     font-family: 'helvetica-neue';
@@ -349,7 +349,7 @@ h4{
 .login33{
     width: 80%;
     height: 32pt;
-    border: 1px solid  rgba(100, 100, 100, 0.74);
+    border: 2px solid  rgba(0, 0, 0, 0.253);
     background-color:  rgb(253, 252, 251);
     color:black;
     border-radius: 3px;
