@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import ring from './Sound/Sound.mp3'
+import { readSync } from 'fs';
 
 
 const openGeocoder = require('node-open-geocoder');
@@ -143,6 +144,9 @@ class PharmaProvider extends Component {
     
     handleReset = () => {
         axios.get(`/user/reset/${this.state.forgotEmail}`).then(res => {  
+            if(res.data !== 'Confirmed'){
+                alert(res.data)
+            }
             this.setState({
                 confirmed: res.data
             })
@@ -165,7 +169,6 @@ class PharmaProvider extends Component {
             }
         })
     }
-
 
 
     getLocation = () => {
