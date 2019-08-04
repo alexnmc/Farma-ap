@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import {withPharma} from './PharmaProvider'
 import Camera, { FACING_MODES } from 'react-html5-camera-photo'
 import 'react-html5-camera-photo/build/css/index.css'
+import axios from 'axios'
 
 
 
@@ -23,8 +24,16 @@ class Home extends Component {
 
     sendEmail = (e) => {
         e.preventDefault()
-        
         this.props.handleSubmit() 
+
+        const newMail = {
+            name: 'Alex',
+            phone: '123123'
+        }
+        axios.post('/mail', newMail).then(res => {
+          
+        })
+        .catch(err => alert(err))
     }
     
     
