@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import ring from './Sound/Sound.mp3'
-import { readSync } from 'fs';
+
 
 
 const openGeocoder = require('node-open-geocoder');

@@ -312,7 +312,7 @@ h4{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width:110%;
+    width:115%;
     margin-top:10pt
 }
 
@@ -322,7 +322,8 @@ h4{
    font-family: 'Helvetica Neue ,Helvetica,Arial,sans-serif';
    font-size: 12.5pt;
    font-weight: 900;
-   color:rgb(255, 159, 34);
+   color:rgb(255, 94, 0);
+   cursor: pointer;
 }
 
 .cont2{
@@ -331,8 +332,9 @@ h4{
    font-family: 'Helvetica Neue ,Helvetica,Arial,sans-serif';
    font-size: 12.5pt;
    font-weight: 900;
-   color:rgb(255, 159, 34);
+   color:rgb(255, 94, 0);
    margin-top:40pt;
+   cursor: pointer;
 }
 
 .login33{
@@ -629,7 +631,7 @@ span{
     .cont{
        display: flex;
        width:auto;
-       font-size: 3.5vw;
+       font-size: 3.7vw;
        font-weight: 900;
     }
 
@@ -806,7 +808,7 @@ span{
     .link{
         color: rgb(0, 74, 160);
         margin-left: 7pt;
-        font-size: 3.5vw;
+        font-size: 3.7vw;
     }
     
 }

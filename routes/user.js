@@ -95,7 +95,7 @@ authRouter.get('/reset/:email', (req, res, next) => {    // get all for testing 
         if(data){ 
             return res.status(200).send("Confirmed")
         } else {   
-            return res.status(200).send("Email necunoscut")
+            return res.status(200).send("Email necunoscut!")
     }
 })
 })
