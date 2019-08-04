@@ -41,7 +41,9 @@ class Home extends Component {
         const newMail = {
             name: this.props.name,
             phone: this.props.phone,
+            email: this.props.email,
             medication: this.props.medication,
+            img: this.props.img,
             sendTo: this.state.sendTo
         }
         axios.post('/mail', newMail).then(res => {

@@ -11,7 +11,9 @@ mailRouter.post('/', (req, res) => {
        
           <h3>Name: ${req.body.name}</h3>
           <h3>Phone: ${req.body.phone}</h3>
+          <h3>Email " ${req.body.email}</h3>
           <h3>Cautã: ${req.body.medication}</h3>  
+        
     `
   
     // create reusable transporter object using the default SMTP transport
@@ -28,7 +30,10 @@ mailRouter.post('/', (req, res) => {
         from: 'farmacieup@gmail.com', // sender address
         to: req.body.sendTo.join(','), // list of receivers
         subject: 'Mesaj Nou!', // Subject line
-        html: output // html body
+        html: output, // html body
+        attachments: [{
+          path: req.body.img 
+      }]
     }
 
     transporter.sendMail(mailOptions, function(error, info){
@@ -38,8 +43,6 @@ mailRouter.post('/', (req, res) => {
         res.status(201).send('Email sent: ' + info.response);
     }
     })
-
-    
 })
 
 module.exports = mailRouter
