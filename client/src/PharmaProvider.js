@@ -42,7 +42,7 @@ class PharmaProvider extends Component {
     }
 
     logout = () => {
-        var answer = window.confirm("Esti sigur ca vrei sa iesi din cont?")
+        var answer = window.confirm("Esti sigur ca vrei sa iesi din cont ?")
             if(answer){
                 this.setState({
                     user:'',   
@@ -140,9 +140,9 @@ class PharmaProvider extends Component {
                 this.state.pharmaCode === "" ? 
                     alert("Vã rugãm sa introduceti codul secret.")
                     :
-                    alert("Cod  gresit!")
+                    alert("Cod gresit !")
         :
-        alert('Parolele nu sint identice!')
+        alert('Parolele nu sint identice !')
     }
 
     
@@ -164,7 +164,7 @@ class PharmaProvider extends Component {
         }
         axios.put(`/user/reset/${this.state.forgotEmail}`, newUser).then(res => {  
               alert(res.data)
-            if(res.data === "Parola a fost schimbatã!" ){
+            if(res.data === "Parola a fost schimbatã !" ){
                 this.setState({
                     toggle2: true,
                     confirmed: '',
@@ -181,7 +181,7 @@ class PharmaProvider extends Component {
             openGeocoder().reverse(position.coords.longitude, position.coords.latitude)
                 .end((err, res) => {       
                         if(err){
-                            alert('Locatie necunuscuta')
+                            alert('Locatie necunuscuta !')
                         }  
                         if(res){
                             localStorage.setItem("city", JSON.stringify(res.address.city))

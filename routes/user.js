@@ -17,7 +17,7 @@ authRouter.post("/signup", (req, res, next) => {
         
         if (existingUser) {
                res.status(400)
-               return next(new Error ("Adresa de email este deja inregisratã!"))
+               return next(new Error ("Adresa de email este deja inregisratã !"))
         }
        
         const newUser = new User(req.body);
@@ -47,7 +47,7 @@ authRouter.post("/login", (req, res, next) => {
         // If that user isn't in the database OR the password is wrong:
         if (!user ) {
              res.status(403)
-             return next(new Error( "Email sau parolã gresitã"))
+             return next(new Error( "Email sau parolã gresitã !"))
         }
 
          user.checkPassword(req.body.password, (err, match )=>{ //this function runs the check password method from the schema, it decrypts the password and compares it w the users input
@@ -59,7 +59,7 @@ authRouter.post("/login", (req, res, next) => {
             
             if(!match){
                 res.status(403)
-             return next(new Error( "Email sau parolã gresitã")) //if password doesn not match send back this error
+             return next(new Error( "Email sau parolã gresitã !")) //if password doesn not match send back this error
             }
 
             const token = jwt.sign(user.withoutPassword(), process.env.SECRET) //if match is true create token
@@ -106,7 +106,7 @@ authRouter.get('/reset/:email', (req, res, next) => {    // get all for testing 
         if(data){ 
             return res.status(200).send("Confirmed")
         } else {   
-            return res.status(200).send("Email necunoscut!")
+            return res.status(200).send("Email necunoscut !")
     }
 })
 })
@@ -126,7 +126,7 @@ authRouter.put('/reset/:email', (req, res, next) => {    // reset password
                 res.status(500)
                 return next(err)
             }
-            return res.status(201).send("Parola a fost schimbatã!")
+            return res.status(201).send("Parola a fost schimbatã !")
         }
     )
     })
@@ -141,7 +141,7 @@ authRouter.delete('/', (req, res, next) => {
             res.status(500)
             return next(err)
         }
-        return res.status(202).send(` all users were succesfully deleted!`)
+        return res.status(202).send(` all users were succesfully deleted `)
     })
 })
 
