@@ -92,6 +92,7 @@ p{
 .p5{
     width: 150pt;
     text-align: start;
+    margin-left: -25pt
    
 }
 
@@ -111,7 +112,7 @@ p{
 }
 
 .p33{
-    width: 140pt;
+    width: 30pt;
 }
 
 .home{
@@ -490,13 +491,13 @@ h4{
     align-items: center;
     justify-content: space-around;
     width: 96%;
-    height: 25pt;
+    min-height: 25pt;
     font-family: 'helvetica-neue';
     border: 1px solid rgba(0, 17, 255, 0.287);
     margin:auto;
     margin-top: 4pt;
-    padding-left:5pt;
-    font-size: 12pt;
+    padding-left:4pt;
+    font-size: 13pt;
 }
 
 
@@ -725,6 +726,10 @@ span{
         color: rgba(223, 0, 0, 0.972);
         font-size: 12.5pt;
         width:200pt;
+    }
+
+    .p5{
+        margin: 0pt;
     }
     
     span{
