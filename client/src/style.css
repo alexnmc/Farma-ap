@@ -242,6 +242,7 @@ button{
     font-size:13.5pt;
     color:  rgb(0, 97, 207);
     margin:auto;
+    margin-top:0pt;
     font-weight:900;
     width:150pt;
 }
