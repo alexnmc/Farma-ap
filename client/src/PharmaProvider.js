@@ -199,7 +199,7 @@ class PharmaProvider extends Component {
         
         axios.post('/message', {date, email, phone, medication, img, city, county}).then(res => {
             console.log(res.data)
-            alert(res.data +' Nume: '+ name +'  medicament: '+ medication)
+            alert(res.data +' Email: ' + email +'  medicament: '+ medication)
         })
         
         this.setState({
