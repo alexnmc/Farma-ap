@@ -553,6 +553,7 @@ span{
         width: 67vw;
         height: 36pt;
         font-size: 15pt;
+        font-weight: 900;
         display: flex;
         justify-content: center;
         align-items: center;
