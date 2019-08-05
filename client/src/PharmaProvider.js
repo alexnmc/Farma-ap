@@ -42,7 +42,7 @@ class PharmaProvider extends Component {
     }
 
     logout = () => {
-        var answer = window.confirm("Esti sigur ca vrei sa iesi din cont ?")
+        var answer = window.confirm("Esti sigur cã vrei sã iesi din cont ?")
             if(answer){
                 this.setState({
                     user:'',   
@@ -181,7 +181,7 @@ class PharmaProvider extends Component {
             openGeocoder().reverse(position.coords.longitude, position.coords.latitude)
                 .end((err, res) => {       
                         if(err){
-                            alert('Locatie necunuscuta !')
+                            alert('Locatie necunuscutã !')
                         }  
                         if(res){
                             localStorage.setItem("city", JSON.stringify(res.address.city))
