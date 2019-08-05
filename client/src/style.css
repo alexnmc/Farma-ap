@@ -176,7 +176,14 @@ button{
     border-radius:2px;
 }
 
-.cameraDiv{
+
+.photoButton{
+    margin-top:20pt;
+    margin-bottom:20pt;
+}
+
+
+ .cameraDiv{
     height: 250pt;
     width: 250pt;
     margin: auto;
@@ -373,6 +380,7 @@ h4{
     text-align: center;
     animation: move2 1s;
     margin-top: -40pt;
+    margin-bottom: 25pt;
     margin-right: -30pt;
 }
 
@@ -591,6 +599,7 @@ span{
        margin-top:20pt;
        margin-bottom:25pt;
     }
+
     
     h4{
         font-size: 5vw;
@@ -709,6 +718,7 @@ span{
         text-align: center;
         margin-right: 17pt;
         margin-top:0pt;
+        margin-bottom:0pt;
         animation: none !important;
     }
     

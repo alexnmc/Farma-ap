@@ -175,7 +175,7 @@ class PharmaProvider extends Component {
     }
 
 
-    getLocation = () => {
+    /*getLocation = () => {
         navigator.geolocation.getCurrentPosition(
         function(position) {
             openGeocoder().reverse(position.coords.longitude, position.coords.latitude)
@@ -190,7 +190,7 @@ class PharmaProvider extends Component {
                 })
             }
         )
-    }
+    }*/
 
 
     handleSubmit = () => {  // on submit we are sending a new message object to the database

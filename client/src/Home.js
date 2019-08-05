@@ -18,7 +18,7 @@ class Home extends Component {
     }
 
     componentDidMount(){
-       this.props.getLocation()
+       //this.props.getLocation()
        this.getFarmacies()
     }
 
@@ -90,14 +90,6 @@ class Home extends Component {
                             { this.state.toggle ?
                             <div>
                             <input 
-                                type='text'
-                                name='name'
-                                placeholder='Nume'
-                                value={this.props.name}
-                                onChange={this.props.handleChange2}
-                                required
-                            />
-                            <input 
                                 type='email'
                                 name='email'
                                 placeholder='Email'
@@ -122,7 +114,7 @@ class Home extends Component {
                                 onChange={this.props.handleChange2}
                                 required
                             />
-                            <button onClick = {() => this.toggle()}>{this.props.img.length ? "Reluati poza"  : "Poza"}</button>
+                            <button className = 'photoButton' onClick = {() => this.toggle()}>{this.props.img.length ? "Reluati poza"  : "Poza - opțional"}</button>
                             <button className = 'button2'>Trimite</button>
                             </div>
                            
