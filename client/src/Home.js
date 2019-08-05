@@ -39,7 +39,6 @@ class Home extends Component {
         this.props.handleSubmit() 
 
         const newMail = {
-            name: this.props.name,
             phone: this.props.phone,
             email: this.props.email,
             medication: this.props.medication,

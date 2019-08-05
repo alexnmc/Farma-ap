@@ -4,11 +4,6 @@ const Schema = mongoose.Schema
 const messageSchema = new Schema({
     
     
-    name: {
-        type: String,
-        
-    },
-    
     email: {
         type: String,
         
@@ -47,8 +42,6 @@ const messageSchema = new Schema({
         type: Boolean,
         default: true
     }
-
-   
 })
 
 module.exports = mongoose.model("message", messageSchema)

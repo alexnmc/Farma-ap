@@ -8,8 +8,6 @@ mailRouter.post('/', (req, res) => {
   
    const output = `
      
-       
-          <h3>Nume: ${req.body.name}</h3>
           <h3>Telefon: ${req.body.phone}</h3>
           <h3>Email: ${req.body.email}</h3>
           <h3>Cautã: ${req.body.medication}</h3>  

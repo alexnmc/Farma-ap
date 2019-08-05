@@ -26,7 +26,6 @@ class PharmaProvider extends Component {
             pharmaCode: '',
             city2: '',
             city4:'',
-            name: '',
             email: '',
             forgotEmail: '',
             newPassword: '',
@@ -194,17 +193,17 @@ class PharmaProvider extends Component {
 
 
     handleSubmit = () => {  // on submit we are sending a new message object to the database
-        const {name, email, phone, medication, img, county} = this.state
+        const { email, phone, medication, img, county} = this.state
         const city = this.state.city.length ? this.state.city : this.state.city2
         const date = new Date()
         
-        axios.post('/message', {date, name, email, phone, medication, img, city, county}).then(res => {
+        axios.post('/message', {date, email, phone, medication, img, city, county}).then(res => {
             console.log(res.data)
             alert(res.data +' Nume: '+ name +'  medicament: '+ medication)
         })
         
         this.setState({
-            name: '',
+           
             email: '',
             phone: '',
             medication: '',
