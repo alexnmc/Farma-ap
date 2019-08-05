@@ -58,7 +58,7 @@ const PharmaLogin = props=>  {
                                 :
 
                                     <div className = "loginForm">
-                                        <h4 className = "h4">Introduceti parola nouã:</h4>
+                                        <h4 className = "h4">Introduceți parola nouã:</h4>
                                         <input
                                             className = "login33"
                                             type="password"
@@ -75,7 +75,7 @@ const PharmaLogin = props=>  {
                                 { props.toggle2?
                                  <p className = 'cont2'>Ai uitat parola? <span className = 'link' onClick={props.editToggler2}>Reseteazã</span></p>
                                 :
-                                 <p className = 'cont2'>Ti-ai amintit parola? <span className = 'link' onClick={props.editToggler2}>Login</span></p>
+                                 <p className = 'cont2'>Ți-ai amintit parola? <span className = 'link' onClick={props.editToggler2}>Login</span></p>
                                 }
                             </div>
                    
@@ -84,7 +84,7 @@ const PharmaLogin = props=>  {
                             <div className='loginForm'>
                                     <div className = "loginWrap">
                                         <div className = "loginLogo"></div>
-                                        <p className = 'cont'>Aveti deja cont? <span className = 'link' onClick={props.editToggler}>Login</span></p>
+                                        <p className = 'cont'>Aveți deja cont? <span className = 'link' onClick={props.editToggler}>Login</span></p>
                                     </div>
                             <h4> Creeazã cont nou:</h4>
                         
@@ -104,7 +104,7 @@ const PharmaLogin = props=>  {
                                     name='city4'
                                     value={props.city4}
                                     onChange={props.handleChange2}>
-                                <option value = ''>oras:</option>
+                                <option value = ''>oraș:</option>
                                 {props.cities.map((city, index) => <option key={city} value={city} className = {index}>{city}</option>)}
                                 </select>
 

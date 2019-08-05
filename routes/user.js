@@ -47,7 +47,7 @@ authRouter.post("/login", (req, res, next) => {
         // If that user isn't in the database OR the password is wrong:
         if (!user ) {
              res.status(403)
-             return next(new Error( "Email sau parolã gresitã !"))
+             return next(new Error( "Email sau parolã greșitã !"))
         }
 
          user.checkPassword(req.body.password, (err, match )=>{ //this function runs the check password method from the schema, it decrypts the password and compares it w the users input
@@ -59,7 +59,7 @@ authRouter.post("/login", (req, res, next) => {
             
             if(!match){
                 res.status(403)
-             return next(new Error( "Email sau parolã gresitã !")) //if password doesn not match send back this error
+             return next(new Error( "Email sau parolã greșitã !")) //if password doesn not match send back this error
             }
 
             const token = jwt.sign(user.withoutPassword(), process.env.SECRET) //if match is true create token

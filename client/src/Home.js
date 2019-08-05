@@ -66,7 +66,7 @@ class Home extends Component {
                     <div className='bookingContainer'>
                         <div className = "imgWrap">
                             <div className = 'img1'></div>
-                            <h1 className = 'cauta'>Cãutati produsul dorit:</h1>
+                            <h1 className = 'cauta'>Cãutați produsul dorit:</h1>
                         </div>
                            
                          <form className = 'bookingForm' onSubmit={this.sendEmail}  >
@@ -79,7 +79,7 @@ class Home extends Component {
                                     name='city2'
                                     value={this.props.city2}
                                     onChange={this.props.handleChange2}>
-                                <option value = ''>Alege orasul:</option>
+                                <option value = ''>Alege orașul:</option>
                                 {this.props.cities.map((city, index) => <option key={city} value={city} className = {index}>{city}</option>)}
                                 </select>
                             :

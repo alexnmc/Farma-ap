@@ -42,7 +42,7 @@ class PharmaProvider extends Component {
     }
 
     logout = () => {
-        var answer = window.confirm("Esti sigur cã vrei sã iesi din cont ?")
+        var answer = window.confirm("Ești sigur cã vrei sã ieși din cont ?")
             if(answer){
                 this.setState({
                     user:'',   
@@ -138,9 +138,9 @@ class PharmaProvider extends Component {
                 this.pharmaSignup()
                 :
                 this.state.pharmaCode === "" ? 
-                    alert("Vã rugãm sa introduceti codul secret.")
+                    alert("Vã rugãm sa introduceți codul secret.")
                     :
-                    alert("Cod gresit !")
+                    alert("Cod greșit !")
         :
         alert('Parolele nu sint identice !')
     }
@@ -181,7 +181,7 @@ class PharmaProvider extends Component {
             openGeocoder().reverse(position.coords.longitude, position.coords.latitude)
                 .end((err, res) => {       
                         if(err){
-                            alert('Locatie necunuscutã !')
+                            alert('Locație necunuscutã !')
                         }  
                         if(res){
                             localStorage.setItem("city", JSON.stringify(res.address.city))
