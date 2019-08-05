@@ -369,7 +369,7 @@ h4{
 .cauta{
     font-family: 'Helvetica-Neue';
     color: rgb(0, 82, 177);
-    font-size: 20pt;
+    font-size: 22pt;
     text-align: center;
     animation: move2 1s;
     margin-top: -40pt;
@@ -385,7 +385,7 @@ h4{
 .oras{
     font-family: 'Helvetica-Neue ';
     color: rgb(0, 79, 168);
-    font-size: 14pt;
+    font-size: 16pt;
     text-align: center;
     margin-bottom: 20pt;
 }
@@ -400,8 +400,8 @@ h4{
 }
 
 .img1{
-    width: 55pt;
-    height: 55pt;
+    width: 52pt;
+    height: 52pt;
     background-image: url('./Photos/foto.png');
     background-size: cover;
     background-position: center;
