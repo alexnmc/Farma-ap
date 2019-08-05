@@ -4,7 +4,7 @@ import ring from './Sound/Sound.mp3'
 
 
 
-const openGeocoder = require('node-open-geocoder');
+//const openGeocoder = require('node-open-geocoder');
 const PharmaContext = React.createContext()
 const sound = new Audio(ring)
 

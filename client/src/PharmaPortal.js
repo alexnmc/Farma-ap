@@ -38,23 +38,21 @@ class PharmaPortal extends Component {
                 item.toggle ?
                 
                 <div className = "messageContainer" key = {item._id}>
-                    <p className = "p2"> {`Nume: ${item.name.toUpperCase() || ''}`}</p>  
+                    <p className = "p1"> {`Email: ${item.email}`}</p>
                     <p className = "p5"> {`Tel: ${item.phone}`}</p> 
                     <img  onClick = {() => this.props.enlarge(item._id)} className = 'myImg' alt = '' src = {item.img}/> 
                     <p className = "p3"><span>Cautã: </span>{item.medication}</p>
-                    <p className = "p1"> {`Email: ${item.email}`}</p>
                     <p className = "p4"> {`${moment(item.date).format('MMMM Do YYYY, h:mm:ss a')}`}</p>
                 </div>
 
                 :
                  
                 <div className = "messageContainer" key = {item._id}>
-                    <p className = "p2"> {`Nume: ${item.name.toUpperCase() || ''}`}</p>  
+                    <p className = "p1"> {`Email: ${item.email}`}</p>
                     <p className = "p5"> {`Tel: ${item.phone}`}</p> 
                     <img  style = {document.documentElement.clientWidth < 1100 ? {width: '100%' , height: '60vh'} : {position: 'fixed' , border: "2px solid white", marginTop: '20pt', width: '320pt' , height: '300pt'}}  onClick = {() => this.props.enlarge(item._id)} className = 'myImg' alt = '' src = {item.img}/>
                     <p className = "p33"></p>
-                    <p className = "p3"><span>Cautã: </span>{item.medication}</p>
-                    <p className = "p1"> {`Email: ${item.email}`}</p>
+                    <p className = "p3" style ={{marginRight: "-110pt"}}><span>Cautã: </span>{item.medication}</p>
                     <p className = "p4"> {`${moment(item.date).format('MMMM Do YYYY, h:mm:ss a')}`}</p>
                 </div>
             )
