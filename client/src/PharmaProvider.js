@@ -163,7 +163,7 @@ class PharmaProvider extends Component {
             password: this.state.newPassword,
         }
         axios.put(`/user/reset/${this.state.forgotEmail}`, newUser).then(res => {  
-            console.log(res.data)
+              alert(res.data)
             if(res.data === "Parola a fost schimbatã!" ){
                 this.setState({
                     toggle2: true,

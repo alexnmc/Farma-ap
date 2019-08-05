@@ -34,7 +34,7 @@ body::before {
 
 .navbar {
     width: 100vw;
-    height: 50pt;
+    height: 57pt;
     background-color:#fcfcfc; 
     display:flex;
     position: relative;
@@ -136,7 +136,7 @@ a{
     width:250pt;
     height: 45pt;
     margin:10pt;
-    font-size: 15pt;
+    font-size: 17pt;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -243,7 +243,7 @@ button{
 h4{
     color: rgb(0, 79, 170);;
     font-family: 'helvetica-neue';
-    font-size:15pt;
+    font-size:17pt;
     margin-bottom: 30pt;
     margin-top: 30pt;
     text-align: center;
@@ -393,8 +393,8 @@ h4{
 }
 
 .img1{
-    width: 65pt;
-    height: 65pt;
+    width: 55pt;
+    height: 55pt;
     background-image: url('./Photos/foto.png');
     background-size: cover;
     background-position: center;
@@ -418,8 +418,8 @@ h4{
 }
 
 .img2{
-    width: 75pt;
-    height: 75pt;
+    width: 65pt;
+    height: 65pt;
     background-image: url('./Photos/foto.png');
     background-size: cover;
     background-position: center;
@@ -437,7 +437,7 @@ h4{
 .imgWrap{
     width:360pt;
     margin-bottom: 20pt;
-    margin-top: -10vh;
+    margin-top: -12vh;
     display: inline;
 }
 
@@ -523,6 +523,7 @@ span{
 
 @media only screen and (max-width: 600px) {
 
+    
     .bookingContainer{
         display: flex;
         flex-direction: column;
@@ -534,10 +535,10 @@ span{
     
     .input,
     input{
-        width: 69vw;
-        height: 38pt;
+        width: 67vw;
+        height: 36pt;
         margin:10pt;
-        font-size: 12pt;
+        font-size: 15pt;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -558,14 +559,14 @@ span{
         display:flex;
         align-items: center;
         justify-content: center;
-        width: 69vw;
+        width: 67vw;
         height: 37pt;
         background-color:rgb(0, 94, 200);
         font-size: 15pt;
         color: white;
         cursor: pointer;
         margin-top: 12%;
-        border-radius:2px;
+        border-radius:3px;
     }
 
     .button2{
@@ -585,7 +586,7 @@ span{
     }
     
     h4{
-        font-size: 4vw;
+        font-size: 4.2vw;
         margin-bottom: 15pt;
         text-align: center;
         margin-top:15pt
@@ -619,10 +620,10 @@ span{
         background-color:  rgb(253, 252, 251);
         color: blue;
         font-family: 'helvetica-neue';
-        margin-top:5pt;
+        margin-top:0pt;
         padding-left:3.5pt;
         font-size:11pt;
-        margin-bottom: 8pt
+        margin-bottom: 10pt
     }
     
     .loginForm{
@@ -652,8 +653,6 @@ span{
        font-weight: 900;
     }
 
-    
-    
     .messageContainer{
         display: flex;
         align-items: flex-start;
@@ -707,10 +706,9 @@ span{
     }
     
     .img1{
-        width: 45pt;
-        height: 45pt;
-        margin-right:4vw;
-        margin-right:20pt;
+        width: 44pt;
+        height: 44pt;
+        margin-right:15pt;
         animation: none !important;
     }
 
@@ -735,8 +733,8 @@ span{
     }
     
     .img2{
-        width: 60pt;
-        height: 60pt;
+        width: 55pt;
+        height: 55pt;
         background-size: cover;
         background-position: center;
         margin-right: 20pt;
@@ -802,8 +800,8 @@ span{
     }
 
     .imgWrap{
-        margin-bottom: 20pt;
-        margin-top: 10vh;
+        margin-bottom: 17pt;
+        margin-top: 8.5vh;
         display: flex;
         align-items: center;
         justify-content: center;
