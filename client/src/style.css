@@ -201,9 +201,12 @@ button{
 .logout{
    width: 70pt;
    height: 20pt;
-   font-size: 9pt;
+   font-size: 12pt;
    margin:auto;
    border-radius:5px;
+   background-color: white;
+   color: blue;
+   font-family: 'helvetica'
    
 }
 
@@ -232,7 +235,7 @@ button{
 }
 
 .h1{
-    font-family: 'helvetica-neue';
+    font-family: 'helvetica';
     font-size:13pt;
     color: rgba(0, 61, 202, 0.795);
     margin:auto;
@@ -752,11 +755,12 @@ span{
 
     .logout{
         width: 60pt;
-        height: 22pt;
+        height: 21pt;
         font-size: 9pt;
-        background-color: blue;
+        background-color: rgba(19, 19, 230, 0.849);
         border-radius: 5px;
         margin:5pt;
+        color:white
     }
 
      .input2{
