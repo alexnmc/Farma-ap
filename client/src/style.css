@@ -398,13 +398,13 @@ h4{
     background-image: url('./Photos/foto.png');
     background-size: cover;
     background-position: center;
-    margin-right: 20pt;
+    margin-left: 20pt;
     animation: move1 1s;
 }
 
 @keyframes move1{
     from{margin-left: -100vw}
-    to{margin-left: 0pt}
+    to{margin-left: 20pt}
 }
 
 
@@ -418,8 +418,8 @@ h4{
 }
 
 .img2{
-    width: 65pt;
-    height: 65pt;
+    width: 60pt;
+    height: 60pt;
     background-image: url('./Photos/foto.png');
     background-size: cover;
     background-position: center;
