@@ -219,11 +219,13 @@ button{
 .input2{
     width: 150pt;
     height: 25pt;
-    font-size: 12pt;
+    font-size: 14pt;
     margin:auto;
     border: 2px solid rgba(0, 0, 255, 0.007);
     background-color: white;
-    color: rgb(0, 0, 236);
+    color:  rgb(0, 97, 207);
+    font-family: 'helvetica-neue';
+    font-weight: 600
 }
 
 .portalWrap{
@@ -236,8 +238,8 @@ button{
 }
 
 .h1{
-    font-family: 'helvetica';
-    font-size:12.5pt;
+    font-family: 'helvetica-neue';
+    font-size:13.5pt;
     color:  rgb(0, 97, 207);
     margin:auto;
     font-weight:900;
