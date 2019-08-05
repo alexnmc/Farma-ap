@@ -135,7 +135,8 @@ a{
 .input{
     width:250pt;
     height: 45pt;
-    margin:10pt;
+    margin:auto;
+    margin-bottom:14pt;
     font-size: 17pt;
     display: flex;
     justify-content: center;
@@ -548,7 +549,19 @@ span{
         height: 100%;
     }
     
-    .input,
+    .input{
+        width: 67vw;
+        height: 36pt;
+        font-size: 15pt;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid  rgba(0, 85, 182, 0.342);
+        border-radius: 4px;
+        padding-left:7pt; 
+    }
+    
+    
     input{
         width: 67vw;
         height: 36pt;
