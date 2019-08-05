@@ -13,7 +13,7 @@ const PharmaLogin = props=>  {
                             <div  className='loginForm'>
                                 <div className = "loginWrap">
                                     <div className = "loginLogo"></div>
-                                    <p className = 'cont'>Alãturati-vã retelei noastre - <span className = 'link' onClick={props.editToggler}>Înregistrare</span></p>
+                                    <p className = 'cont'>Alãturați-vã rețelei noastre - <span className = 'link' onClick={props.editToggler}>Înregistrare</span></p>
                                 </div>
                                 { props.toggle2 ?
                                 <div className = "loginForm">
@@ -43,7 +43,7 @@ const PharmaLogin = props=>  {
                                 <div>
                                 {props.confirmed !== 'Confirmed' ?
                                     <div className = "loginForm">
-                                        <h4 className = 'h4'>Introduceti adresa de email cu care ati creat contul:</h4>
+                                        <h4 className = 'h4'>Introduceți adresa de email cu care ați creat contul:</h4>
                                         <input
                                             className = "login33"
                                             type='text'
@@ -52,7 +52,7 @@ const PharmaLogin = props=>  {
                                             value={props.forgotEmail}
                                             onChange={props.handleChange2}
                                         />
-                                        <button className = 'loginButton' onClick={props.handleReset}>Continuati</button>
+                                        <button className = 'loginButton' onClick={props.handleReset}>Continuați</button>
                                     </div>
                                 
                                 :
