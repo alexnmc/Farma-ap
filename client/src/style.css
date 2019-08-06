@@ -131,7 +131,8 @@ p{
     display:flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-top:20vh;
     background-color: white;
 }
 
@@ -470,7 +471,6 @@ h4{
 .imgWrap2{
     width: 100vh;
     margin-bottom: 50pt;
-    margin-top:-9vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -784,7 +784,6 @@ span{
     .imgWrap2{
         width: 100vh;
         margin-bottom: 50pt;
-        margin-top: 70pt;
         display: flex;
         align-items: center;
         justify-content: center;

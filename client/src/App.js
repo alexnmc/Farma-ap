@@ -3,6 +3,7 @@ import { Switch, Route, Redirect} from 'react-router-dom'
 import Navbar from './Navbar'
 import Home from './Home'
 import Contact from './Contact'
+import About from './About'
 import PharmaLogin from './PharmaLogin'
 import PharmaPortal from './PharmaPortal'
 import ProtectedRoutes from './ProtectedRoutes'
@@ -30,6 +31,7 @@ class App extends Component {
                 <Switch>
                     <Route exact path="/" component={Home}/>
                     <Route path="/contact" component={Contact}/>
+                    <Route path="/about" component={About}/>
                     <Route exact path="/pharma" render = {props => this.props.token ? <Redirect to="/portal"/> : <PharmaLogin {...props}/>}/>
                     <ProtectedRoutes
                         redirectTo="/pharma"
