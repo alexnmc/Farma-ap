@@ -9,7 +9,7 @@ const Loading = ({type, color}) => {
       {document.documentElement.clientWidth > 1100 ?
         <ReactLoading  type={'spin'} color={' rgb(0, 97, 207)'} height={'15%'} width={'15%'}/>
         :
-        <ReactLoading  type={'spin'} color={' rgb(0, 97, 207)'} height={'25%'} width={'25%'}/>
+        <ReactLoading  type={'spin'} color={' rgb(0, 97, 207)'} height={'28%'} width={'28%'}/>
       }
     </div>
   )
