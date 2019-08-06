@@ -16,7 +16,7 @@ class Contact extends Component {
 render(){
     return(
         <div className = "contact">
-            <h1 className = 'h3'>Pentru informații conactați:</h1>
+            <h1 className = 'h3'>Pentru informații contactați:</h1>
             <h1 className = 'h3'>Cristian Lazãr</h1>
             <h1 className = 'h3'>Tel: 0773-853-041</h1>
             <h1 className = 'h3'>Email: Cristianlazar2000@yahoo.com</h1>

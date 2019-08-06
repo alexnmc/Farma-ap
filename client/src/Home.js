@@ -122,6 +122,7 @@ class Home extends Component {
                             <div className = "cameraDiv">
                                 <Camera
                                 sizeFactor = {0.5}
+                                isImageMirror = {false}
                                 idealFacingMode = {FACING_MODES.ENVIRONMENT}
                                 onTakePhoto = { (dataUri) => { this.props.onTakePhoto(dataUri)} }
                                 />
