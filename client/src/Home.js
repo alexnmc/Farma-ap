@@ -84,7 +84,7 @@ class Home extends Component {
                                 </select>
                             :
                             
-                            <h1 className = 'oras'>{this.state.city}</h1>
+                            <h1 className = 'oras'>{this.state.city}</h1>// geolocation is off right now..
                             }
                            
                             { this.state.toggle ?
@@ -128,18 +128,16 @@ class Home extends Component {
                                 }
                             </div>
                            
-                            :
+                           :
+                            
                             <div className = "cameraWrap"> 
-                              
-                                    <Camera
+                                <Camera
                                     sizeFactor = {0.5}
                                     isImageMirror = {false}
                                     idealFacingMode = {FACING_MODES.ENVIRONMENT}
                                     onTakePhoto = { (dataUri) => { this.props.onTakePhoto(dataUri)} }
-                                    />
-                                
+                                />
                                 <button className = 'cameraButton' onClick = {() => this.toggle()}>înapoi</button>
-                               
                             </div>
                             }
                         </form>
