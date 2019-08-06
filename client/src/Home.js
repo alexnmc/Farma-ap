@@ -43,7 +43,7 @@ class Home extends Component {
             phone: this.props.phone,
             email: this.props.email,
             medication: this.props.medication,
-            img: this.props.img,
+            img: this.props.img || '',
             sendTo: this.state.sendTo
         }
         axios.post('/mail', newMail).then(res => {

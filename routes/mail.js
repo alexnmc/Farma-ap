@@ -29,9 +29,7 @@ mailRouter.post('/', (req, res) => {
         to: req.body.sendTo.join(','), // list of receivers
         subject: 'Mesaj Nou!', // Subject line
         html: output, // html body
-        attachments: [{
-          path: req.body.img 
-      }]
+        attachments: req.body.img.length && [{path: req.body.img}]
     }
 
     transporter.sendMail(mailOptions, function(error, info){
