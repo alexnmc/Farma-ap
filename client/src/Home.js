@@ -71,7 +71,7 @@ class Home extends Component {
                            
                          <form className = 'bookingForm' onSubmit={this.sendEmail}  >
                             
-                            { !this.props.city.length && this.state.toggle && !this.props.loading ?
+                            { !this.props.city.length && this.state.toggle && this.props.loading ?
                                 <select 
                                     required 
                                     className = 'input'
@@ -89,7 +89,7 @@ class Home extends Component {
                            
                             { this.state.toggle ?
                             <div>
-                                {!this.props.loading ?
+                                {this.props.loading ?
                                 <div>
                                     <input 
                                         type='email'
