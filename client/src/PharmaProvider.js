@@ -114,7 +114,7 @@ class PharmaProvider extends Component {
     }
 
     pharmaSignup = () => {
-        this.getLocation()
+        //this.getLocation()
         const newUser = {
             username: this.state.username,
             password: this.state.password,
