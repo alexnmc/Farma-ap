@@ -129,15 +129,17 @@ class Home extends Component {
                             </div>
                            
                             :
+                            <div className = "cameraWrap"> 
+                              
+                                    <Camera
+                                    sizeFactor = {0.5}
+                                    isImageMirror = {false}
+                                    idealFacingMode = {FACING_MODES.ENVIRONMENT}
+                                    onTakePhoto = { (dataUri) => { this.props.onTakePhoto(dataUri)} }
+                                    />
                                 
-                            <div className = "cameraDiv">
-                                <Camera
-                                sizeFactor = {0.5}
-                                isImageMirror = {false}
-                                idealFacingMode = {FACING_MODES.ENVIRONMENT}
-                                onTakePhoto = { (dataUri) => { this.props.onTakePhoto(dataUri)} }
-                                />
-                                <button className = 'button2' onClick = {() => this.toggle()}>înapoi</button>
+                                <button className = 'cameraButton' onClick = {() => this.toggle()}>înapoi</button>
+                               
                             </div>
                             }
                         </form>

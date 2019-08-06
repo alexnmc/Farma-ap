@@ -204,17 +204,13 @@ button{
 }
 
 
- .cameraDiv{
-    height: 250pt;
+ .react-html5-camera-photo>video {
     width: 250pt;
-    margin: auto;
+    border:2px solid white;
 }
 
-.react-html5-camera-photo>video {
-    width: 100%;
-    height: 100%;
-    border:2px solid white;
-    margin: auto;
+.cameraButton{
+    margin-top: 40pt;
 }
 
 .loginButton{
@@ -316,7 +312,6 @@ h4{
     padding-left:3.5pt;
     font-size:15pt;
     margin-bottom: 8pt
-
 }
 
 .admin{
@@ -558,7 +553,7 @@ span{
         align-items: center;
         justify-content: flex-start;
         margin-top:2%;
-        height: 100%;
+       
     }
     
     .input{
@@ -588,13 +583,23 @@ span{
         padding-left:7pt;
     }
     
-    .cameraDiv{
-        height: 160pt;
-        width: 95vw;
+    
+    .cameraWrap{
+        height: auto;
+        width:100vw;
+    }
+    
+    .react-html5-camera-photo>video {
+        width: 95%;
+        border:2px solid white;
         margin: auto;
     }
-   
-   
+
+    .cameraButton{
+        margin-top:12%;
+        margin-bottom:12%
+    }
+
     button{
         margin: auto;
         display:flex;
@@ -858,7 +863,7 @@ span{
     }
 
     .home{
-        min-height: 130vh;
+        height: auto;
         width: 100vw;
         display:flex;
         flex-direction: column;
