@@ -24,6 +24,15 @@ body::before {
     position: fixed;
     z-index: -10; 
 }
+
+.loading{
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    height: 54vh;
+    width:40vw;
+    margin:auto;
+}
   
 
 .myImg{
@@ -870,6 +879,15 @@ span{
         justify-content: space-between;
         width:115%;
         margin-top:10pt
+    }
+
+    .loading{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        height: 50vh;
+        width:50vw;
+        margin:auto;
     }
     
     

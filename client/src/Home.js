@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import {withPharma} from './PharmaProvider'
 import Camera, { FACING_MODES } from 'react-html5-camera-photo'
 import 'react-html5-camera-photo/build/css/index.css'
+import Loading from './Loading'
 import axios from 'axios'
 
 
@@ -70,7 +71,7 @@ class Home extends Component {
                            
                          <form className = 'bookingForm' onSubmit={this.sendEmail}  >
                             
-                            { !this.props.city.length && this.state.toggle ?
+                            { !this.props.city.length && this.state.toggle && !this.props.loading ?
                                 <select 
                                     required 
                                     className = 'input'
@@ -88,33 +89,43 @@ class Home extends Component {
                            
                             { this.state.toggle ?
                             <div>
-                            <input 
-                                type='email'
-                                name='email'
-                                placeholder='Email'
-                                value={this.props.email}
-                                onChange={this.props.handleChange2}
-                                required
-                            />
-                            <input 
-                                type='number'
-                                name='phone'
-                                placeholder='Telefon'
-                                value={this.props.phone}
-                                onChange={this.props.handleChange2}
-                                required
-                            />
+                                {!this.props.loading ?
+                                <div>
+                                    <input 
+                                        type='email'
+                                        name='email'
+                                        placeholder='Email'
+                                        value={this.props.email}
+                                        onChange={this.props.handleChange2}
+                                        required
+                                    />
+                                    <input 
+                                        type='number'
+                                        name='phone'
+                                        placeholder='Telefon'
+                                        value={this.props.phone}
+                                        onChange={this.props.handleChange2}
+                                        required
+                                    />
 
-                            <input 
-                                type='text'
-                                name='medication'
-                                placeholder='Produsul dorit'
-                                value={this.props.medication}
-                                onChange={this.props.handleChange2}
-                                required
-                            />
-                            <button className = 'photoButton' onClick = {() => this.toggle()}>{this.props.img.length ? "Reluati poza"  : "Poza - opțional"}</button>
-                            <button className = 'button2'>Trimite</button>
+                                    <input 
+                                        type='text'
+                                        name='medication'
+                                        placeholder='Produsul dorit'
+                                        value={this.props.medication}
+                                        onChange={this.props.handleChange2}
+                                        required
+                                    />
+                                    <button className = 'photoButton' onClick = {() => this.toggle()}>{this.props.img.length ? "Reluati poza"  : "Poza - opțional"}</button>
+                                    <button className = 'button2'>Trimite</button>
+                                </div>
+                                
+                                :
+                                
+                                <div>
+                                    <Loading/>
+                                </div>
+                                }
                             </div>
                            
                             :

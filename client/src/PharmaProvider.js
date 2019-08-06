@@ -36,7 +36,8 @@ class PharmaProvider extends Component {
             cities:['Oradea','Salonta','Marghita','Sacueni','Beius','Valea lui Mihai','Alesd','Stei','Vascau','Nucet'],
             messages: [],
             currentCity: '',
-            confirmed: ''
+            confirmed: '',
+            loading: false
         }
     }
 
@@ -191,19 +192,25 @@ class PharmaProvider extends Component {
         )
     }*/
 
-
+    alertCallBack = (data, email, med) => {
+        alert(data +' Email: ' + email +'  medicament: '+ med)
+    }
+    
+    
     handleSubmit = () => {  // on submit we are sending a new message object to the database
+        this.setState({loading: true})
         const { email, phone, medication, img, county} = this.state
         const city = this.state.city.length ? this.state.city : this.state.city2
         const date = new Date()
         
         axios.post('/message', {date, email, phone, medication, img, city, county}).then(res => {
-            console.log(res.data)
-            alert(res.data +' Email: ' + email +'  medicament: '+ medication)
+            this.setState(
+            {loading: false},
+             this.alertCallBack(res.data, email, medication)
+            )
         })
         
         this.setState({
-           
             email: '',
             phone: '',
             medication: '',
