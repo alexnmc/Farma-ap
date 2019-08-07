@@ -116,7 +116,7 @@ class Home extends Component {
                                         onChange={this.props.handleChange2}
                                         required
                                     />
-                                    <button className = 'photoButton' onClick = {() => this.toggle()}>{this.props.img.length ? "Reluati poza"  : "Poza - opțional"}</button>
+                                    <button className = 'photoButton' onClick = {() => this.toggle()}>{this.props.img.length ? "Reluați poza"  : "Poza - opțional"}</button>
                                     <button className = 'button2'>Trimite</button>
                                 </div>
                                 
