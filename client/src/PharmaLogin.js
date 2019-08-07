@@ -130,7 +130,7 @@ const PharmaLogin = props=>  {
                                     className = "login1"
                                     type="password"
                                     name='password2'
-                                    placeholder='repeta parola'
+                                    placeholder='repetã parola'
                                     value={props.password2}
                                     onChange={props.handleChange2}
                                 />
