@@ -94,7 +94,7 @@ class Home extends Component {
                                     <input 
                                         type='email'
                                         name='email'
-                                        placeholder='Email'
+                                        placeholder='Email:'
                                         value={this.props.email}
                                         onChange={this.props.handleChange2}
                                         required
@@ -102,7 +102,7 @@ class Home extends Component {
                                     <input 
                                         type='number'
                                         name='phone'
-                                        placeholder='Telefon'
+                                        placeholder='Telefon:'
                                         value={this.props.phone}
                                         onChange={this.props.handleChange2}
                                         required
@@ -111,7 +111,7 @@ class Home extends Component {
                                     <input 
                                         type='text'
                                         name='medication'
-                                        placeholder='Produsul dorit'
+                                        placeholder='Produsul dorit:'
                                         value={this.props.medication}
                                         onChange={this.props.handleChange2}
                                         required

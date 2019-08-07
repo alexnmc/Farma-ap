@@ -156,11 +156,11 @@ p{
     height: 45pt;
     margin:auto;
     margin-bottom:14pt;
-    font-size: 17pt;
+    font-size: 16pt;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid  rgba(0, 67, 144, 0.205);
+    border: 1pt solid  rgba(0, 50, 107, 0.294);
     color:  rgb(0, 88, 189);
     padding-left:5pt;
     font-family: 'Helvetica-Neue';
@@ -174,11 +174,15 @@ input{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid  rgba(0, 67, 144, 0.281);
-    border-radius: 7px;
+    border: 1pt solid  rgba(0, 50, 107, 0.294);
+    border-radius: 6px;
     padding-left:5pt;
     font-family: 'Helvetica-Neue';
-    color: rgba(17, 17, 42, 0.829);
+    color:rgba(0, 0, 0, 0.822);
+}
+
+input::placeholder{
+    color:rgba(0, 71, 151, 0.623);
 }
 
 button{
@@ -563,8 +567,6 @@ span{
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 1px solid  rgba(0, 85, 182, 0.342);
-        border-radius: 4px;
         padding-left:7pt; 
     }
     
@@ -577,8 +579,6 @@ span{
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 1px solid  rgba(0, 85, 182, 0.342);
-        border-radius: 4px;
         padding-left:7pt;
     }
     
