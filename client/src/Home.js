@@ -62,7 +62,7 @@ class Home extends Component {
     onCameraError = (error) =>{
         alert('Vã rugã sã activați camera foto!')
         window.location.reload()
-      }
+    }
 
 
     render(){
