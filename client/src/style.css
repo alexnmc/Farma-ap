@@ -27,14 +27,15 @@ body::before {
 
 .loading{
     display: flex;
-    align-items:flex-start;
+    align-items:center;
     justify-content: center;
-    height: 54vh;
+    height: 20vh;
+    margin-bottom:34vh;
     width:40vw;
-    margin:auto;
+   
+   
 }
   
-
 .myImg{
     width:30pt;
     height: 20pt;
