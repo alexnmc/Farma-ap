@@ -59,9 +59,9 @@ class Home extends Component {
         })
     }
 
-    onCameraError = (error) => {
-        alert('Vã rugã sã activați camera foto!');
-      }
+    //onCameraError = (error) => {
+       // alert(error);
+     // }
 
     
 
@@ -142,7 +142,7 @@ class Home extends Component {
                                     isImageMirror = {false}
                                     idealFacingMode = {FACING_MODES.ENVIRONMENT}
                                     onTakePhoto = { (dataUri) => { this.props.onTakePhoto(dataUri)} }
-                                    onCameraError = { (error) => { this.onCameraError(error); } }
+                                  //  onCameraError = { (error) => { this.onCameraError(error); } }
                                     isDisplayStartCameraError = {false}
                                 />
                                 <button className = 'cameraButton' onClick = {() => this.toggle()}>înapoi</button>
