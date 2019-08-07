@@ -275,7 +275,7 @@ button{
 }
 
 h4{
-    color: rgb(0, 79, 170);;
+    color: rgb(0, 79, 170);
     font-family: 'helvetica-neue';
     font-size:17pt;
     margin-bottom: 30pt;
@@ -295,7 +295,7 @@ h4{
 .login1{
     width: 80%;
     height: 34pt;
-    border: 2px solid  rgba(0, 0, 0, 0.253);
+    border: 1px solid  rgba(0, 0, 0, 0.459);
     background-color:  rgb(253, 252, 251);
     color:black;
     border-radius: 3px;
@@ -307,9 +307,9 @@ h4{
 .login11{
     width: 80%;
     height: 34pt;
-    border: 2px solid  rgba(0, 0, 0, 0.253);
+    border: 1px solid  rgba(0, 0, 0, 0.459);
     background-color:  rgb(253, 252, 251);
-    color: rgb(0, 0, 221);
+    color: rgba(8, 8, 187, 0.918);
     font-family: 'helvetica-neue';
     margin-top:5pt;
     padding-left:3.5pt;
@@ -318,7 +318,7 @@ h4{
 }
 
 .admin{
-    background-color: rgba(233, 233, 233, 0.719);
+    background-color: rgba(241, 241, 241, 0.781);
     height: 100vh;
     width: 100vw;
     display:flex;
@@ -349,6 +349,8 @@ h4{
     border-radius:3px;
     margin-top: 10vh;
     padding-bottom: 10pt;
+    border-radius: 4pt;
+    border: 1px solid rgba(11, 62, 121, 0.171);
 }
 
 .loginWrap{
@@ -648,9 +650,7 @@ span{
     .login1{
         width: 75%;
         height: 30pt;
-        border: 1px solid  rgba(2, 2, 2, 0.74);
         background-color:  rgb(253, 252, 251);
-        color:black;
         border-radius: 3px;
         margin-top: 0pt;
         padding-left:3.5pt;
@@ -660,9 +660,7 @@ span{
     .login11{
         width: 75%;
         height: 30pt;
-        border: 1px solid  rgba(2, 2, 2, 0.74);
         background-color:  rgb(253, 252, 251);
-        color: blue;
         font-family: 'helvetica-neue';
         margin-top:0pt;
         padding-left:3.5pt;
