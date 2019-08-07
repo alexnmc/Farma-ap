@@ -38,6 +38,16 @@ messageRouter.delete('/', (req, res, next) => {
 })
 
 
+messageRouter.delete('/:id', (req, res, next) => {
+    Message.findOneAndDelete({_id:req.params.id} , (err, data) => {     
+        if (err) {
+            res.status(500)
+            return next(err)
+        }
+        return res.status(202).send('the message was succesfully deleted!')
+    })
+})
+
 messageRouter.post('/',  (req, res, next) => {   
     Message.findOne({name: req.body.name, phone:req.body.phone, medication:req.body.medication, city: req.body.city, date: req.body.date}, (err, message) => {
         if (err) {
