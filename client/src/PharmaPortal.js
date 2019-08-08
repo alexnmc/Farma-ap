@@ -47,7 +47,7 @@ class PharmaPortal extends Component {
 
                 :
                  
-                <div className = "messageContainer" key = {item._id} style = {{position: 'relative' , backgroundColor : 'rgb(0, 74, 160)', color: 'white'}}>
+                <div className = "messageContainer" key = {item._id} style = {{position: 'relative' , backgroundColor : 'rgb(54, 125, 187)', color: 'white'}}>
                     <p className = "p1"> {`Email: ${item.email}`}</p>
                     <p className = "p5"> {`Tel: ${item.phone}`}</p> 
                     <img  style = {document.documentElement.clientWidth < 1100 ? {width: '100%' , height: '60vh'} : {position: 'absolute' , border: "2px solid white", marginTop: '20pt', marginLeft: '40pt' , width: '320pt' , height: '300pt'}}  onClick = {() => this.props.enlarge(item._id)} className = 'myImg' alt = '' src = {item.img}/>
