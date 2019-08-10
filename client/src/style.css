@@ -48,7 +48,7 @@ body::before {
     position: relative;
     align-items: center;
     font-size: 20px;
-    font-family:'Liberation';
+    font-family:'helvetica-neue';
     font-weight: 600;
     border-bottom: 5px solid #fbff1dcc;
     display:flex;
@@ -575,7 +575,8 @@ span{
     .navbar {
         width: 100vw;
         height: 59pt;
-        font-size: 18px;
+        font-size: 17px;
+        font-family: arial
     }
     
     
@@ -597,6 +598,7 @@ span{
         justify-content: center;
         align-items: center;
         padding-left:7pt; 
+        font-family: arial
     }
     
     
@@ -609,6 +611,7 @@ span{
         justify-content: center;
         align-items: center;
         padding-left:7pt;
+        font-family: arial
     }
     
     
@@ -739,11 +742,13 @@ span{
     
     .h2{
         font-size:13pt;
-        margin-bottom: 24%
+        margin-bottom: 24%;
+        font-family: arial
     }
 
     .p2{
         margin: 1pt;
+        font-family: arial
        
     }
 
@@ -752,29 +757,33 @@ span{
         color: rgba(223, 0, 0, 0.972);
         font-size: 12.5pt;
         width: 100%;
-        text-align: start
+        text-align: start;
+        font-family: arial
     }
 
     .p5{
         margin: 0pt;
+        font-family: arial
     }
     
     span{
         font-size:11pt;
+        font-family: arial
     }
 
     .cauta{
         font-size: 16pt;
         text-align: center;
-        margin-right: 17pt;
+        margin-right: 16pt;
         margin-top:0pt;
         margin-bottom:0pt;
         animation: fade 2.5s;
+        font-family: arial
     }
     
     .img1{
-        width: 42pt;
-        height: 42pt;
+        width: 40pt;
+        height: 40pt;
         margin-right:12pt;
         animation: fade 2.5s;
     }
@@ -790,6 +799,7 @@ span{
         text-align: center;
         margin-bottom:5pt;
         width: 90vw;
+        font-family: arial
     }
 
     .farmaup{
@@ -797,6 +807,7 @@ span{
         text-align: center;
         margin-bottom:5pt;
         font-weight:900;
+        font-family: arial
     }
     
     .img2{
@@ -831,15 +842,16 @@ span{
         font-size: 11pt;
         border: 2px solid rgba(0, 0, 255, 0);
         margin:2pt;
+        font-family: arial
     }
 
     .h1{
-      
-        font-size: 11pt;
+       font-size: 11pt;
         margin: 2pt;
         font-weight: 900;
         text-align: center;
         width: 100pt;
+        font-family: arial
     }
 
     .portalWrap{
@@ -900,6 +912,7 @@ span{
         color: rgb(0, 74, 160);
         margin-left: 7pt;
         font-size: 3.7vw;
+        font-family: arial
     }
 
     .loginWrap{
