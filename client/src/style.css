@@ -197,7 +197,7 @@ input{
 }
 
 input::placeholder{
-    color:rgba(0, 70, 151, 0.376);
+    color:rgba(0, 70, 151, 0.596);
 }
 
 button{
