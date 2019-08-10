@@ -446,18 +446,18 @@ h4{
 }
 
 .img1{
-    width: 52pt;
-    height: 52pt;
+    width: 50pt;
+    height: 50pt;
     background-image: url('./Photos/foto.png');
     background-size: cover;
     background-position: center;
-    margin-left: 20pt;
+    margin-left: 15pt;
     animation: move1 1s;
 }
 
 @keyframes move1{
     from{margin-left: -100vw}
-    to{margin-left: 20pt}
+    to{margin-left: 15pt}
 }
 
 
@@ -471,8 +471,8 @@ h4{
 }
 
 .img2{
-    width: 60pt;
-    height: 60pt;
+    width: 50pt;
+    height: 50pt;
     background-image: url('./Photos/foto.png');
     background-size: cover;
     background-position: center;
@@ -575,13 +575,7 @@ span{
         width: 100vw;
         height: 59pt;
         font-size: 18px;
-        
     }
-    
-    
-    
-    
-    
     
     
     .bookingContainer{
@@ -769,7 +763,7 @@ span{
     }
 
     .cauta{
-        font-size: 17pt;
+        font-size: 16pt;
         text-align: center;
         margin-right: 17pt;
         margin-top:0pt;
@@ -778,9 +772,9 @@ span{
     }
     
     .img1{
-        width: 44pt;
-        height: 44pt;
-        margin-right:11pt;
+        width: 42pt;
+        height: 42pt;
+        margin-right:12pt;
         animation: none !important;
     }
 
@@ -805,8 +799,8 @@ span{
     }
     
     .img2{
-        width: 55pt;
-        height: 55pt;
+        width: 50pt;
+        height: 50pt;
         background-size: cover;
         background-position: center;
         margin-right: 20pt;
