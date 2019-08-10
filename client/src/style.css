@@ -187,6 +187,7 @@ input{
     box-shadow: none;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
+    -webkit-appearance: none;
     animation: fade 2s;
 }
 
