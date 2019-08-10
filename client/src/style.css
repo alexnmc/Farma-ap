@@ -166,6 +166,7 @@ p{
     font-family: 'Liberation';
     border-radius: 8pt;
     -webkit-appearance: none;
+    animation: fade 2s;
    
 }
 
@@ -185,7 +186,13 @@ input{
     border-radius: 8pt;
     box-shadow: none;
     -webkit-box-shadow: none;
-	-moz-box-shadow: none;
+    -moz-box-shadow: none;
+    animation: fade 2s;
+}
+
+@keyframes fade{
+    from {  opacity: 0}
+    to   {  opacity: 1}
 }
 
 input::placeholder{
