@@ -571,6 +571,18 @@ span{
 
 @media only screen and (max-width: 600px) {
 
+    .navbar {
+        width: 100vw;
+        height: 59pt;
+        font-size: 18px;
+        
+    }
+    
+    
+    
+    
+    
+    
     
     .bookingContainer{
         display: flex;
@@ -730,7 +742,6 @@ span{
     }
     
     
-    
     .h2{
         font-size:13pt;
         margin-bottom: 24%
@@ -801,7 +812,6 @@ span{
         margin-right: 20pt;
     }
 
-   
     .imgWrap2{
         width: 100vh;
         margin-bottom: 50pt;
