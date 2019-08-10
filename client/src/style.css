@@ -224,7 +224,7 @@ button{
 }
 
 
- .react-html5-camera-photo>video {
+.react-html5-camera-photo>video {
     width: 250pt;
     border:2px solid white;
 }
@@ -493,7 +493,7 @@ h4{
     margin-bottom: 20pt;
     margin-top: -12vh;
     display: inline;
-    animation: fade 2s;
+    
 }
 
 .imgWrap2{
@@ -769,14 +769,14 @@ span{
         margin-right: 17pt;
         margin-top:0pt;
         margin-bottom:0pt;
-        animation: none !important;
+        animation: fade 2.5s;
     }
     
     .img1{
         width: 42pt;
         height: 42pt;
         margin-right:12pt;
-        animation: none !important;
+        animation: fade 2.5s;
     }
 
     .myImg{
@@ -878,6 +878,12 @@ span{
         align-items: center;
         justify-content: center;
         animation: none !important;
+        
+    }
+
+    @keyframes fade{
+        from {  opacity: 0}
+        to   {  opacity: 1}
     }
 
     .home{
