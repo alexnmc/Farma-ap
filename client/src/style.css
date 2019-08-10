@@ -183,6 +183,8 @@ input{
     font-family: 'Liberation';
     color:rgba(0, 0, 0, 0.822);
     border-radius: 8pt;
+    outline: none;
+    box-shadow: none;
 }
 
 input::placeholder{
