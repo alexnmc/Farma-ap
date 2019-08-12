@@ -160,7 +160,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1pt solid  rgba(0, 50, 107, 0.267);
+    border: 1px solid  rgba(0, 50, 107, 0.164);
     color:  rgba(0, 88, 189, 0.945);
     padding-left:5pt;
     font-family: 'Liberation';
@@ -178,7 +178,7 @@ input{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1pt solid  rgba(0, 50, 107, 0.267);
+    border: 1px solid  rgba(0, 50, 107, 0.164);
     border-radius: 6px;
     padding-left:5pt;
     font-family: 'Liberation';
