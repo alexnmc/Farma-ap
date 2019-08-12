@@ -39,7 +39,7 @@ class PharmaPortal extends Component {
                 
                 <div className = "messageContainer" key = {item._id}>
                     <p className = "p1"> {`Email: ${item.email}`}</p>
-                    <p className = "p5"> {`Tel: ${item.phone}`}</p> 
+                    <p className = "p5"> {`Tel: 0${item.phone}`}</p> 
                     <img  onClick = {() => this.props.enlarge(item._id)} className = 'myImg' alt = '' src = {item.img}/> 
                     <p className = "p3"><span>Cautã: </span>{item.medication}</p>
                     <p className = "p4"> {moment(item.date).format('MMMM Do YYYY, h:mm:ss a')}</p>
