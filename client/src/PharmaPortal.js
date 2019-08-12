@@ -63,7 +63,7 @@ class PharmaPortal extends Component {
             <div className = 'pharmaport'>
                 <div className = 'messageWrap'>
                 <div className = 'portalWrap'>
-                     <div className= 'h1' style = {this.props.currentCity ? {opacity: 1} : {opacity:0}}>{this.props.messages.length === 1 ?  this.props.currentCity + ': 1 mesaj' : `${this.props.currentCity +': '+ this.props.messages.length + ' mesaje'}`}</div>
+                     <div className= 'h1' style = {this.props.currentCity ? {opacity: 1} : {opacity:0}}>{this.props.messages.length === 1 ? ': 1 mesaj' : `${this.props.messages.length + ' mesaje'}`}</div>
                     <select 
                         required 
                         className = 'input2'
