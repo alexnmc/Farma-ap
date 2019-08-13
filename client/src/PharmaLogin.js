@@ -134,7 +134,7 @@ const PharmaLogin = props=>  {
                                     value={props.password2}
                                     onChange={props.handleChange2}
                                 />
-                                <button className = 'loginButton'  onClick={props.handleSignup} >înregistare</button>
+                                <button className = 'loginButton'  onClick={props.handleSignup} >Înregistrare</button>
                             </div>
                             
                     }
