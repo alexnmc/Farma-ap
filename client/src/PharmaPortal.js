@@ -9,7 +9,7 @@ class PharmaPortal extends Component {
         
         this.state = {
            userCity: this.props.user.city,
-           messages: this.props.messages
+           messages: this.props.messages,
           
            
         }
@@ -20,6 +20,7 @@ class PharmaPortal extends Component {
         this.props.getMessages(this.state.userCity)
         setInterval(this.props.updateMessage, 100000)
     }
+
 
     render(){
         
@@ -37,12 +38,13 @@ class PharmaPortal extends Component {
             return(
                 item.toggle ?
                 
-                <div className = "messageContainer" key = {item._id}>
+                <div className = "messageContainer" key = {item._id} style = {{backgroundColor: item.rezolvat ? "rgba(44, 44, 44, 0.733)" : null}}>
                     <p className = "p1"> {`Email: ${item.email}`}</p>
                     <p className = "p5"> {`Tel: 0${item.phone}`}</p> 
-                    <img  onClick = {() => this.props.enlarge(item._id)} className = 'myImg' alt = '' src = {item.img}/> 
+                    <img  onClick = {!item.rezolvat ? () => this.props.enlarge(item._id) : null} className = 'myImg' alt = '' src = {item.img}/> 
                     <p className = "p3"><span>Cautã: </span>{item.medication}</p>
                     <p className = "p4"> {moment(item.date).format('MMMM Do YYYY, h:mm:ss a')}</p>
+                    <p className = 'rezolvat' onClick = {!item.rezolvat ? () => this.props.rezolvat(item._id) : null}>{!item.rezolvat ? "Rezolvat?" : "Închis"}</p>
                 </div>
 
                 :
@@ -63,7 +65,7 @@ class PharmaPortal extends Component {
             <div className = 'pharmaport'>
                 <div className = 'messageWrap'>
                 <div className = 'portalWrap'>
-                     <div className= 'h1' style = {this.props.currentCity ? {opacity: 1} : {opacity:0}}>{this.props.messages.length === 1 ? ': 1 mesaj' : `${this.props.messages.length + ' mesaje'}`}</div>
+                     <div className= 'h1' style = {this.props.currentCity ? {opacity: 1} : {opacity:0}}>{this.props.messages.length === 1 ? '1 mesaj' : `${this.props.messages.length + ' mesaje'}`}</div>
                     <select 
                         required 
                         className = 'input2'

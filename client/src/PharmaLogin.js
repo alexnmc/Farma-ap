@@ -136,7 +136,6 @@ const PharmaLogin = props=>  {
                                 />
                                 <button className = 'loginButton'  onClick={props.handleSignup} >Înregistrare</button>
                             </div>
-                            
                     }
                 </div>
             </div>

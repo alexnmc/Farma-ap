@@ -69,6 +69,20 @@ messageRouter.post('/',  (req, res, next) => {
 )})
  
 
+messageRouter.put('/:id',  (req, res, next) => {   
+        Message.findOneAndUpdate(
+                {_id: req.params.id},
+                req.body,                          
+                {new: true},                   
+                (err, updatedMessage) => {
+                    if (err) {
+                        res.status(500)
+                        return next(err)
+                    }
+                    return res.status(201).send(updatedMessage)
+                }
+        )
+})
 
 
 

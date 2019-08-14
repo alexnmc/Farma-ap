@@ -72,14 +72,18 @@ body::before {
     width: 100%
 }
 
-
 a{
     text-decoration: none;
     color:  rgb(0, 97, 207);
     cursor: pointer;
 }
 
-
+.rezolvat{
+    color:red;
+    font-family: helvetica;
+    font-size:9pt;
+    cursor: pointer;
+}
 
 p{
     font-weight: 600;
@@ -216,7 +220,6 @@ button{
     border: 1px solid rgba(0, 0, 173, 0.212);
     animation: fade 2s;
 }
-
 
 .photoButton{
     margin-top:20pt;

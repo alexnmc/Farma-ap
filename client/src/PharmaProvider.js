@@ -275,6 +275,23 @@ class PharmaProvider extends Component {
             messages: newArr
         })
     }
+
+    rezolvat = (id) => {
+        var answer = window.confirm("Ești sigur cã vrei sã inchizi mesajul?")
+        if(answer){
+            const updates = {rezolvat: true}
+            axios.put(`/message/${id}`, updates).then(response => {
+                const updatedMessage = response.data
+                this.setState(prevState => {
+                    return {
+                        messages: prevState.messages.map(item => item._id === id ? updatedMessage : item )
+                        }
+                    })
+            })
+        }
+    }
+
+
     
     
     render() {
@@ -303,7 +320,8 @@ class PharmaProvider extends Component {
                     getMessages: this.getMessages,
                     updateMessage: this.updateMessage,
                     onTakePhoto: this.onTakePhoto,
-                    enlarge: this.enlarge
+                    enlarge: this.enlarge,
+                    rezolvat: this.rezolvat
                 }}>
                 {this.props.children}
             </PharmaContext.Provider>

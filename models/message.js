@@ -41,6 +41,11 @@ const messageSchema = new Schema({
     toggle: {
         type: Boolean,
         default: true
+    },
+
+    rezolvat: {
+        type: Boolean,
+        default: false
     }
 })
 
