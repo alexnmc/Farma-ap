@@ -20,25 +20,24 @@ class Home extends Component {
 
     componentDidMount(){
        //this.props.getLocation()
-       this.getFarmacies()
+      
     }
 
 
-    getFarmacies = () => {
-        let yourCity = this.state.city || this.props.city2
+    getFarmacies = (e) => {
+        e.preventDefault()
+        let yourCity = this.props.city || this.props.city2
         axios.get(`/user/${yourCity}`).then(res => { 
-            let newArr = res.data.map(item =>  item = item.username) 
+           let newArr = res.data.map(item =>  item = item.username) 
             this.setState({
                 sendTo: newArr
-            })
+            }, this.sendEmail)
         })
     }
     
     
-    sendEmail = (e) => {
-        e.preventDefault()
+    sendEmail = () => {
         this.props.handleSubmit() 
-
         const newMail = {
             phone: this.props.phone,
             email: this.props.email,
@@ -47,9 +46,8 @@ class Home extends Component {
             sendTo: this.state.sendTo
         }
         axios.post('/mail', newMail).then(res => {
-           console.log(res.data)
-        })
-        .catch(err => alert(err))
+          console.log(res)
+        }).catch(err => alert(err))
     }
     
     
@@ -74,7 +72,7 @@ class Home extends Component {
                             <h1 className = 'cauta'>Cautã produsul dorit:</h1>
                         </div>
                            
-                         <form className = 'bookingForm' onSubmit={this.sendEmail}  >
+                         <form className = 'bookingForm' onSubmit={this.getFarmacies}  >
                             
                             { !this.props.city.length && this.state.toggle && !this.props.loading ?
                                 <select 

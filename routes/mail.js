@@ -4,9 +4,8 @@ const nodemailer = require('nodemailer');
 
 
 mailRouter.post('/', (req, res) => {
-    console.log(req.body.sendTo.join(','))
-  
-   const output = `
+    
+  const output = `
      
           <h3>Telefon: ${req.body.phone}</h3>
           <h3>Email: ${req.body.email}</h3>

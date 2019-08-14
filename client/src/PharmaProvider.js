@@ -291,9 +291,6 @@ class PharmaProvider extends Component {
         }
     }
 
-
-    
-    
     render() {
         return (
             <PharmaContext.Provider
