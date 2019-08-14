@@ -43,7 +43,7 @@ class PharmaPortal extends Component {
                     <p className = "p5" style = {item.rezolvat ? {color: 'rgb(0, 74, 160)'} : null}> {`Tel: 0${item.phone}`}</p> 
                     <img  onClick = {!item.rezolvat ? () => this.props.enlarge(item._id) : null} className = 'myImg' alt = '' src = {item.img}/> 
                     <p className = "p3" style = {item.rezolvat ? {color: 'rgb(0, 74, 160)'} : null}><span style = {item.rezolvat ? {color: 'rgb(0, 74, 160)'} : null}>Cautã: </span>{item.medication}</p>
-                    <p className = "p4"> {moment(item.date).format('MMMM Do YYYY, h:mm:ss a')}</p>
+                    <p className = "p4"> {moment(item.date).format('MMMM Do YYYY, HH:mm:ss ')}</p>
                     <p className = 'rezolvat' onClick = {!item.rezolvat ? () => this.props.rezolvat(item._id) : null}>{!item.rezolvat ? "Rezolvat?" : "Închis"}</p>
                 </div>
 
