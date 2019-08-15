@@ -156,6 +156,7 @@ p{
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    position: relative
 }
 
 .input{
@@ -233,6 +234,7 @@ button{
 .react-html5-camera-photo>video {
     width: 250pt;
     border:2px solid white;
+    position: relative
 }
 
 .cameraButton{
@@ -435,6 +437,34 @@ h4{
 }
 
 
+.savedImgWrap{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: -25pt;
+    margin-bottom: 30pt;
+   
+}
+
+
+.savedImg{
+    font-family: 'Liberation Sans';
+    color: rgb(0, 82, 177);
+    font-size: 17pt;
+    text-align: center;
+    margin:auto;
+   
+}
+
+.savedPicture{
+    width:30pt;
+    height:30pt;
+    margin:auto;
+    cursor: pointer
+}
+
+
 @keyframes move2{
     from{margin-right: -100vw}
     to{margin-right: -30pt}
@@ -629,6 +659,8 @@ span{
     .cameraWrap{
         height: auto;
         width:100vw;
+        position: relative;
+       
     }
     
     .react-html5-camera-photo>video {

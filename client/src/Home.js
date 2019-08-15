@@ -15,6 +15,7 @@ class Home extends Component {
            city: this.props.city,
            toggle: true,
            sendTo:[],
+           enlargeToggle: false
         }
     }
 
@@ -60,6 +61,12 @@ class Home extends Component {
     onCameraError = (error) =>{
         alert('Vã rugã sã activați camera foto!')
         //window.location.reload()
+    }
+
+    enlargePicture = () => {
+        this.setState({
+            enlargeToggle: !this.state.enlargeToggle
+        })
     }
 
 
@@ -134,6 +141,12 @@ class Home extends Component {
                            :
                             
                             <div className = "cameraWrap"> 
+                                <div className = "savedImgWrap">
+                                    { !this.state.enlargeToggle && <h2 className = "savedImg">{this.props.img.length ? "Pozã salvatã"  : null}</h2>}
+                                    <img className = 'savedPicture' alt = '' src = {this.props.img}  style = {this.state.enlargeToggle ? {width: '330pt' , height: '400pt'} : null} onClick = {() => this.enlargePicture()}/> 
+                                </div>
+                               { !this.state.enlargeToggle ?
+                                <div>
                                 <Camera
                                     sizeFactor = {0.5}
                                     isImageMirror = {false}
@@ -143,6 +156,10 @@ class Home extends Component {
                                     isDisplayStartCameraError = {false}
                                 />
                                 <button className = 'cameraButton' onClick = {() => this.toggle()}>înapoi</button>
+                                </div>
+                                : 
+                                null
+                               }
                             </div>
                             }
                         </form>
