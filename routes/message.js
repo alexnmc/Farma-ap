@@ -44,7 +44,7 @@ messageRouter.delete('/:id', (req, res, next) => {
             res.status(500)
             return next(err)
         }
-        return res.status(202).send('the message was succesfully deleted!')
+        return res.status(202).send('Mesajul dumneavoastrã a fost șters. Mulțumim cã ați folosit serviciile noastre!')
     })
 })
 

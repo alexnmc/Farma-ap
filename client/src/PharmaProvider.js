@@ -304,11 +304,11 @@ class PharmaProvider extends Component {
     
     deleteMessage = (id) => {
         axios.delete(`/message/${id}`).then(response => {
+            alert(res.data)
             this.setState(prevState => {
                 return {
                     messages: prevState.messages.map(item => item._id !== id ? item : null ),
-                    confirmedID: ''
-                    }
+                }
                 })
         })
     }
