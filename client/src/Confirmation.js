@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
-//import Axios from 'axios'
+import {withPharma} from './PharmaProvider'
+
 
 class Confirmation extends Component{
        constructor(props){
@@ -15,7 +16,7 @@ class Confirmation extends Component{
 render(){
      return(
         <div className = "contact">
-            <button  onClick = {() => this.props.deleteMessage()}style = {{margin: 'auto'}}>Mesaj reazolvat?</button>
+            <button  onClick = {() => this.props.deleteMessage()} style = {{margin: 'auto'}}>Mesaj reazolvat?</button>
         </div>
      )
  }
@@ -23,4 +24,4 @@ render(){
 }
 
 
-export default Confirmation
+export default withPharma(Confirmation)
