@@ -141,10 +141,14 @@ class Home extends Component {
                            :
                             
                             <div className = "cameraWrap"> 
+                            { this.props.img ?  
                                 <div className = "savedImgWrap">
                                     { !this.state.enlargeToggle && <h2 className = "savedImg">{this.props.img.length ? "Pozã salvatã"  : null}</h2>}
-                                    <img className = 'savedPicture' alt = '' src = {this.props.img}  style = {this.state.enlargeToggle ? {width: '250pt' , height: '300pt'} : null} onClick = {() => this.enlargePicture()}/> 
+                                    <img className = 'savedPicture' alt = '' src = {this.props.img}  style = {this.state.enlargeToggle ? {width: '240pt' , height: '280pt'} : null} onClick = {() => this.enlargePicture()}/> 
                                 </div>
+                                :
+                                null
+                            }
                                { !this.state.enlargeToggle ?
                                 <div>
                                 <Camera
