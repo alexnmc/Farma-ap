@@ -817,7 +817,7 @@ span{
     .cauta{
         font-size: 16pt;
         text-align: center;
-        margin-right: 16pt;
+        margin-right: 15pt;
         margin-top:0pt;
         margin-bottom:0pt;
         animation: fade 2.5s;
@@ -825,8 +825,8 @@ span{
     }
     
     .img1{
-        width: 40pt;
-        height: 40pt;
+        width: 37pt;
+        height: 37pt;
         margin-right:12pt;
         animation: fade 2.5s;
     }
@@ -846,7 +846,7 @@ span{
     }
 
     .farmaup{
-        font-size: 23pt;
+        font-size: 20pt;
         text-align: center;
         margin-bottom:5pt;
         font-weight:900;
@@ -854,8 +854,8 @@ span{
     }
     
     .img2{
-        width: 50pt;
-        height: 50pt;
+        width: 40pt;
+        height: 40pt;
         background-size: cover;
         background-position: center;
         margin-right: 20pt;
