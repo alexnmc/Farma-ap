@@ -12,14 +12,12 @@ class Confirmation extends Component{
 
 
     sliceIt = () => {
-        
         let arr = this.state.id.split('')
         arr.splice(0,14)
         let final = arr.join('')
-        
         this.setState({
             id: final
-        })
+        }, this.props.deleteMessage(this.state.id))
     }
 
     componentDidMount(){
@@ -31,7 +29,7 @@ class Confirmation extends Component{
 render(){
      return(
         <div className = "contact">
-            <button  onClick = {() => this.props.deleteMessage(this.state.id)} style = {{margin: 'auto'}}>Mesaj reazolvat?</button>
+            <button  onClick = {() => this.sliceIt()} style = {{margin: 'auto'}}>Mesaj reazolvat?</button>
         </div>
      )
  }
