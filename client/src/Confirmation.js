@@ -6,7 +6,8 @@ class Confirmation extends Component{
        constructor(props){
            super(props)
            this.state = {
-               id: ''
+               id: '',
+               toggle: false
            }
         }
 
@@ -30,8 +31,19 @@ class Confirmation extends Component{
 render(){
      return(
         <div className = "contact">
-            <h1 className = 'cauta'>Dacã cererea dumneavoastrã a fost rezolvatã vã rugãm sã confirmați aici:</h1>
-            <button style = {{marginBottom: '350pt'}} onClick = {() => this.sliceIt()}>Confirmare</button>
+            {this.state.toggle ?
+            
+                <div>
+                    <h1 className = "cauta">Mulțumin! Puteți sa inchideți fereastra. </h1>
+                </div>
+                
+                :
+                
+                <div>
+                    <h1 className = 'cauta'>Dacã cererea dumneavoastrã a fost rezolvatã vã rugãm sã confirmați aici:</h1>
+                    <button style = {{marginBottom: '350pt'}} onClick = {() => this.sliceIt()}>Confirmare</button>
+                </div>
+            }
         </div>
      )
  }
