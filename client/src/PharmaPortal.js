@@ -57,8 +57,8 @@ class PharmaPortal extends Component {
                                                                                     {position: 'absolute' , border: "2px solid white", marginTop: '20pt', marginLeft: '40pt' , width: '320pt' , height: '300pt'}}  
                             onClick = {() => this.props.enlarge(item._id)} className = 'myImg' alt = '' src = {item.img}/>
                     <p className = "p33"></p>
-                    <p className = "p3" style = {document.documentElement.clientWidth > 1100 ? {opacity: '0'} : {opacity: '1', color: 'white'}}><span style= {{color: 'white'}}>Cautã: </span>{item.medication}</p>
-                    <p className = "p4" style = {{color: 'white'}}> {moment(item.date).format('MMMM Do YYYY, h:mm:ss a')}</p>
+                    {document.documentElement.clientWidth < 1000 ? <p className = "p3"><span>Cautã: </span>{item.medication}</p> : <p style = {{width: '300pt'}}></p>}
+                    <p className = "p4" style = {{color: 'white'}}> {moment(item.date).format('MMMM Do YYYY, HH:mm:ss')}</p>
                     <p style = {{width:'50pt'}}></p>
                 </div>
             )
