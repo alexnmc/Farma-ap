@@ -46,8 +46,8 @@ mailRouter.post('/confirm', (req, res) => {
     
   const output = `
      
-          <h3>Confirmation:</h3>
-          <a href="https://farmacie-app.herokuapp.com/confirmation/${req.body.id}">click here</a>
+          <h3>Dați click pe link sã confirmați rezolvarea cerererii:</h3>
+          <a href="https://farmacie-app.herokuapp.com/confirmation/${req.body.id}">click aici</a>
         
     `
   
@@ -64,7 +64,7 @@ mailRouter.post('/confirm', (req, res) => {
     let mailOptions = {
         from: 'farmacieup@gmail.com', // sender address
         to: req.body.sendTo, // list of receivers
-        subject: 'Confirmation link', // Subject line
+        subject: 'Confirmați rezolvarea', // Subject line
         html: output, // html body
         
     }
