@@ -20,9 +20,10 @@ class Confirmation extends Component{
         }, this.props.deleteMessage(this.state.id))
     }
 
+   
     componentDidMount(){
         this.setState({
-            id: this.props.history.location.pathname
+           id: this.props.history.location.pathname
         }, this.sliceIt)
     }
 

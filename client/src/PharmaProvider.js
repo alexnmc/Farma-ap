@@ -309,7 +309,7 @@ class PharmaProvider extends Component {
                 return {
                     messages: prevState.messages.map(item => item._id !== id ? item : null ),
                 }
-                })
+            })
         })
     }
 
