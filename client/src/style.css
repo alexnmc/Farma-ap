@@ -451,17 +451,18 @@ h4{
 .savedImg{
     font-family: 'Liberation Sans';
     color: rgb(0, 82, 177);
-    font-size: 17pt;
+    font-size: 15pt;
     text-align: center;
     margin:auto;
    
 }
 
 .savedPicture{
-    width:30pt;
-    height:30pt;
+    width: 27pt;
+    height:27pt;
     margin:auto;
-    cursor: pointer
+    cursor: pointer;
+    border: 1pt solid white;
 }
 
 
