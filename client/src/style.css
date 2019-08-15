@@ -665,7 +665,7 @@ span{
     }
     
     .react-html5-camera-photo>video {
-        width: 95%;
+        width: 90%;
         border:2px solid white;
         margin: auto;
     }
