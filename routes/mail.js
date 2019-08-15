@@ -47,7 +47,7 @@ mailRouter.post('/confirm', (req, res) => {
   const output = `
      
           <h3>Confirmation:</h3>
-          <a href="https://farmacie-app.herokuapp.com/confirmation">click here</a>
+          <a href="https://farmacie-app.herokuapp.com/confirmation/${req.body.id}">click here</a>
         
     `
   
