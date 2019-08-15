@@ -18,15 +18,18 @@ class Confirmation extends Component{
         let final = arr.join('')
         this.setState({
             id: final,
-            toggle: true
         }, this.props.deleteMessage(this.state.id))
+        this.setState({
+            toggle: true
+        })
     }
 
    
     componentDidMount(){
         this.setState({
-           id: this.props.history.location.pathname
-        }, this.sliceIt)
+           id: this.props.history.location.pathname,
+           toggle: false
+        })
     }
 
 render(){
