@@ -303,7 +303,7 @@ class PharmaProvider extends Component {
 
     
     deleteMessage = (id) => {
-        axios.delete(`/message/${id}`).then(response => {
+        axios.delete(`/message/${id}`).then(res => {
             alert(res.data)
             this.setState(prevState => {
                 return {
