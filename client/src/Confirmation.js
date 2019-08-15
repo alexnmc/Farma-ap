@@ -38,7 +38,7 @@ render(){
             {this.state.toggle ?
             
                 <div>
-                    <h1 className = "cauta">Mulțumin! Puteți sa inchideți fereastra. </h1>
+                    <h1 className = "cauta">Mulțumin! Puteți sã inchideți fereastra. </h1>
                 </div>
                 
                 :

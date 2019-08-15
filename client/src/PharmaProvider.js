@@ -304,7 +304,7 @@ class PharmaProvider extends Component {
     
     deleteMessage = (id) => {
         axios.delete(`/message/${id}`).then(res => {
-            alert(res.data)
+            console.log(res.data)
             this.setState(prevState => {
                 return {
                     messages: prevState.messages.map(item => item._id !== id ? item : null ),
