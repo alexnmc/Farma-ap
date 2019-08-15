@@ -102,9 +102,10 @@ class Home extends Component {
                                     <input 
                                         type='email'
                                         name='email'
-                                        placeholder='Email-opțional:'
+                                        placeholder='Email'
                                         value={this.props.email}
                                         onChange={this.props.handleChange2}
+                                        required
                                        
                                     />
                                     <input 
