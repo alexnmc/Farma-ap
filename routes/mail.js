@@ -40,4 +40,44 @@ mailRouter.post('/', (req, res) => {
     })
 })
 
+
+
+mailRouter.post('/confirm', (req, res) => {
+    
+  const output = `
+     
+          <h3>Confirmation:</h3>
+          <a href="https://farmacie-app.herokuapp.com/confirmation">click here</a>
+        
+    `
+  
+    // create reusable transporter object using the default SMTP transport
+    let transporter = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+        user: 'farmacieup@gmail.com', // generated ethereal user
+        pass: 'farmaup123'  // generated ethereal password
+      }
+    })
+  
+    // setup email data with unicode symbols
+    let mailOptions = {
+        from: 'farmacieup@gmail.com', // sender address
+        to: req.body.sendTo, // list of receivers
+        subject: 'Confirmation link', // Subject line
+        html: output, // html body
+        
+    }
+
+    transporter.sendMail(mailOptions, function(error, info){
+    if (error) {
+        res.status(201).send(error)
+    } else {
+        res.status(201).send('Confirmation Email sent: ' + info.response);
+    }
+    })
+})
+
+
+
 module.exports = mailRouter

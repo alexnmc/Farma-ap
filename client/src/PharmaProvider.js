@@ -2,8 +2,6 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import ring from './Sound/Sound.mp3'
 
-
-
 //const openGeocoder = require('node-open-geocoder');
 const PharmaContext = React.createContext()
 const sound = new Audio(ring)
@@ -37,7 +35,8 @@ class PharmaProvider extends Component {
             messages: [],
             currentCity: '',
             confirmed: '',
-            loading: false
+            loading: false,
+            confirmedID:''
         }
     }
 
@@ -196,7 +195,6 @@ class PharmaProvider extends Component {
         alert(data +' Email: ' + email +'  medicament: '+ med)
     }
     
-    
     handleSubmit = () => {  // on submit we are sending a new message object to the database
         this.setState({loading: true})
         const { email, phone, medication, img, county} = this.state
@@ -276,7 +274,7 @@ class PharmaProvider extends Component {
         })
     }
 
-    rezolvat = (id) => {
+    rezolvat = (id, email) => {
         var answer = window.confirm("Ești sigur cã vrei sã inchizi mesajul?")
         if(answer){
             const updates = {rezolvat: true}
@@ -284,11 +282,35 @@ class PharmaProvider extends Component {
                 const updatedMessage = response.data
                 this.setState(prevState => {
                     return {
-                        messages: prevState.messages.map(item => item._id === id ? updatedMessage : item )
+                        messages: prevState.messages.map(item => item._id === id ? updatedMessage : item ),
+                        confirmedID: id
                         }
                     })
             })
         }
+        this.sendConfirmationEmail(email, id)
+    }
+
+    sendConfirmationEmail = (email, id) => {
+        const newMail = {
+            sendTo: email,
+            id: id
+        }
+        axios.post('/mail/confirm', newMail).then(res => {
+            console.log(res)
+          }).catch(err => alert(err))
+    }
+
+    
+    deleteMessage = () => {
+        axios.delete(`/message/${this.state.confirmedID}`).then(response => {
+            this.setState(prevState => {
+                return {
+                    messages: prevState.messages.map(item => item._id !== this.state.confirmedID ? item : null ),
+                    confirmedID: ''
+                    }
+                })
+        })
     }
 
     render() {
@@ -318,7 +340,9 @@ class PharmaProvider extends Component {
                     updateMessage: this.updateMessage,
                     onTakePhoto: this.onTakePhoto,
                     enlarge: this.enlarge,
-                    rezolvat: this.rezolvat
+                    rezolvat: this.rezolvat,
+                    sendConfirmationEmail: this.sendConfirmationEmail,
+                    deleteMessage: this.deleteMessage
                 }}>
                 {this.props.children}
             </PharmaContext.Provider>

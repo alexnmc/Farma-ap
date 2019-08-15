@@ -10,8 +10,6 @@ class PharmaPortal extends Component {
         this.state = {
            userCity: this.props.user.city,
            messages: this.props.messages,
-          
-           
         }
     }
 
@@ -44,7 +42,7 @@ class PharmaPortal extends Component {
                     {item.img ? <img  onClick = {!item.rezolvat ? () => this.props.enlarge(item._id) : null} className = 'myImg' alt = '' src = {item.img}/> : <div style = {{width:'30pt', height: '20pt'}}></div>}
                     <p className = "p3" style = {item.rezolvat ? {color: 'rgb(0, 74, 160)'} : null}><span style = {item.rezolvat ? {color: 'rgb(0, 74, 160)'} : null}>Cautã: </span>{item.medication}</p>
                     <p className = "p4"> {moment(item.date).format('MMMM Do YYYY, HH:mm:ss ')}</p>
-                    <p className = 'rezolvat' onClick = {!item.rezolvat ? () => this.props.rezolvat(item._id) : null}>{!item.rezolvat ? "Rezolvat?" : "Închis"}</p>
+                    <p className = 'rezolvat' onClick = {!item.rezolvat ? () => this.props.rezolvat(item._id, item.email) : null}>{!item.rezolvat ? "Rezolvat?" : "Închis"}</p>
                 </div>
 
                 :

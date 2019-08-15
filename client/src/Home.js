@@ -36,7 +36,6 @@ class Home extends Component {
         })
     }
     
-    
     sendEmail = () => {
         this.props.handleSubmit() 
         const newMail = {
@@ -50,7 +49,6 @@ class Home extends Component {
           console.log(res)
         }).catch(err => alert(err))
     }
-    
     
     toggle = () => {
         this.setState({

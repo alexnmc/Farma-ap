@@ -48,6 +48,7 @@ messageRouter.delete('/:id', (req, res, next) => {
     })
 })
 
+
 messageRouter.post('/',  (req, res, next) => {   
     Message.findOne({name: req.body.name, phone:req.body.phone, medication:req.body.medication, city: req.body.city, date: req.body.date}, (err, message) => {
         if (err) {

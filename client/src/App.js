@@ -6,6 +6,7 @@ import Contact from './Contact'
 import About from './About'
 import PharmaLogin from './PharmaLogin'
 import PharmaPortal from './PharmaPortal'
+import Confirmation from './Confirmation'
 import ProtectedRoutes from './ProtectedRoutes'
 import {withPharma} from './PharmaProvider'
 
@@ -39,7 +40,7 @@ class App extends Component {
                         token={this.props.token}
                         path="/portal"
                     />
-                
+                    <Route path = "/confirmation/:id"  component = {Confirmation}/>
                 </Switch>
             </div>
         )
