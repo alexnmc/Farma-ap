@@ -116,7 +116,6 @@ class Home extends Component {
                                         onChange={this.props.handleChange2}
                                         required
                                     />
-
                                     <input 
                                         type='text'
                                         name='medication'

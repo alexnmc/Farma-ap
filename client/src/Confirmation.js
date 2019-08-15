@@ -29,7 +29,8 @@ class Confirmation extends Component{
 render(){
      return(
         <div className = "contact">
-            <button  onClick = {() => this.sliceIt()} style = {{margin: 'auto'}}>Mesaj reazolvat?</button>
+            <h1 className = 'cauta'>Dacã cererea dumneavoastrã a fost rezolvatã vã rugãm sã confirmați aici:</h1>
+            <button style = {{marginBottom: '350pt'}} onClick = {() => this.sliceIt()}>Confirmare</button>
         </div>
      )
  }
