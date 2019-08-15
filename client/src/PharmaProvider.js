@@ -36,7 +36,6 @@ class PharmaProvider extends Component {
             currentCity: '',
             confirmed: '',
             loading: false,
-            confirmedID:''
         }
     }
 
@@ -283,7 +282,7 @@ class PharmaProvider extends Component {
                 this.setState(prevState => {
                     return {
                         messages: prevState.messages.map(item => item._id === id ? updatedMessage : item ),
-                        confirmedID: id
+                        
                         }
                     })
             })
@@ -302,11 +301,11 @@ class PharmaProvider extends Component {
     }
 
     
-    deleteMessage = () => {
+    deleteMessage = (id) => {
         axios.delete(`/message/${this.state.confirmedID}`).then(response => {
             this.setState(prevState => {
                 return {
-                    messages: prevState.messages.map(item => item._id !== this.state.confirmedID ? item : null ),
+                    messages: prevState.messages.map(item => item._id !== id ? item : null ),
                     confirmedID: ''
                     }
                 })

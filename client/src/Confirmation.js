@@ -6,12 +6,20 @@ class Confirmation extends Component{
        constructor(props){
            super(props)
            this.state = {
-               
+               id: ''
            }
         }
 
 
+    consolog = () => {
+        console.log(this.state.id)
+    }
 
+    componentDidMount(){
+        this.setState({
+            id: this.props.history.loaction
+        }, this.consololog)
+    }
 
 render(){
      return(
