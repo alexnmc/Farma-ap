@@ -431,7 +431,7 @@ h4{
     font-size: 22pt;
     text-align: center;
     animation: move2 1s;
-    margin-top: -40pt;
+    margin-top: -37pt;
     margin-bottom: 25pt;
     margin-right: -30pt;
 }
@@ -488,8 +488,8 @@ h4{
 }
 
 .img1{
-    width: 50pt;
-    height: 50pt;
+    width: 47pt;
+    height: 47pt;
     background-image: url('./Photos/foto.png');
     background-size: cover;
     background-position: center;
