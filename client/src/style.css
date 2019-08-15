@@ -79,9 +79,9 @@ a{
 }
 
 .rezolvat{
-    color:red;
+    color:rgb(224, 45, 0);
     font-family: helvetica;
-    font-size:9pt;
+    font-size: 10pt;
     cursor: pointer;
     width:50pt;
 }
@@ -115,7 +115,7 @@ p{
     margin-left:40pt;
     text-align: start;
     color: red;
-    font-size: 14.5pt;
+    font-size: 14pt;
 }
 
 .p4{
@@ -567,7 +567,7 @@ h4{
     margin:auto;
     margin-top: 4pt;
     padding-left:4pt;
-    font-size: 13pt;
+    font-size: 12.5pt;
     
 }
 
@@ -884,7 +884,7 @@ span{
         width:33vw;
         height: 27pt;
         font-size: 11pt;
-        border: 2px solid rgba(0, 0, 255, 0);
+        border: 1px solid rgb(0, 0, 255);
         margin:2pt;
         font-family: arial
     }

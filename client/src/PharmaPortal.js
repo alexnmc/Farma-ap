@@ -38,10 +38,10 @@ class PharmaPortal extends Component {
             return(
                 item.toggle ?
                 
-                <div className = "messageContainer" key = {item._id} style = {{backgroundColor: item.rezolvat ? "rgb(54, 125, 187)" : null}}>
+                <div className = "messageContainer" key = {item._id} style = {{backgroundColor: item.rezolvat ? "rgb(54, 125, 187, 0.900)" : null}}>
                     <p className = "p1" style = {item.rezolvat ? {color: 'rgb(0, 74, 160)'} : null}> {`Email: ${item.email}`}</p>
                     <p className = "p5" style = {item.rezolvat ? {color: 'rgb(0, 74, 160)'} : null}> {`Tel: 0${item.phone}`}</p> 
-                    {item.img ? <img  onClick = {!item.rezolvat ? () => this.props.enlarge(item._id) : null} className = 'myImg' alt = '' src = {item.img}/> : null}
+                    {item.img ? <img  onClick = {!item.rezolvat ? () => this.props.enlarge(item._id) : null} className = 'myImg' alt = '' src = {item.img}/> : <div style = {{width:'30pt', height: '20pt'}}></div>}
                     <p className = "p3" style = {item.rezolvat ? {color: 'rgb(0, 74, 160)'} : null}><span style = {item.rezolvat ? {color: 'rgb(0, 74, 160)'} : null}>Cautã: </span>{item.medication}</p>
                     <p className = "p4"> {moment(item.date).format('MMMM Do YYYY, HH:mm:ss ')}</p>
                     <p className = 'rezolvat' onClick = {!item.rezolvat ? () => this.props.rezolvat(item._id) : null}>{!item.rezolvat ? "Rezolvat?" : "Închis"}</p>
@@ -57,8 +57,9 @@ class PharmaPortal extends Component {
                                                                                     {position: 'absolute' , border: "2px solid white", marginTop: '20pt', marginLeft: '40pt' , width: '320pt' , height: '300pt'}}  
                             onClick = {() => this.props.enlarge(item._id)} className = 'myImg' alt = '' src = {item.img}/>
                     <p className = "p33"></p>
-                    <p className = "p3" style = {document.documentElement.clientWidth > 1100 ? {visibility: 'hidden'} : {visibility: 'visible', color: 'white'}}><span style= {{color: 'white'}}>Cautã: </span>{item.medication}</p>
+                    <p className = "p3" style = {document.documentElement.clientWidth > 1100 ? {opacity: '0'} : {opacity: '1', color: 'white'}}><span style= {{color: 'white'}}>Cautã: </span>{item.medication}</p>
                     <p className = "p4" style = {{color: 'white'}}> {moment(item.date).format('MMMM Do YYYY, h:mm:ss a')}</p>
+                    <p style = {{width:'50pt'}}></p>
                 </div>
             )
         })
