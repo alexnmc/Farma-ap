@@ -290,6 +290,7 @@ class PharmaProvider extends Component {
         this.sendConfirmationEmail(email, id)
     }
 
+    
     sendConfirmationEmail = (email, id) => {
         const newMail = {
             sendTo: email,
@@ -302,7 +303,7 @@ class PharmaProvider extends Component {
 
     
     deleteMessage = (id) => {
-        axios.delete(`/message/${this.state.confirmedID}`).then(response => {
+        axios.delete(`/message/${id}`).then(response => {
             this.setState(prevState => {
                 return {
                     messages: prevState.messages.map(item => item._id !== id ? item : null ),
