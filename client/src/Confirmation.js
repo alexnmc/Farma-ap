@@ -16,9 +16,7 @@ class Confirmation extends Component{
         let arr = this.state.id.split('')
         arr.splice(0,14)
         let final = arr.join('')
-        this.setState({
-            id: final,
-        }, this.props.deleteMessage(this.state.id))
+        this.props.deleteMessage(final)
         this.setState({
             toggle: true
         })
