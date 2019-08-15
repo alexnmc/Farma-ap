@@ -24,7 +24,7 @@ mailRouter.post('/', (req, res) => {
   
     // setup email data with unicode symbols
     let mailOptions = {
-        from: 'farmacieup@gmail.com', // sender address
+        from: 'Farma-up', // sender address
         to: req.body.sendTo.join(','), // list of receivers
         subject: 'Mesaj Nou!', // Subject line
         html: output, // html body
@@ -62,7 +62,7 @@ mailRouter.post('/confirm', (req, res) => {
   
     // setup email data with unicode symbols
     let mailOptions = {
-        from: 'farmacieup@gmail.com', // sender address
+        from: 'Farma-up', // sender address
         to: req.body.sendTo, // list of receivers
         subject: 'Confirmați rezolvarea', // Subject line
         html: output, // html body
