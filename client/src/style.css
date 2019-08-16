@@ -302,7 +302,7 @@ button{
 
 h4{
     color: rgb(0, 79, 170);
-    font-family: 'Liberation Sans';
+    font-family: 'trebuchet ms';
     font-size:17pt;
     margin-bottom: 30pt;
     margin-top: 30pt;
@@ -311,7 +311,7 @@ h4{
 
 .h4{
     color: rgb(0, 79, 170);;
-    font-family: 'Liberation Sans';
+    font-family: 'trebuchet ms';
     font-size:14pt;
     margin-bottom: -4pt;
     margin-top: 30pt;
@@ -327,7 +327,7 @@ h4{
     border-radius: 3px;
     margin-top:5pt;
     padding-left:3.5pt;
-    font-size:15pt;
+    font-size:13pt;
     animation: none !important;
    
 }
@@ -395,7 +395,7 @@ h4{
 .cont{
    display: flex;
    width:auto;
-   font-family: 'liberation';
+   font-family: 'trebuchet ms';
    font-size: 12.5pt;
    font-weight: 900;
    color:rgba(197, 72, 0, 0.966);
@@ -405,7 +405,7 @@ h4{
 .cont2{
    display: flex;
    width:auto;
-   font-family: 'liberation';
+   font-family: 'trebuchet ms';
    font-size: 12.5pt;
    font-weight: 900;
    color:rgba(197, 72, 0, 0.966);
@@ -526,7 +526,7 @@ h4{
 .loginLogo{
     width: 35pt;
     height: 35pt;
-    background-image: url('./Photos/foto.png');
+    background-image: url('./Photos/farmacie2.png');
     background-size: cover;
     background-position: center;
 }
