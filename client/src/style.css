@@ -160,7 +160,7 @@ p{
 }
 
 .input{
-    width:280pt;
+    width:270pt;
     height: 45pt;
     margin:auto;
     margin-bottom:14pt;
@@ -179,7 +179,7 @@ p{
 }
 
 input{
-    width:280pt;
+    width:270pt;
     height: 45pt;
     margin:10pt;
     font-size: 15pt;
@@ -213,7 +213,7 @@ button{
     display:flex;
     align-items: center;
     justify-content: center;
-    width: 280pt;
+    width: 270pt;
     height: 40pt;
     background-color: rgb(0, 97, 207);
     font-size: 14pt;
