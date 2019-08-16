@@ -168,7 +168,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid  rgba(0, 50, 107, 0.164);
+    border: 1px solid  rgba(151, 151, 151, 0.315);
     color:  rgba(0, 88, 189, 0.945);
     padding-left:5pt;
     font-family: 'Liberation';
@@ -186,7 +186,7 @@ input{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid  rgba(0, 50, 107, 0.164);
+    border: 1px solid  rgba(151, 151, 151, 0.315);
     border-radius: 6px;
     padding-left:5pt;
     font-family: 'Liberation';
@@ -348,7 +348,7 @@ h4{
 
 
 .admin{
-    background-color: rgba(226, 226, 226, 0.719);
+    background-color: rgba(238, 238, 238, 0.719);
     height: 100vh;
     width: 100vw;
     display:flex;
@@ -381,7 +381,7 @@ h4{
     margin-top: 10vh;
     padding-bottom: 10pt;
     border-radius: 4pt;
-    border: 1px solid rgba(11, 62, 121, 0.171);
+    border: 1px solid rgba(165, 165, 165, 0.287);
 }
 
 .loginWrap{
