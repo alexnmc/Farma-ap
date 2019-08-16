@@ -48,7 +48,6 @@ body::before {
     position: relative;
     align-items: center;
     font-size: 20px;
-    font-family:'helvetica-neue';
     font-weight: 600;
     border-bottom: 5px solid #fbff1dcc;
     display:flex;
@@ -68,13 +67,14 @@ body::before {
     content: " ";
     position: absolute;
     bottom: 0px;
-    border: 3px solid rgba(0, 97, 207, 0.746);
+    border: 3px solid rgba(0, 98, 211, 0.849);
     width: 100%
 }
 
 a{
     text-decoration: none;
-    color:  rgb(0, 97, 207);
+    font-family: 'trebuchet ms';
+    color: rgb(0, 98, 211);
     cursor: pointer;
 }
 
@@ -169,9 +169,9 @@ p{
     justify-content: center;
     align-items: center;
     border: 1px solid  rgba(151, 151, 151, 0.315);
-    color:  rgba(0, 88, 189, 0.945);
+    color:  rgba(9, 103, 209, 0.822);
     padding-left:5pt;
-    font-family: 'Liberation';
+    font-family: 'trebuchet ms';
     border-radius: 8pt;
     -webkit-appearance: none;
     animation: fade 2s;
@@ -189,7 +189,7 @@ input{
     border: 1px solid  rgba(151, 151, 151, 0.315);
     border-radius: 6px;
     padding-left:5pt;
-    font-family: 'Liberation';
+    font-family: 'trebuchet ms';
     color:rgba(0, 0, 0, 0.822);
     border-radius: 8pt;
     box-shadow: none;
@@ -426,14 +426,15 @@ h4{
 }
 
 .cauta{
-    font-family: 'Liberation Sans';
-    color: rgb(0, 82, 177);
+    font-family: 'trebuchet ms';
+    color: rgb(35, 112, 199);
     font-size: 21pt;
     text-align: center;
     animation: move2 1s;
     margin-top: -37pt;
     margin-bottom: 25pt;
     margin-right: -30pt;
+    font-weight: 900
 }
 
 
@@ -489,9 +490,9 @@ h4{
 }
 
 .img1{
-    width: 45pt;
-    height: 45pt;
-    background-image: url('./Photos/foto.png');
+    width: 55pt;
+    height: 55pt;
+    background-image: url('./Photos/farmacie2.png');
     background-size: cover;
     background-position: center;
     margin-left: 15pt;
@@ -618,7 +619,7 @@ span{
         width: 100vw;
         height: 59pt;
         font-size: 17px;
-        font-family: "Open Sans", Arial, sans-serif;
+       
     }
     
     
@@ -812,7 +813,7 @@ span{
     
     span{
         font-size:11pt;
-        font-family: "Open Sans", Arial, sans-serif;
+        
     }
 
     .cauta{
@@ -822,12 +823,12 @@ span{
         margin-top:0pt;
         margin-bottom:0pt;
         animation: fade 2.5s;
-        font-family: "Open Sans", Arial, sans-serif;
+       
     }
     
     .img1{
-        width: 37pt;
-        height: 37pt;
+        width: 40pt;
+        height: 40pt;
         margin-right:12pt;
         animation: fade 2.5s;
     }
