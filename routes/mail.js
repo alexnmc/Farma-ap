@@ -6,6 +6,7 @@ const nodemailer = require('nodemailer');
 mailRouter.post('/', (req, res) => {
     
   const output = `
+          <h3>Telefon:</h3>
           <a href="tel:${req.body.phone}">${req.body.phone}</a>
           <h3>Email: ${req.body.email}</h3>
           <h3>Cautã: ${req.body.medication}</h3>  
