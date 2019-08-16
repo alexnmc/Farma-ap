@@ -252,7 +252,7 @@ button{
 }
 
 .logout{
-   width: 70pt;
+   width: 120pt;
    height: 20pt;
    font-size: 11pt;
    margin:auto;
@@ -871,21 +871,22 @@ span{
     }
 
     .logout{
-        width: 60pt;
+        width: 80pt;
         height: 21pt;
         font-size: 9pt;
-        background-color: rgb(0, 97, 207);
+        background-color: rgba(0, 108, 231, 0.904);
         border-radius: 5px;
         margin:5pt;
         color:white
     }
 
      .input2{
-        width:33vw;
+        width:120pt;
         height: 27pt;
         font-size: 11pt;
         border: 1px solid rgb(0, 0, 255);
         margin:2pt;
+        margin-right: 12pt;
         font-family: arial
     }
 
