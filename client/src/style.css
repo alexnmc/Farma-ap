@@ -169,7 +169,7 @@ p{
     justify-content: center;
     align-items: center;
     border: 1px solid  rgba(151, 151, 151, 0.253);
-    color:  rgba(0, 107, 230, 0.822);
+    color:  rgba(35, 111, 199, 0.918);
     padding-left:5pt;
     font-family: 'trebuchet ms';
     border-radius: 8pt;
@@ -190,7 +190,7 @@ input{
     border-radius: 6px;
     padding-left:5pt;
     font-family: 'trebuchet ms';
-    color:rgba(0, 153, 255, 0.822);
+    color:rgba(0, 78, 131, 0.822);
     border-radius: 8pt;
     box-shadow: none;
     -webkit-box-shadow: none;
@@ -205,7 +205,7 @@ input{
 }
 
 input::placeholder{
-    color:rgba(0, 119, 255, 0.596);
+    color:rgba(0, 105, 226, 0.486);
 }
 
 button{
