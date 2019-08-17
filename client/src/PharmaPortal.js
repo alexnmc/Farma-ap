@@ -49,7 +49,7 @@ class PharmaPortal extends Component {
                  
                 <div className = "messageContainer" key = {item._id} style = {{position: 'relative' , backgroundColor : ' rgba(62, 142, 212, 0.570)', color: 'white'}}>
                     <p className = "p1"> {`Email: ${item.email}`}</p>
-                    <p className = "p5"> {`Tel: ${item.phone}`}</p> 
+                    <p className = "p5"> {`Tel: 0${item.phone}`}</p> 
                     <img    style = {document.documentElement.clientWidth < 1100 ?  
                                         {width: '100%' , height: '60vh'} 
                                         : 
