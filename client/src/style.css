@@ -819,7 +819,7 @@ span{
     }
 
     .cauta{
-        font-size: 15.5pt;
+        font-size: 14.5pt;
         text-align: center;
         margin-right: 15pt;
         margin-top:0pt;
@@ -837,8 +837,8 @@ span{
 
 
     .img1{
-        width: 42pt;
-        height: 42pt;
+        width: 40pt;
+        height: 40pt;
         margin-right:12pt;
         animation: fade 2.5s;
     }
