@@ -25,7 +25,7 @@ mailRouter.post('/', (req, res) => {
     let mailOptions = {
         from: 'farmacieup@gmail.com', // sender address
         to: req.body.sendTo.join(','), // list of receivers
-        subject: 'Mesaj Nou!', // Subject line
+        subject: req.body.medication, // Subject line
         html: output, // html body
         attachments: req.body.img.length && [{path: req.body.img}]
     }
