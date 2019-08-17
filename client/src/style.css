@@ -227,7 +227,6 @@ button{
 
 .photoButton{
     margin-top:20pt;
-    margin-bottom:20pt;
 }
 
 
@@ -461,9 +460,9 @@ h4{
 
 
 .savedImg{
-    font-family: 'Liberation Sans';
-    color: rgb(0, 82, 177);
-    font-size: 15pt;
+    font-family: 'trebuchet ms';
+    color: rgba(0, 90, 194, 0.835);
+    font-size: 13pt;
     text-align: center;
     margin:auto;
    
@@ -631,7 +630,6 @@ span{
         width: 100vw;
         height: 59pt;
         font-size: 17px;
-       
     }
     
     
@@ -641,7 +639,6 @@ span{
         align-items: center;
         justify-content: flex-start;
         margin-top:2%;
-       
     }
     
     .input{
@@ -656,7 +653,6 @@ span{
         font-family: arial
     }
     
-    
     input{
         width: 67vw;
         height: 36pt;
@@ -669,7 +665,6 @@ span{
         font-family: arial
     }
     
-    
     .cameraWrap{
         height: auto;
         width:100vw;
@@ -678,14 +673,14 @@ span{
     }
     
     .react-html5-camera-photo>video {
-        width: 90%;
+        width: 87%;
         border:2px solid white;
         margin: auto;
     }
 
     .cameraButton{
-        margin-top:12%;
-        margin-bottom:12%
+        margin-top:21pt;
+        margin-bottom:10%;
     }
 
     button{
@@ -704,11 +699,10 @@ span{
     }
 
     .button2{
-        margin-bottom: 10vh;
+        margin-top:21pt;
+        margin-bottom:8%;
     }
 
-   
-    
     .loginButton{
        width: 75%;
        height: 33pt;
@@ -717,7 +711,6 @@ span{
        margin-bottom:25pt;
     }
 
-    
     h4{
         font-size: 5vw;
         margin-bottom: 15pt;
