@@ -263,7 +263,6 @@ button{
 }
 
 
-
 .filler{
     width: 340pt;
     height:20pt;
@@ -277,7 +276,7 @@ button{
     border: 2px solid rgba(0, 0, 255, 0.007);
     background-color: white;
     color:  rgb(0, 97, 207);
-    font-family: 'Liberation';
+    font-family: 'trebuchet ms';
     font-weight: 600
 }
 
@@ -291,7 +290,7 @@ button{
 }
 
 .h1{
-    font-family: 'Liberation';
+    font-family: 'trebuchet ms';
     font-size:13.5pt;
     color:  rgb(0, 97, 207);
     margin:auto;
@@ -896,7 +895,7 @@ span{
         width:105pt;
         height: 25pt;
         font-size: 11pt;
-        border: 1px solid rgb(0, 0, 255);
+        border: 1px solid #0061cfec;
         margin:5pt;
         margin-right: 12pt;
         font-family: arial
