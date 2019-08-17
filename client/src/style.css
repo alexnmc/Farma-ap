@@ -251,7 +251,7 @@ button{
 }
 
 .logout{
-   width: 120pt;
+   width: 100pt;
    height: 20pt;
    font-size: 11pt;
    margin:auto;
@@ -260,8 +260,9 @@ button{
    color: rgb(0, 97, 207);
    font-family: 'helvetica';
    padding: 3pt;
-   
 }
+
+
 
 .filler{
     width: 340pt;
@@ -606,7 +607,7 @@ span{
 .messageWrap{
     width: 100%;
     height: auto;
-    margin-top: 40pt;
+    margin-top: 25pt;
     margin-bottom: 170pt;
    
 }
@@ -882,21 +883,21 @@ span{
     }
 
     .logout{
-        width: 80pt;
+        width: 90pt;
         height: 21pt;
         font-size: 9pt;
-        background-color: rgba(0, 108, 231, 0.904);
+        background-color: rgba(0, 108, 231, 0.787);
         border-radius: 5px;
         margin:5pt;
         color:white
     }
 
      .input2{
-        width:120pt;
-        height: 27pt;
+        width:105pt;
+        height: 25pt;
         font-size: 11pt;
         border: 1px solid rgb(0, 0, 255);
-        margin:2pt;
+        margin:5pt;
         margin-right: 12pt;
         font-family: arial
     }
@@ -921,7 +922,7 @@ span{
     .messageWrap{
         width: 100%;
         height: auto;
-        margin-top: 40pt;
+        margin-top: 25pt;
         margin-bottom:0pt;
     }
 

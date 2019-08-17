@@ -70,6 +70,7 @@ class PharmaPortal extends Component {
         return(
             <div className = 'pharmaport'>
                 <div className = 'messageWrap'>
+                <p className = 'p4' style = {{marginBottom: '20pt', width: '100%', textAlign: 'center'}}>Login: {this.props.user.username}</p>
                 <div className = 'portalWrap'>
                     <div className= 'h1' style = {this.props.currentCity ? {opacity: 1} : {opacity:0}}>{this.props.messages.length === 1 ? '1 mesaj' : `${this.props.messages.length + ' mesaje'}`}</div>
                     <select 
