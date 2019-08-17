@@ -97,7 +97,7 @@ p{
 }
    
 .p1{
-    width: 230pt;
+    width: 260pt;
     text-align: start;
     margin:1pt;
 }
@@ -110,12 +110,12 @@ p{
 }
 
 .p3{
-    width: 260pt;
+    width: 270pt;
     text-align: start;
     margin-left:40pt;
     text-align: start;
     color: red;
-    font-size: 14pt;
+    font-size: 12pt;
 }
 
 .p4{
@@ -563,12 +563,13 @@ h4{
     justify-content: space-around;
     width: 96%;
     min-height: 25pt;
-    font-family: 'liberation';
-    border: 1px solid rgba(0, 17, 255, 0.287);
+    font-family: 'arial';
+    border: 1px solid rgba(29, 29, 29, 0.287);
+    border-radius:4px;
     margin:auto;
     margin-top: 4pt;
     padding-left:4pt;
-    font-size: 12.5pt;
+    font-size: 12pt;
     
 }
 
@@ -774,7 +775,6 @@ span{
         width: 95%;
         height: auto;
         padding:3pt;
-        font-family: 'helvetica';
         border: 1px solid rgba(0, 38, 255, 0.171);
         margin-top: 10pt;
         font-size: 11pt;
