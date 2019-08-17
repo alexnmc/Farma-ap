@@ -517,7 +517,7 @@ h4{
 
 .farmaup{
     font-family: 'trebuchet ms';
-    color: rgb(48, 172, 230);
+    color: rgb(52, 191, 255);
     font-size: 23pt;
     text-align: center;
     margin-bottom:5pt;
@@ -786,7 +786,6 @@ span{
         flex-wrap: wrap;
     }
     
-    
     .h2{
         font-size:13pt;
         margin-bottom: 24%;
@@ -834,7 +833,6 @@ span{
         margin-bottom:0pt;
         animation: fade 2.5s;
     }
-
 
     .img1{
         width: 40pt;
