@@ -427,7 +427,7 @@ h4{
 
 .cauta{
     font-family: 'trebuchet ms';
-    color: rgb(33, 104, 184);
+    color: rgb(53, 110, 202);
     font-size: 21pt;
     text-align: center;
     animation: move2 1s;
@@ -481,7 +481,7 @@ h4{
 }
 
 .h3{
-    font-family: 'liberation';
+    font-family: 'trebuchet ms';
     color:  rgb(0, 81, 173);
     font-size: 16pt;
     text-align: center;
@@ -506,8 +506,8 @@ h4{
 
 
 .farmaup{
-    font-family: 'liberation';
-    color: rgb(0, 81, 173);
+    font-family: 'trebuchet ms';
+    color: rgb(48, 172, 230);
     font-size: 23pt;
     text-align: center;
     margin-bottom:5pt;
@@ -517,7 +517,7 @@ h4{
 .img2{
     width: 45pt;
     height: 45pt;
-    background-image: url('./Photos/foto.png');
+    background-image: url('./Photos/farmacie2.png');
     background-size: cover;
     background-position: center;
     margin-right: 40pt;
