@@ -3,16 +3,16 @@ import {withPharma} from './PharmaProvider'
 
 
 class Confirmation extends Component{
-       constructor(props){
-           super(props)
-           this.state = {
-               id: '',
-               toggle: false
-           }
+    constructor(props){
+        super(props)
+        this.state = {
+            id: '',
+            toggle: false
         }
+     }
 
 
-    sliceIt = () => {
+    confirm = () => {
         let arr = this.state.id.split('')
         arr.splice(0,14)
         let final = arr.join('')
@@ -30,26 +30,25 @@ class Confirmation extends Component{
         })
     }
 
-render(){
-     return(
-        <div className = "contact">
-            {this.state.toggle ?
-            
-                <div>
-                    <h1 className = "cauta">Mulțumin! Puteți sã inchideți fereastra. </h1>
-                </div>
+    render(){
+        return(
+            <div className = "contact">
+                {this.state.toggle ?
                 
-                :
-                
-                <div>
-                    <h1 className = 'cauta'>Dacã cererea dumneavoastrã a fost rezolvatã vã rugãm sã confirmați aici:</h1>
-                    <button style = {{marginBottom: '350pt'}} onClick = {() => this.sliceIt()}>Confirmare</button>
-                </div>
-            }
-        </div>
-     )
- }
-
+                    <div>
+                        <h1 className = "cauta2">Mulțumin! Puteți sã inchideți fereastra.</h1>
+                    </div>
+                    
+                    :
+                    
+                    <div>
+                        <h1 className = 'cauta2'>Dacã cererea dumneavoastrã a fost rezolvatã vã rugãm sã confirmați aici:</h1>
+                        <button style = {{marginBottom: '350pt'}} onClick = {() => this.confirm()}>Confirmare</button>
+                    </div>
+                }
+            </div>
+        )
+    }
 }
 
 

@@ -437,6 +437,17 @@ h4{
     font-weight: 900
 }
 
+.cauta2{
+    font-family: 'trebuchet ms';
+    color: rgb(53, 110, 202);
+    font-size: 21pt;
+    text-align: center;
+    animation: move2 1s;
+    margin-top: -37pt;
+    margin-bottom: 25pt;
+    font-weight: 900
+}
+
 
 .savedImgWrap{
     display:flex;
@@ -815,15 +826,23 @@ span{
     }
 
     .cauta{
-        font-size: 16pt;
+        font-size: 15.5pt;
         text-align: center;
         margin-right: 15pt;
         margin-top:0pt;
         margin-bottom:0pt;
         animation: fade 2.5s;
-       
     }
-    
+
+    .cauta2{
+        font-size: 15pt;
+        text-align: center;
+        margin-top:0pt;
+        margin-bottom:0pt;
+        animation: fade 2.5s;
+    }
+
+
     .img1{
         width: 43pt;
         height: 43pt;
