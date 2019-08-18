@@ -539,8 +539,7 @@ h4{
     background-image: url('./Photos/farmacie2.png');
     background-size: cover;
     background-position: center;
-    margin-left: 15pt;
-    animation: move1 0.5s
+    animation: move4 0.5s
 }
 
 @keyframes move1{
