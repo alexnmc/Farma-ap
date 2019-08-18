@@ -16,10 +16,9 @@ class Contact extends Component {
 render(){
     return(
         <div className = "contact">
-            <h1 className = 'h3'>Pentru informații contactați:</h1>
-            <h1 className = 'h3'>Cristian Lazãr</h1>
-            <h1 className = 'h3'>Tel: 0773-853-041</h1>
-            <h1 className = 'h3'>Email: Cristianlazar2000@yahoo.com</h1>
+            <div className = 'img1'></div>
+            <h1 className = 'h3'>Pentru informații trimiteți email pe adresa:</h1>
+            <h1 className = 'h3'>farmacieup@gmail.com</h1>
         </div>
     )
 }
