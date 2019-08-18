@@ -54,7 +54,6 @@ body::before {
     justify-content: space-around;
 }
 
-
 .navbar::before {
     content: " ";
     position: absolute;
@@ -168,7 +167,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid  rgba(151, 151, 151, 0.253);
+    border: 1px solid  rgba(52, 93, 131, 0.164);
     color:  rgba(35, 111, 199, 0.918);
     padding-left:5pt;
     font-family: 'trebuchet ms';
@@ -186,7 +185,7 @@ input{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid  rgba(151, 151, 151, 0.253);
+    border: 1px solid  rgba(52, 93, 131, 0.164);
     border-radius: 6px;
     padding-left:5pt;
     font-family: 'trebuchet ms';
@@ -205,7 +204,7 @@ input{
 }
 
 input::placeholder{
-    color:rgba(0, 105, 226, 0.486);
+    color:rgba(29, 90, 160, 0.486);
 }
 
 button{
@@ -228,7 +227,6 @@ button{
 .photoButton{
     margin-top:15pt;
 }
-
 
 .react-html5-camera-photo>video {
     width: 250pt;
@@ -261,7 +259,6 @@ button{
    font-family: 'helvetica';
    padding: 3pt;
 }
-
 
 .filler{
     width: 340pt;
@@ -320,7 +317,7 @@ h4{
 .login1{
     width: 80%;
     height: 34pt;
-    border: 1px solid  rgba(0, 0, 0, 0.459);
+    border: 1px solid  rgba(15, 49, 65, 0.459);
     background-color:  rgb(253, 252, 251);
     color:black;
     border-radius: 3px;
@@ -334,17 +331,16 @@ h4{
 .login11{
     width: 80%;
     height: 34pt;
-    border: 1px solid  rgba(0, 0, 0, 0.459);
+    border: 1px solid  rgba(15, 49, 65, 0.459);
     background-color:  rgb(253, 252, 251);
-    color: rgba(8, 8, 187, 0.918);
-    font-family: 'Liberation Sans';
+    color: rgba(21, 64, 184, 0.918);
+    font-family: 'trebuchet ms';
     margin-top:5pt;
     padding-left:3.5pt;
     font-size:15pt;
     margin-bottom: 8pt;
     
 }
-
 
 .admin{
     background-color: rgba(238, 238, 238, 0.719);
@@ -355,7 +351,6 @@ h4{
     justify-content: center;
     font-family: 'Liberation Sans'
 }
-
 
 .loginForm{
     height:auto;
@@ -429,7 +424,7 @@ h4{
     color: rgb(53, 110, 202);
     font-size: 21pt;
     text-align: center;
-    animation: move2 1s;
+    animation: move2 0.7s;
     margin-top: -37pt;
     margin-bottom: 25pt;
     margin-right: -30pt;
@@ -447,7 +442,6 @@ h4{
     font-weight: 900
 }
 
-
 .savedImgWrap{
     display:flex;
     flex-direction: row;
@@ -458,14 +452,12 @@ h4{
    
 }
 
-
 .savedImg{
     font-family: 'trebuchet ms';
     color: rgba(0, 90, 194, 0.835);
     font-size: 13pt;
     text-align: center;
     margin:auto;
-   
 }
 
 .savedPicture{
@@ -497,6 +489,7 @@ h4{
     text-align: center;
     margin-bottom:5pt;
     width: 545pt;
+    animation: move4 0.5s 1s;
 }
 
 .h5{
@@ -507,6 +500,27 @@ h4{
     margin-bottom:5pt;
     margin-top:15pt;
     width: 545pt;
+    animation:move3 0.5s 0.5s;
+}
+
+.h6{
+    font-family: 'trebuchet ms';
+    color:  rgb(0, 81, 173);
+    font-size: 16pt;
+    text-align: center;
+    margin-bottom:5pt;
+    margin-top:15pt;
+    width: 550pt;
+}
+
+@keyframes move3{
+    from{margin-right: -100vw;}
+    to{margin-right: 0pt;}
+}
+
+@keyframes move4{
+    from{margin-left: -100vw;}
+    to{margin-left: 0pt;}
 }
 
 .img1{
@@ -516,7 +530,17 @@ h4{
     background-size: cover;
     background-position: center;
     margin-left: 15pt;
-    animation: move1 1s;
+    animation: move1 0.7s;
+}
+
+.img3{
+    width: 50pt;
+    height: 50pt;
+    background-image: url('./Photos/farmacie2.png');
+    background-size: cover;
+    background-position: center;
+    margin-left: 15pt;
+    animation: move1 0.5s
 }
 
 @keyframes move1{
@@ -527,7 +551,7 @@ h4{
 
 .farmaup{
     font-family: 'trebuchet ms';
-    color: rgb(52, 191, 255);
+    color: rgba(28, 167, 231, 0.801);
     font-size: 23pt;
     text-align: center;
     margin-bottom:5pt;
@@ -722,14 +746,14 @@ span{
     }
 
     h4{
-        font-size: 5vw;
+        font-size: 4.5vw;
         margin-bottom: 15pt;
         text-align: center;
         margin-top:15pt
     }
 
     .h4{
-        font-size: 4.5vw;
+        font-size: 4vw;
         margin-bottom: -38pt;
         text-align: center;
         margin-top:25pt
@@ -778,7 +802,7 @@ span{
     .cont{
        display: flex;
        width:auto;
-       font-size: 3.7vw;
+       font-size: 3.5vw;
        font-weight: 900;
     }
 
@@ -857,6 +881,7 @@ span{
         margin: auto;
     }
 
+    .h6,
     .h3{
         font-size: 13.5pt;
         text-align: center;
