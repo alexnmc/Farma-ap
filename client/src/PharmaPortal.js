@@ -36,20 +36,20 @@ class PharmaPortal extends Component {
             return(
                 item.toggle ?
                 
-                <div className = "messageContainer" key = {item._id} style = {{backgroundColor: item.rezolvat ? "rgb(54, 125, 187, 0.900)" : null}}>
+                <div className = "messageContainer" key = {item._id} style = {{backgroundColor: item.rezolvat ? "rgb(33, 104, 184, 0.800)" : null}}>
                     <p className = "p1" style = {item.rezolvat ? {color: 'rgb(0, 74, 160)'} : null}>Email: <a href = {`mailto:${item.email}`} style = {{fontWeight: "500"}}>{item.email}</a></p>
                     <p className = "p5" style = {item.rezolvat ? {color: 'rgb(0, 74, 160)'} : null}>Tel: <a href = {`tel: ${item.phone}`}>{`0${item.phone}`}</a></p> 
                     {item.img ? <img  onClick = {!item.rezolvat ? () => this.props.enlarge(item._id) : null} className = 'myImg' alt = '' src = {item.img}/> : <div style = {{width:'30pt', height: '20pt'}}></div>}
                     <p className = "p3" style = {item.rezolvat ? {color: 'rgb(0, 74, 160)'} : null}><span style = {item.rezolvat ? {color: 'rgb(0, 74, 160)'} : null}>Cautã: </span>{item.medication}</p>
                     <p className = "p4"> {moment(item.date).format('MMMM Do YYYY, HH:mm:ss ')}</p>
-                    <p className = 'rezolvat' onClick = {!item.rezolvat ? () => this.props.rezolvat(item._id, item.email) : null}>{!item.rezolvat ? "Rezolvat?" : "Închis"}</p>
+                    <p className = 'rezolvat' onClick = {!item.rezolvat ? () => this.props.rezolvat(item._id, item.email) : null}>{!item.rezolvat ? "închide" : "rezolvat"}</p>
                 </div>
 
                 :
                  
-                <div className = "messageContainer" key = {item._id} style = {{position: 'relative' , backgroundColor : ' rgba(62, 142, 212, 0.570)', color: 'white'}}>
-                    <p className = "p1"> {`Email: ${item.email}`}</p>
-                    <p className = "p5"> {`Tel: 0${item.phone}`}</p> 
+                <div className = "messageContainer" key = {item._id} style = {{position: 'relative' , backgroundColor : 'rgb(33, 104, 184, 0.290)'}}>
+                    <p className = "p1">Email: <a href = {`mailto:${item.email}`} style = {{fontWeight: "500"}}>{item.email}</a></p>
+                    <p className = "p5">Tel: <a href = {`tel: ${item.phone}`}>{`0${item.phone}`}</a></p> 
                     <img    style = {document.documentElement.clientWidth < 1100 ?  
                                         {width: '100%' , height: '60vh'} 
                                         : 
@@ -60,8 +60,8 @@ class PharmaPortal extends Component {
                             src = {item.img}/>
                     <p className = "p33"></p>
                     {document.documentElement.clientWidth < 1000 ? <p className = "p3"><span>Cautã: </span>{item.medication}</p> : <p style = {{width: '300pt'}}></p>}
-                    <p className = "p4" style = {{color: 'white'}}> {moment(item.date).format('MMMM Do YYYY, HH:mm:ss')}</p>
-                    <p style = {{width:'50pt'}}></p>
+                    <p className = "p4"> {moment(item.date).format('MMMM Do YYYY, HH:mm:ss')}</p>
+                    <p className = 'rezolvat'>închide</p>
                 </div>
             )
         })

@@ -129,7 +129,7 @@ p{
 }
 
 .p33{
-    width: 30pt;
+    width: 40pt;
     color: rgba(62, 142, 212, 0.753)
 }
 
@@ -434,7 +434,7 @@ h4{
     background-image: url('./Photos/farmacie2.png');
     background-size: cover;
     background-position: center;
-    margin-left: 40pt;
+    margin-left: 42pt;
     animation: move1 0.7s;
 }
 
@@ -446,7 +446,7 @@ h4{
     animation: move2 0.7s;
     margin-top: -37pt;
     margin-bottom: 25pt;
-    margin-right: -60pt;
+    margin-right: -62pt;
     font-weight: 900
 }
 
@@ -490,7 +490,7 @@ h4{
 
 @keyframes move2{
     from{margin-right: -100vw}
-    to{margin-right: -60pt}
+    to{margin-right: -62pt}
 }
 
 .oras{
@@ -503,7 +503,7 @@ h4{
 
 .h3{
     font-family: 'trebuchet ms';
-    color: rgb(0, 153, 224);
+    color: rgb(0, 151, 221);
     font-size: 16pt;
     text-align: center;
     margin-bottom:5pt;
@@ -534,12 +534,12 @@ h4{
 }
 
 @keyframes move3{
-    from{margin-right: -100vw;}
+    from{margin-right: -70vw;}
     to{margin-right: 0pt;}
 }
 
 @keyframes move4{
-    from{margin-left: -100vw;}
+    from{margin-left: -70vw;}
     to{margin-left: 0pt;}
 }
 
@@ -554,7 +554,7 @@ h4{
 
 @keyframes move1{
     from{margin-left: -100vw}
-    to{margin-left: 40pt}
+    to{margin-left: 42pt}
 }
 
 
@@ -1032,6 +1032,10 @@ span{
         justify-content: center;
         height: 60vh;
         width:50vw;
+    }
+
+    .rezolvat{
+        margin-left: 84%;
     }
 
 }
