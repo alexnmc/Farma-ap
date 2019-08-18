@@ -499,6 +499,16 @@ h4{
     width: 545pt;
 }
 
+.h5{
+    font-family: 'trebuchet ms';
+    color:  rgb(0, 81, 173);
+    font-size: 16pt;
+    text-align: center;
+    margin-bottom:5pt;
+    margin-top:15pt;
+    width: 545pt;
+}
+
 .img1{
     width: 55pt;
     height: 55pt;
