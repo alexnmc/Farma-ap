@@ -8,6 +8,10 @@ html, body {
     overflow-x: hidden;
 }
 
+body::-webkit-scrollbar { 
+    display: none;  
+}
+
 body::before {
     content: ' ';
     display: block;
@@ -137,12 +141,8 @@ p{
     align-items: center;
     justify-content: center;
     background-color: rgba(238, 238, 238, 0.719);
+   
 }
-
-.home::-webkit-scrollbar { 
-    display: none;  
-}
-
 
 .contact{
     height: 100vh;
@@ -154,11 +154,6 @@ p{
     padding-top:20vh;
     background-color:#fcfcfc;
 }
-
-.contact::-webkit-scrollbar { 
-    display: none;  
-}
-
 
 .bookingContainer{
     display: flex;
@@ -184,7 +179,6 @@ p{
     border-radius: 8pt;
     -webkit-appearance: none;
     animation: fade 2s;
-   
 }
 
 input{
@@ -446,7 +440,7 @@ h4{
 
 .cauta{
     font-family: 'trebuchet ms';
-    color: rgb(53, 110, 202);
+    color: rgb(50, 105, 194);
     font-size: 21pt;
     text-align: center;
     animation: move2 0.7s;
@@ -509,13 +503,14 @@ h4{
 
 .h3{
     font-family: 'trebuchet ms';
-    color:  rgb(0, 81, 173);
+    color: rgb(0, 153, 224);
     font-size: 16pt;
     text-align: center;
     margin-bottom:5pt;
     width: 545pt;
     animation: move4 0.5s 1s;
 }
+
 
 .h5{
     font-family: 'trebuchet ms';
@@ -565,7 +560,7 @@ h4{
 
 .farmaup{
     font-family: 'trebuchet ms';
-    color: rgba(28, 167, 231, 0.801);
+    color: rgb(0, 174, 255);
     font-size: 23pt;
     text-align: center;
     margin-bottom:5pt;
@@ -613,10 +608,7 @@ h4{
     min-height: 100vh;
     width: 100vw;
     background-color: white;
-}
-
-.pharmaport::-webkit-scrollbar { 
-    display: none;  
+   
 }
 
 .messageContainer{
@@ -625,14 +617,13 @@ h4{
     justify-content: space-around;
     width: 96%;
     min-height: 25pt;
-    font-family: 'arial';
+    font-family: 'trebuchet ms';
     border: 1px solid rgba(29, 29, 29, 0.287);
     border-radius:4px;
     margin:auto;
     margin-top: 4pt;
     padding-left:4pt;
     font-size: 12pt;
-    
 }
 
 
@@ -831,11 +822,13 @@ span{
         width: 95%;
         height: auto;
         padding:3pt;
-        border: 1px solid rgba(0, 38, 255, 0.171);
+        border: 1px solid rgba(0, 38, 255, 0.048);
+        border-radius:6px;
         margin-top: 10pt;
         font-size: 11pt;
         font-weight:500;
         flex-wrap: wrap;
+        background-color: rgba(189, 205, 221, 0.479);
     }
     
     .h2{
