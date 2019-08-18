@@ -822,13 +822,14 @@ span{
         width: 95%;
         height: auto;
         padding:3pt;
+        padding-left:5pt;
         border: 1px solid rgba(0, 38, 255, 0.048);
-        border-radius:6px;
+        border-radius:8px;
         margin-top: 10pt;
         font-size: 11pt;
         font-weight:500;
         flex-wrap: wrap;
-        background-color: rgba(189, 205, 221, 0.479);
+        background-color: rgba(189, 205, 221, 0.411);
     }
     
     .h2{
