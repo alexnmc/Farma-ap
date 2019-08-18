@@ -889,8 +889,9 @@ span{
     .img1{
         width: 40pt;
         height: 40pt;
-        margin-right:12pt;
+        margin-right:15pt;
         animation: fade 2.5s;
+        margin-left: 10pt;
     }
 
     .myImg{
