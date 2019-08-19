@@ -469,6 +469,15 @@ h4{
     font-weight: 900
 }
 
+.activH1{
+    font-family: 'trebuchet ms';
+    color: rgb(53, 110, 202);
+    font-size: 18pt;
+    margin-top:25pt;
+    margin-bottom: 30pt;
+
+}
+
 .savedImgWrap{
     display:flex;
     flex-direction: row;
@@ -900,6 +909,12 @@ span{
         margin-top:0pt;
         margin-bottom:0pt;
         animation: fade 2.5s;
+    }
+
+    .activH1{
+        font-size: 12.5pt;
+        width: 80vw;
+        text-align: center
     }
 
     .img1{

@@ -6,7 +6,6 @@ const bcrypt = require('bcrypt')
 
 //post a new user to user collection (signing up)
 authRouter.post("/signup", (req, res, next) => {
-    
     User.findOne({username: req.body.username}, (err, existingUser) => {
         
         if (err) {
@@ -27,9 +26,6 @@ authRouter.post("/signup", (req, res, next) => {
         });
     });
 });
-
-
-
 
 authRouter.post("/login", (req, res, next) => {
     // Try to find the user with the submitted username 
@@ -73,8 +69,8 @@ authRouter.post("/login", (req, res, next) => {
 
 
 
+
 authRouter.get('/:city', (req, res, next) => {    // get all for testing with postman 
-    
     User.find({city: req.params.city}, (err, data) => {
         if(err) {
             res.status(500)
@@ -85,7 +81,6 @@ authRouter.get('/:city', (req, res, next) => {    // get all for testing with po
 })
 
 authRouter.get('/', (req, res, next) => {    // get all for testing with postman 
-    
     User.find((err, data) => {
         if(err) {
             res.status(500)
@@ -96,9 +91,7 @@ authRouter.get('/', (req, res, next) => {    // get all for testing with postman
     })
 })
 
-
 authRouter.get('/reset/:email', (req, res, next) => {    // get all for testing with postman 
-    
     User.findOne({username: req.params.email} ,(err, data) => {
         if(err) {
             res.status(500)
@@ -111,7 +104,6 @@ authRouter.get('/reset/:email', (req, res, next) => {    // get all for testing 
     }
 })
 })
-
 
 authRouter.put('/reset/:email', (req, res, next) => {    // reset password
     bcrypt.hash(req.body.password, 10, (err, hash) => {// encrypts the new password
@@ -148,11 +140,7 @@ authRouter.put('/activate/:id', (req, res, next) => {    // activate user
     )
 })
 
-
-
-
 authRouter.delete('/', (req, res, next) => {
-    
     User.remove((err, data) => {      // for testing, deletes everything on the /auth endpoint!
         if (err) {
             res.status(500)
@@ -162,10 +150,7 @@ authRouter.delete('/', (req, res, next) => {
     })
 })
 
-
-
 authRouter.delete('/:id', (req, res, next) => {    
-     
     User.findOneAndDelete({_id: req.params.id} , (err, data) => {
        if (err) {
            res.status(500)

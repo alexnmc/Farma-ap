@@ -36,13 +36,13 @@ class Confirmation extends Component{
                 {this.state.toggle ?
                 
                     <div>
-                        <h1 style = {{animation: 'none'}} className = "cauta2">Mulțumin! Puteți sã inchideți fereastra.</h1>
+                        <h1 className = "activH1">Mulțumin! Puteți sã inchideți fereastra.</h1>
                     </div>
                     
                     :
                     
                     <div>
-                        <h1 className = 'cauta2'>Dacã cererea dumneavoastrã a fost rezolvatã vã rugãm sã confirmați aici:</h1>
+                        <h1 className = 'activH1'>Dacã cererea dumneavoastrã a fost rezolvatã vã rugãm sã confirmați aici:</h1>
                         <button style = {{marginBottom: '350pt'}} onClick = {() => this.confirm()}>Confirmare</button>
                     </div>
                 }
