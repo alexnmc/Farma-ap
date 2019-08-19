@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import {withPharma} from './PharmaProvider'
 import { Link } from 'react-router-dom'
+import axios from 'axios'
 
 
 class Activation extends Component{
@@ -12,12 +13,24 @@ class Activation extends Component{
      }
 
 
+    
+    
+    
+    activateUser = (id) => {
+        const newUser = {confirmed: true}
+        axios.put(`/user/activate/${id}`, newUser).then(res => {  
+               console.log(res.data)
+        })
+    }
+  
+    
+    
+    
     activate = () => {
         let arr = this.state.id.split('')
-        arr.splice(0,14)
+        arr.splice(0,12)
         let final = arr.join('')
-        this.props.activateUser(final)
-        
+        this.activateUser(final)
     }
 
    
@@ -30,7 +43,7 @@ class Activation extends Component{
     render(){
         return(
             <div className = "contact">
-                <h2 style = {{animation: none}} className = "cauta">Mulțumin! Puteți sã inchideți fereastra.</h2>
+                <h2 style = {{animation: 'none'}} className = "cauta">Mulțumin! Puteți sã inchideți fereastra.</h2>
                 <Link to = "/pharma">Login aici</Link>
             </div>
         )

@@ -133,6 +133,22 @@ authRouter.put('/reset/:email', (req, res, next) => {    // reset password
     })
 })
 
+authRouter.put('/activate/:id', (req, res, next) => {    // activate user
+         User.findOneAndUpdate(
+        {_id: req.params.id},
+         req.body,                           
+        {new: true},                
+        (err, updatedUser) => {
+            if (err) {
+                res.status(500)
+                return next(err)
+            }
+            return res.status(201).send("Activated!")
+        }
+    )
+    })
+})
+
 
 
 authRouter.delete('/', (req, res, next) => {
