@@ -30,8 +30,8 @@ class Activation extends Component{
     render(){
         return(
             <div className = "contact">
-                <h1 className = "cauta2">Mulțumin! Puteți sã inchideți fereastra.</h1>
-                <Link to = "/pharma">Login</Link>
+                <h2 style = {{animation: none}} className = "cauta">Mulțumin! Puteți sã inchideți fereastra.</h2>
+                <Link to = "/pharma">Login aici</Link>
             </div>
         )
     }
