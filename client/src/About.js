@@ -23,7 +23,6 @@ render(){
             <h1 className = 'h6'>Gãsiți în cel mai scurt timp medicamentul sau produsul farmaceutic care cãutați!</h1>
             <h1 className = 'h6'>Cum funcționeazã ? </h1>
             <h1 className = 'h6'>Completați formularul de pe pagina Cautã si o sã fiți contactat direct de farmaciile locale care oferã produsul.</h1>
-            <h1 className = 'h6'>Farmaciile din rețeaua noastrã așteaptã mesajul dumneavoastrã !</h1>
         </div>
     )
 }

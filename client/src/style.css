@@ -539,6 +539,7 @@ h4{
     margin-bottom:5pt;
     margin-top:15pt;
     width: 550pt;
+   
 }
 
 @keyframes move3{
@@ -573,7 +574,10 @@ h4{
     text-align: center;
     margin-bottom:5pt;
     font-weight:900;
+    animation: pop2 0.5s linear 1;
+    animation-delay: 0.7s;
 }
+
 
 .img2{
     width: 45pt;
@@ -582,7 +586,17 @@ h4{
     background-size: cover;
     background-position: center;
     margin-right: 40pt;
+    animation: pop 0.5s linear 1;
+    animation-delay: 0.2s
 }
+
+@keyframes pop{
+    50%  {transform: scale(1.2);}
+  }
+
+  @keyframes pop2{
+    50%  {transform: scale(1.1);}
+  }
 
 .loginLogo{
     width: 35pt;
