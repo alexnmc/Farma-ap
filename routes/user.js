@@ -134,7 +134,7 @@ authRouter.put('/reset/:email', (req, res, next) => {    // reset password
 })
 
 authRouter.put('/activate/:id', (req, res, next) => {    // activate user
-         User.findOneAndUpdate(
+    User.findOneAndUpdate(
         {_id: req.params.id},
          req.body,                           
         {new: true},                
@@ -146,8 +146,8 @@ authRouter.put('/activate/:id', (req, res, next) => {    // activate user
             return res.status(201).send("Activated!")
         }
     )
-    })
 })
+
 
 
 
