@@ -36,11 +36,13 @@ class PharmaProvider extends Component {
             currentCity: '',
             confirmed: '',
             loading: false,
+            alert: '',
+            alert2:''
         }
     }
 
     logout = () => {
-        var answer = window.confirm("Ești sigur cã vrei sã ieși din cont ?")
+        var answer = window.confirm("Ești sigur cã vrei sã ieși din cont?")
             if(answer){
                 this.setState({
                     user:'',   
@@ -59,7 +61,7 @@ class PharmaProvider extends Component {
             localStorage.setItem("token", token)
             this.setState({ user: user, token })
         })
-        .catch(err => alert(err.response.data.errMsg))
+        .catch(err => this.setState({alert: err.response.data.errMsg}))
     }
 
     login = userInfo => {
@@ -69,10 +71,9 @@ class PharmaProvider extends Component {
             localStorage.setItem("token", token)
             this.setState({ user: user, token })
         })
-        .catch(err => alert(err.response.data.errMsg))
+        .catch(err => this.setState({alert: err.response.data.errMsg}))
     }
 
-    
     editToggler = () => {
         this.setState(prevState => {
             return {
@@ -83,7 +84,9 @@ class PharmaProvider extends Component {
                 pharmaCode: '',
                 forgotEmail: '',
                 confirmed:'',
-                toggle2: true      
+                toggle2: true ,
+                alert:'',
+                alert2:''     
             }
         })
     }
@@ -93,8 +96,9 @@ class PharmaProvider extends Component {
             return {
                 toggle2: !prevState.toggle2,
                 forgotEmail: '',
-                confirmed:''               //toggle from login to reset password
-                
+                confirmed:'',
+                alert: '',
+                alert2:''               //toggle from login to reset password
             }
         })
     }
@@ -108,25 +112,32 @@ class PharmaProvider extends Component {
         this.login(newUser) // we are receiving this function from the context and we call it here 
         this.setState({
             username: '',
-            password: ''
+            password: '',
+            alert2:'',
         })
     }
 
     pharmaSignup = () => {
         //this.getLocation()
-        const newUser = {
-            username: this.state.username,
-            password: this.state.password,
-            city: this.state.city4
+        if(this.state.password.length < 6){
+            this.setState({
+                alert: 'Parola 6 - 8 caractere'
+            })
+        }else{
+            const newUser = {
+                username: this.state.username,
+                password: this.state.password,
+                city: this.state.city4
+            }
+            this.signup(newUser)
+            this.setState({
+                username: '',
+                password: '',
+                password2:'',
+                pharmaCode:'',
+                city4: ''
+            })
         }
-        this.signup(newUser)
-        this.setState({
-            username: '',
-            password: '',
-            password2:'',
-            pharmaCode:'',
-            city4: ''
-        })
     }
     
     handleSignup = (e) => {
@@ -136,32 +147,37 @@ class PharmaProvider extends Component {
                 this.pharmaSignup()
                 :
                 this.state.pharmaCode === "" ? 
-                    alert("Vã rugãm sa introduceți codul secret.")
+                     this.setState({alert: "Vã rugãm sa introduceți codul secret!"})
                     :
-                    alert("Cod greșit !")
+                     this.setState({alert: "Cod greșit!"})
         :
-        alert('Parolele nu sint identice !')
+            this.setState({alert:'Parolele nu sint identice !'})
     }
 
     
     handleReset = () => {
         axios.get(`/user/reset/${this.state.forgotEmail}`).then(res => {  
             if(res.data !== 'Confirmed'){
-                alert(res.data)
+                this.setState({alert: res.data})
+            } else {
+                this.setState({alert: '', confirmed: res.data})
             }
-            this.setState({
-                confirmed: res.data
-            })
+            
         })
     }
 
 
     resetPassword = () => {
+        if(this.state.newPassword.length < 6){
+            this.setState({
+                alert: 'Parola minim 6 caractere'
+            })
+        }else{
         const newUser = {
             password: this.state.newPassword,
         }
         axios.put(`/user/reset/${this.state.forgotEmail}`, newUser).then(res => {  
-              alert(res.data)
+            this.setState({ alert2: res.data})
             if(res.data === "Parola a fost schimbatã !" ){
                 this.setState({
                     toggle2: true,
@@ -170,6 +186,7 @@ class PharmaProvider extends Component {
                 })
             }
         })
+        }
     }
 
 
@@ -229,6 +246,8 @@ class PharmaProvider extends Component {
         const { name, value } = e.target
         this.setState({
             [name]: value,
+            alert:'',
+            alert2:''
         })
     }  
     
@@ -248,7 +267,6 @@ class PharmaProvider extends Component {
 
     updateMessage = () => {
         axios.get(`/message/2/${this.state.currentCity}`).then(res => {  
-            console.log(res.data.length, this.state.messages.length)
             if(res.data.length > this.state.messages.length){
                 sound.play()
             }

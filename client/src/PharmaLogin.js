@@ -7,7 +7,6 @@ const PharmaLogin = props=>  {
     
         return(
             <div className="admin">
-                
                 <div className = "loginContainer">
                     { props.toggle ?
                             <div  className='loginForm'>
@@ -31,10 +30,12 @@ const PharmaLogin = props=>  {
                                         className = "login1"   
                                         type="password"
                                         name='password'
+                                        maxlength="8"
                                         placeholder='Parola'
                                         value={props.password}
                                         onChange={props.handleChange2}
                                     />
+                                    <p className = "alert" style = {props.alert2 ? {color:'blue'} : null}>{props.alert || props.alert2}</p>
                                     <button className = 'loginButton' onClick={props.handleLogin}>Autentificare</button>
                                 </div>
                                 
@@ -52,6 +53,7 @@ const PharmaLogin = props=>  {
                                             value={props.forgotEmail}
                                             onChange={props.handleChange2}
                                         />
+                                        <p className = "alert" style = {props.alert2 ? {color:'blue'} : null}>{props.alert || props.alert2}</p>
                                         <button className = 'loginButton' onClick={props.handleReset}>Continuați</button>
                                     </div>
                                 
@@ -63,10 +65,12 @@ const PharmaLogin = props=>  {
                                             className = "login33"
                                             type="password"
                                             name='newPassword'
+                                            maxlength="8"
                                             placeholder='Parola nouã'
                                             value={props.newPassword}
                                             onChange={props.handleChange2}
                                         />
+                                        <p className = "alert" style = {props.alert2 ? {color:'blue'} : null}>{props.alert || props.alert2}</p>
                                         <button className = 'loginButton' onClick={props.resetPassword}>Trimite</button>
                                     </div>
                                 }
@@ -122,18 +126,21 @@ const PharmaLogin = props=>  {
                                     type="password"
                                     name='password'
                                     placeholder='alege parola'
+                                    maxlength="8"
                                     value={props.password}
                                     onChange={props.handleChange2}
                                 />
-
+                               
                                 <input
                                     className = "login1"
                                     type="password"
                                     name='password2'
                                     placeholder='repetã parola'
+                                    maxlength="8"
                                     value={props.password2}
                                     onChange={props.handleChange2}
                                 />
+                                <p className = "alert" style = {props.alert2 ? {color:'blue'} : null}>{props.alert || props.alert2}</p>
                                 <button className = 'loginButton'  onClick={props.handleSignup} >Înregistrare</button>
                             </div>
                     }

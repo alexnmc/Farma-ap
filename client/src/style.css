@@ -44,6 +44,14 @@ body::before {
     cursor: pointer;
 }
 
+.alert{
+    font-family: arial;
+    font-size: 11pt;
+    color: rgb(219, 0, 0);
+    font-weight: 500;
+    height: 5pt;
+}
+
 .navbar {
     width: 100vw;
     height: 57pt;
