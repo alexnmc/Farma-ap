@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {withPharma} from './PharmaProvider'
-import Camera, { FACING_MODES } from 'react-html5-camera-photo'
+import Camera, { FACING_MODES, IMAGE_TYPES} from 'react-html5-camera-photo'
 import 'react-html5-camera-photo/build/css/index.css'
 import Loading from './Loading'
 import axios from 'axios'
@@ -150,12 +150,14 @@ class Home extends Component {
                                { !this.state.enlargeToggle ?
                                 <div>
                                 <Camera
-                                    sizeFactor = {0.5}
+                                    sizeFactor = {0.4}
                                     isImageMirror = {false}
                                     idealFacingMode = {FACING_MODES.ENVIRONMENT}
                                     onTakePhoto = { (dataUri) => { this.props.onTakePhoto(dataUri)} }
-                                    onCameraError = { (error) => { this.onCameraError(error); } }
+                                    onCameraError = { (error) => { this.onCameraError(error) } }
                                     isDisplayStartCameraError = {false}
+                                    imageType = {IMAGE_TYPES.JPG}
+                                    imageCompression = {1}
                                 />
                                 <button className = 'cameraButton' onClick = {() => this.toggle()}>înapoi</button>
                                 </div>

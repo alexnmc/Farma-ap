@@ -259,6 +259,7 @@ class PharmaProvider extends Component {
 
     getMessage2 = () => {
         axios.get(`/message/2/${this.state.currentCity}`).then(res => {  
+            console.log(res.data)
             this.setState({
                 messages: res.data 
             })
@@ -277,9 +278,8 @@ class PharmaProvider extends Component {
     }
 
     onTakePhoto = (dataUri) => {
-        let uri = decodeURIComponent(dataUri)
         this.setState({
-           img: uri
+           img: dataUri
         })
     }
 
