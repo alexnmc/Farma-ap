@@ -12,6 +12,7 @@ class PharmaProvider extends Component {
     constructor(){
         super()
         this.state = {
+            toggle3: '',
             user: JSON.parse(localStorage.getItem("user")) || {},
             token: localStorage.getItem("token") || "",
             city: JSON.parse(localStorage.getItem("city")) || '', // from geolocation..
@@ -56,12 +57,11 @@ class PharmaProvider extends Component {
 
     signup = userInfo => {
         axios.post('/user/signup', userInfo).then(res => {
-            const { token, user } = res.data
-            localStorage.setItem("user", JSON.stringify(user))    //stores the token and the user  in local storage in case of page refresh...
-            localStorage.setItem("token", token)
-            this.setState({ user: user, token })
-        })
-        .catch(err => this.setState({alert: err.response.data.errMsg}))
+           this.setState({
+               toggle3: res.data.success,
+            })
+           this.sendActivationEmail(res.data.user._id, res.data.user.username)
+        }).catch(err => this.setState({alert: err.response.data.errMsg}))
     }
 
     login = userInfo => {
@@ -70,21 +70,21 @@ class PharmaProvider extends Component {
             localStorage.setItem("user", JSON.stringify(user))
             localStorage.setItem("token", token)
             this.setState({ user: user, token })
-        })
-        .catch(err => this.setState({alert: err.response.data.errMsg}))
+        }).catch(err => this.setState({alert: err.response.data.errMsg}))
     }
 
     editToggler = () => {
         this.setState(prevState => {
             return {
-                toggle: !prevState.toggle, //toggle from login to signin
+                toggle: !prevState.toggle, //toggle from login to signup
                 username: '',
                 password: '',
                 password2: '',
                 pharmaCode: '',
                 forgotEmail: '',
                 confirmed:'',
-                toggle2: true ,
+                toggle2: true,
+                toggle3: '',
                 alert:'',
                 alert2:''     
             }
@@ -135,7 +135,7 @@ class PharmaProvider extends Component {
                 password: '',
                 password2:'',
                 pharmaCode:'',
-                city4: ''
+                city4: '',
             })
         }
     }
@@ -317,6 +317,16 @@ class PharmaProvider extends Component {
         axios.post('/mail/confirm', newMail).then(res => {
             console.log(res)
           }).catch(err => alert(err))
+    }
+
+    sendActivationEmail = (id, email) => {
+        const newMail = {
+            sendTo: email,
+            id: id
+        }
+        axios.post('/mail/activate', newMail).then(res => {
+            console.log(res)
+        }).catch(err => alert(err))
     }
 
     

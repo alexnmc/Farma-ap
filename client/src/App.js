@@ -7,6 +7,7 @@ import About from './About'
 import PharmaLogin from './PharmaLogin'
 import PharmaPortal from './PharmaPortal'
 import Confirmation from './Confirmation'
+import Activation from './Activation'
 import ProtectedRoutes from './ProtectedRoutes'
 import {withPharma} from './PharmaProvider'
 
@@ -41,6 +42,7 @@ class App extends Component {
                         path="/portal"
                     />
                     <Route path = "/confirmation/:id"  component = {Confirmation}/>
+                    <Route path = "/activation/:id"  component = {Activation}/>
                 </Switch>
             </div>
         )

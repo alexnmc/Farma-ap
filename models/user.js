@@ -19,8 +19,12 @@ const userSchema = new Schema({
     city: {
         type: String,
         required: true
+    },
+
+    confirmed: {
+        type: Boolean,
+        default: false
     }
-    
 })
    
 
