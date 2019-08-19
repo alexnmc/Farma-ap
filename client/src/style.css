@@ -1060,4 +1060,8 @@ span{
         margin-left: 84%;
     }
 
+    .alert{
+        font-size: 10pt;
+    }
+
 }
