@@ -13,9 +13,6 @@ class Activation extends Component{
      }
 
 
-    
-    
-    
     activateUser = (id) => {
         const newUser = {confirmed: true}
         axios.put(`/user/activate/${id}`, newUser).then(res => {  
@@ -23,9 +20,6 @@ class Activation extends Component{
         })
     }
   
-    
-    
-    
     activate = () => {
         let arr = this.state.id.split('')
         arr.splice(0,12)
@@ -33,11 +27,10 @@ class Activation extends Component{
         this.activateUser(final)
     }
 
-   
     componentDidMount(){
         this.setState({
            id: this.props.history.location.pathname,
-        })
+        }, this.activate)
     }
 
     render(){
