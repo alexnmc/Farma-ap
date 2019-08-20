@@ -111,9 +111,7 @@ class PharmaProvider extends Component {
         }
         this.login(newUser) // we are receiving this function from the context and we call it here 
         this.setState({
-            username: '',
-            password: '',
-            alert2:'',
+           alert2:'',
         })
     }
 
