@@ -12,22 +12,6 @@ body::-webkit-scrollbar {
     display: none;  
 }
 
-body::before {
-    content: ' ';
-    display: block;
-    background-image: url('./Photos/bkg3.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100vw;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    position: fixed;
-    z-index: -10; 
-}
 
 .loading{
     display: flex;
@@ -60,26 +44,9 @@ body::before {
     position: relative;
     align-items: center;
     font-size: 20px;
-    font-weight: 600;
-    border-bottom: 5px solid #fbff00d8;
+    border-bottom: 3px solid rgb(14, 106, 212);
     display:flex;
     justify-content: space-around;
-}
-
-.navbar::before {
-    content: " ";
-    position: absolute;
-    bottom: -11px;
-    border: 3px solid #3fdb01f1;
-    width: 100%
-}
-
-.navbar::after {
-    content: " ";
-    position: absolute;
-    bottom: 0px;
-    border: 3px solid rgba(14, 106, 212, 0.781);
-    width: 100%
 }
 
 a{
@@ -149,7 +116,6 @@ p{
     align-items: center;
     justify-content: center;
     background-color: rgba(238, 238, 238, 0.719);
-   
 }
 
 .contact{
