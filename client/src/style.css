@@ -1012,6 +1012,7 @@ span{
 
     .imgWrap{
         margin-bottom: 7vh;
+        margin-top: 3vh;
         display: flex;
         align-items: center;
         justify-content: center;
