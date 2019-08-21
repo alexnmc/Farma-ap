@@ -54,13 +54,13 @@ body::before {
 
 .navbar {
     width: 100vw;
-    height: 50pt;
+    height: 47pt;
     background-color:#fcfcfc; 
     display:flex;
     position: relative;
     align-items: center;
-    font-size: 18px;
-    border-bottom: 3px solid rgba(14, 106, 212, 0.781);-weight: 600;
+    font-size: 17px;
+    border-bottom: 4px solid rgb(14, 107, 214);
     display:flex;
     justify-content: space-around;
 }
