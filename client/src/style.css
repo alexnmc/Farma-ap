@@ -807,9 +807,10 @@ span{
     }
 
     .inputS{
-        width: 57vw;
+        width: 55vw;
         height: 36pt;
         font-size: 12pt;
+        margin: auto
     }
 
     .searchIn{
@@ -825,7 +826,7 @@ span{
 
     .searchLogo{
         height: 36pt;
-        width: 10vw;
+        width: 12vw;
         background-color: rgb(0, 103, 221);
         border-top-right-radius: 8pt;
         border-bottom-right-radius: 8pt;
@@ -845,17 +846,19 @@ span{
         display: block;
         font-family: 'trebuchet ms';
         color:rgba(0, 78, 131, 0.822);
-        width: 57vw;
+        width: 55vw;
         margin: 0pt;
     }
     
     .suggestions-container{
-        width: 57vw;
+        width: 55vw;
+        margin: auto;
     }
     
     .search-input-container .search-input-container__inner {
-        width: 57vw;
+        width: 55vw;
         position: relative;
+        margin:auto;
     }
     
     .cameraWrap{
