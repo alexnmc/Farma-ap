@@ -60,6 +60,7 @@ body::before {
     position: relative;
     align-items: center;
     font-size: 17px;
+    font-weight: 900;
     border-bottom: 4px solid rgb(14, 107, 214);
     display:flex;
     justify-content: space-around;
