@@ -57,10 +57,14 @@ class PharmaProvider extends Component {
 
     signup = userInfo => {
         axios.post('/user/signup', userInfo).then(res => {
-           this.setState({
+           if(res.data.success === 'success'){
+            this.setState({
                toggle3: res.data.success,
             })
            this.sendActivationEmail(res.data.user._id, res.data.user.username)
+            }else{
+               alert("Eroare! Vã rugãm sã încercați din nou.")
+            }
         }).catch(err => this.setState({alert: err.response.data.errMsg}))
     }
 
@@ -98,7 +102,7 @@ class PharmaProvider extends Component {
                 forgotEmail: '',
                 confirmed:'',
                 alert: '',
-                alert2:''               //toggle from login to reset password
+                alert2:''       //toggle from login to reset password
             }
         })
     }
@@ -109,7 +113,7 @@ class PharmaProvider extends Component {
             username: this.state.username,
             password: this.state.password,
         }
-        this.login(newUser) // we are receiving this function from the context and we call it here 
+        this.login(newUser) 
         this.setState({
            alert2:'',
         })
@@ -152,7 +156,6 @@ class PharmaProvider extends Component {
             this.setState({alert:'Parolele nu sint identice !'})
     }
 
-    
     handleReset = () => {
         axios.get(`/user/reset/${this.state.forgotEmail}`).then(res => {  
             if(res.data !== 'Confirmed'){
