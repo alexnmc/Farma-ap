@@ -815,9 +815,6 @@ span{
     .searchIn{
         width:67vw;
         height: 36pt;
-        display: flex;
-        justify-content:center;
-        align-items: center;
         color:rgba(35, 111, 199, 0.918);
         border-radius: 8pt;
         margin:auto;
