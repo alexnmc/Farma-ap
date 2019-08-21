@@ -810,7 +810,7 @@ span{
         width: 55vw;
         height: 36pt;
         font-size: 12pt;
-        margin: auto
+        margin: 0pt;
     }
 
     .searchIn{
@@ -852,12 +852,12 @@ span{
     
     .suggestions-container{
         width: 55vw;
-        margin: auto;
+        margin: 0pt;
     }
     
     .search-input-container .search-input-container__inner {
         width: 55vw;
-        margin:auto;
+        margin:0pt;
     }
     
     .cameraWrap{
