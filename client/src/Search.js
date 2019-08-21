@@ -18,7 +18,7 @@ render() {
           recentSearches={recentSearches}
           placeholder={'Alege Orasul'}
           inputClass = {'inputS'}
-          SuggestionListClass = {'inputS'}
+          SuggestionListClass = {'inputY'}
           persistent = {false}
         />
         <div className = 'searchLogo'></div>

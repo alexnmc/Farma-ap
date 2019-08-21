@@ -811,15 +811,16 @@ span{
         height: 36pt;
         font-size: 12pt;
         margin: 0pt;
+        position:relative;
     }
 
     .searchIn{
         width:67vw;
         height: 36pt;
         display: flex;
-        justify-content:space-between;
+        justify-content:center;
         align-items: center;
-        color:  rgba(35, 111, 199, 0.918);
+        color:rgba(35, 111, 199, 0.918);
         border-radius: 8pt;
         margin:auto;
     }
@@ -836,6 +837,7 @@ span{
         background-size: contain;
         background-repeat: no-repeat;
         cursor: pointer;
+        margin:auto;
     }
 
     .suggestions-container ul li span {
