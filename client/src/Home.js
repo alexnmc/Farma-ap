@@ -4,6 +4,7 @@ import Camera, { FACING_MODES, IMAGE_TYPES} from 'react-html5-camera-photo'
 import 'react-html5-camera-photo/build/css/index.css'
 import Loading from './Loading'
 import axios from 'axios'
+import Search from './Search'
 
 
 
@@ -78,27 +79,13 @@ class Home extends Component {
                         </div>
                            
                          <form className = 'bookingForm' onSubmit={this.getFarmacies}  >
-                            
-                            { !this.props.city.length && this.state.toggle && !this.props.loading ?
-                                <select 
-                                    required 
-                                    className = 'input'
-                                    aria-required="true" 
-                                    name='city2'
-                                    value={this.props.city2}
-                                    onChange={this.props.handleChange2}>
-                                <option value = ''>Alege orașul:</option>
-                                {this.props.cities.map((city, index) => <option key={city} value={city} className = {index}>{city}</option>)}
-                                </select>
-                            :
-                            
-                            <h1 className = 'oras'>{this.state.city}</h1>// geolocation is off right now..
-                            }
-                           
-                            { this.state.toggle ?
+                        { this.state.toggle ?
                             <div>
                                 {!this.props.loading ?
                                 <div>
+                                    
+                                    <Search/>
+                                    
                                     <input 
                                         type='email'
                                         name='email'

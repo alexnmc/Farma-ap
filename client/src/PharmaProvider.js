@@ -32,7 +32,7 @@ class PharmaProvider extends Component {
             time:'',
             medication: '',
             img:'',
-            cities:['Oradea','Salonta','Marghita','Sacueni','Beius','Valea lui Mihai','Alesd','Stei','Vascau','Nucet'],
+            cities:['ORADEA','SALONTA','MARGHITA','SACUIENI','BEIUS','VALEA LUI MIHAI','ALESD','STEI','VASCAU','NUCET'],
             messages: [],
             currentCity: '',
             confirmed: '',
@@ -167,7 +167,6 @@ class PharmaProvider extends Component {
         })
     }
 
-
     resetPassword = () => {
         if(this.state.newPassword.length < 6){
             this.setState({
@@ -213,24 +212,35 @@ class PharmaProvider extends Component {
     }
     
     handleSubmit = () => {  // on submit we are sending a new message object to the database
-        this.setState({loading: true})
-        const { email, phone, medication, img, county} = this.state
-        const city = this.state.city.length ? this.state.city : this.state.city2
-        const date = new Date()
-        
-        axios.post('/message', {date, email, phone, medication, img, city, county}).then(res => {
-            this.setState(
-            {loading: false},
-             this.alertCallBack(res.data, email, medication)
-            )
-        })
-        
+        if(!this.state.city2){
+            alert('Nu uita sã alegi orașul!')
+        }else{
+            this.setState({loading: true})
+            const { email, phone, medication, img, county} = this.state
+            const city = this.state.city2
+            const date = new Date()
+            axios.post('/message', {date, email, phone, medication, img, city, county}).then(res => {
+                this.setState(
+                {loading: false},
+                this.alertCallBack(res.data, email, medication)
+                )
+            })
+            
         this.setState({
             email: '',
             phone: '',
             medication: '',
             img: ''
         })
+    }
+    
+    }
+
+    searchInput = (city) => {
+        var upper = city.toUpperCase()
+        this.setState({
+            city2: upper
+        }, () => console.log(this.state.city2))
     }
 
     handleChange = (e) => {
@@ -371,7 +381,8 @@ class PharmaProvider extends Component {
                     enlarge: this.enlarge,
                     rezolvat: this.rezolvat,
                     sendConfirmationEmail: this.sendConfirmationEmail,
-                    deleteMessage: this.deleteMessage
+                    deleteMessage: this.deleteMessage,
+                    searchInput: this.searchInput
                 }}>
                 {this.props.children}
             </PharmaContext.Provider>
