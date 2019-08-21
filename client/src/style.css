@@ -154,30 +154,6 @@ p{
    
 }
 
-
-
-.suggestions-container ul li span {
-    letter-spacing: .2px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-transform: uppercase;
-    display: block;
-    font-family: 'trebuchet ms';
-    color:rgba(0, 78, 131, 0.822);
-    width: 250pt;
-    margin: 0pt;
-}
-
-.suggestions-container{
-    width: 270pt;
-   
-}
-
-.search-input-container .search-input-container__inner {
-    width: 210pt;
-    position: relative;
-}
-
 .input{
     width:270pt;
     height: 45pt;
@@ -207,13 +183,13 @@ p{
     font-family: 'trebuchet ms';
     -webkit-appearance: none;
     animation: fade 2s;
-    position: relative;
-    margin:0pt;
-    border: 0pt;
+    border-radius: 8pt;
     border-top-right-radius: 0pt;
     border-bottom-right-radius: 0pt;
     border: 1px solid  rgba(52, 93, 131, 0.164);
-    border-right: 0pt;
+    color:  rgba(35, 111, 199, 0.918);
+
+   
 }
 
 .searchIn{
@@ -229,7 +205,6 @@ p{
 
 .searchLogo{
     height: 44pt;
-    margin-top:0.5pt;
     width: 50pt;
     background-color: rgb(0, 103, 221);
     border-top-right-radius: 8pt;
