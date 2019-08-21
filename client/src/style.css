@@ -173,7 +173,7 @@ p{
 }
 
 .inputS{
-    width:220pt;
+    width:250pt;
     height: 45pt;
     font-size: 16pt;
     display: flex;
@@ -810,28 +810,6 @@ span{
         margin: auto;
     }
 
-    .suggestions-container ul li span {
-        letter-spacing: .2px;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        text-transform: uppercase;
-        display: block;
-        font-family: 'trebuchet ms';
-        color:rgba(0, 78, 131, 0.822);
-        width: 55vw;
-       
-    }
-    
-    .suggestions-container{
-        width: 55vw;
-        
-    }
-    
-    .search-input-container .search-input-container__inner {
-        width: 55vw;
-       
-    }
-    
     .cameraWrap{
         height: auto;
         width:100vw;

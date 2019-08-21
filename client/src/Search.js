@@ -25,7 +25,7 @@ render() {
               value={this.props.city2}
               onChange={this.props.handleChange2}>
               <option value = ''>Alege orașul:</option>
-              {this.state.cities.map((city, index) => <option key={city} value={city} className = {index}>{city}</option>)}
+              {this.state.cities.map((city, index) => <option  key={city} value={city} className = {index}>{city}</option>)}
             </select>
         <div className = 'searchLogo'></div>
         </div>

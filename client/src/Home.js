@@ -93,7 +93,6 @@ class Home extends Component {
                                         value={this.props.email}
                                         onChange={this.props.handleChange2}
                                         required
-                                       
                                     />
                                     <input 
                                         type='number'
