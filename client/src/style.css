@@ -837,7 +837,7 @@ span{
         background-size: contain;
         background-repeat: no-repeat;
         cursor: pointer;
-        margin: 0.5pt;
+        margin: auto;
     }
 
     .suggestions-container ul li span {
@@ -849,17 +849,17 @@ span{
         font-family: 'trebuchet ms';
         color:rgba(0, 78, 131, 0.822);
         width: 55vw;
-        margin: 0pt;
+       
     }
     
     .suggestions-container{
         width: 55vw;
-        margin: 0pt;
+        
     }
     
     .search-input-container .search-input-container__inner {
         width: 55vw;
-        margin:0pt;
+       
     }
     
     .cameraWrap{
