@@ -17,7 +17,6 @@ render() {
           onSubmitFunction={this.props.searchInput}
           recentSearches={recentSearches}
           placeholder={'Alege Orasul'}
-          inputPosition={'center'}
           inputClass = {'inputS'}
           SuggestionListClass = {'inputS'}
           persistent = {false}
