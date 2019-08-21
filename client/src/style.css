@@ -113,7 +113,7 @@ p{
 
 .p4{
     width: 150pt;
-    text-align: start;
+    text-align: center;
     margin:1pt;
    
 }
@@ -630,7 +630,7 @@ h4{
     width: 96%;
     min-height: 25pt;
     font-family: 'trebuchet ms';
-    border: 1px solid rgba(29, 29, 29, 0.287);
+    border: 1px solid rgba(29, 29, 29, 0.178);
     border-radius:4px;
     margin:auto;
     margin-top: 4pt;
