@@ -565,8 +565,8 @@ h4{
 
 
 @keyframes move2{
-    from{margin-right: -100vw}
-    to{margin-right: 0pt}
+    from{margin-left: 100vw}
+    to{margin-left: 10pt}
 }
 
 .oras{
@@ -630,8 +630,8 @@ h4{
 }
 
 @keyframes move1{
-    from{margin-left: -100vw}
-    to{margin-left: 0pt}
+    from{margin-right: 100vw}
+    to{margin-right: 10pt}
 }
 
 
