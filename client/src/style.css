@@ -810,7 +810,7 @@ span{
         width: 55vw;
         height: 36pt;
         font-size: 12pt;
-        margin: auto;
+        margin: 0pt;
         position:relative;
     }
 
@@ -837,7 +837,7 @@ span{
         background-size: contain;
         background-repeat: no-repeat;
         cursor: pointer;
-        margin:auto;
+        margin: 0.5pt;
     }
 
     .suggestions-container ul li span {
