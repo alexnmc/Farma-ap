@@ -785,6 +785,7 @@ span{
         width: 55vw;
         height: 36pt;
         font-size: 12pt;
+        background-color: rgba(222, 230, 236, 0.623);
      }
 
     .searchIn{
