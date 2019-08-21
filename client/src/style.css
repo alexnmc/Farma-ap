@@ -151,12 +151,10 @@ p{
     align-items: center;
     justify-content: flex-start;
     position: relative;
-    margin-top:50pt;
+   
 }
 
-.bookingForm{
-    margin-top:60pt;
-}
+
 
 .suggestions-container ul li span {
     letter-spacing: .2px;
@@ -504,8 +502,8 @@ h4{
     background-image: url('./Photos/farmacie2.png');
     background-size: cover;
     background-position: center;
-    margin-left: 42pt;
     animation: move1 0.7s;
+    margin:10pt;
 }
 
 .cauta{
@@ -514,10 +512,9 @@ h4{
     font-size: 21pt;
     text-align: center;
     animation: move2 0.7s;
-    margin-top: -37pt;
-    margin-bottom: 25pt;
-    margin-right: -62pt;
-    font-weight: 900
+    font-weight: 900;
+    margin:10pt;
+   
 }
 
 .cauta2{
@@ -569,7 +566,7 @@ h4{
 
 @keyframes move2{
     from{margin-right: -100vw}
-    to{margin-right: -62pt}
+    to{margin-right: 0pt}
 }
 
 .oras{
@@ -634,7 +631,7 @@ h4{
 
 @keyframes move1{
     from{margin-left: -100vw}
-    to{margin-left: 42pt}
+    to{margin-left: 0pt}
 }
 
 
@@ -678,10 +675,12 @@ h4{
 }
 
 .imgWrap{
-    width:360pt;
-    margin-bottom: 20pt;
-    margin-top: -12vh;
-    display: inline;
+    width:100vw;
+    margin-bottom: 50pt;
+    margin-top: -8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center
     
 }
 
