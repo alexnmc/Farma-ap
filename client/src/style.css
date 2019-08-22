@@ -1108,7 +1108,6 @@ span{
         align-items: center;
         justify-content: center;
         animation: none !important;
-        
     }
 
     @keyframes fade{
@@ -1158,7 +1157,7 @@ span{
     }
 
     .footer{
-        margin-top:-15pt
+        margin-top:-12.5pt
     }
 
     
