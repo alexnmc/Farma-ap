@@ -69,11 +69,11 @@ body::before {
 
 .navbar:after{
     width: 100vw;
-    height: 48pt;
+    height: 1pt;
     content: " ";
     position: absolute;
-    border-bottom: 5px solid rgb(102, 206, 238);
-    top:1px;
+    border-bottom: 5px solid rgb(120, 213, 241);
+    top:48pt;
 }
 
 a{
