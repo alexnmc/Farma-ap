@@ -985,6 +985,7 @@ span{
     .savedImg,
     .cauta3{
         font-size:12pt;
+        animation: none;
     }
 
     .cauta2{
