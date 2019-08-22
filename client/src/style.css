@@ -1116,7 +1116,7 @@ span{
     }
 
     .home{
-        min-height: 100vh;
+        height: auto;
         width: 100vw;
         display:flex;
         flex-direction: column;
