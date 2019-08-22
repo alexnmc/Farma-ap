@@ -72,7 +72,7 @@ body::before {
     height: 48pt;
     content: " ";
     position: absolute;
-    border-bottom: 5px solid rgb(30, 196, 246);
+    border-bottom: 5px solid rgb(102, 206, 238);
     top:1px;
 }
 
