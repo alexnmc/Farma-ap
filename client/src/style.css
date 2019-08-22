@@ -986,8 +986,8 @@ span{
     }
 
     .img1{
-        width: 40pt;
-        height: 40pt;
+        width: 39pt;
+        height: 39pt;
         margin-right:15pt;
         animation: fade 2.5s;
         margin-left: 10pt;
@@ -1092,7 +1092,7 @@ span{
     }
 
     .imgWrap{
-        margin-bottom: 7vh;
+        margin-bottom: 6vh;
         margin-top: 3vh;
         display: flex;
         align-items: center;
