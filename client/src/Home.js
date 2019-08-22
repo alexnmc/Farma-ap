@@ -115,7 +115,7 @@ class Home extends Component {
                                         onChange={this.props.handleChange2}
                                         required
                                     />
-                                    <button className = 'photoButton' onClick = {() => this.toggle()}>{this.props.img.length ? "Reluați poza"  : "Poza - opțional"}</button>
+                                    <button className = 'photoButton' onClick = {() => this.toggle()}>{this.props.img.length ? "Reluați poza" : "Poza - opțional"}</button>
                                     <button className = 'button2'>Trimite</button>
                                 </div>
                                 
@@ -132,9 +132,12 @@ class Home extends Component {
                             <div className = "cameraWrap"> 
                             { this.props.img ?  
                                 <div className = "savedImgWrap">
-                                    { !this.state.enlargeToggle && <h2 className = "savedImg">{this.props.img.length ? "Pozã salvatã"  : null}</h2>}
-                                    <img className = 'savedPicture' alt = '' src = {this.props.img}  style = {this.state.enlargeToggle ? document.documentElement.clientWidth < 900 ? {width: '85vw' , height: '60vh'} : {width: '300pt' , height: '300pt'} : null} onClick = {() => this.enlargePicture()}/> 
-                                </div>
+                                    { !this.state.enlargeToggle && <h2 className = "savedImg">{this.props.img.length ? "Pozã salvatã" : null}</h2>}
+                                      <div style = {{display: "block", margin:"auto"}}>
+                                        <p style = {{ fontFamily: "arial", color:"rgb(24, 80, 170)", fontSize: "9pt" , fontWeight: '200'}}>click</p>
+                                        <img className = 'savedPicture' alt = '' src = {this.props.img}  style = {this.state.enlargeToggle ? document.documentElement.clientWidth < 900 ? {width: '85vw' , height: '60vh'} : {width: '300pt' , height: '300pt'} : null} onClick = {() => this.enlargePicture()}/> 
+                                      </div>
+                             </div>
                                 :
                                 null
                             }
