@@ -67,11 +67,16 @@ class Home extends Component {
     deleteImg = () => {
         var answer = window.confirm("Ești sigur cã vrei sã ștergi poza?")
             if(answer){
-            this.props.deletePhoto()
-            this.setState({
-                enlargeToggle: false
-            })
-        }
+                this.props.deletePhoto()
+                this.setState({
+                    enlargeToggle: false
+                })
+            }else{
+                this.setState({
+                    enlargeToggle: false
+                })
+            }
+            
     }
 
     
@@ -94,9 +99,7 @@ class Home extends Component {
                             <div>
                                 {!this.props.loading ?
                                 <div>
-                                    
                                     <Search/>
-                                    
                                     <input 
                                         type='email'
                                         name='email'

@@ -11,6 +11,7 @@ const messageSchema = new Schema({
     
     phone: {
         type: Number,
+        required: true
         
     },
 
@@ -21,16 +22,13 @@ const messageSchema = new Schema({
 
     city: {
         type: String,
-        
-    },
-
-    county: {
-        type: String,
+        required: true
         
     },
 
     medication: {
         type: String,
+        required: true
         
     },
 

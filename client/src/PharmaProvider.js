@@ -325,7 +325,6 @@ class PharmaProvider extends Component {
         }
     }
 
-    
     sendConfirmationEmail = (email, id) => {
         const newMail = {
             sendTo: email,
