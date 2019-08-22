@@ -212,9 +212,6 @@ class PharmaProvider extends Component {
     }
     
     handleSubmit = () => {  // on submit we are sending a new message object to the database
-        if(!this.state.city2){
-            alert('Nu uita sã alegi orașul!')
-        }else{
             this.setState({loading: true})
             const { email, phone, medication, img, county} = this.state
             const city = this.state.city2
@@ -226,16 +223,14 @@ class PharmaProvider extends Component {
                 )
             })
             
-        this.setState({
-            email: '',
-            phone: '',
-            medication: '',
-            img: ''
-        })
+            this.setState({
+                email: '',
+                phone: '',
+                medication: '',
+                img: ''
+            })
     }
-    }
-
-
+    
     handleChange = (e) => {
         e.preventDefault()
         const { name, value } = e.target
