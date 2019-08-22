@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import ring from './Sound/Sound.mp3'
 
+
 //const openGeocoder = require('node-open-geocoder');
 const PharmaContext = React.createContext()
 const sound = new Audio(ring)
@@ -12,6 +13,7 @@ class PharmaProvider extends Component {
     constructor(){
         super()
         this.state = {
+            toggleHome: true,
             toggle3: '',
             user: JSON.parse(localStorage.getItem("user")) || {},
             token: localStorage.getItem("token") || "",
@@ -356,6 +358,13 @@ class PharmaProvider extends Component {
         })
     }
 
+    reloadRender = () => {
+        this.setState({
+            toggleHome: !this.state.toggleHome
+        })
+        
+    }
+
     render() {
         return (
             <PharmaContext.Provider
@@ -387,7 +396,8 @@ class PharmaProvider extends Component {
                     sendConfirmationEmail: this.sendConfirmationEmail,
                     deleteMessage: this.deleteMessage,
                     handleChange3: this.handleChange3,
-                    deletePhoto: this.deletePhoto
+                    deletePhoto: this.deletePhoto,
+                    reloadRender: this.reloadRender
                 }}>
                 {this.props.children}
             </PharmaContext.Provider>

@@ -1,11 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import {withPharma} from './PharmaProvider'
 
 
 const Navbar = (props) => {
+   
+  
+   
     return (
         <div className="navbar">
-            <Link to="/">Cautã</Link>
+            <Link onClick = {() => props.reloadRender()} to="/">Cautã</Link>
             <Link to="/about">Despre</Link>
             <Link to="/contact">Contact</Link>
             <Link to = "/pharma">Login</Link>
@@ -13,4 +17,4 @@ const Navbar = (props) => {
     )
 }
 
-export default Navbar
+export default withPharma(Navbar)

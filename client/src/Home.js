@@ -14,7 +14,6 @@ class Home extends Component {
         super(props)
         this.state = {
            city: this.props.city,
-           toggle: true,
            sendTo:[],
            enlargeToggle: false
         }
@@ -24,7 +23,6 @@ class Home extends Component {
        //this.props.getLocation()
       
     }
-
 
     getFarmacies = (e) => {
         e.preventDefault()
@@ -52,9 +50,7 @@ class Home extends Component {
     }
     
     toggle = () => {
-        this.setState({
-            toggle: !this.state.toggle
-        })
+        this.props.reloadRender()
     }
 
     onCameraError = (error) =>{
@@ -83,19 +79,18 @@ class Home extends Component {
             return(
                 <div className = 'home'>
                     <div className='bookingContainer'>
-                    {this.state.toggle ? 
+                    {this.props.toggleHome ? 
                             <div className = "imgWrap">
                                 <div className = 'img1'></div>
                                 <h1 className = 'cauta'>Caută produsul dorit:</h1>
                             </div>
                             : 
-                               
                             <div className = "imgWrap">
                                 <h1 className = 'cauta3'>{!this.state.enlargeToggle ? "Luați poza rețetei sau a produsului:" : "Poza salvatã:"}</h1>
                             </div>
                     }
                          <form className = 'bookingForm' onSubmit={this.getFarmacies}  >
-                        { this.state.toggle ?
+                        { this.props.toggleHome ?
                             <div>
                                 {!this.props.loading ?
                                 <div>
