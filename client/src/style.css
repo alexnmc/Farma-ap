@@ -61,9 +61,19 @@ body::before {
     align-items: center;
     font-size: 17px;
     font-weight: 900;
-    border-bottom: 4px solid rgb(14, 107, 214);
+    border-bottom: 5px solid rgb(9, 103, 211);
     display:flex;
     justify-content: space-around;
+    
+}
+
+.navbar:after{
+    width: 100vw;
+    height: 48pt;
+    content: " ";
+    position: absolute;
+    border-bottom: 5px solid rgb(30, 196, 246);
+    top:1px;
 }
 
 a{
@@ -751,12 +761,7 @@ span{
 
 @media only screen and (max-width: 600px) {
 
-    .navbar {
-        width: 100vw;
-        height: 59pt;
-        font-size: 17px;
-        background-color: #ffffff
-    }
+    
 
     a{
         color: rgb(24, 80, 170);
