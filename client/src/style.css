@@ -487,6 +487,7 @@ h4{
     margin:10pt;
 }
 
+.cauta3,
 .cauta{
     font-family: 'trebuchet ms';
     color: rgb(50, 105, 194);
@@ -981,6 +982,12 @@ span{
         color: rgb(24, 80, 170);
     }
 
+    
+    .savedImg,
+    .cauta3{
+        font-size:12pt;
+    }
+
     .cauta2{
         font-size: 15pt;
         text-align: center;
@@ -1102,6 +1109,7 @@ span{
     }
 
     .imgWrap{
+        min-height: 78px;
         margin-bottom: 5vh;
         margin-top: 3vh;
         display: flex;

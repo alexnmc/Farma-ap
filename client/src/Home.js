@@ -73,19 +73,17 @@ class Home extends Component {
             return(
                 <div className = 'home'>
                     <div className='bookingContainer'>
-                    {!this.state.enlargeToggle ?
-                        <div className = "imgWrap">
-                            <div className = 'img1'></div>
-                            <h1 className = 'cauta'>Caută produsul dorit:</h1>
-                        </div>
-                        :
-
-                        <div className = "imgWrap">
-                           <h1 className = 'cauta'>Poza salvatã:</h1>
-                        </div>
-
+                    {this.state.toggle ? 
+                            <div className = "imgWrap">
+                                <div className = 'img1'></div>
+                                <h1 className = 'cauta'>Caută produsul dorit:</h1>
+                            </div>
+                            : 
+                               
+                            <div className = "imgWrap">
+                                <h1 className = 'cauta3'>{!this.state.enlargeToggle ? "Luați poza rețetei sau a produsului:" : "Poza salvatã:"}</h1>
+                            </div>
                     }
-                           
                          <form className = 'bookingForm' onSubmit={this.getFarmacies}  >
                         { this.state.toggle ?
                             <div>
