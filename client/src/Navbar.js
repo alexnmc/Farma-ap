@@ -4,9 +4,6 @@ import {withPharma} from './PharmaProvider'
 
 
 const Navbar = (props) => {
-   
-  
-   
     return (
         <div className="navbar">
             <Link onClick = {() => props.reloadRender2()} to="/">Cautã</Link>

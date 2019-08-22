@@ -363,7 +363,7 @@ class PharmaProvider extends Component {
 
     reloadRender2 = () => {
         this.setState({
-            toggleHome: false
+            toggleHome: true
         })
     }
 
