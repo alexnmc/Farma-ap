@@ -300,6 +300,12 @@ class PharmaProvider extends Component {
         })
     }
 
+    deletePhoto = () => {
+        this.setState({
+            img: '',
+        })
+    }
+
     rezolvat = (id, email) => {
         var answer = window.confirm("Ești sigur cã vrei sã inchizi mesajul?")
         if(answer){
@@ -380,9 +386,8 @@ class PharmaProvider extends Component {
                     rezolvat: this.rezolvat,
                     sendConfirmationEmail: this.sendConfirmationEmail,
                     deleteMessage: this.deleteMessage,
-                    handleChange3: this.handleChange3
-                   
-                    
+                    handleChange3: this.handleChange3,
+                    deletePhoto: this.deletePhoto
                 }}>
                 {this.props.children}
             </PharmaContext.Provider>

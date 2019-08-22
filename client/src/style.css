@@ -279,6 +279,15 @@ button{
     margin-top:15pt;
 }
 
+.deletePic{
+    width: 70pt;
+    height:18pt;
+    background-color: rgb(235, 0, 0);
+    font-size: 10pt;
+    margin:2pt;
+}
+
+
 .react-html5-camera-photo>video {
     width: 250pt;
     border:2px solid white;
@@ -1166,5 +1175,13 @@ span{
 
     .footer{
         margin-top:-10.5pt
+    }
+
+    .deletePic{
+        width: 50pt;
+        height:17pt;
+        background-color: rgb(235, 0, 0);
+        font-size: 9pt;
+        margin:2pt;
     }
 }

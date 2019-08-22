@@ -68,7 +68,17 @@ class Home extends Component {
         })
     }
 
+    deleteImg = () => {
+        var answer = window.confirm("Ești sigur cã vrei sã ștergi poza?")
+            if(answer){
+            this.props.deletePhoto()
+            this.setState({
+                enlargeToggle: false
+            })
+        }
+    }
 
+    
     render(){
             return(
                 <div className = 'home'>
@@ -132,12 +142,16 @@ class Home extends Component {
                             <div className = "cameraWrap"> 
                             { this.props.img ?  
                                 <div className = "savedImgWrap">
-                                    { !this.state.enlargeToggle && <h2 className = "savedImg">{this.props.img.length ? "Pozã salvatã" : null}</h2>}
+                                    { !this.state.enlargeToggle && this.props.img.length && <h2 className = "savedImg">Pozã salvatã:</h2>}
                                       <div style = {{display: "block", margin:"auto"}}>
+                                        <div style = {{display: 'flex', alignItems: "center" , justifyContent: 'space-between'}}>
                                         <p style = {{ fontFamily: "arial", color:"rgb(24, 80, 170)", fontSize: "9pt" , fontWeight: '200'}}>click</p>
+                                        {this.state.enlargeToggle && <button onClick = {()=> this.deleteImg()}className = 'deletePic'>șterge</button>}
+                                        </div>
                                         <img className = 'savedPicture' alt = '' src = {this.props.img}  style = {this.state.enlargeToggle ? document.documentElement.clientWidth < 900 ? {width: '85vw' , height: '60vh'} : {width: '300pt' , height: '300pt'} : null} onClick = {() => this.enlargePicture()}/> 
+                                      
                                       </div>
-                             </div>
+                                </div>
                                 :
                                 null
                             }
