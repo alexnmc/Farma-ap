@@ -191,7 +191,6 @@ class PharmaProvider extends Component {
         }
     }
 
-
     /*getLocation = () => {
         navigator.geolocation.getCurrentPosition(
         function(position) {
@@ -259,7 +258,6 @@ class PharmaProvider extends Component {
             [name]: value,
             city2: e.target.value
         })
-        
     }  
     
     getMessages = (city) => {
@@ -332,7 +330,7 @@ class PharmaProvider extends Component {
         }
         axios.post('/mail/confirm', newMail).then(res => {
             console.log(res)
-          }).catch(err => alert(err))
+        }).catch(err => alert(err))
     }
 
     sendActivationEmail = (id, email) => {
@@ -361,7 +359,12 @@ class PharmaProvider extends Component {
         this.setState({
             toggleHome: !this.state.toggleHome
         })
-        
+    }
+
+    reloadRender2 = () => {
+        this.setState({
+            toggleHome: false
+        })
     }
 
     render() {
@@ -396,7 +399,8 @@ class PharmaProvider extends Component {
                     deleteMessage: this.deleteMessage,
                     handleChange3: this.handleChange3,
                     deletePhoto: this.deletePhoto,
-                    reloadRender: this.reloadRender
+                    reloadRender: this.reloadRender,
+                    reloadRender2: this.reloadRender2
                 }}>
                 {this.props.children}
             </PharmaContext.Provider>

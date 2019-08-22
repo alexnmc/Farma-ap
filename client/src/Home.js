@@ -19,11 +19,6 @@ class Home extends Component {
         }
     }
 
-    componentDidMount(){
-       //this.props.getLocation()
-      
-    }
-
     getFarmacies = (e) => {
         e.preventDefault()
         let yourCity = this.props.city || this.props.city2
@@ -76,7 +71,6 @@ class Home extends Component {
                     enlargeToggle: false
                 })
             }
-            
     }
 
     
