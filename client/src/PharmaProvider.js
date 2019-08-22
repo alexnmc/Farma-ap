@@ -32,7 +32,7 @@ class PharmaProvider extends Component {
             time:'',
             medication: '',
             img:'',
-            cities:['ORADEA','SALONTA','MARGHITA','SACUIENI','BEIUS','VALEA LUI MIHAI','ALESD','STEI','VASCAU','NUCET'],
+            cities:['Oradea','Salonta','Marghita','Sacueni','Beius','Valea lui Mihai','Alesd','Stei','Vascau','Nucet'],
             messages: [],
             currentCity: '',
             confirmed: '',
@@ -233,15 +233,8 @@ class PharmaProvider extends Component {
             img: ''
         })
     }
-    
     }
 
-    searchInput = (city) => {
-        var upper = city.toUpperCase()
-        this.setState({
-            city2: upper
-        }, () => console.log(this.state.city2))
-    }
 
     handleChange = (e) => {
         e.preventDefault()
@@ -260,6 +253,16 @@ class PharmaProvider extends Component {
             alert:'',
             alert2:''
         })
+    }  
+
+    handleChange3 = (e) => {
+        e.preventDefault()
+        const { name, value } = e.target
+        this.setState({
+            [name]: value,
+            city2: e.target.value
+        })
+        
     }  
     
     getMessages = (city) => {
@@ -382,7 +385,9 @@ class PharmaProvider extends Component {
                     rezolvat: this.rezolvat,
                     sendConfirmationEmail: this.sendConfirmationEmail,
                     deleteMessage: this.deleteMessage,
-                    searchInput: this.searchInput
+                    handleChange3: this.handleChange3
+                   
+                    
                 }}>
                 {this.props.children}
             </PharmaContext.Provider>

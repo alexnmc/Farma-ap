@@ -173,24 +173,28 @@ p{
 }
 
 .inputS{
-    width:250pt;
+    width:240pt;
     height: 45pt;
+    margin:auto;
+    margin-bottom:14pt;
     font-size: 16pt;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid  rgba(52, 93, 131, 0.164);
+    color:  rgba(35, 111, 199, 0.918);
     padding-left:5pt;
     font-family: 'trebuchet ms';
+    border-radius: 8pt;
     -webkit-appearance: none;
     animation: fade 2s;
-    border-radius: 8pt;
     border-top-right-radius: 0pt;
     border-bottom-right-radius: 0pt;
     border: 1px solid  rgba(52, 93, 131, 0.164);
     color:  rgba(35, 111, 199, 0.918);
-
-   
 }
+
+
 
 .searchIn{
     width:270pt;
