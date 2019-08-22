@@ -296,7 +296,6 @@ button{
    background-color: rgb(0, 97, 207);
    margin-top:30pt;
    animation:none
-   
 }
 
 .logout{
@@ -1110,7 +1109,7 @@ span{
 
     .imgWrap{
         min-height: 78px;
-        margin-bottom: 5vh;
+        margin-bottom: 5.2vh;
         margin-top: 3vh;
         display: flex;
         align-items: center;
