@@ -397,7 +397,7 @@ h4{
 
 .admin{
     background-color: rgba(238, 238, 238, 0.719);
-    height: 93vh;
+    height: 92vh;
     width: 100vw;
     display:flex;
     align-items: center;
@@ -1159,7 +1159,4 @@ span{
     .footer{
         margin-top:-12.5pt
     }
-
-    
-
 }
