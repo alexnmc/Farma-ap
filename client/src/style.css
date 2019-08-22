@@ -72,6 +72,16 @@ a{
     color:rgb(0, 74, 160);
     cursor: pointer;
 }
+
+.footer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-top: -18pt;
+    width: 100vw;
+}
+
 .rezolvat{
     color:rgb(224, 45, 0);
     font-family: helvetica;
@@ -1092,7 +1102,7 @@ span{
     }
 
     .imgWrap{
-        margin-bottom: 6vh;
+        margin-bottom: 5vh;
         margin-top: 3vh;
         display: flex;
         align-items: center;
@@ -1145,6 +1155,10 @@ span{
 
     .alert{
         font-size: 10pt;
+    }
+
+    .footer{
+        margin-top:-15pt
     }
 
     
