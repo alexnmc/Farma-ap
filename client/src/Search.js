@@ -18,8 +18,8 @@ render() {
    
     return (
         <div className = "searchIn">
-            <input class="awesomplete" className = 'inputS' list="mylist" placeholder = 'Alege orasul:' onChange={this.props.handleChange3}/>
-            <datalist id="mylist" >
+            <input class="awesomplete" className = 'inputS' list="mylist" placeholder = 'Alege orasul:' onChange={this.props.handleChange3} required/>
+            <datalist id="mylist" className = 'city'>
               {this.props.cities.map((city, index) => <option key={city} value={city} className = {index}>{city}</option>)}
             </datalist>
         <div className = 'searchLogo'></div>
