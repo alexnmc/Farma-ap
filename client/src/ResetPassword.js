@@ -6,7 +6,7 @@ class Activation extends Component{
     constructor(props){
         super(props)
         this.state = {
-            id: '',
+            
         }
      }
 
@@ -22,7 +22,7 @@ class Activation extends Component{
     render(){
         return(
             <div className = "contact">
-                {this.props.alert2 === "Parola a fost schimbata" ?
+                {this.props.alert2 === "Parola a fost schimbatã!" ?
                 <div>
                     <h2 className = "activH1">Mulțumin! Parola a fost schimbatã.</h2>
                     <Link style = {{fontSize: '15pt', fontWeight: '900'}} to = "/pharma">Login</Link>

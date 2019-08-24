@@ -119,7 +119,7 @@ authRouter.put('/reset/:id', (req, res, next) => {    // reset password
                 res.status(500)
                 return next(err)
             }
-            return res.status(201).send("Parola a fost schimbatã !")
+            return res.status(201).send("Parola a fost schimbatã!")
         }
     )
     })
