@@ -5,6 +5,7 @@ import 'react-html5-camera-photo/build/css/index.css'
 import Loading from './Loading'
 import axios from 'axios'
 import Search from './Search'
+import camera from './Photos/camera.png'
 
 
 
@@ -117,7 +118,7 @@ class Home extends Component {
                                         onChange={this.props.handleChange2}
                                         required
                                     />
-                                    <button className = 'photoButton' onClick = {() => this.toggle()}>{this.props.img.length ? "Reluați poza" : "Poza - opțional"}</button>
+                                    <button className = 'photoButton' onClick = {() => this.toggle()}>{this.props.img.length ? "Reluați poza" : "Poza - opțional"} <img style = {{width: '13.5%', marginLeft: '17%', marginRight: "-30%"}} src = {camera}></img></button>
                                     <button className = 'button2'>Trimite</button>
                                 </div>
                                 
