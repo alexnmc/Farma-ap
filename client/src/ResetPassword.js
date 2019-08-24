@@ -26,7 +26,7 @@ class Activation extends Component{
     render(){
         return(
             <div className = "contact">
-                <div className = "loginForm">
+                <div className = "loginForm2">
                     <h4 className = "h4">Introduceți parola nouã:</h4>
                     <input
                         className = "login33"
@@ -46,7 +46,7 @@ class Activation extends Component{
                         value={this.props.newPassword2}
                         onChange={this.props.handleChange2}
                     />
-                    <p className = "alert" style = {this.props.alert2 ? {color:'blue'} : null}>{this.props.alert ||this. props.alert2}</p>
+                    <p className = "alert" style = {this.props.alert2 ? {color:'blue'} : null}>{this.props.alert ||this.props.alert2}</p>
                     <button className = 'loginButton' onClick={this.props.resetPassword}>Trimite</button>
                 </div>
             </div>

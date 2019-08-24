@@ -438,6 +438,15 @@ h4{
     margin:auto;
 }
 
+.loginForm2{
+    height:auto;
+    width:300pt;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .loginContainer{
     height:auto;
     width:360pt;
@@ -502,7 +511,7 @@ h4{
     background-color:  rgb(253, 252, 251);
     color:black;
     border-radius: 3px;
-    margin-top:20pt;
+    margin-top:10pt;
     padding-left:3.5pt;
     font-size:15pt;
 }

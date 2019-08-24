@@ -179,6 +179,7 @@ class PharmaProvider extends Component {
             })
         }else{
             if(this.state.newPassword === this.state.newPassword2){
+                console.log("asta e",id)
                 const newUser = {
                     password: this.state.newPassword,
                 }
@@ -186,9 +187,9 @@ class PharmaProvider extends Component {
                     this.setState({ alert2: res.data})
                     if(res.data === "Parola a fost schimbatã !" ){
                         this.setState({
-                            toggle2: true,
                             confirmed: '',
-                            newPassword: ''
+                            newPassword: '',
+                            newPassword2:''
                         })
                     }
                 })
