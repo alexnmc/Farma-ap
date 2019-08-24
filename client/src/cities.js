@@ -1,6 +1,6 @@
           
           
-const cities =   [
+const cities = [
                'Oradea','Salonta','Marghita','Sacueni','Beius','Valea lui Mihai','Alesd','Stei','Vascau','Nucet',
                "Abrămuț",	
                 "Aușeu",
@@ -89,8 +89,9 @@ const cities =   [
                 "Uileacu de Beiuș",	
                 "Vadu Crișului",
                 "Viișoara",
-                "Vârciorog"]
+                "Vârciorog"
+              ]
 
-                cities.sort()
+              cities.sort()
 
     export default cities
