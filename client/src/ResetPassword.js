@@ -13,7 +13,7 @@ class Activation extends Component{
 
     reset = () => {
         let arr = this.props.history.location.pathname.split('')
-        arr.splice(0,13)
+        arr.splice(0,15)
         let final = arr.join('')
         this.props.resetPassword(final)
     }
