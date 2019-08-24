@@ -314,7 +314,6 @@ class PharmaProvider extends Component {
                         }
                     })
             })
-            this.sendConfirmationEmail(email, id)
         }
     }
 
