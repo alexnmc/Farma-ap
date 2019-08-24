@@ -121,11 +121,6 @@ class PharmaProvider extends Component {
     }
 
     pharmaSignup = () => {
-        emailExistence.check(this.state.username, function(error, response){
-            console.log('emailvalid: ' , response);
-        })
-        
-        
         if(this.state.password.length < 6){
             this.setState({
                 alert: 'Parola 6 - 8 caractere'
