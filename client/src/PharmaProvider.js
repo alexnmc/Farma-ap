@@ -196,7 +196,7 @@ class PharmaProvider extends Component {
                 })
             }else{
                 this.setState({
-                    alert:  "Parolele nu sânt identice!"
+                    alert:  "Parolele nu sunt identice!"
                 })
             }
         }
