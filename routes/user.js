@@ -105,13 +105,13 @@ authRouter.get('/reset/:email', (req, res, next) => {    // get all for testing 
 })
 })
 
-authRouter.put('/reset/:email', (req, res, next) => {    // reset password
+authRouter.put('/reset/:id', (req, res, next) => {    // reset password
     bcrypt.hash(req.body.password, 10, (err, hash) => {// encrypts the new password
         if (err) return next(err)
         req.body.password = hash
         
         User.findOneAndUpdate(
-        {username: req.params.email},
+        {_id: req.params.id},
          req.body,                           
         {new: true},                
         (err, updatedUser) => {

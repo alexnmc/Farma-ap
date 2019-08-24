@@ -172,7 +172,7 @@ class PharmaProvider extends Component {
         })
     }
 
-    resetPassword = () => {
+    resetPassword = (id) => {
         if(this.state.newPassword.length < 6){
             this.setState({
                 alert: 'Parola minim 6 caractere'
@@ -182,7 +182,7 @@ class PharmaProvider extends Component {
                 const newUser = {
                     password: this.state.newPassword,
                 }
-                axios.put(`/user/reset/${this.state.forgotEmail}`, newUser).then(res => {  
+                axios.put(`/user/reset/${id}`, newUser).then(res => {  
                     this.setState({ alert2: res.data})
                     if(res.data === "Parola a fost schimbatã !" ){
                         this.setState({

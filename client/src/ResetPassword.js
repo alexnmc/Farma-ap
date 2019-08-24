@@ -1,8 +1,5 @@
 import React, {Component} from 'react'
 import {withPharma} from './PharmaProvider'
-import { Link } from 'react-router-dom'
-import axios from 'axios'
-
 
 class Activation extends Component{
     constructor(props){
@@ -15,7 +12,7 @@ class Activation extends Component{
 
     activate = () => {
         let arr = this.state.id.split('')
-        arr.splice(0,12)
+        arr.splice(0,13)
         let final = arr.join('')
         this.props.resetPassword(final)
     }
@@ -43,7 +40,7 @@ class Activation extends Component{
                     <input
                         className = "login33"
                         type="password"
-                        name='newPassword'
+                        name='newPassword2'
                         maxLength="8"
                         placeholder='Repetã parola'
                         value={this.props.newPassword2}
