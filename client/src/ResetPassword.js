@@ -10,19 +10,14 @@ class Activation extends Component{
      }
 
 
-    activate = () => {
-        let arr = this.state.id.split('')
+    reset = () => {
+        let arr = this.props.history.location.pathname.split('')
         arr.splice(0,13)
         let final = arr.join('')
         this.props.resetPassword(final)
     }
 
-    componentDidMount(){
-        this.setState({
-           id: this.props.history.location.pathname,
-        }, this.activate)
-    }
-
+   
     render(){
         return(
             <div className = "contact">
@@ -47,7 +42,7 @@ class Activation extends Component{
                         onChange={this.props.handleChange2}
                     />
                     <p className = "alert" style = {this.props.alert2 ? {color:'blue'} : null}>{this.props.alert ||this.props.alert2}</p>
-                    <button className = 'loginButton' onClick={this.props.resetPassword}>Trimite</button>
+                    <button className = 'loginButton' onClick={this.reset}>Trimite</button>
                 </div>
             </div>
         )
