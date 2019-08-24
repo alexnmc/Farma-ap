@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import ring from './Sound/Sound.mp3'
+import cities from './cities'
 
 
 //const openGeocoder = require('node-open-geocoder');
@@ -34,7 +35,7 @@ class PharmaProvider extends Component {
             time:'',
             medication: '',
             img:'',
-            cities:['Oradea','Salonta','Marghita','Sacueni','Beius','Valea lui Mihai','Alesd','Stei','Vascau','Nucet'],
+            cities: cities,
             messages: [],
             currentCity: '',
             confirmed: '',
