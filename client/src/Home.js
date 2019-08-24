@@ -132,7 +132,7 @@ class Home extends Component {
                            :
                             
                             <div className = "cameraWrap"> 
-                            { this.props.img ?  
+                            {this.props.img ?  
                                 <div className = "savedImgWrap">
                                     { !this.state.enlargeToggle && this.props.img.length && <h2 className = "savedImg">Pozã salvatã:</h2>}
                                       <div style = {{display: "block", margin:"auto"}}>
