@@ -759,7 +759,7 @@ span{
 }
 
 .cameraLogo{
-    width: 12%;
+    width: 31pt;
     margin-left: 16%;
     margin-right: -30%
 }
@@ -1194,6 +1194,8 @@ span{
 
     .cameraLogo{
         margin-right: -14%;
-        width: 14.5%
+        margin-left: 10pt;
+        width: 14.5%;
+        max-width: 28pt;
     }
 }

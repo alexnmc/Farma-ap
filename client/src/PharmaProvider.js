@@ -31,6 +31,7 @@ class PharmaProvider extends Component {
             email: '',
             forgotEmail: '',
             newPassword: '',
+            newPassword2:'',
             phone: '',
             time:'',
             medication: '',
@@ -160,13 +161,14 @@ class PharmaProvider extends Component {
     }
 
     handleReset = () => {
-        axios.get(`/user/reset/${this.state.forgotEmail}`).then(res => {  
-            if(res.data !== 'Confirmed'){
-                this.setState({alert: res.data})
+        axios.get(`/user/reset/${this.state.forgotEmail}`).then(res => { 
+            console.log('this is the users',res.data.id) 
+            if(res.data.confirmed !== 'Confirmed'){
+                this.setState({alert: res.data.confirmed})
             } else {
-                this.setState({alert: '', confirmed: res.data})
+                this.setState({alert: '', confirmed: res.data.confirmed})
+                this.sendResetEmail(this.state.forgotEmail, res.data.id)
             }
-            
         })
     }
 
@@ -176,38 +178,27 @@ class PharmaProvider extends Component {
                 alert: 'Parola minim 6 caractere'
             })
         }else{
-        const newUser = {
-            password: this.state.newPassword,
-        }
-        axios.put(`/user/reset/${this.state.forgotEmail}`, newUser).then(res => {  
-            this.setState({ alert2: res.data})
-            if(res.data === "Parola a fost schimbatã !" ){
+            if(this.state.newPassword === this.state.newPassword2){
+                const newUser = {
+                    password: this.state.newPassword,
+                }
+                axios.put(`/user/reset/${this.state.forgotEmail}`, newUser).then(res => {  
+                    this.setState({ alert2: res.data})
+                    if(res.data === "Parola a fost schimbatã !" ){
+                        this.setState({
+                            toggle2: true,
+                            confirmed: '',
+                            newPassword: ''
+                        })
+                    }
+                })
+            }else{
                 this.setState({
-                    toggle2: true,
-                    confirmed: '',
-                    newPassword: ''
+                    alert:  "Parolele nu sânt identice!"
                 })
             }
-        })
         }
     }
-
-    /*getLocation = () => {
-        navigator.geolocation.getCurrentPosition(
-        function(position) {
-            openGeocoder().reverse(position.coords.longitude, position.coords.latitude)
-                .end((err, res) => {       
-                        if(err){
-                            alert('Locație necunuscutã !')
-                        }  
-                        if(res){
-                            localStorage.setItem("city", JSON.stringify(res.address.city))
-                            localStorage.setItem("county", JSON.stringify(res.address.county))
-                        }
-                })
-            }
-        )
-    }*/
 
     alertCallBack = (data, email, med) => {
         alert(data +' Email: ' + email +'  medicament: '+ med)
@@ -229,7 +220,8 @@ class PharmaProvider extends Component {
                 email: '',
                 phone: '',
                 medication: '',
-                img: ''
+                img: '',
+                city2: ''
             })
     }
     
@@ -324,12 +316,12 @@ class PharmaProvider extends Component {
         }
     }
 
-    sendConfirmationEmail = (email, id) => {
+    sendResetEmail = (email, id) => {
         const newMail = {
             sendTo: email,
             id: id
         }
-        axios.post('/mail/confirm', newMail).then(res => {
+        axios.post('/mail/reset', newMail).then(res => {
             console.log(res)
         }).catch(err => alert(err))
     }
@@ -344,7 +336,6 @@ class PharmaProvider extends Component {
         }).catch(err => alert(err))
     }
 
-    
     deleteMessage = (id) => {
         axios.delete(`/message/${id}`).then(res => {
             console.log(res.data)

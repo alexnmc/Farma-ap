@@ -41,12 +41,12 @@ mailRouter.post('/', (req, res) => {
 
 
 
-mailRouter.post('/confirm', (req, res) => {
+mailRouter.post('/reset', (req, res) => {
     
   const output = `
      
-          <h3>Dați click pe link sã confirmați rezolvarea cerererii:</h3>
-          <a href="https://farmacie-app.herokuapp.com/confirmation/${req.body.id}">click aici</a>
+          <h3>Pentru resetarea parolei dați click pe linkul de mai jos:</h3>
+          <a href="https://farmacie-app.herokuapp.com/resetpassword/${req.body.id}">click aici</a>
         
     `
   
@@ -63,7 +63,7 @@ mailRouter.post('/confirm', (req, res) => {
     let mailOptions = {
         from: 'farmacieup@gmail.com', // sender address
         to: req.body.sendTo, // list of receivers
-        subject: 'Confirmați rezolvarea', // Subject line
+        subject: 'Resetare parolã', // Subject line
         html: output, // html body
         
     }

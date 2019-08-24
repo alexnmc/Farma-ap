@@ -7,10 +7,10 @@ import Contact from './Contact'
 import About from './About'
 import PharmaLogin from './PharmaLogin'
 import PharmaPortal from './PharmaPortal'
-import Confirmation from './Confirmation'
 import Activation from './Activation'
 import ProtectedRoutes from './ProtectedRoutes'
 import {withPharma} from './PharmaProvider'
+import ResetPassword from './ResetPassword';
 
 
 
@@ -42,7 +42,7 @@ class App extends Component {
                         token={this.props.token}
                         path="/portal"
                     />
-                    <Route path = "/confirmation/:id"  component = {Confirmation}/>
+                    <Route path = "/resetpassword/:id"  component = {ResetPassword}/>
                     <Route path = "/activation/:id"  component = {Activation}/>
                 </Switch>
                 <Footer/>

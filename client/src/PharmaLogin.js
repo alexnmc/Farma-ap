@@ -58,20 +58,9 @@ const PharmaLogin = props =>  {
                                     </div>
                                 
                                 :
-
-                                    <div className = "loginForm">
-                                        <h4 className = "h4">Introduceți parola nouã:</h4>
-                                        <input
-                                            className = "login33"
-                                            type="password"
-                                            name='newPassword'
-                                            maxLength="8"
-                                            placeholder='Parola nouã'
-                                            value={props.newPassword}
-                                            onChange={props.handleChange2}
-                                        />
-                                        <p className = "alert" style = {props.alert2 ? {color:'blue'} : null}>{props.alert || props.alert2}</p>
-                                        <button className = 'loginButton' onClick={props.resetPassword}>Trimite</button>
+                                    <div style = {{height: '300pt'}}>
+                                        <h4>Vã rugãm sã resetați parola prin link-ul primit în email.</h4>
+                                        <h4>Mulțumim!</h4>
                                     </div>
                                 }
                                 </div>
@@ -150,7 +139,7 @@ const PharmaLogin = props =>  {
                                         onChange={props.handleChange2}
                                     />
                                     <p className = "alert" style = {props.alert2 ? {color:'blue'} : null}>{props.alert || props.alert2}</p>
-                                    <button className = 'loginButton'  onClick={props.handleSignup} >Înregistrare</button>
+                                    <button className = 'loginButton'  onClick={props.handleSignup}>Înregistrare</button>
                                 </div>
                             }
                             </div>
