@@ -58,7 +58,7 @@ const PharmaLogin = props =>  {
                                     </div>
                                 
                                 :
-                                    <div style = {{height: '300pt'}}>
+                                    <div style = {{height: 'auto', width: '300pt'}}>
                                         <h4>Vã rugãm sã resetați parola prin link-ul primit în email.</h4>
                                         <h4>Mulțumim!</h4>
                                     </div>
