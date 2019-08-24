@@ -3,11 +3,8 @@ import axios from 'axios'
 import ring from './Sound/Sound.mp3'
 import cities from './cities'
 
-
-//const openGeocoder = require('node-open-geocoder');
 const PharmaContext = React.createContext()
 const sound = new Audio(ring)
-
 
 
 class PharmaProvider extends Component {
@@ -124,7 +121,11 @@ class PharmaProvider extends Component {
     }
 
     pharmaSignup = () => {
-        //this.getLocation()
+        emailExistence.check(this.state.username, function(error, response){
+            console.log('emailvalid: ' , response);
+        })
+        
+        
         if(this.state.password.length < 6){
             this.setState({
                 alert: 'Parola 6 - 8 caractere'
@@ -333,7 +334,7 @@ class PharmaProvider extends Component {
             id: id
         }
         axios.post('/mail/activate', newMail).then(res => {
-            console.log(res)
+            console.log("emaail de activare",res)
         }).catch(err => alert(err))
     }
 

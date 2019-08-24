@@ -21,7 +21,7 @@ class Activation extends Component{
    
     render(){
         return(
-                this.props.alert2 === "Parola a fost schimbatã!" ?
+            this.props.alert2 === "Parola a fost schimbatã!" ?
                 
                 <div className = "contact">
                     <div className = "loginForm2">
@@ -29,7 +29,9 @@ class Activation extends Component{
                         <Link style = {{fontSize: '15pt', fontWeight: '900'}} to = "/pharma">Login</Link>
                     </div>
                 </div>
+                
                 :
+                
                 <div className = "contact">
                     <div className = "loginForm2">
                         <h4 className = "h4">Introduceți parola nouã:</h4>
@@ -55,8 +57,6 @@ class Activation extends Component{
                         <button className = 'loginButton' onClick={this.reset}>Trimite</button>
                     </div>
                 </div>
-                
-           
         )
     }
 }

@@ -72,7 +72,7 @@ mailRouter.post('/reset', (req, res) => {
     if (error) {
         res.status(201).send(error)
     } else {
-        res.status(201).send('Confirmation Email sent: ' + info.response);
+        res.status(201).send('Email sent: ' + info.response);
     }
     })
 })
@@ -109,7 +109,7 @@ mailRouter.post('/activate', (req, res) => {
     if (error) {
         res.status(201).send(error)
     } else {
-        res.status(201).send('Confirmation Email sent: ' + info.response);
+        res.status(201).send('Email sent: ' + info.response);
     }
     })
 })
