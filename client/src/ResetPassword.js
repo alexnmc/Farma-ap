@@ -25,7 +25,7 @@ class Activation extends Component{
                 
                 <div className = "contact">
                     <h2 className = "activH1">Mulțumin! Parola a fost schimbatã.</h2>
-                    <Link style = {{ fontSize: '15pt', fontWeight: '900'}} to = "/pharma">Login</Link>
+                    <Link style = {{fontSize: '15pt', fontWeight: '900'}} to = "/pharma">Login</Link>
                 </div>
                 :
                 <div className = "contact">

@@ -360,6 +360,12 @@ class PharmaProvider extends Component {
         })
     }
 
+    reloadRender3 = () => {
+        this.setState({
+            toggle: true
+        })
+    }
+
     render() {
         return (
             <PharmaContext.Provider
@@ -393,7 +399,8 @@ class PharmaProvider extends Component {
                     handleChange3: this.handleChange3,
                     deletePhoto: this.deletePhoto,
                     reloadRender: this.reloadRender,
-                    reloadRender2: this.reloadRender2
+                    reloadRender2: this.reloadRender2,
+                    reloadRender3: this.reloadRender3
                 }}>
                 {this.props.children}
             </PharmaContext.Provider>
