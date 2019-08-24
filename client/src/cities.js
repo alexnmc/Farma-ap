@@ -1,8 +1,17 @@
           
           
 const cities = [
-               'Oradea','Salonta','Marghita','Sacueni','Beius','Valea lui Mihai','Alesd','Stei','Vascau','Nucet',
-               "Abrămuț",	
+                'Oradea',
+                'Salonta',
+                'Marghita',
+                'Sacueni',
+                'Beius',
+                'Valea lui Mihai',
+                'Alesd',
+                'Stei',
+                'Vascau',
+                'Nucet',
+                "Abrămuț",	
                 "Aușeu",
                 "Avram Iancu",
                 "Balc",

@@ -158,7 +158,6 @@ class PharmaProvider extends Component {
 
     handleReset = () => {
         axios.get(`/user/reset/${this.state.forgotEmail}`).then(res => { 
-            console.log('this is the users',res.data.id) 
             if(res.data.confirmed !== 'Confirmed'){
                 this.setState({alert: res.data.confirmed})
             } else {
@@ -175,7 +174,7 @@ class PharmaProvider extends Component {
             })
         }else{
             if(this.state.newPassword === this.state.newPassword2){
-                console.log("asta e",id)
+                
                 const newUser = {
                     password: this.state.newPassword,
                 }
@@ -319,7 +318,7 @@ class PharmaProvider extends Component {
             id: id
         }
         axios.post('/mail/reset', newMail).then(res => {
-            console.log(res)
+           
         }).catch(err => alert(err))
     }
 
@@ -329,13 +328,13 @@ class PharmaProvider extends Component {
             id: id
         }
         axios.post('/mail/activate', newMail).then(res => {
-            console.log("emaail de activare",res)
+           
         }).catch(err => alert(err))
     }
 
     deleteMessage = (id) => {
         axios.delete(`/message/${id}`).then(res => {
-            console.log(res.data)
+           
             this.setState(prevState => {
                 return {
                     messages: prevState.messages.map(item => item._id !== id ? item : null ),
