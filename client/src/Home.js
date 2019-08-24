@@ -85,7 +85,7 @@ class Home extends Component {
                             </div>
                             : 
                             <div className = "imgWrap">
-                                <h1 className = 'cauta3'>{!this.state.enlargeToggle ? "Luați poza rețetei sau a produsului:" : "Poza salvatã:"}</h1>
+                                <h1 className = 'cauta3'>{!this.state.enlargeToggle ? "Fotografiați rețeta sau a produsul cãutat:" : "Poza salvatã:"}</h1>
                             </div>
                     }
                          <form className = 'bookingForm' onSubmit={this.getFarmacies}  >

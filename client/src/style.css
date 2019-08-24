@@ -986,17 +986,15 @@ span{
     }
 
     .cauta{
-        font-size: 14.5pt;
+        font-size: 14pt;
         text-align: center;
         margin-right: 15pt;
         margin-top:0pt;
         margin-bottom:0pt;
         animation: fade 2.5s;
-        color: rgb(24, 80, 170);
+        color: rgb(13, 67, 153);
     }
 
-    
-    .savedImg,
     .cauta3{
         font-size:12pt;
         animation: none;
@@ -1017,8 +1015,8 @@ span{
     }
 
     .img1{
-        width: 39pt;
-        height: 39pt;
+        width: 38pt;
+        height: 38pt;
         margin-right:15pt;
         animation: fade 2.5s;
         margin-left: 10pt;
@@ -1123,8 +1121,7 @@ span{
     }
 
     .imgWrap{
-        min-height: 78px;
-        margin-bottom: 5.2vh;
+        margin-bottom: 4vh;
         margin-top: 3vh;
         display: flex;
         align-items: center;
