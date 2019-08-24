@@ -758,6 +758,12 @@ span{
     margin:4%
 }
 
+.cameraLogo{
+    width: 13.5%;
+    margin-left: 15%;
+    margin-right: -30%
+}
+
 
 @media only screen and (max-width: 600px) {
 
@@ -1185,5 +1191,10 @@ span{
         background-color: rgb(235, 0, 0);
         font-size: 9pt;
         margin:2pt;
+    }
+
+    .cameraLogo{
+        margin-right: -14%;
+        width: 14.5%
     }
 }
