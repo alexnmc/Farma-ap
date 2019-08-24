@@ -161,7 +161,7 @@ p{
     align-items: center;
     justify-content: flex-start;
     padding-top:10vh;
-    background-color:#fcfcfcb9;
+    background-color:#fcfcfce1;
 }
 
 .bookingContainer{
@@ -426,7 +426,6 @@ h4{
 .admin::-webkit-scrollbar { 
     display: none;  
 }
-
 
 .loginForm{
     height:auto;
