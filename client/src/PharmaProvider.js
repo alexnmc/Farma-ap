@@ -189,7 +189,8 @@ class PharmaProvider extends Component {
                         this.setState({
                             confirmed: '',
                             newPassword: '',
-                            newPassword2:''
+                            newPassword2:'',
+                            alert2: res.data
                         })
                     }
                 })
