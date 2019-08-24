@@ -38,7 +38,7 @@ class Activation extends Component{
                         onChange={this.props.handleChange2}
                     />
                     <input
-                        className = "login33"
+                        className = "login34"
                         type="password"
                         name='newPassword2'
                         maxLength="8"
