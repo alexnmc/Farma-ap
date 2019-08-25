@@ -17,7 +17,8 @@ linkRouter.post('/',  (req, res, next) => {
 
 
 linkRouter.get('/:id', (req, res) => {    // get all for testing with postman 
-    Link.findOne({linkID: req.params.id}, (err, data) => {
+    Link.find({linkID: req.params.id}, (err, data) => {
+        
         if(err) {
             res.status(500)
             return next(err)
@@ -36,6 +37,18 @@ linkRouter.get('/', (req, res) => {    // get all for testing with postman
         return res.status(200).send(data)
     })
 })
+
+
+linkRouter.delete('/:id', (req, res, next) => {
+    Link.findOneAndDelete({linkID: req.params.id} , (err, data) => {     
+        if (err) {
+            res.status(500)
+            return next(err)
+        }
+        return res.status(202).send('sters')
+    })
+})
+
 
 
 

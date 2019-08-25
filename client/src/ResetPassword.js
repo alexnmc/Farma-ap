@@ -7,24 +7,49 @@ class Activation extends Component{
     constructor(props){
         super(props)
         this.state = {
-            id:''
+            id:'',
+            final:'',
+            toggle: true
         }
      }
 
 
+    
+    componentDidMount(){
+        let arr = this.props.history.location.pathname.split('')
+        arr.splice(0,15)
+        let final = arr.join('')
+        this.setState({final: final},this.getID)
+       
+    }
+
+    getID = () => {
+        console.log(this.state.final)
+        axios.get(`/link/${this.state.final}`).then(res =>{
+            console.log(res)
+            if(!res.data.length){
+                this.setState({
+                    toggle: false
+                })
+            }
+        }).catch(err => console.log(err))
+        
+    }
+    
+    
     reset = () => {
         let arr = this.props.history.location.pathname.split('')
         arr.splice(0,15)
         let final = arr.join('')
-        this.props.getLinkID(final)
+        this.setState({final: final},
+        this.getLinkID(this.state.final))
     }
 
     getLinkID = (id) => {
         axios.get(`/link/${id}`).then(res =>{
-                this.setState({
-                   id: res.data.userID
-                }.this.props.resetPassword(this.state.userID))
-        }).catch(err => alert(err))
+            this.props.resetPassword(res.data.userID)
+        }).catch(err => console.log(err))
+        
         axios.delete(`/link/${id}`).then(res => {
             console.log(res)
         })
@@ -45,6 +70,7 @@ class Activation extends Component{
                 :
                 
                 <div className = "contact">
+                {this.state.toggle ?
                     <div className = "loginForm2">
                         <h4 className = "h4">Introduceți parola nouã:</h4>
                         <input
@@ -68,6 +94,14 @@ class Activation extends Component{
                         <p className = "alert" style = {this.props.alert2 ? {color:'blue'} : null}>{this.props.alert || this.props.alert2}</p>
                         <button className = 'loginButton' onClick={this.reset}>Trimite</button>
                     </div>
+
+                    :
+
+                    <div className = "loginForm2">
+                        <h1 className = "h4">Link expirat!</h1>
+                        <Link style = {{marginTop: '15pt', fontSize: '15pt', fontWeight: '900'}} to = "/pharma">Login</Link>
+                    </div>
+                }
                 </div>
         )
     }
