@@ -826,6 +826,7 @@ span{
         padding-left:7pt; 
         font-family: arial;
         background-color: rgba(222, 230, 236, 0.700);
+       
     }
     
     input{
@@ -1120,6 +1121,10 @@ span{
         margin-right: 12pt;
         font-family: arial
     }
+
+    input::placeholder{
+    color:rgba(29, 90, 160, 0.595);
+}
 
     .h1{
        font-size: 11pt;
