@@ -10,6 +10,7 @@ class PharmaPortal extends Component {
         this.state = {
            userCity: this.props.user.city,
            messages: this.props.messages,
+           helpToggle: true
         }
     }
 
@@ -17,6 +18,13 @@ class PharmaPortal extends Component {
     componentDidMount(){
         this.props.getMessages(this.state.userCity)
         setInterval(this.props.updateMessage, 100000)
+    }
+
+    
+    helpToggle = () => {
+        this.setState({
+            helpToggle: !this.state.helpToggle
+        })
     }
 
 
@@ -70,8 +78,8 @@ class PharmaPortal extends Component {
         return(
             <div className = 'pharmaport'>
                 <div className = 'messageWrap'>
-                <div style = {{margin: "auto" , width: "100%" , display:'flex', alignItems: 'center', justifyContent: 'space-evenly', marginBottom: '5pt'}}>
-                    <p className = 'h1A'>Ajutor</p>
+                <div style = {{margin: "auto" , width: "97%" , display:'flex', alignItems: 'center', justifyContent: 'space-evenly', marginBottom: '5pt'}}>
+                    <p className = 'h1A' style = {this.state.helpToggle ? {cursor: "pointer"} : {cursor: 'pointer' , color:"red"}}  onClick = {() => this.helpToggle()}>{this.state.helpToggle ? "Ajutor" : "Mesaje"}</p>
                     <p className = 'h1A' style = {{marginRight:'-5vw'}}>Login: {this.props.user.username}</p>
                 </div>
                 <div className = 'portalWrap'>
@@ -88,8 +96,18 @@ class PharmaPortal extends Component {
                     </select>
                     <button className = "logout" onClick = {this.props.logout}>Log out </button>
                 </div>
-                    {messages}
+                {this.state.helpToggle ? 
+                    
+                    <div>{messages}</div>
+
+                    :
+
+                    <div className = 'contact'>
+                        <p className = "h1">Asteptam pe Kinga sa scrie ce treb sa pun aici... </p>
+                    </div>
+                    }
                 </div>
+               
             </div>
         )
     }
