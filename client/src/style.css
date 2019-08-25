@@ -150,7 +150,7 @@ p{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba(238, 238, 238, 0.719);
+    background-color: rgba(243, 243, 243, 0.808);
 }
 
 .contact{
@@ -428,7 +428,7 @@ h4{
 }
 
 .admin{
-    background-color: rgba(238, 238, 238, 0.719);
+    background-color: rgba(238, 238, 238, 0.808);
     height: 92vh;
     width: 100vw;
     display:flex;
