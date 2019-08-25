@@ -185,7 +185,6 @@ class PharmaProvider extends Component {
                             confirmed: '',
                             newPassword: '',
                             newPassword2:'',
-                            alert2: res.data
                         })
                     }
                 })

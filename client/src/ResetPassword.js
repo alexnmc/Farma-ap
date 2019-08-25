@@ -24,7 +24,6 @@ class Activation extends Component{
     }
 
     getID = () => {
-        console.log(this.state.final)
         axios.get(`/link/${this.state.final}`).then(res =>{
             console.log(res)
             if(!res.data.length){
@@ -33,9 +32,7 @@ class Activation extends Component{
                 })
             }
         }).catch(err => console.log(err))
-        
     }
-    
     
     reset = () => {
         let arr = this.props.history.location.pathname.split('')
