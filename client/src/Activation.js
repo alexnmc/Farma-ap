@@ -43,7 +43,6 @@ class Activation extends Component{
 
     render(){
         return(
-            
             <div className = "contact">
                 <h2 className = "activH1">{!this.state.toggle ? "Mulțumin!Contul este activat." : "Contul este activ."}</h2>
                 <Link style = {{fontSize: '15pt', fontWeight: '900'}} to = "/pharma">Login</Link>
