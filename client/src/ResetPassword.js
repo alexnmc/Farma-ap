@@ -41,8 +41,8 @@ class Activation extends Component{
         let arr = this.props.history.location.pathname.split('')
         arr.splice(0,15)
         let final = arr.join('')
-        this.setState({final: final},
-        this.getLinkID(this.state.final))
+        this.setState({final: final})
+        this.getLinkID(final)
     }
 
     getLinkID = (id) => {
