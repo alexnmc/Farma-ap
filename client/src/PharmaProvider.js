@@ -315,7 +315,6 @@ class PharmaProvider extends Component {
 
     sendResetEmail = (email, id) => {
         let linkID = Math.random()
-        
         const newLink = {
             linkID: linkID,
             userID: id,

@@ -9,14 +9,22 @@ class Activation extends Component{
         super(props)
         this.state = {
             id: '',
+            toggle: false
         }
      }
 
 
     activateUser = (id) => {
-        const newUser = {confirmed: true}
-        axios.put(`/user/activate/${id}`, newUser).then(res => {  
-               console.log(res.data)
+        axios.get(`/user/by/${id}`).then(res=> {
+            console.log(res)
+            if(res.data.confirmed === false){
+                const newUser = {confirmed: true}
+                axios.put(`/user/activate/${id}`, newUser).then(res => {  
+                 
+            })
+            }else{
+                this.setState({toggle: true})
+            }
         })
     }
   
@@ -35,8 +43,9 @@ class Activation extends Component{
 
     render(){
         return(
+            
             <div className = "contact">
-                <h2 className = "activH1">Mulțumin! Contul este activat.</h2>
+                <h2 className = "activH1">{!this.state.toggle ? "Mulțumin!Contul este activat." : "Contul este activ."}</h2>
                 <Link style = {{fontSize: '15pt', fontWeight: '900'}} to = "/pharma">Login</Link>
             </div>
         )
