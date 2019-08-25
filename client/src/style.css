@@ -360,7 +360,7 @@ button{
 
 .h1{
     font-family: 'trebuchet ms';
-    font-size:12pt;
+    font-size:11pt;
     color:  rgb(0, 97, 207);
     margin:auto;
     margin-top:0pt;
@@ -370,7 +370,7 @@ button{
 
 .h1A{
     font-family: 'trebuchet ms';
-    font-size:12pt;
+    font-size:11pt;
     color:  rgb(0, 97, 207);
     font-weight:900;
     min-width:100pt;
@@ -1101,18 +1101,16 @@ span{
     .logout{
         width: 90pt;
         height: 21pt;
-        font-size: 9pt;
-        background-color: rgba(0, 108, 231, 0.787);
-        border-radius: 5px;
+        font-size: 11pt;
         margin:5pt;
-        color:white
+        color: rgb(0, 97, 207);
     }
 
      .input2{
         width:105pt;
-        height: 25pt;
+        height: 22pt;
         font-size: 11pt;
-        border: 1px solid #0061cfec;
+        border: 1px solid #0061cf6e;
         margin:5pt;
         margin-right: 12pt;
         font-family: arial
