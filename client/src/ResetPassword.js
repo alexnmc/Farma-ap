@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import {withPharma} from './PharmaProvider'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
+import ResetLoading from './ResetLoading'
 
 class Activation extends Component{
     constructor(props){
@@ -9,6 +10,7 @@ class Activation extends Component{
         this.state = {
             id:'',
             toggle: true,
+            loading: 'off'
         }
      }
 
@@ -29,13 +31,14 @@ class Activation extends Component{
     
 
     resetAndDelete = () => {
+        this.setState({loading: 'on'})
         let arr = this.props.history.location.pathname.split('')
         arr.splice(0,15)
         let final = arr.join('')
         axios.get(`/link/${final}`).then(res =>{
            this.props.resetPassword(res.data[0].userID)
             axios.delete(`/link/${res.data[0].linkID}`).then(res => {
-               this.setState({toggle2: this.props.alert2})
+               this.setState({loading: 'off', toggle2: this.props.alert2})
             })
         }).catch(err => console.log(err))
     }
@@ -76,7 +79,11 @@ class Activation extends Component{
                             value={this.props.newPassword2}
                             onChange={this.props.handleChange2}
                         />
+                        {this.state.loading === 'off' ?
                         <p className = "alert" style = {this.props.alert2 ? {color:'blue'} : null}>{this.props.alert || this.props.alert2}</p>
+                        :
+                        <ResetLoading/>
+                        }
                         <button className = 'loginButton' onClick={() => this.resetAndDelete()}>Trimite</button>
                     </div>
 
