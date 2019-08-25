@@ -178,11 +178,10 @@ p{
     height: 45pt;
     margin:auto;
     margin-bottom:14pt;
-    font-size: 16pt;
+    font-size: 15pt;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid  rgba(52, 93, 131, 0.164);
     color:  rgba(35, 111, 199, 0.918);
     padding-left:5pt;
     font-family: 'trebuchet ms';
@@ -196,12 +195,12 @@ p{
     height: 45pt;
     margin:auto;
     margin-bottom:14pt;
-    font-size: 16pt;
+    font-size: 15pt;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid  rgba(52, 93, 131, 0.164);
     color:  rgba(35, 111, 199, 0.918);
+    border: 0px solid rgba(52, 93, 131, 0);
     padding-left:5pt;
     font-family: 'trebuchet ms';
     border-radius: 9pt;
@@ -209,7 +208,6 @@ p{
     animation: fade 2s;
     border-top-right-radius: 0pt;
     border-bottom-right-radius: 0pt;
-    border: 1px solid  rgba(52, 93, 131, 0.164);
     color:  rgba(35, 111, 199, 0.918);
 }
 
@@ -221,6 +219,7 @@ p{
     align-items: center;
     color:  rgba(35, 111, 199, 0.918);
     border-radius: 9pt;
+    border: 0pt;
     margin:auto;
 }
 
@@ -246,7 +245,7 @@ input{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid  rgba(52, 93, 131, 0.164);
+    border: 0px solid  rgba(52, 93, 131, 0.164);
     border-radius: 6px;
     padding-left:5pt;
     font-family: 'trebuchet ms';
@@ -826,7 +825,7 @@ span{
         align-items: center;
         padding-left:7pt; 
         font-family: arial;
-        background-color: rgba(222, 230, 236, 0.623);
+        background-color: rgba(222, 230, 236, 0.700);
     }
     
     input{
@@ -839,15 +838,15 @@ span{
         align-items: center;
         padding-left:7pt;
         font-family: arial;
-        background-color: rgba(222, 230, 236, 0.623);
+        background-color: rgba(222, 230, 236, 0.700);
     }
 
     .inputS{
         width: 54.5vw;
         height: 36pt;
         font-size: 12pt;
-        background-color: rgba(222, 230, 236, 0.623);
-     }
+        background-color: rgba(222, 230, 236, 0.700);
+    }
 
     .searchIn{
         width:67vw;
@@ -1057,9 +1056,9 @@ span{
     }
 
     .img1{
-        width: 38pt;
-        height: 38pt;
-        margin-right:15pt;
+        width: 35pt;
+        height: 35pt;
+        margin-right:3pt;
         animation: fade 2.5s;
         margin-left: 10pt;
     }
