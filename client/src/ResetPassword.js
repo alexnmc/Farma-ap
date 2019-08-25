@@ -8,7 +8,6 @@ class Activation extends Component{
         super(props)
         this.state = {
             id:'',
-            final:'',
             toggle: true,
             toggle2: this.props.alert2
         }
@@ -19,12 +18,8 @@ class Activation extends Component{
         let arr = this.props.history.location.pathname.split('')
         arr.splice(0,15)
         let final = arr.join('')
-        this.setState({final: final},this.getID)
-       
-    }
-
-    getID = () => {
-        axios.get(`/link/${this.state.final}`).then(res =>{
+        axios.get(`/link/${final}`).then(res =>{
+            console.log(res.data)
             if(!res.data.length){
                 this.setState({
                     toggle: false
@@ -33,18 +28,18 @@ class Activation extends Component{
         }).catch(err => console.log(err))
     }
     
-    reset = () => {
+    
+
+    resetAndDelete = () => {
         let arr = this.props.history.location.pathname.split('')
         arr.splice(0,15)
         let final = arr.join('')
-        this.getLinkID(final)
-    }
-
-    getLinkID = (id) => {
-        axios.get(`/link/${id}`).then(res =>{
-            this.setState({userID: res.data[0].userID}, this.props.resetPassword(this.state.userID))
-            axios.delete(`/link/${id}`).then(res => {
-                console.log(res)
+        axios.get(`/link/${final}`).then(res =>{
+            console.log("ID for reset", res)
+            this.props.resetPassword(res.data[0].userID)
+            axios.delete(`/link/${res.data.linkID}`).then(res => {
+                console.log(res.data)
+                this.setState({toggle2: this.props.alert2})
             })
         }).catch(err => console.log(err))
     }
@@ -86,7 +81,7 @@ class Activation extends Component{
                             onChange={this.props.handleChange2}
                         />
                         <p className = "alert" style = {this.props.alert2 ? {color:'blue'} : null}>{this.props.alert || this.props.alert2}</p>
-                        <button className = 'loginButton' onClick={this.reset}>Trimite</button>
+                        <button className = 'loginButton' onClick={() => this.resetAndDelete()}>Trimite</button>
                     </div>
 
                     :
