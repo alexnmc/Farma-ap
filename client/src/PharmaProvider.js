@@ -156,6 +156,7 @@ class PharmaProvider extends Component {
             this.setState({alert:'Parolele nu sint identice !'})
     }
 
+    
     handleReset = () => {
         axios.get(`/user/reset/${this.state.forgotEmail}`).then(res => { 
             if(res.data.confirmed !== 'Confirmed'){
@@ -178,13 +179,14 @@ class PharmaProvider extends Component {
                     password: this.state.newPassword,
                 }
                 
-                axios.put(`/user/reset/${id}`, newUser).then(res => {  
-                    this.setState({ alert2: res.data})
-                    if(res.data === "Parola a fost schimbatã !" ){
+                axios.put(`/user/reset/${id}`, newUser).then(res => {
+                        this.setState({alert2: res.data})
+                    if(res.data === "Parola a fost schimbatã!" ){
                         this.setState({
                             confirmed: '',
                             newPassword: '',
                             newPassword2:'',
+                           
                         })
                     }
                 })

@@ -9,7 +9,6 @@ class Activation extends Component{
         this.state = {
             id:'',
             toggle: true,
-            toggle2: this.props.alert2
         }
      }
 
@@ -19,7 +18,6 @@ class Activation extends Component{
         arr.splice(0,15)
         let final = arr.join('')
         axios.get(`/link/${final}`).then(res =>{
-            console.log(res.data)
             if(!res.data.length){
                 this.setState({
                     toggle: false
@@ -35,11 +33,9 @@ class Activation extends Component{
         arr.splice(0,15)
         let final = arr.join('')
         axios.get(`/link/${final}`).then(res =>{
-            console.log("ID for reset", res)
-            this.props.resetPassword(res.data[0].userID)
-            axios.delete(`/link/${res.data.linkID}`).then(res => {
-                console.log(res.data)
-                this.setState({toggle2: this.props.alert2})
+           this.props.resetPassword(res.data[0].userID)
+            axios.delete(`/link/${res.data[0].linkID}`).then(res => {
+               this.setState({toggle2: this.props.alert2})
             })
         }).catch(err => console.log(err))
     }
@@ -47,7 +43,7 @@ class Activation extends Component{
    
     render(){
         return(
-            this.state.toggle2 === "Parola a fost schimbatã!" ?
+            this.props.alert2 === "Parola a fost schimbatã!" ?
                 
                 <div className = "contact">
                     <div className = "loginForm2">
