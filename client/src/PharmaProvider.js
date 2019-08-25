@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import ring from './Sound/Sound.mp3'
 import cities from './cities'
+const uuidv1 = require('uuid/v1')
 
 const PharmaContext = React.createContext()
 const sound = new Audio(ring)
@@ -229,7 +230,6 @@ class PharmaProvider extends Component {
         this.setState({
             [name]: value,
         }, this.getMessages(e.target.value))
-        
     }  
 
     handleChange2 = (e) => {
@@ -259,7 +259,6 @@ class PharmaProvider extends Component {
 
     getMessage2 = () => {
         axios.get(`/message/2/${this.state.currentCity}`).then(res => {  
-            console.log(res.data)
             this.setState({
                 messages: res.data 
             })
@@ -314,20 +313,20 @@ class PharmaProvider extends Component {
     }
 
     sendResetEmail = (email, id) => {
-        let linkID = Math.random()
+        let linkID = uuidv1()
         const newLink = {
             linkID: linkID,
             userID: id,
         }
         axios.post('/link', newLink).then(res => {
-        }).catch(err => alert(err))
+        }).catch(err => console.log(err))
     
         const newMail = {
             sendTo: email,
             linkID: linkID,
         }
         axios.post('/mail/reset', newMail).then(res => {
-        }).catch(err => alert(err))
+        }).catch(err => console.log(err))
     }
 
     sendActivationEmail = (id, email) => {
@@ -337,7 +336,7 @@ class PharmaProvider extends Component {
         }
         axios.post('/mail/activate', newMail).then(res => {
            
-        }).catch(err => alert(err))
+        }).catch(err => console.log(err))
     }
 
     deleteMessage = (id) => {
