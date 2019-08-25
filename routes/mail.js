@@ -9,8 +9,7 @@ mailRouter.post('/', (req, res) => {
           <h3>Telefon: <a href="tel:${req.body.phone}">${req.body.phone}</a></h3>
           <h3>Email: ${req.body.email}</h3>
           <h3>Cautã: ${req.body.medication}</h3>  
-        
-    `
+      `
   
     // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
@@ -46,11 +45,9 @@ mailRouter.post('/reset', (req, res) => {
   const output = `
      
           <h3>Pentru resetarea parolei dați click pe linkul de mai jos:</h3>
-          <a href="https://farmacie-app.herokuapp.com/resetpassword/${req.body.id}">click aici</a>
+          <a href="https://farmacie-app.herokuapp.com/resetpassword/${req.body.linkID}">click aici</a>
         
     `
-  
-    // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
@@ -59,7 +56,7 @@ mailRouter.post('/reset', (req, res) => {
       }
     })
   
-    // setup email data with unicode symbols
+    
     let mailOptions = {
         from: 'farmacieup@gmail.com', // sender address
         to: req.body.sendTo, // list of receivers
@@ -87,7 +84,7 @@ mailRouter.post('/activate', (req, res) => {
         
     `
   
-    // create reusable transporter object using the default SMTP transport
+   
     let transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
@@ -96,7 +93,7 @@ mailRouter.post('/activate', (req, res) => {
       }
     })
   
-    // setup email data with unicode symbols
+   
     let mailOptions = {
         from: 'farmacieup@gmail.com', // sender address
         to: req.body.sendTo, // list of receivers

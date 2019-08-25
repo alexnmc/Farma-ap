@@ -20,6 +20,7 @@ app.use(express.static(path.join(__dirname, "client", "build")))
 app.use("/user", require("./routes/user"))
 app.use("/message", require("./routes/message"))
 app.use( "/mail", require('./routes/mail'))
+app.use( "/link", require('./routes/link'))
 
 
 

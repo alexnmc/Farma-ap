@@ -1,12 +1,13 @@
 import React, {Component} from 'react'
 import {withPharma} from './PharmaProvider'
 import { Link } from 'react-router-dom'
+import axios from 'axios'
 
 class Activation extends Component{
     constructor(props){
         super(props)
         this.state = {
-            
+            id:''
         }
      }
 
@@ -15,7 +16,18 @@ class Activation extends Component{
         let arr = this.props.history.location.pathname.split('')
         arr.splice(0,15)
         let final = arr.join('')
-        this.props.resetPassword(final)
+        this.props.getLinkID(final)
+    }
+
+    getLinkID = (id) => {
+        axios.get(`/link/${id}`).then(res =>{
+                this.setState({
+                   id: res.data.userID
+                }.this.props.resetPassword(this.state.userID))
+        }).catch(err => alert(err))
+        axios.delete(`/link/${id}`).then(res => {
+            console.log(res)
+        })
     }
 
    

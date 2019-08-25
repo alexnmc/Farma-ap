@@ -313,12 +313,20 @@ class PharmaProvider extends Component {
     }
 
     sendResetEmail = (email, id) => {
+        let linkID = Math.random()
+        
+        const newLink = {
+            linkID: linkID,
+            userID: id,
+        }
+        axios.post('/link', newLink).then(res => {
+        }).catch(err => alert(err))
+    
         const newMail = {
             sendTo: email,
-            id: id
+            linkID: linkID,
         }
         axios.post('/mail/reset', newMail).then(res => {
-           
         }).catch(err => alert(err))
     }
 
@@ -334,7 +342,6 @@ class PharmaProvider extends Component {
 
     deleteMessage = (id) => {
         axios.delete(`/message/${id}`).then(res => {
-           
             this.setState(prevState => {
                 return {
                     messages: prevState.messages.map(item => item._id !== id ? item : null ),
