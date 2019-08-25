@@ -745,7 +745,7 @@ h4{
     min-height: 25pt;
     font-family: 'trebuchet ms';
     border: 1px solid rgba(29, 29, 29, 0.178);
-    border-radius:4px;
+    border-radius:5px;
     margin:auto;
     margin-top: 4pt;
     padding-left:4pt;
@@ -985,11 +985,11 @@ span{
         justify-content: flex-start;
         width: 95%;
         height: auto;
-        padding:3pt;
-        padding-left:5pt;
+        padding:5pt;
         border: 1px solid rgba(0, 38, 255, 0.048);
-        border-radius:8px;
-        margin-top: 10pt;
+        border-radius:14pt;
+        margin-top: 5pt;
+        margin-bottom: 10pt;
         font-size: 11pt;
         font-weight:500;
         flex-wrap: wrap;
@@ -1216,7 +1216,7 @@ span{
     }
 
     .rezolvat{
-        margin-left: 84%;
+        margin-left: 80%;
     }
 
     .alert{
