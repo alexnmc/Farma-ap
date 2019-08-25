@@ -186,7 +186,7 @@ p{
     color:  rgba(35, 111, 199, 0.918);
     padding-left:5pt;
     font-family: 'trebuchet ms';
-    border-radius: 8pt;
+    border-radius: 9pt;
     -webkit-appearance: none;
     animation: fade 2s;
 }
@@ -204,7 +204,7 @@ p{
     color:  rgba(35, 111, 199, 0.918);
     padding-left:5pt;
     font-family: 'trebuchet ms';
-    border-radius: 8pt;
+    border-radius: 9pt;
     -webkit-appearance: none;
     animation: fade 2s;
     border-top-right-radius: 0pt;
@@ -220,7 +220,7 @@ p{
     justify-content:space-between;
     align-items: center;
     color:  rgba(35, 111, 199, 0.918);
-    border-radius: 8pt;
+    border-radius: 9pt;
     margin:auto;
 }
 
@@ -251,7 +251,7 @@ input{
     padding-left:5pt;
     font-family: 'trebuchet ms';
     color:rgba(0, 78, 131, 0.822);
-    border-radius: 8pt;
+    border-radius: 9pt;
     box-shadow: none;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -280,7 +280,7 @@ button{
     color: white;
     cursor: pointer;
     margin-bottom : 20pt;
-    border-radius:3px;
+    border-radius:9pt;
     border: 1px solid rgba(0, 0, 173, 0.212);
     animation: fade 2s;
 }
@@ -895,12 +895,13 @@ span{
         color: white;
         cursor: pointer;
         margin-top: 12%;
-        border-radius:3px;
+        border-radius:9pt;
     }
 
     .button2{
         margin-top:15pt;
         margin-bottom:9.5%;
+        color: rgb(57, 246, 0);
     }
 
     .loginButton{
