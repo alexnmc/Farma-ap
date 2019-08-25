@@ -9,12 +9,12 @@ class Activation extends Component{
         this.state = {
             id:'',
             final:'',
-            toggle: true
+            toggle: true,
+            toggle2: this.props.alert2
         }
      }
 
 
-    
     componentDidMount(){
         let arr = this.props.history.location.pathname.split('')
         arr.splice(0,15)
@@ -25,7 +25,6 @@ class Activation extends Component{
 
     getID = () => {
         axios.get(`/link/${this.state.final}`).then(res =>{
-            console.log(res)
             if(!res.data.length){
                 this.setState({
                     toggle: false
@@ -38,13 +37,12 @@ class Activation extends Component{
         let arr = this.props.history.location.pathname.split('')
         arr.splice(0,15)
         let final = arr.join('')
-        this.setState({final: final})
         this.getLinkID(final)
     }
 
     getLinkID = (id) => {
         axios.get(`/link/${id}`).then(res =>{
-            this.props.resetPassword(res.data.userID)
+            this.setState({userID: res.data[0].userID}, this.props.resetPassword(this.state.userID))
             axios.delete(`/link/${id}`).then(res => {
                 console.log(res)
             })
@@ -54,7 +52,7 @@ class Activation extends Component{
    
     render(){
         return(
-            this.props.alert2 === "Parola a fost schimbatã!" ?
+            this.state.toggle2 === "Parola a fost schimbatã!" ?
                 
                 <div className = "contact">
                     <div className = "loginForm2">

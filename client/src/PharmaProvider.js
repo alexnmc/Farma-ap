@@ -174,10 +174,10 @@ class PharmaProvider extends Component {
             })
         }else{
             if(this.state.newPassword === this.state.newPassword2){
-                
                 const newUser = {
                     password: this.state.newPassword,
                 }
+                
                 axios.put(`/user/reset/${id}`, newUser).then(res => {  
                     this.setState({ alert2: res.data})
                     if(res.data === "Parola a fost schimbatã !" ){
