@@ -16,7 +16,7 @@ const PharmaLogin = props =>  {
                                 </div>
                                 {props.toggle2 ?
                                 <div className = "loginForm">
-                                    <h4>Intrare in cont:</h4>
+                                    <h4>Intrare în cont:</h4>
                                     <input
                                         className = "login1"
                                         type='text'
