@@ -80,7 +80,7 @@ class PharmaPortal extends Component {
                 <div className = 'messageWrap'>
                 <div style = {{margin: "auto" , width: "97%" , display:'flex', alignItems: 'center', justifyContent: 'space-evenly', marginBottom: '5pt'}}>
                     <p className = 'h1A' style = {this.state.helpToggle ? {cursor: "pointer"} : {cursor: 'pointer' , color:"red"}}  onClick = {() => this.helpToggle()}>{this.state.helpToggle ? "Ajutor" : "Mesaje"}</p>
-                    <p className = 'h1A' style = {{marginRight:'-5vw'}}>Login: {this.props.user.username}</p>
+                    <p className = 'h1A' style = {{marginRight:'-5vw'}}>{this.props.user.username}</p>
                 </div>
                 <div className = 'portalWrap'>
                     <div className= 'h1' style = {this.props.currentCity ? {opacity: 1} : {opacity:0}}>{this.props.messages.length === 1 ? '1 mesaj' : `${this.props.messages.length + ' mesaje'}`}</div>
