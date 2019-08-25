@@ -48,11 +48,10 @@ class Activation extends Component{
     getLinkID = (id) => {
         axios.get(`/link/${id}`).then(res =>{
             this.props.resetPassword(res.data.userID)
+            axios.delete(`/link/${id}`).then(res => {
+                console.log(res)
+            })
         }).catch(err => console.log(err))
-        
-        axios.delete(`/link/${id}`).then(res => {
-            console.log(res)
-        })
     }
 
    
