@@ -280,7 +280,7 @@ button{
     cursor: pointer;
     margin-bottom : 20pt;
     border-radius:9pt;
-    border: 1px solid rgba(0, 0, 173, 0.212);
+    border: 0px solid rgba(0, 0, 173, 0.144);
     animation: fade 2s;
 }
 
