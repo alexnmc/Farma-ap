@@ -321,7 +321,7 @@ button{
 .logout{
    width: 100pt;
    height: 20pt;
-   font-size: 11pt;
+   font-size: 12pt;
    margin:auto;
    border-radius:5px;
    border: 0pt;
@@ -340,7 +340,7 @@ button{
 .input2{
     width: 150pt;
     height: 25pt;
-    font-size: 14pt;
+    font-size: 12pt;
     margin:auto;
     border: 2px solid rgba(0, 0, 255, 0.007);
     background-color: white;
@@ -360,12 +360,20 @@ button{
 
 .h1{
     font-family: 'trebuchet ms';
-    font-size:13.5pt;
+    font-size:12pt;
     color:  rgb(0, 97, 207);
     margin:auto;
     margin-top:0pt;
     font-weight:900;
     width:150pt;
+}
+
+.h1A{
+    font-family: 'trebuchet ms';
+    font-size:12pt;
+    color:  rgb(0, 97, 207);
+    font-weight:900;
+    min-width:100pt;
 }
 
 h4{
@@ -1117,6 +1125,15 @@ span{
         text-align: center;
         width: 100pt;
         font-family: "Open Sans", Arial, sans-serif;
+    }
+
+    .h1A{
+        font-family: 'trebuchet ms';
+        font-size:11pt;
+        color:  rgb(0, 97, 207);
+        font-weight:900;
+        min-width:50pt;
+       
     }
 
     .portalWrap{

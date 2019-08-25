@@ -70,7 +70,10 @@ class PharmaPortal extends Component {
         return(
             <div className = 'pharmaport'>
                 <div className = 'messageWrap'>
-                <p className = 'p4' style = {{fontSize: '11pt', marginBottom: '22pt', width: '92%', textAlign: 'end', color:' #0061cf'}}>Login: {this.props.user.username}</p>
+                <div style = {{margin: "auto" , width: "100%" , display:'flex', alignItems: 'center', justifyContent: 'space-evenly', marginBottom: '5pt'}}>
+                    <p className = 'h1A'>Ajutor</p>
+                    <p className = 'h1A' style = {{marginRight:'-5vw'}}>Login: {this.props.user.username}</p>
+                </div>
                 <div className = 'portalWrap'>
                     <div className= 'h1' style = {this.props.currentCity ? {opacity: 1} : {opacity:0}}>{this.props.messages.length === 1 ? '1 mesaj' : `${this.props.messages.length + ' mesaje'}`}</div>
                     <select 
