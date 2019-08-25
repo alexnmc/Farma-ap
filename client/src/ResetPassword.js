@@ -94,8 +94,8 @@ class Activation extends Component{
                     :
 
                     <div className = "loginForm2">
-                        <h1 className = "h4">Link expirat!</h1>
-                        <Link style = {{marginTop: '15pt', fontSize: '15pt', fontWeight: '900'}} to = "/pharma">Login</Link>
+                        <h1 className = "activH1">Link expirat!</h1>
+                        <Link style = {{fontSize: '15pt', fontWeight: '900'}} to = "/pharma">Login</Link>
                     </div>
                 }
                 </div>
