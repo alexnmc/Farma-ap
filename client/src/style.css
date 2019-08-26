@@ -15,10 +15,6 @@ body::-webkit-scrollbar {
 body::before {
     content: ' ';
     display: block;
-    background-image: url('./Photos/bkg3.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
     top: 0;
