@@ -48,7 +48,7 @@ class Activation extends Component{
             <div className = "contact">
                 <h2 className = "activH1">{!this.state.toggle ? "Mulțumim!Contul este activat." : "Contul este activ."}</h2>
                 <CheckAnimation/>
-                <Link style = {{fontSize: '15pt', fontWeight: '900'}} to = "/pharma">Login</Link>
+                <Link style = {{fontSize: '15pt', fontWeight: '900', marginTop: '15pt'}} to = "/pharma">Login</Link>
             </div>
         )
     }

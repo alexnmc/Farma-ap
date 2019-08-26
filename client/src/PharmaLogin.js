@@ -13,7 +13,7 @@ const PharmaLogin = props =>  {
                             <div  className='loginForm'>
                                 <div className = "loginWrap">
                                     <div className = "loginLogo"></div>
-                                    <p className = 'cont'>Alãturați-vã rețelei noastre - <span className = 'link' onClick={props.editToggler}>Înregistrare</span></p>
+                                    <p className = 'cont'>Alãturați-vã rețelei noastre! <span className = 'link' onClick={props.editToggler}>Înregistrare</span></p>
                                 </div>
                                 {props.toggle2 ?
                                 <div className = "loginForm">

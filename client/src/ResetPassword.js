@@ -54,7 +54,7 @@ class Activation extends Component{
                     <div className = "loginForm2">
                         <h2 className = "activH1">Mulțumim! Parola a fost schimbatã.</h2>
                         <CheckAnimation/>
-                        <Link style = {{fontSize: '15pt', fontWeight: '900'}} to = "/pharma">Login</Link>
+                        <Link style = {{fontSize: '15pt', fontWeight: '900', marginTop: '15pt'}} to = "/pharma">Login</Link>
                     </div>
                 </div>
                 
@@ -93,7 +93,7 @@ class Activation extends Component{
                     :
 
                     <div className = "loginForm2">
-                        <h1 className = "activH1">Link expirat!</h1>
+                        <h1 className = "activH1">Link de resetare invalid!</h1>
                         <Link style = {{fontSize: '15pt', fontWeight: '900'}} to = "/pharma">Login</Link>
                     </div>
                 }
