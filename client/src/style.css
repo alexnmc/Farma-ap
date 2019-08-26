@@ -389,7 +389,7 @@ h4{
     width: 90%;
     height: 35pt;
     border: 2px solid  rgba(0, 53, 114, 0.180);
-    background-color:  rgb(109, 131, 156);
+    background-color:  rgb(255, 255, 255);
     color:black;
     margin-top:5pt;
     padding-left:3.5pt;
@@ -397,18 +397,22 @@ h4{
     animation: none !important;
 }
 
+.login1::placeholder{color:rgb(122, 122, 122)}
+
 .login11{
     width: 90%;
     height: 35pt;
     border: 2px solid  rgba(0, 53, 114, 0.180);
-    background-color:  rgb(109, 131, 156);
-    color:white;
+    background-color:  rgb(255, 255, 255);
+    color:black;
     font-family: 'arial';
     margin-top:5pt;
     padding-left:3.5pt;
     font-size:12pt;
     margin-bottom: 8pt;
 }
+
+.login11::placeholder{color: rgb(122, 122, 122)}
 
 .admin{
     background-color: rgb(19, 38, 68);
