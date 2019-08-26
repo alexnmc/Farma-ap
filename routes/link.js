@@ -50,6 +50,17 @@ linkRouter.delete('/:id', (req, res, next) => {
 })
 
 
+linkRouter.delete('/', (req, res, next) => {
+    Link.remove((err, data) => {     
+        if (err) {
+            res.status(500)
+            return next(err)
+        }
+        return res.status(202).send('sters')
+    })
+})
+
+
 
 
 module.exports = linkRouter

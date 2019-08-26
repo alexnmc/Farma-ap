@@ -401,8 +401,8 @@ h4{
 
 .login1{
     width: 90%;
-    height: 35pt;
-    border: 1px solid  rgba(15, 49, 65, 0.459);
+    height: 37pt;
+    border: 2px solid  rgba(0, 53, 114, 0.383);
     background-color:  rgb(253, 252, 251);
     color:black;
     border-radius: 3px;
@@ -415,8 +415,8 @@ h4{
 
 .login11{
     width: 90%;
-    height: 35pt;
-    border: 1px solid  rgba(15, 49, 65, 0.459);
+    height: 37pt;
+    border: 2px solid  rgba(0, 53, 114, 0.383);
     background-color:  rgb(253, 252, 251);
     color: rgba(21, 64, 184, 0.918);
     font-family: 'trebuchet ms';

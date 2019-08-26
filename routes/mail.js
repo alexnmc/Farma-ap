@@ -47,7 +47,6 @@ mailRouter.post('/reset', (req, res) => {
     <h4>Pentru resetarea parolei dați:<a href="https://farmacie-app.herokuapp.com/resetpassword/${req.body.linkID}">click aici</a></h4>
     `
     
-    
     let transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
