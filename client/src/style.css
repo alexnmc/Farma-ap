@@ -54,12 +54,12 @@ body::before {
 
 .navbar {
     width: 100vw;
-    height: 55px;
+    height: 57px;
     background-color:#ffffff; 
     display:flex;
     position: relative;
     align-items: center;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 900;
     border-bottom: 5px solid rgb(9, 103, 211);
     display:flex;
@@ -73,13 +73,13 @@ body::before {
     content: " ";
     position: absolute;
     border-bottom: 5px solid rgba(139, 228, 255, 0.945);
-    top:54px;
+    top:56px;
 }
 
 a{
     text-decoration: none;
     font-family: 'arial';
-    color:rgb(0, 74, 160);
+    color:rgb(40, 95, 184);
     cursor: pointer;
 }
 
@@ -144,13 +144,13 @@ p{
 }
 
 .home{
-    height: 94vh;
+    height: 93.5vh;
     width: 100vw;
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba(255, 255, 255, 0.781);
+    background-color: rgba(255, 255, 255, 0.829);
 }
 
 .contact{
@@ -531,8 +531,8 @@ h4{
 }
 
 .img1{
-    width: 40pt;
-    height: 40pt;
+    width: 50px;
+    height: 50px;
     background-image: url('./Photos/farmacie2.png');
     background-size: cover;
     background-position: center;
@@ -543,8 +543,8 @@ h4{
 .cauta3,
 .cauta{
     font-family: 'arial';
-    color: rgb(50, 105, 194);
-    font-size: 17pt;
+    color: rgb(40, 95, 184);
+    font-size: 16pt;
     text-align: center;
     animation: move2 0.7s;
     font-weight: 900;
@@ -675,7 +675,6 @@ h4{
     color: rgb(0, 174, 255);
     font-size: 18pt;
     text-align: center;
-    margin-bottom:5pt;
     font-weight:900;
     animation: pop2 0.5s linear 1;
     animation-delay: 0.7s;
@@ -712,7 +711,7 @@ h4{
 .imgWrap{
     width:100vw;
     margin-bottom: 30pt;
-    margin-top: -10px;
+    margin-top: -12vh;
     display: flex;
     align-items: center;
     justify-content: center
