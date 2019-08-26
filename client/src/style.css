@@ -54,7 +54,7 @@ body::before {
 
 .navbar {
     width: 100vw;
-    height: 49pt;
+    height: 55px;
     background-color:#ffffff; 
     display:flex;
     position: relative;
@@ -73,7 +73,7 @@ body::before {
     content: " ";
     position: absolute;
     border-bottom: 5px solid rgb(120, 213, 241);
-    top:48pt;
+    top:54px;
 }
 
 a{
@@ -144,7 +144,7 @@ p{
 }
 
 .home{
-    height: 92vh;
+    height: 94vh;
     width: 100vw;
     display:flex;
     flex-direction: column;
@@ -712,7 +712,7 @@ h4{
 .imgWrap{
     width:100vw;
     margin-bottom: 30pt;
-    margin-top: -5vh;
+    margin-top: -10px;
     display: flex;
     align-items: center;
     justify-content: center
