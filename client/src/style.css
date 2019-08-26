@@ -505,6 +505,7 @@ h4{
     margin-top:70pt;
     padding-left:3.5pt;
     font-size:12pt;
+    border-radius: 0px
 }
 
 .login33::placeholder{
@@ -521,6 +522,7 @@ h4{
     margin-top:10pt;
     padding-left:3.5pt;
     font-size:12pt;
+    border-radius: 0px
 }
 
 .login34::placeholder{
