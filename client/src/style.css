@@ -54,23 +54,23 @@ body::before {
 
 .navbar {
     width: 100vw;
-    height: 70px;
-    background-color: rgb(255, 255, 255);
+    height: 80px;
+    background-color: rgb(11, 27, 58);
     display:flex;
     position: relative;
     align-items: center;
     font-size: 16px;
-    font-weight: 900;
+    font-weight: 300;
     display:flex;
     justify-content: space-around;
-    border-bottom: 3px solid rgba(40, 95, 184, 0.897);
+   
 }
 
 
 a{
     text-decoration: none;
     font-family: 'arial';
-    color: rgb(40, 95, 184);
+    color:white;
     cursor: pointer;
 }
 
@@ -141,7 +141,7 @@ p{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba(255, 255, 255, 0.931);
+    background-color: rgb(15, 32, 58);
 }
 
 .contact{
@@ -173,13 +173,13 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    color:  rgba(35, 111, 199, 0.918);
+    color: white;
     padding-left:5pt;
     font-family: 'arial';
     border-radius: 9pt;
     -webkit-appearance: none;
     animation: fade 2s;
-    background-color: rgba(222, 230, 236, 0.700);
+    
 }
 
 .inputS{
@@ -191,17 +191,16 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    color:  rgba(35, 111, 199, 0.918);
+    color: white;
     border: 0px solid  rgba(71, 124, 173, 0.733);
     padding-left:5pt;
     font-family: 'arial';
-    border-radius: 9pt;
-    -webkit-appearance: none;
+   -webkit-appearance: none;
     animation: fade 2s;
     border-top-right-radius: 0pt;
     border-bottom-right-radius: 0pt;
     color:  rgba(35, 111, 199, 0.918);
-    background-color: rgba(222, 230, 236, 0.700);
+    background-color:  rgb(83, 91, 112);
 }
 
 .searchIn{
@@ -211,7 +210,6 @@ p{
     justify-content:space-between;
     align-items: center;
     color:  rgba(35, 111, 199, 0.918);
-    border-radius: 9pt;
     border: 0px solid rgb(52, 93, 131);
     margin:auto;
 }
@@ -219,10 +217,8 @@ p{
 .searchLogo{
     height: 40pt;
     width: 50pt;
-    background-color:rgb(40, 95, 184);
-    border-top-right-radius: 8pt;
-    border-bottom-right-radius: 8pt;
-    border: 12px solid rgb(40, 95, 184);
+    background-color:rgb(32, 53, 87);
+    border:10px solid rgb(32, 53, 87);
     background-image: url('./Photos/search.gif');
     background-position: center;
     background-size: contain;
@@ -239,17 +235,15 @@ input{
     justify-content: center;
     align-items: center;
     border: 0px solid  rgba(71, 124, 173, 0.733);
-    border-radius: 6px;
     padding-left:5pt;
     font-family: 'arial';
-    color:rgba(0, 78, 131, 0.822);
-    border-radius: 9pt;
+    color:white;
     box-shadow: none;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     -webkit-appearance: none;
     animation: fade 2s;
-    background-color: rgba(222, 230, 236, 0.700);
+    background-color: rgb(83, 91, 112);
 }
 
 @keyframes fade{
@@ -258,7 +252,7 @@ input{
 }
 
 input::placeholder{
-    color:rgba(59, 109, 167, 0.788);
+    color: white;
     font-size: 13pt;
 }
 
@@ -269,23 +263,19 @@ button{
     justify-content: center;
     width: 270pt;
     height: 37pt;
-    background-color:rgb(40, 95, 184);
+    background-color: rgba(71, 151, 46, 0.966);
     font-size: 13pt;
     color: white;
     cursor: pointer;
     margin-bottom : 15pt;
-    border-radius:9pt;
     border: 0px solid rgba(0, 0, 173, 0.144);
     animation: fade 2s;
 }
 
-.button2{
-    color: rgb(57, 246, 0);
-}
 
 .photoButton{
     margin-top:15pt;
-    border-radius: 9pt;
+    
 }
 
 .deletePic{
@@ -399,22 +389,20 @@ h4{
     width: 90%;
     height: 35pt;
     border: 2px solid  rgba(0, 53, 114, 0.180);
-    background-color:  rgb(253, 252, 251);
+    background-color:  rgb(109, 131, 156);
     color:black;
-    border-radius: 3px;
     margin-top:5pt;
     padding-left:3.5pt;
     font-size:12pt;
     animation: none !important;
-   
 }
 
 .login11{
     width: 90%;
     height: 35pt;
     border: 2px solid  rgba(0, 53, 114, 0.180);
-    background-color:  rgb(253, 252, 251);
-    color: rgba(21, 64, 184, 0.918);
+    background-color:  rgb(109, 131, 156);
+    color:white;
     font-family: 'arial';
     margin-top:5pt;
     padding-left:3.5pt;
@@ -423,7 +411,7 @@ h4{
 }
 
 .admin{
-    background-color: rgba(255, 255, 255, 0.829);
+    background-color: rgb(19, 38, 68);
     height: 92vh;
     width: 100vw;
     display:flex;
@@ -537,11 +525,11 @@ h4{
 .cauta3,
 .cauta{
     font-family: 'arial';
-    color:  rgba(0, 69, 149, 0.863);
+    color:  rgb(255, 255, 255);
     font-size: 16pt;
     text-align: center;
     animation: move2 0.7s;
-    font-weight: 900;
+    font-weight: 300;
     margin:10pt;
    
 }
@@ -796,10 +784,6 @@ span{
 @media only screen and (max-width: 600px) {
 
     
-    .navbar{
-        height:60px;
-        background-color: white;
-    }
     
     
     .bookingContainer{
@@ -820,7 +804,7 @@ span{
         align-items: center;
         padding-left:7pt; 
         font-family: arial;
-        background-color: rgba(222, 230, 236, 0.700);
+      
        
     }
     
@@ -835,21 +819,21 @@ span{
         padding-left:7pt;
         font-family: arial;
         border:none;
-        background-color: rgba(222, 230, 236, 0.700);
+       
     }
 
     .inputS{
         width: 54.5vw;
         height: 36pt;
         font-size: 12pt;
-        background-color: rgba(222, 230, 236, 0.700);
+       
         border:none
     }
 
     .searchIn{
         width:67vw;
         height: 36pt;
-        color:rgba(35, 111, 199, 0.918);
+       
         border-radius: 8pt;
         margin:auto;
     }
@@ -857,9 +841,6 @@ span{
     .searchLogo{
         height: 36pt;
         width: 12.5vw;
-        border-top-right-radius: 8pt;
-        border-bottom-right-radius: 8pt;
-        border: 10px solid rgb(40, 95, 184);
         background-image: url('./Photos/search.gif');
         background-position: center;
         background-size: contain;
@@ -896,7 +877,7 @@ span{
         color: white;
         cursor: pointer;
         margin-top: 12%;
-        border-radius:9pt;
+       
     }
 
     .button2{
@@ -929,7 +910,6 @@ span{
     .login1{
         width: 85%;
         height: 30pt;
-        background-color:  rgb(253, 252, 251);
         border-radius: 3px;
         margin-top: 0pt;
         padding-left:3.5pt;
@@ -939,7 +919,6 @@ span{
     .login11{
         width: 85%;
         height: 30pt;
-        background-color:  rgb(253, 252, 251);
         margin-top:0pt;
         padding-left:3.5pt;
         font-size:12pt;
@@ -1116,10 +1095,7 @@ span{
         font-family: arial
     }
 
-    input::placeholder{
-    color:rgba(29, 90, 160, 0.595);
-}
-
+    
     .h1{
        font-size: 11pt;
         margin: 2pt;
@@ -1188,7 +1164,6 @@ span{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: rgb(255, 255, 255);
     }
 
     .link{
