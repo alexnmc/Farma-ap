@@ -304,7 +304,7 @@ button{
    width: 90%;
    height: 35pt;
    font-size:12pt;
-   background-color:rgb(40, 95, 184);
+   background-color:rgb(30, 116, 255);
    margin-top:30pt;
    animation:none;
    border-radius:1px;
@@ -369,7 +369,7 @@ button{
 }
 
 h4{
-    color: rgb(0, 85, 182);
+    color:white;
     font-family: 'arial';
     font-size:14pt;
     margin-bottom: 20pt;
@@ -378,7 +378,7 @@ h4{
 }
 
 .h4{
-    color: rgb(0, 85, 182);;
+    color: white;
     font-family: 'arial';
     font-size:14pt;
     margin-bottom: -4pt;
@@ -389,34 +389,36 @@ h4{
 .login1{
     width: 90%;
     height: 35pt;
-    border: 2px solid  rgba(0, 53, 114, 0.180);
-    background-color:  rgb(255, 255, 255);
-    color:black;
+    border-bottom: 2px solid  rgb(9, 33, 61);
+    background-color:  rgba(255, 255, 255, 0);
+    color:rgb(177, 177, 177);
     margin-top:5pt;
     padding-left:3.5pt;
     font-size:12pt;
     animation: none !important;
 }
 
-.login1::placeholder{color:rgb(122, 122, 122)}
+.login1::placeholder{color:rgb(177, 177, 177)}
 
 .login11{
     width: 90%;
     height: 35pt;
-    border: 2px solid  rgba(0, 53, 114, 0.180);
-    background-color:  rgb(255, 255, 255);
-    color:black;
+    border:0pt;
+    border-bottom: 2px solid  rgb(5, 30, 58);
+    background-color:  rgba(255, 255, 255, 0.014);
+    color:rgb(177, 177, 177);
     font-family: 'arial';
     margin-top:5pt;
     padding-left:3.5pt;
     font-size:12pt;
     margin-bottom: 8pt;
+    border-radius: 0px;
 }
 
-.login11::placeholder{color: rgb(122, 122, 122)}
+.login11::placeholder{color: rgb(177, 177, 177)}
 
 .admin{
-    background-color: rgb(19, 34, 58);
+    background-color: rgba(235, 235, 235, 0.726);
     height: 91vh;
     width: 100vw;
     display:flex;
@@ -456,7 +458,7 @@ h4{
     align-items: center;
     justify-content: center;
     margin:auto;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(37, 52, 93);
     margin-top: 10vh;
     padding-bottom: 10pt;
     border: 0px solid rgba(165, 165, 165, 0.287);
@@ -474,9 +476,9 @@ h4{
    display: flex;
    width:auto;
    font-family: 'arial';
-   font-size: 10pt;
-   font-weight: 900;
-   color:rgb(190, 92, 0);
+   font-size: 11pt;
+   font-weight: 400;
+   color:rgb(1, 196, 255);
    cursor: pointer;
 }
 
@@ -484,9 +486,9 @@ h4{
    display: flex;
    width:auto;
    font-family: 'arial';
-   font-size: 10pt;
-   font-weight: 900;
-   color:rgb(192, 93, 0);
+   font-size: 11pt;
+   font-weight: 400;
+   color:rgb(1, 196, 255);
    margin-top:40pt;
    cursor: pointer;
 }
@@ -503,6 +505,10 @@ h4{
     font-size:12pt;
 }
 
+.login33::placeholder{
+    color:black
+}
+
 .login34{
     width: 90%;
     height: 35pt;
@@ -513,6 +519,10 @@ h4{
     margin-top:10pt;
     padding-left:3.5pt;
     font-size:12pt;
+}
+
+.login34::placeholder{
+    color:black
 }
 
 .img1{
@@ -753,7 +763,7 @@ span{
 }
 
 .link{
-    color: rgb(0, 74, 160);
+    color: white;
     margin-left: 7pt;
     font-size: 10pt;
 }
@@ -951,7 +961,7 @@ span{
        display: flex;
        width:auto;
        font-size: 3.5vw;
-       font-weight: 900;
+       font-weight: 400;
     }
 
     .messageContainer{
@@ -962,7 +972,6 @@ span{
         height: auto;
         padding:5pt;
         border: 1px solid rgba(0, 38, 255, 0.048);
-        border-radius:14pt;
         margin-top: 5pt;
         margin-bottom: 10pt;
         font-size: 11pt;
