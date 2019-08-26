@@ -14,7 +14,7 @@ class UncontrolledLottie extends Component {
       rendererSettings: {
       preserveAspectRatio: 'xMidYMid slice'
       }
-    };
+    }
 
     return(
       <div>
