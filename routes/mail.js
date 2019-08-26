@@ -6,9 +6,9 @@ const nodemailer = require('nodemailer');
 mailRouter.post('/', (req, res) => {
     
   const output = `
-          <h3>Telefon: <a href="tel:${req.body.phone}">${req.body.phone}</a></h3>
-          <h3>Email: ${req.body.email}</h3>
-          <h3>Cautã: ${req.body.medication}</h3>  
+          <h4>Telefon: <a href="tel:${req.body.phone}">${req.body.phone}</a></h4>
+          <h4>Email: ${req.body.email}</h4>
+          <h4>Cautã: ${req.body.medication}</h4>  
       `
   
     // create reusable transporter object using the default SMTP transport
@@ -44,10 +44,10 @@ mailRouter.post('/reset', (req, res) => {
     
   const output = `
      
-          <h3>Pentru resetarea parolei dați click pe linkul de mai jos:</h3>
-          <a href="https://farmacie-app.herokuapp.com/resetpassword/${req.body.linkID}">click aici</a>
-        
+    <h4>Pentru resetarea parolei dați:<a href="https://farmacie-app.herokuapp.com/resetpassword/${req.body.linkID}">click aici</a></h4>
     `
+    
+    
     let transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
@@ -78,9 +78,8 @@ mailRouter.post('/reset', (req, res) => {
 mailRouter.post('/activate', (req, res) => {
     
   const output = `
-     
-          <h3>Vã rugãm sã activați contul:</h3>
-          <a href="https://farmacie-app.herokuapp.com/activation/${req.body.id}">click aici</a>
+          <h3>Bine ați venit in rețeaua farma-up!</h3>
+          <h4>Vã rugãm sã activați contul:<a href="https://farmacie-app.herokuapp.com/activation/${req.body.id}">click aici</a></h4>
         
     `
   
