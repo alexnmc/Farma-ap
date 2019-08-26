@@ -397,6 +397,7 @@ h4{
     padding-left:3.5pt;
     font-size:12pt;
     animation: none !important;
+    border-radius: 0px
 }
 
 .login1::placeholder{color:rgb(177, 177, 177)}
