@@ -829,6 +829,7 @@ span{
         align-items: center;
         padding-left:7pt;
         font-family: arial;
+        border:none;
         background-color: rgba(222, 230, 236, 0.700);
     }
 
@@ -837,6 +838,7 @@ span{
         height: 36pt;
         font-size: 12pt;
         background-color: rgba(222, 230, 236, 0.700);
+        border:none
     }
 
     .searchIn{
