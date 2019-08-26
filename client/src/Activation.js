@@ -23,7 +23,7 @@ class Activation extends Component{
                 const newUser = {confirmed: true}
                 axios.put(`/user/activate/${id}`, newUser).then(res => { 
                     this.setState({
-                        message: "Mulțumim!Contul este activat."
+                        message: "Mulțumim! Contul este activat."
                     }) 
                 })
             
@@ -55,7 +55,7 @@ class Activation extends Component{
         return(
             <div className = "contact">
                 <h2 className = "activH1">{this.state.message}</h2>
-                {this.state.message === "Mulțumim!Contul este activat." ? <CheckAnimation/> :  <div className = 'img1'></div>}
+                {this.state.message === "Mulțumim! Contul este activat." ? <CheckAnimation/> :  <div className = 'img1'></div>}
                 <Link style = {{fontSize: '15pt', fontWeight: '900', marginTop: '15pt'}} to = "/pharma">Login</Link>
             </div>
         )
