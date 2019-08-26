@@ -54,32 +54,24 @@ body::before {
 
 .navbar {
     width: 100vw;
-    height: 57px;
-    background-color:#ffffff; 
+    height: 60px;
+    background-color:rgb(40, 95, 184);
     display:flex;
     position: relative;
     align-items: center;
     font-size: 15px;
     font-weight: 900;
-    border-bottom: 5px solid rgb(9, 103, 211);
+    
     display:flex;
     justify-content: space-around;
     
 }
 
-.navbar:after{
-    width: 100vw;
-    height: 1pt;
-    content: " ";
-    position: absolute;
-    border-bottom: 5px solid rgba(139, 228, 255, 0.945);
-    top:56px;
-}
 
 a{
     text-decoration: none;
     font-family: 'arial';
-    color:rgb(40, 95, 184);
+    color:white;
     cursor: pointer;
 }
 
@@ -226,10 +218,10 @@ p{
 .searchLogo{
     height: 40pt;
     width: 50pt;
-    background-color: rgb(0, 103, 221);
+    background-color:rgb(40, 95, 184);
     border-top-right-radius: 8pt;
     border-bottom-right-radius: 8pt;
-    border: 12px solid  rgb(0, 103, 221);
+    border: 12px solid rgb(40, 95, 184);
     background-image: url('./Photos/search.gif');
     background-position: center;
     background-size: contain;
@@ -275,7 +267,7 @@ button{
     justify-content: center;
     width: 270pt;
     height: 37pt;
-    background-color: rgb(0, 103, 221);
+    background-color:rgb(40, 95, 184);
     font-size: 13pt;
     color: white;
     cursor: pointer;
@@ -319,7 +311,7 @@ button{
    width: 90%;
    height: 35pt;
    font-size:12pt;
-   background-color: rgb(0, 97, 207);
+   background-color:rgb(40, 95, 184);
    margin-top:30pt;
    animation:none
 }
@@ -803,7 +795,7 @@ span{
     
 
     a{
-        color: rgb(24, 80, 170);
+        color: white;
     }
     
     .bookingContainer{
@@ -859,10 +851,9 @@ span{
     .searchLogo{
         height: 36pt;
         width: 12.5vw;
-        background-color: rgb(0, 103, 221);
         border-top-right-radius: 8pt;
         border-bottom-right-radius: 8pt;
-        border: 10px solid  rgb(0, 103, 221);
+        border: 10px solid rgb(40, 95, 184);
         background-image: url('./Photos/search.gif');
         background-position: center;
         background-size: contain;
@@ -895,7 +886,6 @@ span{
         justify-content: center;
         width: 67vw;
         height: 36pt;
-        background-color:rgb(0, 94, 200);
         font-size: 12pt;
         color: white;
         cursor: pointer;
