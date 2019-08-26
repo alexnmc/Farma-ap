@@ -180,7 +180,6 @@ p{
     border-radius: 9pt;
     -webkit-appearance: none;
     animation: fade 2s;
-    
 }
 
 .inputS{
@@ -192,7 +191,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color:  rgb(0, 9, 58);
     border: 0px solid  rgba(71, 124, 173, 0.733);
     padding-left:5pt;
     font-family: 'arial';
@@ -200,7 +199,7 @@ p{
     animation: fade 2s;
     border-top-right-radius: 0pt;
     border-bottom-right-radius: 0pt;
-    background-color:  rgb(83, 91, 112);
+    background-color:  rgb(255, 255, 255);
 }
 
 .searchIn{
@@ -243,7 +242,7 @@ input{
     -moz-box-shadow: none;
     -webkit-appearance: none;
     animation: fade 2s;
-    background-color: rgb(83, 91, 112);
+    background-color: rgb(255, 255, 255);
 }
 
 @keyframes fade{
@@ -252,7 +251,7 @@ input{
 }
 
 input::placeholder{
-    color: white;
+    color: rgb(0, 9, 58);
     font-size: 13pt;
 }
 
@@ -275,7 +274,6 @@ button{
 
 .photoButton{
     margin-top:15pt;
-    
 }
 
 .deletePic{
@@ -835,7 +833,6 @@ span{
         width: 54.5vw;
         height: 36pt;
         font-size: 12pt;
-       
         border:none
     }
 
