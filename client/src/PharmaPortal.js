@@ -45,8 +45,8 @@ class PharmaPortal extends Component {
                 item.toggle ?
                 
                 <div className = "messageContainer" key = {item._id} style = {{backgroundColor: item.rezolvat ? "rgb(33, 104, 184, 0.800)" : null}}>
-                    <p className = "p1" style = {item.rezolvat ? {color: 'rgb(0, 74, 160)'} : null}>Email: <a href = {`mailto:${item.email}`} style = {{fontWeight: "500"}}>{item.email}</a></p>
-                    <p className = "p5" style = {item.rezolvat ? {color: 'rgb(0, 74, 160)'} : null}>Tel: <a href = {`tel: ${item.phone}`}>{`0${item.phone}`}</a></p> 
+                    <p className = "p1" style = {item.rezolvat ? {color: 'rgb(0, 74, 160)'} : null}>Email: <a href = {`mailto:${item.email}`} style = {{fontWeight: "500", color: "blue"}}>{item.email}</a></p>
+                    <p className = "p5" style = {item.rezolvat ? {color: 'rgb(0, 74, 160)'} : null}>Tel: <a href = {`tel: ${item.phone}`} style = {{fontWeight: "500", color: "blue"}}>{`0${item.phone}`}</a></p> 
                     {item.img ? <img  onClick = {!item.rezolvat ? () => this.props.enlarge(item._id) : null} className = 'myImg' alt = '' src = {item.img}/> : <div style = {{width:'30pt', height: '20pt'}}></div>}
                     <p className = "p3" style = {item.rezolvat ? {color: 'rgb(0, 74, 160)'} : null}><span style = {item.rezolvat ? {color: 'rgb(0, 74, 160)'} : null}>Cautã: </span>{item.medication}</p>
                     <p className = "p4"> {moment(item.date).format('MMMM Do YYYY, HH:mm:ss ')}</p>
@@ -56,8 +56,8 @@ class PharmaPortal extends Component {
                 :
                  
                 <div className = "messageContainer" key = {item._id} style = {{position: 'relative' , backgroundColor : 'rgb(33, 104, 184, 0.290)'}}>
-                    <p className = "p1">Email: <a href = {`mailto:${item.email}`} style = {{fontWeight: "500"}}>{item.email}</a></p>
-                    <p className = "p5">Tel: <a href = {`tel: ${item.phone}`}>{`0${item.phone}`}</a></p> 
+                    <p className = "p1">Email: <a  href = {`mailto:${item.email}`} style = {{fontWeight: "500", color: "blue"}}>{item.email}</a></p>
+                    <p className = "p5">Tel: <a  href = {`tel: ${item.phone}`} style = {{fontWeight: "500", color: "blue"}}>{`0${item.phone}`}</a></p> 
                     <img    style = {document.documentElement.clientWidth < 1100 ?  
                                         {width: '100%' , height: '60vh', marginTop: '1%'} 
                                         : 
