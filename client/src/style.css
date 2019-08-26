@@ -55,7 +55,7 @@ body::before {
 .navbar {
     width: 100vw;
     height: 80px;
-    background-color: rgb(11, 27, 58);
+    background-color: rgb(14, 25, 47);
     display:flex;
     position: relative;
     align-items: center;
@@ -141,7 +141,7 @@ p{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(15, 32, 58);
+    background-color: rgb(19, 34, 58);
 }
 
 .contact{
@@ -152,7 +152,7 @@ p{
     align-items: center;
     justify-content: flex-start;
     padding-top:10vh;
-    background-color: rgb(15, 32, 58);
+    background-color: rgb(19, 34, 58);
 }
 
 .bookingContainer{
@@ -414,7 +414,7 @@ h4{
 .login11::placeholder{color: rgb(122, 122, 122)}
 
 .admin{
-    background-color: rgb(19, 38, 68);
+    background-color: rgb(19, 34, 58);
     height: 91vh;
     width: 100vw;
     display:flex;
@@ -615,17 +615,18 @@ h4{
     margin-top:15pt;
     width: 545pt;
     animation:move3 0.5s 0.5s;
+    font-weight: 400;
 }
 
 .h6{
     font-family: 'arial';
-    color:  rgb(239, 246, 255);
+    color:  rgb(255, 255, 255);
     font-size: 14pt;
     text-align: center;
     margin-bottom:5pt;
     margin-top:15pt;
     width: 550pt;
-   
+    font-weight: 400;
 }
 
 @keyframes move3{
@@ -1060,8 +1061,8 @@ span{
     }
     
     .img2{
-        width: 37pt;
-        height: 37pt;
+        width: 35pt;
+        height: 35pt;
         background-size: cover;
         background-position: center;
         margin-right: 20pt;
