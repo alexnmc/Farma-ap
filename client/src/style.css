@@ -143,7 +143,7 @@ p{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(19, 34, 58);
+    background-color: rgb(39, 55, 80);
 }
 
 .contact{
@@ -899,8 +899,8 @@ span{
        width: 85%;
        height: 32pt;
        font-size:12pt;
-       margin-top:20pt;
-       margin-bottom:25pt;
+       margin-top:10pt;
+       margin-bottom:5pt;
     }
 
     h4{
@@ -962,6 +962,10 @@ span{
        width:auto;
        font-size: 3.5vw;
        font-weight: 400;
+    }
+
+    .cont2{
+        margin-top:15pt;
     }
 
     .messageContainer{
