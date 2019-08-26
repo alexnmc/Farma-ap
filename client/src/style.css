@@ -533,7 +533,7 @@ h4{
 .cauta3,
 .cauta{
     font-family: 'arial';
-    color:  rgb(204, 15, 15);
+    color:  rgba(0, 70, 149, 0.938);
     font-size: 16pt;
     text-align: center;
     animation: move2 0.7s;
@@ -1161,8 +1161,8 @@ span{
     }
 
     .imgWrap{
-        margin-bottom: 3vh;
-        margin-top: 3vh;
+        margin-bottom: 4vh;
+        margin-top: 4vh;
         display: flex;
         align-items: center;
         justify-content: center;
