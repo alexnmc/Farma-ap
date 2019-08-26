@@ -61,7 +61,6 @@ body::before {
     align-items: center;
     font-size: 15px;
     font-weight: 900;
-    
     display:flex;
     justify-content: space-around;
     
@@ -71,7 +70,7 @@ body::before {
 a{
     text-decoration: none;
     font-family: 'arial';
-    color:white;
+    color: white;
     cursor: pointer;
 }
 
@@ -524,17 +523,17 @@ h4{
 .img1{
     width: 50px;
     height: 50px;
-    background-image: url('./Photos/farmacie2.png');
+    background-image: url('./Photos/foto.png');
     background-size: cover;
     background-position: center;
     animation: move1 0.7s;
-    margin:10pt;
+   
 }
 
 .cauta3,
 .cauta{
     font-family: 'arial';
-    color: rgb(40, 95, 184);
+    color:  rgb(204, 15, 15);
     font-size: 16pt;
     text-align: center;
     animation: move2 0.7s;
@@ -792,19 +791,13 @@ span{
 
 @media only screen and (max-width: 600px) {
 
-    
-
-    a{
-        color: white;
-    }
-    
     .bookingContainer{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
         margin-top: 0pt;
-     }
+    }
     
     .input{
         width: 67vw;
@@ -1046,11 +1039,10 @@ span{
     }
 
     .img1{
-        width: 35pt;
-        height: 35pt;
-        margin-right:3pt;
+        width: 32pt;
+        height: 32pt;
         animation: fade 2.5s;
-        margin-left: 10pt;
+       
     }
 
     .myImg{

@@ -76,7 +76,7 @@ class Home extends Component {
                     <div className='bookingContainer'>
                         {this.props.toggleHome ? 
                             <div className = "imgWrap">
-                                <div className = 'img1'></div>
+                               
                                 <h1 className = 'cauta'>Caută produsul dorit:</h1>
                             </div>
                             : 
