@@ -1,5 +1,6 @@
 import React from 'react'
 import { withPharma } from './PharmaProvider'
+import CheckAnimation from './UncontrolledLottie.jsx'
 
 
 
@@ -83,7 +84,9 @@ const PharmaLogin = props =>  {
                                 {props.toggle3 === 'success' ?
 
                                 <div style = {{height: '300pt'}}>
+                                    
                                     <h4>Contul dumneavoastrã a fost creat!</h4>
+                                    <CheckAnimation/>
                                     <h4>Vã rugãm sã activați contul prin link-ul primit în email.</h4>
                                     <h4>Mulțumim!</h4>
                                 </div>

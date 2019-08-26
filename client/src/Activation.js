@@ -2,6 +2,8 @@ import React, {Component} from 'react'
 import {withPharma} from './PharmaProvider'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
+import CheckAnimation from './UncontrolledLottie.jsx'
+
 
 
 class Activation extends Component{
@@ -45,6 +47,7 @@ class Activation extends Component{
         return(
             <div className = "contact">
                 <h2 className = "activH1">{!this.state.toggle ? "Mulțumim!Contul este activat." : "Contul este activ."}</h2>
+                <CheckAnimation/>
                 <Link style = {{fontSize: '15pt', fontWeight: '900'}} to = "/pharma">Login</Link>
             </div>
         )

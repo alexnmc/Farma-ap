@@ -9,6 +9,7 @@ import PhotoCamera from './Camera'
 
 
 
+
 class Home extends Component {
     constructor(props){
         super(props)

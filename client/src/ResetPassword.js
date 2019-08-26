@@ -3,6 +3,8 @@ import {withPharma} from './PharmaProvider'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 import ResetLoading from './ResetLoading'
+import CheckAnimation from './UncontrolledLottie.jsx'
+
 
 class Activation extends Component{
     constructor(props){
@@ -51,6 +53,7 @@ class Activation extends Component{
                 <div className = "contact">
                     <div className = "loginForm2">
                         <h2 className = "activH1">Mulțumim! Parola a fost schimbatã.</h2>
+                        <CheckAnimation/>
                         <Link style = {{fontSize: '15pt', fontWeight: '900'}} to = "/pharma">Login</Link>
                     </div>
                 </div>
