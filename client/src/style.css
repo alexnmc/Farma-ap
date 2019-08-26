@@ -72,13 +72,13 @@ body::before {
     height: 1pt;
     content: " ";
     position: absolute;
-    border-bottom: 5px solid rgb(120, 213, 241);
+    border-bottom: 5px solid rgba(139, 228, 255, 0.945);
     top:54px;
 }
 
 a{
     text-decoration: none;
-    font-family: 'trebuchet ms';
+    font-family: 'arial';
     color:rgb(0, 74, 160);
     cursor: pointer;
 }
@@ -184,7 +184,7 @@ p{
     align-items: center;
     color:  rgba(35, 111, 199, 0.918);
     padding-left:5pt;
-    font-family: 'trebuchet ms';
+    font-family: 'arial';
     border-radius: 9pt;
     -webkit-appearance: none;
     animation: fade 2s;
@@ -202,7 +202,7 @@ p{
     color:  rgba(35, 111, 199, 0.918);
     border: 1px solid  rgba(71, 124, 173, 0.733);
     padding-left:5pt;
-    font-family: 'trebuchet ms';
+    font-family: 'arial';
     border-radius: 9pt;
     -webkit-appearance: none;
     animation: fade 2s;
@@ -248,7 +248,7 @@ input{
     border: 1px solid  rgba(71, 124, 173, 0.733);
     border-radius: 6px;
     padding-left:5pt;
-    font-family: 'trebuchet ms';
+    font-family: 'arial';
     color:rgba(0, 78, 131, 0.822);
     border-radius: 9pt;
     box-shadow: none;
@@ -351,7 +351,7 @@ button{
     border: 2px solid rgba(0, 0, 255, 0.007);
     background-color: white;
     color:  rgb(0, 97, 207);
-    font-family: 'trebuchet ms';
+    font-family: 'arial';
     font-weight: 600
 }
 
@@ -365,7 +365,7 @@ button{
 }
 
 .h1{
-    font-family: 'trebuchet ms';
+    font-family: 'arial';
     font-size:11pt;
     color:  rgb(0, 97, 207);
     margin:auto;
@@ -375,7 +375,7 @@ button{
 }
 
 .h1A{
-    font-family: 'trebuchet ms';
+    font-family: 'arial';
     font-size:11pt;
     color:  rgb(0, 97, 207);
     font-weight:900;
@@ -384,7 +384,7 @@ button{
 
 h4{
     color: rgb(0, 85, 182);
-    font-family: 'trebuchet ms';
+    font-family: 'arial';
     font-size:14pt;
     margin-bottom: 20pt;
     margin-top: 30pt;
@@ -393,7 +393,7 @@ h4{
 
 .h4{
     color: rgb(0, 85, 182);;
-    font-family: 'trebuchet ms';
+    font-family: 'arial';
     font-size:14pt;
     margin-bottom: -4pt;
     margin-top: 30pt;
@@ -420,7 +420,7 @@ h4{
     border: 2px solid  rgba(0, 53, 114, 0.383);
     background-color:  rgb(253, 252, 251);
     color: rgba(21, 64, 184, 0.918);
-    font-family: 'trebuchet ms';
+    font-family: 'arial';
     margin-top:5pt;
     padding-left:3.5pt;
     font-size:12pt;
@@ -553,7 +553,7 @@ h4{
 }
 
 .cauta2{
-    font-family: 'trebuchet ms';
+    font-family: 'arial';
     color: rgb(53, 110, 202);
     font-size: 21pt;
     text-align: center;
@@ -564,7 +564,7 @@ h4{
 }
 
 .activH1{
-    font-family: 'trebuchet ms';
+    font-family: 'arial';
     color: rgb(53, 110, 202);
     font-size: 18pt;
     margin-top:25pt;
@@ -583,7 +583,7 @@ h4{
 }
 
 .savedImg{
-    font-family: 'trebuchet ms';
+    font-family: 'arial';
     color: rgba(0, 90, 194, 0.835);
     font-size: 13pt;
     text-align: center;
@@ -613,7 +613,7 @@ h4{
 }
 
 .h3{
-    font-family: 'trebuchet ms';
+    font-family: 'arial';
     color: rgb(0, 151, 221);
     font-size: 16pt;
     text-align: center;
@@ -624,7 +624,7 @@ h4{
 
 
 .h5{
-    font-family: 'trebuchet ms';
+    font-family: 'arial';
     color:  rgb(0, 81, 173);
     font-size: 16pt;
     text-align: center;
@@ -635,7 +635,7 @@ h4{
 }
 
 .h6{
-    font-family: 'trebuchet ms';
+    font-family: 'arial';
     color:  rgb(0, 81, 173);
     font-size: 14pt;
     text-align: center;
@@ -671,7 +671,7 @@ h4{
 
 
 .farmaup{
-    font-family: 'trebuchet ms';
+    font-family: 'arial';
     color: rgb(0, 174, 255);
     font-size: 18pt;
     text-align: center;
@@ -744,7 +744,7 @@ h4{
     justify-content: space-around;
     width: 96%;
     min-height: 25pt;
-    font-family: 'trebuchet ms';
+    font-family: 'arial';
     border: 1px solid rgba(29, 29, 29, 0.178);
     border-radius:5px;
     margin:auto;
