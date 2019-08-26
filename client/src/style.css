@@ -55,7 +55,7 @@ body::before {
 .navbar {
     width: 100vw;
     height: 65px;
-    background-color:rgb(40, 95, 184);
+    background-color:rgb(255, 255, 255);
     display:flex;
     position: relative;
     align-items: center;
@@ -70,7 +70,7 @@ body::before {
 a{
     text-decoration: none;
     font-family: 'arial';
-    color: white;
+    color: rgb(40, 95, 184);
     cursor: pointer;
 }
 
@@ -523,7 +523,7 @@ h4{
 .img1{
     width: 47px;
     height: 47px;
-    background-image: url('./Photos/foto.png');
+    background-image: url('./Photos/farmacie2.png');
     background-size: cover;
     background-position: center;
     animation: move1 0.7s;
