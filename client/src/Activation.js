@@ -26,15 +26,11 @@ class Activation extends Component{
                         message: "Mulțumim! Contul este activat."
                     }) 
                 })
-            
-            if(res.data.confirmed === true){
+            }else if(res.data.confirmed === true){
                 this.setState({message: "Cont activ!"})
-            }
-            
-            if(!res.data){
+            }else{
                 this.setState({message: "Cont inexistent!"})
             }
-        }
         }).catch(err => this.setState({message: "Erroare! Încercați din nou."}))
     }
   
