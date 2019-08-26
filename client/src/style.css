@@ -63,7 +63,6 @@ body::before {
     font-weight: 300;
     display:flex;
     justify-content: space-around;
-   
 }
 
 
@@ -93,6 +92,7 @@ a{
 
 p{
     font-weight: 600;
+    color:white;
 }
 
 .p2{
@@ -111,7 +111,6 @@ p{
     width: 150pt;
     text-align: start;
     margin-left: -25pt
-   
 }
 
 .p3{
@@ -131,7 +130,7 @@ p{
 
 .p33{
     width: 40pt;
-    color: rgba(62, 142, 212, 0.753)
+    color: white
 }
 
 .home{
@@ -351,7 +350,7 @@ button{
 .h1{
     font-family: 'arial';
     font-size:11pt;
-    color:  rgb(0, 97, 207);
+    color: white;
     margin:auto;
     margin-top:0pt;
     font-weight:900;
@@ -361,7 +360,7 @@ button{
 .h1A{
     font-family: 'arial';
     font-size:11pt;
-    color:  rgb(0, 97, 207);
+    color: white;
     font-weight:900;
     min-width:100pt;
 }
@@ -567,7 +566,7 @@ h4{
 
 .savedImg{
     font-family: 'arial';
-    color: rgba(0, 90, 194, 0.835);
+    color: white;
     font-size: 13pt;
     text-align: center;
     margin:auto;
@@ -772,7 +771,7 @@ span{
 .h2{
     font-family: 'liberation';
     font-size:14pt;
-    color:  rgba(0, 70, 149, 0.938);
+    color: white;
     margin:4%
 }
 
@@ -1094,11 +1093,10 @@ span{
         font-family: arial
     }
 
-    
     .h1{
        font-size: 11pt;
         margin: 2pt;
-        font-weight: 900;
+        font-weight: 400;
         text-align: center;
         width: 100pt;
         font-family: "Open Sans", Arial, sans-serif;
@@ -1107,8 +1105,8 @@ span{
     .h1A{
         font-family: 'trebuchet ms';
         font-size:11pt;
-        color:  rgb(0, 97, 207);
-        font-weight:900;
+        color: white;
+        font-weight:400;
         min-width:40pt;
        
     }
