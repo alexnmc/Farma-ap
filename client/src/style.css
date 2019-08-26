@@ -54,7 +54,7 @@ body::before {
 
 .navbar {
     width: 100vw;
-    height: 60px;
+    height: 65px;
     background-color:rgb(40, 95, 184);
     display:flex;
     position: relative;
@@ -791,6 +791,12 @@ span{
 
 @media only screen and (max-width: 600px) {
 
+    
+    .navbar{
+        height:60px;
+    }
+    
+    
     .bookingContainer{
         display: flex;
         flex-direction: column;
