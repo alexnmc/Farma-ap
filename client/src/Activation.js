@@ -11,7 +11,7 @@ class Activation extends Component{
         super(props)
         this.state = {
             id: '',
-            toggle: false
+            message: ''
         }
      }
 
@@ -21,13 +21,21 @@ class Activation extends Component{
             console.log(res)
             if(res.data.confirmed === false){
                 const newUser = {confirmed: true}
-                axios.put(`/user/activate/${id}`, newUser).then(res => {  
-                 
-            })
-            }else{
-                this.setState({toggle: true})
+                axios.put(`/user/activate/${id}`, newUser).then(res => { 
+                    this.setState({
+                        message: "Mulțumim!Contul este activat."
+                    }) 
+                })
+            
+            if(res.data.confirmed === true){
+                this.setState({message: "Cont activ!"})
             }
-        })
+            
+            if(!res.data){
+                this.setState({message: "Cont inexistent!"})
+            }
+        }
+        }).catch(err => this.setState({message: "Erroare! Încercați din nou."}))
     }
   
     activate = () => {
@@ -46,8 +54,8 @@ class Activation extends Component{
     render(){
         return(
             <div className = "contact">
-                <h2 className = "activH1">{!this.state.toggle ? "Mulțumim!Contul este activat." : "Contul este activ."}</h2>
-                <CheckAnimation/>
+                <h2 className = "activH1">{this.state.message}</h2>
+                {this.state.message === "Mulțumim!Contul este activat." ? <CheckAnimation/> :  <div className = 'img1'></div>}
                 <Link style = {{fontSize: '15pt', fontWeight: '900', marginTop: '15pt'}} to = "/pharma">Login</Link>
             </div>
         )

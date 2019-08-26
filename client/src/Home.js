@@ -74,7 +74,7 @@ class Home extends Component {
             return(
                 <div className = 'home'>
                     <div className='bookingContainer'>
-                    {this.props.toggleHome ? 
+                        {this.props.toggleHome ? 
                             <div className = "imgWrap">
                                 <div className = 'img1'></div>
                                 <h1 className = 'cauta'>Caută produsul dorit:</h1>
@@ -83,8 +83,8 @@ class Home extends Component {
                             <div className = "imgWrap">
                                 <h1 className = 'cauta3'>{!this.state.enlargeToggle ? "Fotografiați rețeta sau a produsul cãutat:" : "Poza salvatã:"}</h1>
                             </div>
-                    }
-                         <form className = 'bookingForm' onSubmit={this.getFarmacies}  >
+                        }
+                        <form className = 'bookingForm' onSubmit={this.getFarmacies}  >
                         { this.props.toggleHome ?
                             <div>
                                 {!this.props.loading ?
@@ -128,7 +128,7 @@ class Home extends Component {
                            :
                             
                             <div className = "cameraWrap"> 
-                            {this.props.img ?  
+                            { this.props.img ?  
                                 <div className = "savedImgWrap">
                                     { !this.state.enlargeToggle && this.props.img.length && <h2 className = "savedImg">Pozã salvatã:</h2>}
                                         <div style = {{display: "block", margin:"auto"}}>

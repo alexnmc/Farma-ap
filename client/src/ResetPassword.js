@@ -16,7 +16,6 @@ class Activation extends Component{
         }
      }
 
-
     componentDidMount(){
         let arr = this.props.history.location.pathname.split('')
         arr.splice(0,15)
@@ -30,8 +29,6 @@ class Activation extends Component{
         }).catch(err => console.log(err))
     }
     
-    
-
     resetAndDelete = () => {
         this.setState({loading: 'on'})
         let arr = this.props.history.location.pathname.split('')
