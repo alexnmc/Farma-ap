@@ -63,7 +63,7 @@ class Activation extends Component{
                 <div className = "contact">
                 {this.state.toggle ?
                     <div className = "loginForm2">
-                        <h4 className = "h4">Introduceți parola nouã:</h4>
+                        <h4 className = "h4">Vã rugãm sã introduceți parola nouã:</h4>
                         <input
                             className = "login33"
                             type="password"
