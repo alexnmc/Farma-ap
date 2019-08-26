@@ -968,7 +968,7 @@ span{
         font-size: 11pt;
         font-weight:500;
         flex-wrap: wrap;
-        background-color: rgba(184, 197, 209, 0.411);
+        background-color: rgba(171, 178, 185, 0.411);
     }
     
     .h2{
@@ -1082,14 +1082,13 @@ span{
         height: 21pt;
         font-size: 11pt;
         margin:5pt;
-        color: rgb(0, 97, 207);
     }
 
      .input2{
         width:105pt;
         height: 22pt;
         font-size: 11pt;
-        border: 1px solid #0061cf6e;
+        border: 0px solid #0061cf6e;
         margin:5pt;
         margin-right: 12pt;
         font-family: arial
@@ -1098,7 +1097,7 @@ span{
     .h1{
        font-size: 11pt;
         margin: 2pt;
-        font-weight: 400;
+        font-weight: 600;
         text-align: center;
         width: 100pt;
         font-family: "Open Sans", Arial, sans-serif;
@@ -1107,8 +1106,7 @@ span{
     .h1A{
         font-family: 'trebuchet ms';
         font-size:11pt;
-        color: white;
-        font-weight:400;
+        font-weight:600;
         min-width:40pt;
        
     }
@@ -1166,7 +1164,6 @@ span{
     }
 
     .link{
-        color: rgb(0, 74, 160);
         margin-left: 7pt;
         font-size: 3.7vw;
         font-family: arial
