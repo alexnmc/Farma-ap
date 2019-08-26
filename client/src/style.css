@@ -223,6 +223,8 @@ p{
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
+    border-top-right-radius: 15pt;
+    border-bottom-right-radius: 15pt;
 }
 
 input{
@@ -242,6 +244,7 @@ input{
     -moz-box-shadow: none;
     -webkit-appearance: none;
     animation: fade 2s;
+    border-radius: 15pt;
     background-color: rgb(255, 255, 255);
 }
 
@@ -269,6 +272,7 @@ button{
     margin-bottom : 15pt;
     border: 0px solid rgba(0, 0, 173, 0.144);
     animation: fade 2s;
+    border-radius:15pt;
 }
 
 
