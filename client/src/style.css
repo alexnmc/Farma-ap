@@ -135,7 +135,7 @@ p{
 }
 
 .home{
-    height: 93.5vh;
+    height: 91vh;
     width: 100vw;
     display:flex;
     flex-direction: column;
@@ -145,14 +145,14 @@ p{
 }
 
 .contact{
-    height: 92vh;
+    height: 91vh;
     width: 100vw;
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     padding-top:10vh;
-    background-color:#fcfcfce1;
+    background-color: rgb(15, 32, 58);
 }
 
 .bookingContainer{
@@ -161,7 +161,6 @@ p{
     align-items: center;
     justify-content: flex-start;
     position: relative;
-   
 }
 
 .input{
@@ -416,7 +415,7 @@ h4{
 
 .admin{
     background-color: rgb(19, 38, 68);
-    height: 92vh;
+    height: 91vh;
     width: 100vw;
     display:flex;
     align-items: center;
@@ -456,10 +455,8 @@ h4{
     justify-content: center;
     margin:auto;
     background-color: rgb(255, 255, 255);
-    border-radius:3px;
     margin-top: 10vh;
     padding-bottom: 10pt;
-    border-radius: 4pt;
     border: 0px solid rgba(165, 165, 165, 0.287);
 }
 
@@ -600,7 +597,7 @@ h4{
 
 .h3{
     font-family: 'arial';
-    color: rgb(0, 151, 221);
+    color: rgb(134, 217, 255);
     font-size: 16pt;
     text-align: center;
     margin-bottom:5pt;
@@ -611,7 +608,7 @@ h4{
 
 .h5{
     font-family: 'arial';
-    color:  rgb(0, 81, 173);
+    color: rgb(255, 255, 255);
     font-size: 16pt;
     text-align: center;
     margin-bottom:5pt;
@@ -622,7 +619,7 @@ h4{
 
 .h6{
     font-family: 'arial';
-    color:  rgb(0, 81, 173);
+    color:  rgb(239, 246, 255);
     font-size: 14pt;
     text-align: center;
     margin-bottom:5pt;
@@ -787,9 +784,6 @@ span{
 
 @media only screen and (max-width: 600px) {
 
-    
-    
-    
     .bookingContainer{
         display: flex;
         flex-direction: column;
