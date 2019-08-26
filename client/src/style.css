@@ -200,7 +200,7 @@ p{
     justify-content: center;
     align-items: center;
     color:  rgba(35, 111, 199, 0.918);
-    border: 1px solid rgba(52, 93, 131, 0.616);
+    border: 1px solid  rgba(71, 124, 173, 0.733);
     padding-left:5pt;
     font-family: 'trebuchet ms';
     border-radius: 9pt;
@@ -245,7 +245,7 @@ input{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid  rgba(52, 93, 131, 0.616);
+    border: 1px solid  rgba(71, 124, 173, 0.733);
     border-radius: 6px;
     padding-left:5pt;
     font-family: 'trebuchet ms';
@@ -279,7 +279,7 @@ button{
     font-size: 13pt;
     color: white;
     cursor: pointer;
-    margin-bottom : 20pt;
+    margin-bottom : 15pt;
     border-radius:9pt;
     border: 0px solid rgba(0, 0, 173, 0.144);
     animation: fade 2s;
@@ -385,8 +385,8 @@ button{
 h4{
     color: rgb(0, 85, 182);
     font-family: 'trebuchet ms';
-    font-size:15pt;
-    margin-bottom: 30pt;
+    font-size:14pt;
+    margin-bottom: 20pt;
     margin-top: 30pt;
     text-align: center;
 }
@@ -402,7 +402,7 @@ h4{
 
 .login1{
     width: 90%;
-    height: 37pt;
+    height: 35pt;
     border: 2px solid  rgba(0, 53, 114, 0.383);
     background-color:  rgb(253, 252, 251);
     color:black;
@@ -416,7 +416,7 @@ h4{
 
 .login11{
     width: 90%;
-    height: 37pt;
+    height: 35pt;
     border: 2px solid  rgba(0, 53, 114, 0.383);
     background-color:  rgb(253, 252, 251);
     color: rgba(21, 64, 184, 0.918);
@@ -444,7 +444,7 @@ h4{
 
 .loginForm{
     height:auto;
-    width:300pt;
+    width:290pt;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -454,7 +454,7 @@ h4{
 
 .loginForm2{
     height:auto;
-    width:300pt;
+    width:290pt;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -463,7 +463,7 @@ h4{
 
 .loginContainer{
     height:auto;
-    width:360pt;
+    width:350pt;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -488,20 +488,20 @@ h4{
 .cont{
    display: flex;
    width:auto;
-   font-family: 'trebuchet ms';
-   font-size: 12pt;
+   font-family: 'arial';
+   font-size: 10pt;
    font-weight: 900;
-   color:rgb(218, 105, 0);
+   color:rgb(190, 92, 0);
    cursor: pointer;
 }
 
 .cont2{
    display: flex;
    width:auto;
-   font-family: 'trebuchet ms';
-   font-size: 12pt;
+   font-family: 'arial';
+   font-size: 10pt;
    font-weight: 900;
-   color:rgb(218, 105, 0);
+   color:rgb(192, 93, 0);
    margin-top:40pt;
    cursor: pointer;
 }
@@ -637,7 +637,7 @@ h4{
 .h6{
     font-family: 'trebuchet ms';
     color:  rgb(0, 81, 173);
-    font-size: 16pt;
+    font-size: 14pt;
     text-align: center;
     margin-bottom:5pt;
     margin-top:15pt;
@@ -656,8 +656,8 @@ h4{
 }
 
 .img3{
-    width: 50pt;
-    height: 50pt;
+    width: 40pt;
+    height: 40pt;
     background-image: url('./Photos/farmacie2.png');
     background-size: cover;
     background-position: center;
@@ -673,7 +673,7 @@ h4{
 .farmaup{
     font-family: 'trebuchet ms';
     color: rgb(0, 174, 255);
-    font-size: 23pt;
+    font-size: 18pt;
     text-align: center;
     margin-bottom:5pt;
     font-weight:900;
@@ -683,8 +683,8 @@ h4{
 
 
 .img2{
-    width: 45pt;
-    height: 45pt;
+    width: 40pt;
+    height: 40pt;
     background-image: url('./Photos/farmacie2.png');
     background-size: cover;
     background-position: center;
@@ -702,8 +702,8 @@ h4{
   }
 
 .loginLogo{
-    width: 35pt;
-    height: 35pt;
+    width: 29pt;
+    height: 29pt;
     background-image: url('./Photos/farmacie2.png');
     background-size: cover;
     background-position: center;
@@ -770,7 +770,7 @@ span{
 .link{
     color: rgb(0, 74, 160);
     margin-left: 7pt;
-    font-size: 12pt;
+    font-size: 10pt;
 }
 
 .messageWrap{
@@ -794,9 +794,9 @@ span{
 }
 
 .cameraLogo{
-    width: 25pt;
-    margin-left: 16%;
-    margin-right: -30%
+    width: 22pt;
+    margin-left: 2%;
+   
 }
 
 
