@@ -63,6 +63,7 @@ body::before {
     font-weight: 900;
     display:flex;
     justify-content: space-around;
+    border-bottom: 3px solid rgb(40, 95, 184);
 }
 
 
