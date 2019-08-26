@@ -264,7 +264,7 @@ input{
 }
 
 input::placeholder{
-    color:rgb(59, 109, 167);
+    color:rgba(59, 109, 167, 0.788);
     font-size: 13pt;
 }
 
@@ -403,7 +403,7 @@ h4{
 .login1{
     width: 90%;
     height: 35pt;
-    border: 2px solid  rgba(0, 53, 114, 0.383);
+    border: 2px solid  rgba(0, 53, 114, 0.180);
     background-color:  rgb(253, 252, 251);
     color:black;
     border-radius: 3px;
@@ -417,7 +417,7 @@ h4{
 .login11{
     width: 90%;
     height: 35pt;
-    border: 2px solid  rgba(0, 53, 114, 0.383);
+    border: 2px solid  rgba(0, 53, 114, 0.180);
     background-color:  rgb(253, 252, 251);
     color: rgba(21, 64, 184, 0.918);
     font-family: 'arial';
@@ -429,7 +429,7 @@ h4{
 }
 
 .admin{
-    background-color: rgba(238, 238, 238, 0.808);
+    background-color: rgba(255, 255, 255, 0.507);
     height: 92vh;
     width: 100vw;
     display:flex;
