@@ -79,7 +79,7 @@ class PharmaPortal extends Component {
             <div className = 'pharmaport'>
                 <div className = 'messageWrap'>
                 <div style = {{margin: "auto" , width: "97%" , display:'flex', alignItems: 'center', justifyContent: 'space-evenly', marginBottom: '5pt'}}>
-                    <p className = 'h1A' style = {{cursor: 'pointer' , color:"red"}}  onClick = {() => this.helpToggle()}>{this.state.helpToggle ? "Utilizare" : "Mesaje"}</p>
+                    <p className = 'h1A' style = {{cursor: 'pointer' , color:"red"}}  onClick = {() => this.helpToggle()}>{this.state.helpToggle ? "utilizare" : "înapoi"}</p>
                     <p className = 'h1A' style = {{marginRight:'-5vw'}}>{this.props.user.username}</p>
                 </div>
                 <div className = 'portalWrap'>
@@ -94,7 +94,7 @@ class PharmaPortal extends Component {
                     <option value = ''>Alege orasul:</option>
                     {this.props.cities.map((city, index) => <option key={city} value={city} className = {index}>{city}</option>)}
                     </select>
-                    <button className = "logout" onClick = {this.props.logout}>Ieșire</button>
+                    <button className = "logout" onClick = {this.props.logout}>ieșire</button>
                 </div>
                 {this.state.helpToggle ? 
                     
