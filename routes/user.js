@@ -101,7 +101,7 @@ authRouter.get('/by/:id', (req, res, next) => {    // get all for testing with p
 })
 
 authRouter.get('/reset/:email', (req, res, next) => {    // get all for testing with postman 
-    User.findOne({username: req.params.email} ,(err, data) => {
+    User.findOne({username: req.params.email, confirmed: true} ,(err, data) => {
         if(err) {
             res.status(500)
             return next(err)
