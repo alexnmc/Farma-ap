@@ -568,6 +568,16 @@ h4{
     width:auto
 }
 
+.help{
+    font-family: 'arial';
+    text-align: start;
+    font-size:12pt;
+    color: rgb(14, 25, 47);
+    font-weight:900;
+    margin-top:10pt;
+    
+}
+
 .savedImgWrap{
     display:flex;
     flex-direction: row;

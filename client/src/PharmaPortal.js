@@ -79,7 +79,7 @@ class PharmaPortal extends Component {
             <div className = 'pharmaport'>
                 <div className = 'messageWrap'>
                 <div style = {{margin: "auto" , width: "97%" , display:'flex', alignItems: 'center', justifyContent: 'space-evenly', marginBottom: '5pt'}}>
-                    <p className = 'h1A' style = {this.state.helpToggle ? {cursor: "pointer"} : {cursor: 'pointer' , color:"red"}}  onClick = {() => this.helpToggle()}>{this.state.helpToggle ? "Ajutor" : "Mesaje"}</p>
+                    <p className = 'h1A' style = {{cursor: 'pointer' , color:"red"}}  onClick = {() => this.helpToggle()}>{this.state.helpToggle ? "Utilizare" : "Mesaje"}</p>
                     <p className = 'h1A' style = {{marginRight:'-5vw'}}>{this.props.user.username}</p>
                 </div>
                 <div className = 'portalWrap'>
@@ -102,10 +102,12 @@ class PharmaPortal extends Component {
 
                     :
 
-                    <div className = 'contact'>
-                        <p className = "h1">Alegeți orașul în care doriți sa citiți mesaje</p>
-                        <p className = "h1">După rezolvarea unui mesaj dați click pe <span style = {{color: "red"}}>închide</span></p>
-                        <p className = "h1">Pentru a mãri poza din mesaj dați click pe pozã</p>
+                    <div className = "pharmaport" style = {{marginTop: '15vh'}}>
+                    <ul>
+                        <li className = "help">Alegeți orașul în care doriți sa citiți mesaje</li>
+                        <li className = "help">După rezolvarea unui mesaj dați click pe <span style = {{color: "red"}}>închide</span></li>
+                        <li className = "help">Pentru a mãri poza din mesaj dați click pe pozã</li>
+                    </ul>
                     </div>
                     }
                 </div>
