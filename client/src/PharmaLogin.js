@@ -1,6 +1,7 @@
 import React from 'react'
 import { withPharma } from './PharmaProvider'
 import CheckAnimation from './UncontrolledLottie.jsx'
+import ResetLoading from './ResetLoading'
 
 
 
@@ -36,8 +37,8 @@ const PharmaLogin = props =>  {
                                         value={props.password}
                                         onChange={props.handleChange2}
                                     />
-                                    {props.loading === 'off' ?
-                                    <p className = "alert" style = {this.props.alert2 ? {color:'blue'} : null}>{this.props.alert || this.props.alert2}</p>
+                                    {!props.loading ?
+                                    <p className = "alert" style = {props.alert2 ? {color:'blue'} : null}>{props.alert || props.alert2}</p>
                                     :
                                     <ResetLoading/>
                                     }

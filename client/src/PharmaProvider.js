@@ -41,7 +41,6 @@ class PharmaProvider extends Component {
             loading: false,
             alert: '',
             alert2:'',
-            loading:'off'
         }
     }
 
@@ -73,17 +72,18 @@ class PharmaProvider extends Component {
 
     login = userInfo => {
         axios.post('/user/login', userInfo).then(res => {
-            this.setState({loading:'off'})
             if(res.data.user.confirmed){
                 const { token, user } = res.data          // when the token and user comes back from the database we store it in local storage
                 localStorage.setItem("user", JSON.stringify(user))
                 localStorage.setItem("token", token)
-                this.setState({ user: user, token })
+                this.setState({user: user, token })
+                this.setState({loading:false})
             }else{
-                this.setState({alert: "Vã rugãm sã activati contul!"})
+                this.setState({alert: "Vã rugãm sã activati contul!" , loading:false})
                 this.sendActivationEmail(res.data.user._id, res.data.user.username)
+
             }
-        }).catch(err => this.setState({alert: err.response.data.errMsg}))
+        }).catch(err => this.setState({alert: err.response.data.errMsg, loading:false}))
     }
 
     editToggler = () => {
@@ -118,7 +118,7 @@ class PharmaProvider extends Component {
 
     handleLogin = (e) => {   //login method, we send the username and password entered in the input fields to the database 
         e.preventDefault()
-        this.setState({loading: 'on'})
+        this.setState({loading:true})
         const newUser = {
             username: this.state.username,
             password: this.state.password,
