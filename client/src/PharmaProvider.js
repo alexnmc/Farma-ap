@@ -40,7 +40,8 @@ class PharmaProvider extends Component {
             confirmed: '',
             loading: false,
             alert: '',
-            alert2:''
+            alert2:'',
+            loading:'off'
         }
     }
 
@@ -72,7 +73,7 @@ class PharmaProvider extends Component {
 
     login = userInfo => {
         axios.post('/user/login', userInfo).then(res => {
-            console.log(res.data)
+            this.setState({loading:'off'})
             if(res.data.user.confirmed){
                 const { token, user } = res.data          // when the token and user comes back from the database we store it in local storage
                 localStorage.setItem("user", JSON.stringify(user))
@@ -115,8 +116,9 @@ class PharmaProvider extends Component {
         })
     }
 
-    handleLogin = (e) => {   // login method, we send the username and password entered in the input fields to the database 
+    handleLogin = (e) => {   //login method, we send the username and password entered in the input fields to the database 
         e.preventDefault()
+        this.setState({loading: 'on'})
         const newUser = {
             username: this.state.username,
             password: this.state.password,

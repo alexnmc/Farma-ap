@@ -36,7 +36,11 @@ const PharmaLogin = props =>  {
                                         value={props.password}
                                         onChange={props.handleChange2}
                                     />
-                                    <p className = "alert" style = {props.alert2 ? {color:'blue'} : null}>{props.alert || props.alert2}</p>
+                                    {props.loading === 'off' ?
+                                    <p className = "alert" style = {this.props.alert2 ? {color:'blue'} : null}>{this.props.alert || this.props.alert2}</p>
+                                    :
+                                    <ResetLoading/>
+                                    }
                                     <button className = 'loginButton' onClick={props.handleLogin}>Autentificare</button>
                                 </div>
                                 
