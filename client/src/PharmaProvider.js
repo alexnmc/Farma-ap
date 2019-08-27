@@ -76,7 +76,14 @@ class PharmaProvider extends Component {
             localStorage.setItem("user", JSON.stringify(user))
             localStorage.setItem("token", token)
             this.setState({ user: user, token })
-        }).catch(err => this.setState({alert: err.response.data.errMsg}))
+        }).catch(err => this.handleLoginError(err, res.data))
+    }
+
+    handleLoginError = (err, res.data) => {
+        this.setState({alert: err.response.data.errMsg}) 
+        if(err.response.data.errMsg === "Vã rugãm sã activați contul!"){
+            this.sendActivationEmail(res.data.user._id, res.data.user.username)
+        }
     }
 
     editToggler = () => {
@@ -154,7 +161,7 @@ class PharmaProvider extends Component {
                     :
                      this.setState({alert: "Cod greșit!"})
         :
-            this.setState({alert:'Parolele nu sint identice !'})
+            this.setState({alert:'Parolele nu sunt identice!'})
     }
 
     
@@ -397,7 +404,6 @@ class PharmaProvider extends Component {
                     onTakePhoto: this.onTakePhoto,
                     enlarge: this.enlarge,
                     rezolvat: this.rezolvat,
-                    sendConfirmationEmail: this.sendConfirmationEmail,
                     deleteMessage: this.deleteMessage,
                     handleChange3: this.handleChange3,
                     deletePhoto: this.deletePhoto,

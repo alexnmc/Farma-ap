@@ -14,7 +14,7 @@ authRouter.post("/signup", (req, res, next) => {
         }
         if (existingUser) {
                res.status(400)
-               return next(new Error ("Adresa de email este deja inregisratã !"))
+               return next(new Error ("Adresa de email este deja inregisratã!"))
         }
         const newUser = new User(req.body);
         newUser.save((err, addedUser) => {
@@ -38,7 +38,7 @@ authRouter.post("/login", (req, res, next) => {
 
         if (user && !user.confirmed) {
             res.status(403)
-            return next(new Error( "Vã rugãm sã activați contul!"))
+            return next(user, new Error("Vã rugãm sã activați contul!"))
        }
 
         // If that user isn't in the database:
