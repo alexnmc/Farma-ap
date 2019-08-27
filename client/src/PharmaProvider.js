@@ -79,10 +79,10 @@ class PharmaProvider extends Component {
         }).catch(err => this.handleLoginError(err, res.data))
     }
 
-    handleLoginError = (err, res.data) => {
+    handleLoginError = (err, data) => {
         this.setState({alert: err.response.data.errMsg}) 
         if(err.response.data.errMsg === "Vã rugãm sã activați contul!"){
-            this.sendActivationEmail(res.data.user._id, res.data.user.username)
+            this.sendActivationEmail(data.user._id, data.user.username)
         }
     }
 
