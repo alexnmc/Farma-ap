@@ -43,8 +43,9 @@ body::before {
 .alert{
     font-family: arial;
     font-size: 11pt;
-    color: rgb(219, 0, 0);
+    color: rgb(255, 6, 6);
     font-weight: 500;
+    height:20pt;
 }
 
 .navbar {
@@ -303,7 +304,7 @@ button{
    height: 35pt;
    font-size:12pt;
    background-color:rgb(30, 116, 255);
-   margin-top:30pt;
+   margin-top:20pt;
    animation:none;
    border-radius:1px;
 }
@@ -489,7 +490,7 @@ h4{
    font-size: 11pt;
    font-weight: 400;
    color:rgb(1, 196, 255);
-   margin-top:40pt;
+   margin-top:10pt;
    cursor: pointer;
 }
 
@@ -1212,7 +1213,7 @@ span{
     }
 
     .alert{
-        font-size: 10pt;
+        font-size: 11pt;
     }
 
     .footer{
