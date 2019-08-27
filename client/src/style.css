@@ -172,7 +172,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color:rgb(0, 0, 34);
     padding-left:5pt;
     font-family: 'arial';
     border-radius: 9pt;
@@ -206,7 +206,7 @@ p{
     display: flex;
     justify-content:space-between;
     align-items: center;
-    color:  rgba(35, 111, 199, 0.918);
+    color: rgb(0, 0, 34);
     border: 0px solid rgb(52, 93, 131);
     margin:auto;
 }
@@ -236,7 +236,7 @@ input{
     border: 0px solid  rgba(71, 124, 173, 0.733);
     padding-left:5pt;
     font-family: 'arial';
-    color:white;
+    color:rgb(0, 0, 34);
     box-shadow: none;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
