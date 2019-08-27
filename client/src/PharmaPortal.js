@@ -94,7 +94,7 @@ class PharmaPortal extends Component {
                     <option value = ''>Alege orasul:</option>
                     {this.props.cities.map((city, index) => <option key={city} value={city} className = {index}>{city}</option>)}
                     </select>
-                    <button className = "logout" onClick = {this.props.logout}>Log out </button>
+                    <button className = "logout" onClick = {this.props.logout}>Ieșire</button>
                 </div>
                 {this.state.helpToggle ? 
                     
