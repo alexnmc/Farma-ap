@@ -103,7 +103,9 @@ class PharmaPortal extends Component {
                     :
 
                     <div className = 'contact'>
-                        <p className = "h1">Asteptam pe Kinga sa scrie ce treb sa pun aici... </p>
+                        <p className = "h1">Alegeți orașul în care doriți sa citiți mesaje</p>
+                        <p className = "h1">După rezolvarea unui mesaj dați click pe <span style = {{color: "red"}}>închide</span></p>
+                        <p className = "h1">Pentru a mãri poza din mesaj dați click pe pozã</p>
                     </div>
                     }
                 </div>
