@@ -45,7 +45,6 @@ body::before {
     font-size: 11pt;
     color: rgb(219, 0, 0);
     font-weight: 500;
-    height: 5pt;
 }
 
 .navbar {

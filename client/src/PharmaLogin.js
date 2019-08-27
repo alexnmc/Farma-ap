@@ -37,7 +37,7 @@ const PharmaLogin = props =>  {
                                         value={props.password}
                                         onChange={props.handleChange2}
                                     />
-                                    {!props.loading ?
+                                    {props.loading ?
                                     <p className = "alert" style = {props.alert2 ? {color:'blue'} : null}>{props.alert || props.alert2}</p>
                                     :
                                     <ResetLoading/>
