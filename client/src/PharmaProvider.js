@@ -73,7 +73,7 @@ class PharmaProvider extends Component {
     login = userInfo => {
         axios.post('/user/login', userInfo).then(res => {
             console.log(res.data)
-            if(res.data.userconfirmed){
+            if(res.data.user.confirmed){
                 const { token, user } = res.data          // when the token and user comes back from the database we store it in local storage
                 localStorage.setItem("user", JSON.stringify(user))
                 localStorage.setItem("token", token)
