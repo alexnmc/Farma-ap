@@ -37,9 +37,8 @@ authRouter.post("/login", (req, res, next) => {
         }
 
         if (user && !user.confirmed) {
-            res.status(403)
-            return next(user, new Error("Vã rugãm sã activați contul!"))
-       }
+            return res.status(200).send(user)
+        }
 
         // If that user isn't in the database:
         if (!user ) {
