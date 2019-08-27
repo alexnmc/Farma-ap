@@ -72,14 +72,15 @@ class PharmaProvider extends Component {
 
     login = userInfo => {
         axios.post('/user/login', userInfo).then(res => {
-            if(res.data.confirmed){
+            console.log(res.data)
+            if(res.data.userconfirmed){
                 const { token, user } = res.data          // when the token and user comes back from the database we store it in local storage
                 localStorage.setItem("user", JSON.stringify(user))
                 localStorage.setItem("token", token)
                 this.setState({ user: user, token })
             }else{
                 this.setState({alert: "Vã rugãm sã activati contul!"})
-                this.sendActivationEmail(res.data._id, res.data.username)
+                this.sendActivationEmail(res.data.user._id, res.data.user.username)
             }
         }).catch(err => this.setState({alert: err.response.data.errMsg}))
     }
@@ -341,7 +342,7 @@ class PharmaProvider extends Component {
             id: id
         }
         axios.post('/mail/activate', newMail).then(res => {
-           
+           console.log(res)
         }).catch(err => console.log(err))
     }
 

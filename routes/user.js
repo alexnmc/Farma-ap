@@ -37,9 +37,8 @@ authRouter.post("/login", (req, res, next) => {
         }
 
         if (user && !user.confirmed) {
-            return res.status(200).send(user)
+            return res.status(200).send({user:user.withoutPassword()})
         }
-
         // If that user isn't in the database:
         if (!user ) {
              res.status(403)
