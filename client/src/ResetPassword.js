@@ -45,10 +45,10 @@ class Activation extends Component{
    
     render(){
         return(
-            this.props.alert2 === "Parola a fost schimbatã!" ?
+            this.props.alert2 !== "Parola a fost schimbatã!" ?
                 
                 <div className = "contact">
-                    <div className = "loginForm2">
+                    <div className = "loginForm2" style = {{width:'auto'}}>
                         <h2 className = "activH1">Mulțumim! Parola a fost schimbatã.</h2>
                         <CheckAnimation/>
                         <Link style = {{fontSize: '15pt', fontWeight: '900', marginTop: '15pt'}} to = "/pharma">Login</Link>

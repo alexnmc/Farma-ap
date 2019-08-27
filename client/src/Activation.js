@@ -18,7 +18,6 @@ class Activation extends Component{
 
     activateUser = (id) => {
         axios.get(`/user/by/${id}`).then(res=> {
-            console.log(res)
             if(res.data.confirmed === false){
                 const newUser = {confirmed: true}
                 axios.put(`/user/activate/${id}`, newUser).then(res => { 
