@@ -12,6 +12,7 @@ class PharmaProvider extends Component {
     constructor(){
         super()
         this.state = {
+            data:[],
             toggleHome: true,
             toggle3: '',
             user: JSON.parse(localStorage.getItem("user")) || {},
@@ -72,11 +73,12 @@ class PharmaProvider extends Component {
 
     login = userInfo => {
         axios.post('/user/login', userInfo).then(res => {
+            this.setState({data: res.data})
             const { token, user } = res.data          // when the token and user comes back from the database we store it in local storage
             localStorage.setItem("user", JSON.stringify(user))
             localStorage.setItem("token", token)
             this.setState({ user: user, token })
-        }).catch(err => this.handleLoginError(err, res.data))
+        }).catch(err => this.handleLoginError(err, this.state.data))
     }
 
     handleLoginError = (err, data) => {
