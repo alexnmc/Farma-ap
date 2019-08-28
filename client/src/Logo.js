@@ -11,7 +11,7 @@ const Logo = ()=> {
             <div style  = {{
                             width: "14px",
                             height: "34px",
-                            backgroundColor: "white",
+                            backgroundColor: "rgb(0, 224, 0)",
                             position:"absolute",
                             borderRadius:"20pt"
                             }}>
@@ -20,7 +20,7 @@ const Logo = ()=> {
             <div  style ={{
                             width: "34px",
                             height: "14px",
-                            backgroundColor: "white",
+                            backgroundColor: "rgb(0, 224, 0)",
                             position: "relative",
                             marginLeft:"-9.5px",
                             marginTop:"9.5px",

@@ -685,7 +685,7 @@ h4{
 
 .farmaup{
     font-family: 'arial';
-    color: white;
+    color: rgb(0, 224, 0);
     font-size: 15pt;
     text-align: center;
     font-weight:900;
@@ -695,7 +695,7 @@ h4{
 
 .img2{
    margin: 20pt;
-   margin-bottom: 25pt;
+   margin-bottom: 26pt;
 }
 
 @keyframes pop{
