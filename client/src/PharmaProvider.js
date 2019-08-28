@@ -239,6 +239,7 @@ class PharmaProvider extends Component {
         const { name, value } = e.target
         this.setState({
             [name]: value,
+            currentCity: e.target.value
         }, this.getMessages(e.target.value))
     }  
 

@@ -69,6 +69,10 @@ a{
     color:white;
 }
 
+a:hover{
+    color:rgb(0, 224, 0);
+}
+
 .b{
     animation: move1 0.7s;
 }
@@ -587,7 +591,6 @@ h4{
     color: rgb(14, 25, 47);
     font-weight:900;
     margin-top:10pt;
-    
 }
 
 .savedImgWrap{
@@ -1250,5 +1253,10 @@ span{
         margin-left: 10pt;
         width: 14.5%;
         max-width: 23pt;
+    }
+
+    .help{
+        font-size:10pt;
+        width:95%
     }
 }
