@@ -472,7 +472,8 @@ h4{
     margin:auto;
     background-color: rgb(37, 52, 93);
     margin-top: 10vh;
-    padding-bottom: 10pt;
+    padding-bottom:7pt;
+    padding-top:7pt;
     border: 0px solid rgba(165, 165, 165, 0.287);
 }
 
@@ -480,8 +481,7 @@ h4{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width:110%;
-    margin-top:7pt
+    width:107%;
 }
 
 .cont{
@@ -490,7 +490,7 @@ h4{
    font-family: 'arial';
    font-size: 11pt;
    font-weight: 400;
-   color:rgb(125, 225, 255);
+   color:rgb(93, 217, 255);
    cursor: pointer;
    margin-bottom:auto;
 }
@@ -501,7 +501,7 @@ h4{
    font-family: 'arial';
    font-size: 11pt;
    font-weight: 400;
-   color:rgb(125, 225, 255);
+   color:rgb(93, 217, 255);
    margin-top:10pt;
    cursor: pointer;
 }
@@ -720,11 +720,12 @@ h4{
   }
 
 .loginLogo{
-    width: 29pt;
-    height: 29pt;
+    width: 27pt;
+    height: 27pt;
     background-image: url('./Photos/farmacie2.png');
     background-size: cover;
     background-position: center;
+    margin-left:-5px;
 }
 
 .imgWrap{
@@ -788,7 +789,7 @@ span{
 .link{
     color: white;
     margin-left: 7pt;
-    font-size: 10pt;
+    font-size: 11pt;
 }
 
 .messageWrap{
@@ -1175,8 +1176,9 @@ span{
     }
     
     .loginLogo{
-        width: 28pt;
-        height: 28pt;
+        width: 27pt;
+        height: 27pt;
+        margin:-1px;
     }
 
     .imgWrap{
@@ -1204,7 +1206,7 @@ span{
 
     .link{
         margin-left: 7pt;
-        font-size: 3.7vw;
+        font-size: 3.5vw;
         font-family: arial
     }
 
@@ -1213,7 +1215,6 @@ span{
         align-items: center;
         justify-content: space-between;
         width:115%;
-        margin-top:5pt
     }
 
     .loading{
