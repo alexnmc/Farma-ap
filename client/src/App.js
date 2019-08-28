@@ -10,7 +10,8 @@ import PharmaPortal from './PharmaPortal'
 import Activation from './Activation'
 import ProtectedRoutes from './ProtectedRoutes'
 import {withPharma} from './PharmaProvider'
-import ResetPassword from './ResetPassword';
+import ResetPassword from './ResetPassword'
+import Terms from './Terms'
 
 
 
@@ -42,6 +43,7 @@ class App extends Component {
                     />
                     <Route path = "/resetpassword/:id"  component = {ResetPassword}/>
                     <Route path = "/activation/:id"  component = {Activation}/>
+                    <Route path = "/terms"  component = {Terms}/>
                 </Switch>
                 <Footer/>
             </div>

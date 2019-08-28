@@ -85,7 +85,6 @@ a:hover{
     margin-top: -18pt;
     width: 100vw;
 }
-
 .rezolvat{
     color:rgb(224, 45, 0);
     font-family: helvetica;
@@ -157,6 +156,25 @@ p{
     justify-content: flex-start;
     padding-top:10vh;
     background-color: rgb(15, 28, 51);
+}
+
+.terms{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(15, 28, 51);
+    padding:15pt;
+    padding-bottom:50pt;
+    color: white;
+    font-family: arial;
+}
+
+.titlu{
+   color: white;
+   margin:10pt;
 }
 
 .bookingContainer{
@@ -1241,4 +1259,20 @@ span{
         font-size:10pt;
         width:95%
     }
+
+    .terms{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(15, 28, 51);
+        padding:15pt;
+        padding-bottom:30pt;
+        color: white;
+        font-family: arial;
+        font-size:10pt;
+    }
+
 }
