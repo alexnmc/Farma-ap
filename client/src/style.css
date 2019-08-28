@@ -82,7 +82,7 @@ a:hover{
     align-items: center;
     justify-content: center;
     position: absolute;
-    margin-top: -18pt;
+    margin-top: -20pt;
     width: 100vw;
 }
 .rezolvat{
@@ -145,6 +145,7 @@ p{
     align-items: center;
     justify-content: center;
     background-color: rgb(15, 28, 51);
+    padding-bottom:20pt;
 }
 
 .contact{
@@ -1237,7 +1238,7 @@ span{
     }
 
     .footer{
-        margin-top:-10.5pt
+        margin-top:-13pt
     }
 
     .deletePic{
