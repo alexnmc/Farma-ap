@@ -836,7 +836,7 @@ span{
     .input{
         width: 65vw;
         height: 35pt;
-        font-size: 11pt;
+        font-size: 10pt;
         font-weight: 900;
         display: flex;
         justify-content: center;
@@ -849,20 +849,19 @@ span{
         width: 65vw;
         height: 35pt;
         margin:10pt;
-        font-size: 11pt;
+        font-size: 10pt;
         display: flex;
         justify-content: center;
         align-items: center;
         padding-left:7pt;
         font-family: arial;
         border:none;
-       
     }
 
     .inputS{
         width: 52vw;
         height: 35pt;
-        font-size: 11pt;
+        font-size: 10pt;
         border:none
     }
 
@@ -1089,7 +1088,7 @@ span{
     .h6,
     .h5,
     .h3{
-        font-size: 13pt;
+        font-size: 11pt;
         text-align: center;
         margin-bottom:5pt;
         width: 90vw;
