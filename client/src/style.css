@@ -298,7 +298,7 @@ button{
 
 
 .photoButton{
-    margin-top:15pt;
+    margin-top:14pt;
 }
 
 .deletePic{
@@ -834,24 +834,22 @@ span{
     }
     
     .input{
-        width: 67vw;
-        height: 36pt;
-        font-size: 12pt;
+        width: 65vw;
+        height: 35pt;
+        font-size: 11pt;
         font-weight: 900;
         display: flex;
         justify-content: center;
         align-items: center;
         padding-left:7pt; 
         font-family: arial;
-      
-       
     }
     
     input{
-        width: 67vw;
-        height: 36pt;
+        width: 65vw;
+        height: 35pt;
         margin:10pt;
-        font-size: 12pt;
+        font-size: 11pt;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -862,22 +860,22 @@ span{
     }
 
     .inputS{
-        width: 54.5vw;
-        height: 36pt;
-        font-size: 12pt;
+        width: 52vw;
+        height: 35pt;
+        font-size: 11pt;
         border:none
     }
 
     .searchIn{
-        width:67vw;
-        height: 36pt;
+        width:65vw;
+        height: 35pt;
         border-radius: 8pt;
         margin:auto;
     }
 
     .searchLogo{
-        height: 36pt;
-        width: 12.5vw;
+        height: 35pt;
+        width: 13vw;
         background-image: url('./Photos/search.gif');
         background-position: center;
         background-size: contain;
@@ -908,8 +906,8 @@ span{
         display:flex;
         align-items: center;
         justify-content: center;
-        width: 67vw;
-        height: 36pt;
+        width: 65vw;
+        height: 35pt;
         font-size: 12pt;
         color: white;
         cursor: pointer;
@@ -918,7 +916,7 @@ span{
     }
 
     .button2{
-        margin-top:15pt;
+        margin-top:14pt;
         margin-bottom:9.5%;
     }
 
@@ -1258,7 +1256,7 @@ span{
 
     .help{
         font-size:10pt;
-        width:95%
+        width:100%
     }
 
     .terms{
