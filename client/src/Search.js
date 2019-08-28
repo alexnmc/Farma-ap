@@ -15,7 +15,7 @@ render() {
    
     return (
         <div className = "searchIn">
-            <input type = "text" className = 'inputS' list="mylist" placeholder = 'Alege orasul:' value = {this.props.city2} onChange={this.props.handleChange3} required/>
+            <input type = "text" className = 'inputS' list="mylist" placeholder = 'Alege orașul:' value = {this.props.city2} onChange={this.props.handleChange3} required/>
             <datalist id="mylist" >
               {this.props.cities.map((city, index) => <option key={city} value={city} className = {index}>{city}</option>)}
             </datalist>

@@ -84,7 +84,7 @@ class PharmaPortal extends Component {
                 </div>
                 <div className = 'portalWrap'>
                     <div className= 'h1' style = {this.props.currentCity ? {opacity: 1} : {opacity:0}}>{this.props.messages.length === 1 ? '1 mesaj' : `${this.props.messages.length + ' mesaje'}`}</div>
-                    <input type = "text" className = 'input2' list="mylist" placeholder = 'Alege orasul:' value = {this.props.currentCity} onChange={this.props.handleChange} required/>
+                    <input type = "text" className = 'input2' list="mylist" placeholder = 'Alege orașul:' value = {this.props.currentCity} onChange={this.props.handleChange} required/>
                     <datalist id="mylist" >
                     {this.props.cities.map((city, index) => <option key={city} value={city} className = {index}>{city}</option>)}
                     </datalist>
