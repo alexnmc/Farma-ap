@@ -45,8 +45,8 @@ class PharmaPortal extends Component {
                 item.toggle ?
                 
                 <div className = "messageContainer" key = {item._id} style = {{backgroundColor: item.rezolvat ? "rgb(45, 54, 73)" : null}}>
-                    <p className = "p1">Email: <a href = {!item.rezolvat ? `mailto:${item.email}`: null} style = {!item.rezolvat? { color: "blue"} : {color:'black'}}>{item.email}</a></p>
-                    <p className = "p5">Tel: <a href = {!item.rezolvat? `tel: ${item.phone}` : null} style = {!item.rezolvat? {color: "blue"} : {color:"black"}}>{`0${item.phone}`}</a></p> 
+                    <p className = "p1">Email: <p href = {!item.rezolvat ? `mailto:${item.email}`: ''} style = {!item.rezolvat? { color: "blue"} : {color:'black'}}>{item.email}</p></p>
+                    <p className = "p5">Tel: <p href = {!item.rezolvat? `tel: ${item.phone}` : ''} style = {!item.rezolvat? {color: "blue"} : {color:"black"}}>{`0${item.phone}`}</p></p> 
                     {item.img ? <img  onClick = {!item.rezolvat ? () => this.props.enlarge(item._id) : null} className = 'myImg' alt = '' src = {item.img}/> : <div style = {{width:'30pt', height: '20pt'}}></div>}
                     <p className = "p3" style = {item.rezolvat ?  {color: "black"} : null}><span>Cautã: </span>{item.medication}</p>
                     <p className = "p4"> {moment(item.date).format('MMMM Do YYYY, HH:mm:ss ')}</p>

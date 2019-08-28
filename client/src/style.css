@@ -677,15 +677,6 @@ h4{
     to{margin-left: 0pt;}
 }
 
-.img3{
-    width: 40pt;
-    height: 40pt;
-    background-image: url('./Photos/farmacie2.png');
-    background-size: cover;
-    background-position: center;
-    animation: move4 0.5s
-}
-
 @keyframes move1{
     from{margin-right: 100vw}
     to{margin-right: 10pt}
@@ -694,24 +685,17 @@ h4{
 
 .farmaup{
     font-family: 'arial';
-    color: rgb(0, 174, 255);
-    font-size: 18pt;
+    color: white;
+    font-size: 15pt;
     text-align: center;
     font-weight:900;
     animation: pop2 0.5s linear 1;
-    animation-delay: 0.7s;
 }
 
 
 .img2{
-    width: 40pt;
-    height: 40pt;
-    background-image: url('./Photos/farmacie2.png');
-    background-size: cover;
-    background-position: center;
-    margin-right: 40pt;
-    animation: pop 0.5s linear 1;
-    animation-delay: 0.2s
+   margin: 20pt;
+   margin-bottom: 25pt;
 }
 
 @keyframes pop{
@@ -1096,9 +1080,9 @@ span{
     }
 
     .farmaup{
-        font-size: 20pt;
+        font-size: 17pt;
         text-align: center;
-        margin-bottom:5pt;
+        margin-bottom:10pt;
         font-weight:900;
         font-family: "Open Sans", Arial, sans-serif;
     }
