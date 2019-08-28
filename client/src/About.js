@@ -18,7 +18,7 @@ render(){
     return(
         <div className = "contact">
             <div className = "imgWrap2">
-                <Logo/>
+                
                 <h1 className = 'farmaup'>Farma - up</h1>
             </div>
             <h1 className = 'h6'>Gãsiți în cel mai scurt timp medicamentul sau produsul farmaceutic care îl cãutați!</h1>
