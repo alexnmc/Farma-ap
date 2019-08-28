@@ -44,11 +44,11 @@ class PharmaPortal extends Component {
             return(
                 item.toggle ?
                 
-                <div className = "messageContainer" key = {item._id} style = {{backgroundColor: item.rezolvat ? "rgb(80, 80, 80)" : null}}>
+                <div className = "messageContainer" key = {item._id} style = {{backgroundColor: item.rezolvat ? "rgb(45, 54, 73)" : null}}>
                     <p className = "p1">Email: <a href = {!item.rezolvat ? `mailto:${item.email}`: null} style = {!item.rezolvat? { color: "blue"} : {color:'black'}}>{item.email}</a></p>
                     <p className = "p5">Tel: <a href = {!item.rezolvat? `tel: ${item.phone}` : null} style = {!item.rezolvat? {color: "blue"} : {color:"black"}}>{`0${item.phone}`}</a></p> 
                     {item.img ? <img  onClick = {!item.rezolvat ? () => this.props.enlarge(item._id) : null} className = 'myImg' alt = '' src = {item.img}/> : <div style = {{width:'30pt', height: '20pt'}}></div>}
-                    <p className = "p3"><span>Cautã: </span>{item.medication}</p>
+                    <p className = "p3" style = {item.rezolvat ?  {color: "black"} : null}><span>Cautã: </span>{item.medication}</p>
                     <p className = "p4"> {moment(item.date).format('MMMM Do YYYY, HH:mm:ss ')}</p>
                     <p className = 'rezolvat' onClick = {!item.rezolvat ? () => this.props.rezolvat(item._id, item.email) : null}>{!item.rezolvat ? "închide" : "rezolvat"}</p>
                 </div>
@@ -98,11 +98,11 @@ class PharmaPortal extends Component {
                     :
 
                     <div className = "pharmaport" style = {{marginTop: '15vh'}}>
-                    <ul>
-                        <li className = "help">Alegeți orașul în care doriți sa citiți mesaje</li>
-                        <li className = "help">După rezolvarea unui mesaj dați click pe <span style = {{color: "red"}}>închide</span></li>
-                        <li className = "help">Pentru a mãri poza din mesaj dați click pe pozã</li>
-                    </ul>
+                        <ul>
+                            <li className = "help">Alegeți orașul în care doriți sa citiți mesaje</li>
+                            <li className = "help">După rezolvarea unui mesaj dați click pe <span style = {{color: "red"}}>închide</span></li>
+                            <li className = "help">Pentru a mãri poza din mesaj dați click pe pozã</li>
+                        </ul>
                     </div>
                     }
                 </div>
