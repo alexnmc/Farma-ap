@@ -99,7 +99,8 @@ class PharmaProvider extends Component {
                 toggle2: true,
                 toggle3: '',
                 alert:'',
-                alert2:''     
+                alert2:'',
+                city4:''     
             }
         })
     }
@@ -111,7 +112,8 @@ class PharmaProvider extends Component {
                 forgotEmail: '',
                 confirmed:'',
                 alert: '',
-                alert2:''       //toggle from login to reset password
+                alert2:'',
+                       //toggle from login to reset password
             }
         })
     }
@@ -256,6 +258,15 @@ class PharmaProvider extends Component {
         this.setState({
             [name]: value,
             city2: e.target.value
+        })
+    }  
+
+    handleChange4 = (e) => {
+        e.preventDefault()
+        const { name, value } = e.target
+        this.setState({
+            [name]: value,
+            city4: e.target.value
         })
     }  
     
@@ -407,6 +418,7 @@ class PharmaProvider extends Component {
                     rezolvat: this.rezolvat,
                     deleteMessage: this.deleteMessage,
                     handleChange3: this.handleChange3,
+                    handleChange4: this.handleChange4,
                     deletePhoto: this.deletePhoto,
                     reloadRender: this.reloadRender,
                     reloadRender2: this.reloadRender2,

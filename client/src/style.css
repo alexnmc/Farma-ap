@@ -141,7 +141,7 @@ p{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(22, 38, 65);
+    background-color: rgb(15, 28, 51);
 }
 
 .contact{
@@ -152,7 +152,7 @@ p{
     align-items: center;
     justify-content: flex-start;
     padding-top:10vh;
-    background-color: rgb(19, 34, 58);
+    background-color: rgb(15, 28, 51);
 }
 
 .bookingContainer{
@@ -303,7 +303,7 @@ button{
    width: 90%;
    height: 35pt;
    font-size:12pt;
-   background-color:rgb(30, 116, 255);
+   background-color:rgba(32, 104, 219, 0.972);
    margin-top:20pt;
    animation:none;
    border-radius:1px;
@@ -401,21 +401,33 @@ h4{
 .login1::placeholder{color:rgb(177, 177, 177)}
 
 .login11{
-    width: 90%;
-    height: 35pt;
+    width: 100%;
     border:0pt;
-    border-bottom: 2px solid  rgb(5, 30, 58);
     background-color:  rgba(255, 255, 255, 0.014);
     color:rgb(255, 255, 255);
     font-family: 'arial';
     margin-top:5pt;
     padding-left:3.5pt;
     font-size:12pt;
-    margin-bottom: 8pt;
+    margin-bottom: 0px !important;
     border-radius: 0px;
+    margin:0pt;
 }
 
 .login11::placeholder{color: rgb(177, 177, 177)}
+
+.searchIn2{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 90%;
+    height: 35pt;
+    border-bottom: 2px solid  rgb(9, 33, 61);
+    animation: none !important;
+    border-radius: 0px;
+    margin:auto;
+    margin-bottom: 7pt;
+}
 
 .admin{
     background-color: rgba(235, 235, 235, 0.726);
@@ -478,7 +490,7 @@ h4{
    font-family: 'arial';
    font-size: 11pt;
    font-weight: 400;
-   color:rgb(1, 196, 255);
+   color:rgb(125, 225, 255);
    cursor: pointer;
    margin-bottom:auto;
 }
@@ -489,7 +501,7 @@ h4{
    font-family: 'arial';
    font-size: 11pt;
    font-weight: 400;
-   color:rgb(1, 196, 255);
+   color:rgb(125, 225, 255);
    margin-top:10pt;
    cursor: pointer;
 }
@@ -853,7 +865,6 @@ span{
     .searchIn{
         width:67vw;
         height: 36pt;
-       
         border-radius: 8pt;
         margin:auto;
     }
@@ -943,6 +954,11 @@ span{
         padding-left:3.5pt;
         font-size:12pt;
         margin-bottom: 10pt
+    }
+
+    .searchIn2{
+        width: 85%;
+       
     }
     
     

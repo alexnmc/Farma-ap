@@ -2,6 +2,7 @@ import React from 'react'
 import { withPharma } from './PharmaProvider'
 import CheckAnimation from './UncontrolledLottie.jsx'
 import ResetLoading from './ResetLoading'
+import LoginSearch from './LoginSearch'
 
 
 
@@ -85,11 +86,9 @@ const PharmaLogin = props =>  {
                                         <div className = "loginLogo"></div>
                                         <p className = 'cont'>Aveți deja cont? <span className = 'link' onClick={props.editToggler}>Login</span></p>
                                     </div>
-                                
                                 {props.toggle3 === 'success' ?
 
                                 <div style = {{height: '300pt'}}>
-                                    
                                     <h4>Contul dumneavoastrã a fost creat!</h4>
                                     <CheckAnimation/>
                                     <h4>Vã rugãm sã activați contul prin link-ul primit în email.</h4>
@@ -98,6 +97,9 @@ const PharmaLogin = props =>  {
                                 :
                                 <div className = "loginForm">
                                     <h4> Creeazã cont nou:</h4>
+                                    
+                                    <LoginSearch/>
+                                    
                                     <input
                                         className = "login1"
                                         type='text'
@@ -106,17 +108,6 @@ const PharmaLogin = props =>  {
                                         value={props.pharmaCode}
                                         onChange={props.handleChange2}
                                     />
-
-                                    <select 
-                                        required 
-                                        className = 'login11'
-                                        aria-required="true" 
-                                        name='city4'
-                                        value={props.city4}
-                                        onChange={props.handleChange2}>
-                                    <option value = ''>oraș:</option>
-                                    {props.cities.map((city, index) => <option key={city} value={city} className = {index}>{city}</option>)}
-                                    </select>
 
                                     <input
                                         className = "login1"
