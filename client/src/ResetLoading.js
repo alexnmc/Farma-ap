@@ -6,7 +6,7 @@ const ResetLoading = ({type, color}) => {
     
   return(
     <div >
-      <ReactLoading  type={'spin'} color={' rgb(0, 97, 207)'} height={'20pt'} width={'20pt'}/>
+      <ReactLoading  type={'spin'} color={'rgba(65, 139, 42, 0.966)'} height={'20pt'} width={'20pt'}/>
     </div>
   )
 }

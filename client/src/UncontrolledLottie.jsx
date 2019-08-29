@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Lottie from 'react-lottie'
-import animationData from './check.json'
+import animationData from './check2.json'
 
 class UncontrolledLottie extends Component {
 
