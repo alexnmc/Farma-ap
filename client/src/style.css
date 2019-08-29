@@ -597,7 +597,7 @@ h4{
 
 .activH1{
     font-family: 'arial';
-    color: rgb(53, 110, 202);
+    color: rgb(240, 240, 240);
     font-size: 18pt;
     margin-top:25pt;
     margin-bottom: 30pt;
@@ -926,7 +926,7 @@ span{
     }
 
     h4{
-        font-size: 4.5vw;
+        font-size: 4vw;
         margin-bottom: 15pt;
         text-align: center;
         margin-top:15pt
