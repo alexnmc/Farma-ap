@@ -655,11 +655,10 @@ h4{
 
 .h3{
     font-family: 'arial';
-    color: rgb(134, 217, 255);
+    color: rgb(57, 189, 33);
     font-size: 14pt;
     text-align: center;
     margin-bottom:5pt;
-    width: 545pt;
     animation: move4 0.5s 1s;
 }
 
