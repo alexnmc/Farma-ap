@@ -132,9 +132,7 @@ class Home extends Component {
                                     { !this.state.enlargeToggle && this.props.img.length && <h2 className = "savedImg">Pozã salvatã:</h2>}
                                         <div style = {{display: "block", margin:"auto"}}>
                                         <div style = {{display: 'flex', alignItems: "center" , justifyContent: 'space-between'}}>
-                                        {!this.state.enlargeToggle ? <p style = {{ cursor: "pointer" , fontFamily: "arial", color:"white", fontSize: "9pt" , fontWeight: '200'}} onClick = {() => this.enlargePicture()}>click</p> 
-                                                                     : 
-                                                                     <p style = {{ cursor: "pointer" , fontFamily: "arial", color:"white", fontSize: "9pt" , fontWeight: '200'}} onClick = {() => this.enlargePicture()}>înapoi</p>
+                                        {this.state.enlargeToggle && <p style = {{ cursor: "pointer" , fontFamily: "arial", color:"white", fontSize: "9pt" , fontWeight: '200'}} onClick = {() => this.enlargePicture()}>înapoi</p>
                                         }
                                         {this.state.enlargeToggle && <button onClick = {()=> this.deleteImg()}className = 'deletePic'>șterge</button>}
                                         </div>
