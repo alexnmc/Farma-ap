@@ -454,12 +454,13 @@ h4{
 
 .admin{
     background-color: rgba(235, 235, 235, 0.726);
-    height: 91vh;
+    height: 98vh;
     width: 100vw;
     display:flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Liberation Sans'
+    font-family: 'Liberation Sans';
+   
 }
 
 .admin::-webkit-scrollbar { 
@@ -836,7 +837,7 @@ span{
     .input{
         width: 65vw;
         height: 35pt;
-        font-size: 10pt;
+        font-size: 9pt;
         font-weight: 900;
         display: flex;
         justify-content: center;
@@ -849,7 +850,7 @@ span{
         width: 65vw;
         height: 35pt;
         margin:10pt;
-        font-size: 10pt;
+        font-size: 9pt;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -861,7 +862,7 @@ span{
     .inputS{
         width: 52vw;
         height: 35pt;
-        font-size: 10pt;
+        font-size: 9pt;
         border:none
     }
 
@@ -1235,7 +1236,7 @@ span{
     }
 
     .footer{
-        margin-top:-13pt
+        margin-top:-17pt
     }
 
     .deletePic{

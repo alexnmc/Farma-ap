@@ -10,15 +10,15 @@ const Terms = () => {
 Prezentele Condiţii Generale definesc condiţiile de utilizare a site-ului www.gdprcomplet.ro de către potenţialii vizitatori sau clienţi. Accesând şi navigând pe acest site, acceptaţi termenii de utilizare descrişi în continuare.
 
 <p className = 'titlu'>DREPTURILE ASUPRA CONŢINUTULUI SITE-ULUI</p>
-S.C. Farama-up S.R.L. (denumită în continuare Farma-up), nu va transfera titlul de proprietate asupra aplicaţiilor software (soluţiile GDPRComplet).
+Farma-up nu va transfera titlul de proprietate asupra aplicaţiilor software din site.
 
-Amplusnet deţine drepturi complete şi depline asupra titlului de proprietate şi prin aceasta toate drepturile de autor şi cele brevetate. Nu aveţi dreptul să redistribuiţi, vindeţi, decompilaţi, dezasamblaţi aplicaţia software într-o formă perceptibilă de către oameni.
+Alexander Nemechek deţine drepturi complete şi depline asupra titlului de proprietate şi prin aceasta toate drepturile de autor şi cele brevetate. Nu aveţi dreptul să redistribuiţi, vindeţi, decompilaţi, dezasamblaţi aplicaţia software într-o formă perceptibilă de către oameni.
 
 Toate informaţiile, produsele sau aplicaţiile conţinute în acest site sunt proprietatea Amplusnet, care îşi rezervă dreptul de a modifica conţinutul şi/sau structura site-ului în orice moment şi fară nici o informare prealabilă.
 
 Întregul conţinut al site-ului www.gdprcomplet.ro este protejat prin Legea drepturilor de autor, toate drepturile fiind rezervate. Toate drepturile referitoare la pagini, conţinutul şi prezentarea site-ului sunt deţinute de Amplusnet. Este interzisă copierea, modificarea, afişarea, distribuirea, transmiterea, publicarea, comercializarea, licenţierea, crearea unor materiale derivate sau utilizarea conţinutului site-ului în orice scop fară confirmarea scrisă din partea Amplusnet.
 
-Accesul si utilizarea paginii https://farama-up sunt gratuite si au scopul de a veni in ajutorul utilizatorilor pentru a găsi informațiile necesare în cel mai ușor si rapid mod posibil, conform cerințelor fiecăruia.
+Accesul si utilizarea paginii https://www.farama-up.com sunt gratuite si au scopul de a veni in ajutorul utilizatorilor pentru a găsi informațiile necesare în cel mai ușor si rapid mod posibil, conform cerințelor fiecăruia.
 
 Informațiile prezente pe Comunitatea DPO sunt de interes general și sunt puse la dispoziția utilizatorilor în mod gratuit. Prin termenul „utilizator” al acestei pagini se înțelege orice persoana fizică sau juridică care va accesa pagina. Puteți copia și tipări conținutul paginii Comunitatea DPO pentru folosința dumneavoastră personală, fără intenții comerciale. În orice alte situații, conținutul Comunitatea DPO nu poate fi reprodus, modificat sau exploatat fără consimțământul explicit al reprezentanților Comunității DPO.
 
@@ -70,7 +70,7 @@ Prezentul site poate conţine legături sau trimiteri către alte site-uri consi
 Amplusnet nu poate garanta/controla actualitatea/exactitatea informaţiilor prezente pe site-urile unor terţi, la care se face trimitere de pe site-ul său.
 
 <p className = 'titlu'>INFORMAŢIILE OFERITE PRIN INTERMEDIUL SITE-ULUI</p>
-Orice persoană care vizitează site-ul www.gdprcomplet.ro şi care oferă date sau informaţii cu caracter personal prin intermediul acestui site îşi manifestă acordul în mod expres şi neechivoc pentru următoarele: prelucrarea acestor date şi informaţii personale de către Amplusnet în vederea efectuării de studii de piaţă; transmiterii de materiale promoţionale specifice operaţiunilor de marketing direct; soluţionarea de către Amplusnet a cererilor, întrebărilor şi reclamaţiilor adresate (a se vedea pagina Contact din site); alte activităţi întreprinse de Amplusnet şi permise de lege, ce nu fac obiectul unei aprobări din partea destinatarului.
+Orice persoană care vizitează site-ul www.farma-up.com şi care oferă date sau informaţii cu caracter personal prin intermediul acestui site îşi manifestă acordul în mod expres şi neechivoc pentru următoarele: prelucrarea acestor date şi informaţii personale de către Farma-up în vederea efectuării de studii de piaţă; transmiterii de materiale promoţionale specifice operaţiunilor de marketing direct; soluţionarea de către Amplusnet a cererilor, întrebărilor şi reclamaţiilor adresate (a se vedea pagina Contact din site); alte activităţi întreprinse de Amplusnet şi permise de lege, ce nu fac obiectul unei aprobări din partea destinatarului.
 
 Amplusnet va păstra confidenţialitatea acestor informaţii.
 
