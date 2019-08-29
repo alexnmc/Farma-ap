@@ -1205,6 +1205,7 @@ span{
 
     .admin{
         min-height: 95vh;
+        padding-top:10pt;
         padding-bottom: 20pt;
     }
 
