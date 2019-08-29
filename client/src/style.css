@@ -108,12 +108,14 @@ p{
     width: 260pt;
     text-align: start;
     margin:1pt;
+    font-weight: 500
 }
 
 .p5{
     width: 150pt;
     text-align: start;
-    margin-left: -25pt
+    margin-left: -25pt;
+    font-weight: 500
 }
 
 .p3{

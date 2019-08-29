@@ -61,7 +61,6 @@ mailRouter.post('/reset', (req, res) => {
         to: req.body.sendTo, // list of receivers
         subject: 'Resetare parolã', // Subject line
         html: output, // html body
-        
     }
 
     transporter.sendMail(mailOptions, function(error, info){
