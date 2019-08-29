@@ -4,7 +4,7 @@ import React from 'react'
 const Terms = () => {
     return (
         <div className = "terms">
-<p className = 'titlu'>Condiţii Generale pentru utilizarea site-ului www.farama-up.ro</p>
+<p className = 'titlu'>Condiţii Generale pentru utilizarea site-ului www.farma-up.com</p>
 
 <p className = 'titlu'>INTRODUCERE</p>
 Prezentele Condiţii Generale definesc condiţiile de utilizare a site-ului www.farma-up.com de către potenţialii vizitatori sau clienţi. Accesând şi navigând pe acest site, acceptaţi termenii de utilizare descrişi în continuare.
