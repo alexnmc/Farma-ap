@@ -454,14 +454,12 @@ h4{
 
 .admin{
     background-color: rgba(235, 235, 235, 0.726);
-    min-height: 95vh;
+    min-height: 91vh;
     width: 100vw;
     display:flex;
     align-items: center;
     justify-content: center;
     font-family: 'Liberation Sans';
-    padding-bottom: 20pt;
-   
 }
 
 .admin::-webkit-scrollbar { 
@@ -1203,6 +1201,11 @@ span{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+    .admin{
+        min-height: 95vh;
+        padding-bottom: 20pt;
     }
 
     .link{
