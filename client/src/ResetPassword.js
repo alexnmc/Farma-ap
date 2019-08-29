@@ -45,7 +45,7 @@ class Activation extends Component{
    
     render(){
         return(
-            this.props.alert2 !== "Parola a fost schimbatã!" ?
+            this.props.alert2 === "Parola a fost schimbatã!" ?
                 
                 <div className = "contact">
                     <div className = "loginForm2" style = {{width:'auto'}}>
