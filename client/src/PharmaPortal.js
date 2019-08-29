@@ -47,7 +47,7 @@ class PharmaPortal extends Component {
                 <div className = "messageContainer" key = {item._id} style = {{backgroundColor: item.rezolvat ? "rgb(38, 55, 82)" : null}}>
                     <p className = "p1">Email: <a href = {`mailto:${item.email}`} style = {!item.rezolvat? {color: "blue"} : {color:'black'}}>{item.email}</a></p>
                     <p className = "p5">Tel: <a href = {`tel: ${item.phone}`} style = {!item.rezolvat? {color: "blue"} : {color:"black"}}>{`0${item.phone}`}</a></p> 
-                    {item.img ? <img  onClick = {!item.rezolvat ? () => this.props.enlarge(item._id) : null} className = 'myImg' alt = '' src = {item.img}/> : <div style = {{width:'30pt', height: '20pt'}}></div>}
+                    {item.img ? <img  onClick = {!item.rezolvat ? () => this.props.enlarge(item._id) : null} className = 'myImg' alt = '' src = {item.img} style = {item.rezolvat ? {cursor:'none'}: null}/> : <div style = {{width:'30pt', height: '20pt'}}></div>}
                     <p className = "p3" style = {item.rezolvat ?  {color: "black"} : null}><span>Cautã: </span>{item.medication}</p>
                     <p className = "p4"> {moment(item.date).format('MMMM Do YYYY, HH:mm:ss ')}</p>
                     <p className = 'rezolvat' onClick = {!item.rezolvat ? () => this.props.rezolvat(item._id, item.email) : null} style = {item.rezolvat ? {cursor:'none'} : null}>{!item.rezolvat ? "închide" : "rezolvat"}</p>
