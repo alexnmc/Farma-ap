@@ -7,7 +7,7 @@ const Terms = () => {
 <p className = 'titlu'>Condiţii Generale pentru utilizarea site-ului www.farama-up.ro</p>
 
 <p className = 'titlu'>INTRODUCERE</p>
-Prezentele Condiţii Generale definesc condiţiile de utilizare a site-ului www.gdprcomplet.ro de către potenţialii vizitatori sau clienţi. Accesând şi navigând pe acest site, acceptaţi termenii de utilizare descrişi în continuare.
+Prezentele Condiţii Generale definesc condiţiile de utilizare a site-ului www.farma-up.com de către potenţialii vizitatori sau clienţi. Accesând şi navigând pe acest site, acceptaţi termenii de utilizare descrişi în continuare.
 
 <p className = 'titlu'>DREPTURILE ASUPRA CONŢINUTULUI SITE-ULUI</p>
 Farma-up nu va transfera titlul de proprietate asupra aplicaţiilor software din site.
