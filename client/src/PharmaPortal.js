@@ -44,7 +44,7 @@ class PharmaPortal extends Component {
             return(
                 item.toggle ?
                 
-                <div className = "messageContainer" key = {item._id} style = {{backgroundColor: item.rezolvat ? "rgb(45, 54, 73)" : null}}>
+                <div className = "messageContainer" key = {item._id} style = {{backgroundColor: item.rezolvat ? "rgb(38, 55, 82)" : null}}>
                     <p className = "p1">Email: <a href = {`mailto:${item.email}`} style = {!item.rezolvat? {color: "blue"} : {color:'black'}}>{item.email}</a></p>
                     <p className = "p5">Tel: <a href = {`tel: ${item.phone}`} style = {!item.rezolvat? {color: "blue"} : {color:"black"}}>{`0${item.phone}`}</a></p> 
                     {item.img ? <img  onClick = {!item.rezolvat ? () => this.props.enlarge(item._id) : null} className = 'myImg' alt = '' src = {item.img}/> : <div style = {{width:'30pt', height: '20pt'}}></div>}
