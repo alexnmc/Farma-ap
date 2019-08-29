@@ -328,7 +328,6 @@ button{
    width: 90%;
    height: 35pt;
    font-size:12pt;
-   background-color:rgba(32, 104, 219, 0.972);
    margin-top:20pt;
    animation:none;
    border-radius:1px;
@@ -413,7 +412,7 @@ h4{
 .login1{
     width: 90%;
     height: 35pt;
-    border-bottom: 2px solid  rgb(9, 33, 61);
+    border-bottom: 2px solid  rgb(0, 0, 0);
     background-color:  rgba(255, 255, 255, 0);
     color:rgb(255, 255, 255);
     margin-top:5pt;
@@ -447,7 +446,7 @@ h4{
     align-items: center;
     width: 90%;
     height: 35pt;
-    border-bottom: 2px solid  rgb(9, 33, 61);
+    border-bottom: 2px solid rgb(0, 0, 0);
     animation: none !important;
     border-radius: 0px;
     margin:auto;
@@ -495,7 +494,7 @@ h4{
     align-items: center;
     justify-content: center;
     margin:auto;
-    background-color: rgb(37, 52, 93);
+    background-color: rgb(15, 28, 51);
     margin-top: 10vh;
     padding-bottom:7pt;
     padding-top:7pt;
@@ -515,7 +514,7 @@ h4{
    font-family: 'arial';
    font-size: 11pt;
    font-weight: 400;
-   color:rgb(93, 217, 255);
+   color:rgb(57, 189, 33);
    cursor: pointer;
    margin-bottom:auto;
 }
@@ -526,7 +525,7 @@ h4{
    font-family: 'arial';
    font-size: 11pt;
    font-weight: 400;
-   color:rgb(93, 217, 255);
+   color:rgb(57, 189, 33);
    margin-top:10pt;
    cursor: pointer;
 }
@@ -706,7 +705,7 @@ h4{
 
 .farmaup{
     font-family: 'arial';
-    color: rgb(0, 224, 0);
+    color: rgb(57, 189, 33);
     font-size: 15pt;
     text-align: center;
     font-weight:900;
@@ -730,9 +729,6 @@ h4{
 .loginLogo{
     width: 27pt;
     height: 27pt;
-    background-image: url('./Photos/farmacie2.png');
-    background-size: cover;
-    background-position: center;
     margin-left:-5px;
 }
 
