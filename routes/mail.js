@@ -77,7 +77,7 @@ mailRouter.post('/reset', (req, res) => {
 mailRouter.post('/activate', (req, res) => {
     
   const output = `
-          <h3>Bine ați venit in rețeaua farma-up!</h3>
+          <h3>Bine ați venit in rețeaua Farmaapp!</h3>
           <h4>Vã rugãm sã activați contul: <a href="https://farmacie-app.herokuapp.com/activation/${req.body.id}">click aici</a></h4>
         
     `
