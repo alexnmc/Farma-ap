@@ -576,7 +576,7 @@ h4{
 .img1{
     width: 45px;
     height: 45px;
-    background-image: url('');
+    background-image: url('./Photos/farmacie.png');
     background-size: cover;
     background-position: center;
     animation: move1 0.7s;
@@ -1045,10 +1045,6 @@ span{
     .cauta{
         font-size: 14pt;
         text-align: center;
-        margin-right: 20pt;
-        margin-left:0pt;
-        margin-top:0pt;
-        margin-bottom:0pt;
         animation: fade 2.5s;
     }
 
