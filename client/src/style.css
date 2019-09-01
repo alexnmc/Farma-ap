@@ -46,6 +46,10 @@ body::before {
     color: rgb(255, 6, 6);
     font-weight: 500;
     height:20pt;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:10pt
 }
 
 .navbar {
@@ -330,7 +334,7 @@ button{
    width: 90%;
    height: 35pt;
    font-size:12pt;
-   margin-top:20pt;
+   margin-top:10pt;
    animation:none;
    border-radius:1px;
 }

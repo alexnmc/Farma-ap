@@ -15,7 +15,6 @@ const LoginSearch = (props) => {
            <div className = 'searchLogo' style = {{backgroundColor:'rgba(125, 225, 255, 0)', border: "10pt solid rgba(125, 225, 255, 0)"}}></div>
         </div>
     )
-  
 }
 
 export default withPharma(LoginSearch)
