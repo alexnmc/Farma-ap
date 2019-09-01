@@ -1,4 +1,5 @@
 const express = require('express')
+var forceSsl = require('force-ssl-heroku');
 const app = express()
 require ('dotenv').config()
 const morgan = require('morgan')
@@ -9,12 +10,12 @@ const PORT = process.env.PORT || 8000
 const secret = process.env.SECRET || "some secret passphrase here for local development"
 
 
-
+app.use(forceSsl);
 app.use(express.json({limit: '50mb'})) 
 app.use(morgan('dev'))  
 app.use("/api", expressJwt({secret})) //req.user === {username, password, _id}
 app.use(express.static(path.join(__dirname, "client", "build")))
-
+app.get('/ping', pingHandler)
 
 //routes
 app.use("/user", require("./routes/user"))

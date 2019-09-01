@@ -576,7 +576,7 @@ h4{
 .img1{
     width: 45px;
     height: 45px;
-    background-image: url('./Photos/farmacie2.png');
+    background-image: url('');
     background-size: cover;
     background-position: center;
     animation: move1 0.7s;
