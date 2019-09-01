@@ -306,7 +306,7 @@ button{
 
 
 .photoButton{
-    background-color: rgb(0, 118, 165);
+    background-color: rgb(0, 108, 151);
     margin-top:14pt;
 }
 
@@ -586,7 +586,7 @@ h4{
 .cauta3,
 .cauta{
     font-family: 'arial';
-    color: rgb(230, 230, 230);
+    color: rgb(255, 255, 255);
     font-size: 16pt;
     text-align: center;
     animation: move2 0.7s;
