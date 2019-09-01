@@ -957,11 +957,11 @@ span{
         margin-top:0pt;
         padding-left:3.5pt;
         font-size:12pt;
-        margin-bottom: 10pt
     }
 
     .searchIn2{
         width: 85%;
+        margin-bottom: 0pt;
     }
     
     .loginForm2,
@@ -1196,7 +1196,7 @@ span{
     }
 
     .home{
-        height: auto;
+       
         width: 100vw;
         display:flex;
         flex-direction: column;
