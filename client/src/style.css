@@ -188,11 +188,19 @@ p{
     position: relative;
 }
 
+.bookingForm{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:270pt;
+    height:auto;
+}
+
 .input{
     width:270pt;
     height: 40pt;
     margin:auto;
-    margin-bottom:14pt;
+    margin-bottom:10pt;
     font-size: 12pt;
     display: flex;
     justify-content: center;
@@ -209,11 +217,8 @@ p{
     width:240pt;
     height: 40pt;
     margin:auto;
-    margin-bottom:14pt;
+    margin-bottom:10pt;
     font-size: 13pt;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color:  rgb(0, 9, 58);
     border: 0px solid  rgba(71, 124, 173, 0.733);
     padding-left:5pt;
@@ -253,11 +258,8 @@ p{
 input{
     width:270pt;
     height: 40pt;
-    margin:10pt;
+    margin-top:10pt;
     font-size: 15pt;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border: 0px solid  rgba(71, 124, 173, 0.733);
     padding-left:5pt;
     font-family: 'arial';
@@ -362,6 +364,10 @@ button{
     color: rgb(14, 25, 47);
     font-family: 'arial';
     font-weight: 600
+}
+
+.bookingForm{
+    width:150pt;
 }
 
 .portalWrap{
@@ -836,9 +842,6 @@ span{
         height: 35pt;
         font-size: 9pt;
         font-weight: 900;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         padding-left:7pt; 
         font-family: arial;
     }
@@ -846,11 +849,7 @@ span{
     input{
         width: 65vw;
         height: 35pt;
-        margin:10pt;
         font-size: 9pt;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         padding-left:7pt;
         font-family: arial;
         border:none;
