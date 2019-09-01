@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import {withPharma} from './PharmaProvider'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
-import ResetLoading from './ResetLoading'
+import ReactLoading from "react-loading"
 import CheckAnimation from './UncontrolledLottie.jsx'
 
 
@@ -82,7 +82,9 @@ class Activation extends Component{
                         {this.state.loading === 'off' ?
                         <p className = "alert" style = {this.props.alert2 ? {color:'blue'} : null}>{this.props.alert || this.props.alert2}</p>
                         :
-                        <ResetLoading/>
+                        <div className = "resetLoading" style = {{marginTop: "10pt"}}>
+                            <ReactLoading  type={'spin'} color={'rgba(65, 139, 42, 0.966)'} height={'20pt'} width={'20pt'}/>
+                        </div>
                         }
                         <button className = 'loginButton' onClick={() => this.resetAndDelete()}>Trimite</button>
                     </div>

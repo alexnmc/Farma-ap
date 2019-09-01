@@ -3,27 +3,28 @@ import React from 'react'
 
 
 
-const Logo = ()=> {
+const Logo = (props)=> {
     return (
         
-        <div className = "img2">
+        <div className = {props.className}>
+          
 
             <div style  = {{
-                            width: "14px",
-                            height: "34px",
-                            backgroundColor: "rgb(0, 224, 0)",
+                            width: "17px",
+                            height: "40px",
+                            backgroundColor: "rgb(57, 189, 33)",
                             position:"absolute",
                             borderRadius:"20pt"
                             }}>
             </div>
             
             <div  style ={{
-                            width: "34px",
-                            height: "14px",
-                            backgroundColor: "rgb(0, 224, 0)",
+                            width: "40px",
+                            height: "17px",
+                            backgroundColor: "rgb(57, 189, 33)",
                             position: "relative",
-                            marginLeft:"-9.5px",
-                            marginTop:"9.5px",
+                            marginLeft:"-12px",
+                            marginTop:"12px",
                             borderRadius: "20pt"
                         }}
             >

@@ -445,7 +445,8 @@ h4{
     font-size:12pt;
     margin-bottom: 0px !important;
     border-radius: 0px;
-    margin:0pt;
+    height:35pt;
+   
 }
 
 .login11::placeholder{color: rgb(177, 177, 177)}
@@ -459,8 +460,6 @@ h4{
     border-bottom: 2px solid rgb(0, 0, 0);
     animation: none !important;
     border-radius: 0px;
-    margin:auto;
-    margin-bottom: 7pt;
 }
 
 .admin{
@@ -948,7 +947,7 @@ span{
         border-radius: 3px;
         margin-top: 0pt;
         padding-left:3.5pt;
-        font-size:12pt;
+        font-size:10pt;
     }
 
     .login11{
@@ -956,7 +955,7 @@ span{
         height: 30pt;
         margin-top:0pt;
         padding-left:3.5pt;
-        font-size:12pt;
+        font-size:10pt;
     }
 
     .searchIn2{
@@ -1046,7 +1045,8 @@ span{
     .cauta{
         font-size: 14pt;
         text-align: center;
-        margin-right: 15pt;
+        margin-right: 20pt;
+        margin-left:0pt;
         margin-top:0pt;
         margin-bottom:0pt;
         animation: fade 2.5s;
@@ -1103,8 +1103,7 @@ span{
     }
     
     .img2{
-        width: 32pt;
-        height: 32pt;
+        
         background-size: cover;
         background-position: center;
         margin-right: 20pt;

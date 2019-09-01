@@ -2,8 +2,6 @@ import React  from 'react'
 import {withPharma} from './PharmaProvider'
 
 
-
-
 const LoginSearch = (props) => {
   
     return (

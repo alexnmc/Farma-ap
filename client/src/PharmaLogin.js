@@ -1,7 +1,7 @@
 import React from 'react'
 import { withPharma } from './PharmaProvider'
 import CheckAnimation from './UncontrolledLottie.jsx'
-import ResetLoading from './ResetLoading'
+import ReactLoading from "react-loading"
 import LoginSearch from './LoginSearch'
 
 
@@ -41,7 +41,9 @@ const PharmaLogin = props =>  {
                                     {!props.loading ?
                                     <p className = "alert" style = {props.alert2 ? {color:'blue'} : null}>{props.alert || props.alert2}</p>
                                     :
-                                    <ResetLoading/>
+                                    <div className = "resetLoading" style = {{marginTop: "10pt"}}>
+                                      <ReactLoading  type={'spin'} color={'rgba(65, 139, 42, 0.966)'} height={'20pt'} width={'20pt'}/>
+                                    </div>
                                     }
                                     <button className = 'loginButton' onClick={props.handleLogin}>Autentificare</button>
                                 </div>

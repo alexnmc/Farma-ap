@@ -7,7 +7,6 @@ const uuidv1 = require('uuid/v1')
 const PharmaContext = React.createContext()
 const sound = new Audio(ring)
 
-
 class PharmaProvider extends Component {
     constructor(){
         super()
