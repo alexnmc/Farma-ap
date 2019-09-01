@@ -15,7 +15,7 @@ app.use(express.json({limit: '50mb'}))
 app.use(morgan('dev'))  
 app.use("/api", expressJwt({secret})) //req.user === {username, password, _id}
 app.use(express.static(path.join(__dirname, "client", "build")))
-app.get('/ping', pingHandler)
+
 
 //routes
 app.use("/user", require("./routes/user"))
