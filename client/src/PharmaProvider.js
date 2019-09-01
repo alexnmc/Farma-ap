@@ -16,8 +16,6 @@ class PharmaProvider extends Component {
             toggle3: '',
             user: JSON.parse(localStorage.getItem("user")) || {},
             token: localStorage.getItem("token") || "",
-            city: JSON.parse(localStorage.getItem("city")) || '', // from geolocation..
-            county: localStorage.getItem("county") || '',
             toggle: true,
             toggle2: true,
             username: '',
@@ -105,7 +103,7 @@ class PharmaProvider extends Component {
         })
     }
 
-    editToggler2 = () => {
+    editToggler2 = () => { //toggle from login to reset password
         this.setState(prevState => {
             return {
                 toggle2: !prevState.toggle2,
@@ -113,12 +111,11 @@ class PharmaProvider extends Component {
                 confirmed:'',
                 alert: '',
                 alert2:'',
-                       //toggle from login to reset password
             }
         })
     }
 
-    handleLogin = (e) => {   //login method, we send the username and password entered in the input fields to the database 
+    handleLogin = (e) => {    
         e.preventDefault()
         this.setState({loading:true})
         const newUser = {
@@ -167,7 +164,6 @@ class PharmaProvider extends Component {
             this.setState({alert:'Parolele nu sunt identice!'})
     }
 
-    
     handleReset = () => {
         axios.get(`/user/reset/${this.state.forgotEmail}`).then(res => { 
             if(res.data.confirmed !== 'Confirmed'){
@@ -189,7 +185,6 @@ class PharmaProvider extends Component {
                 const newUser = {
                     password: this.state.newPassword,
                 }
-                
                 axios.put(`/user/reset/${id}`, newUser).then(res => {
                         this.setState({alert2: res.data})
                     if(res.data === "Parola a fost schimbatã!" ){
@@ -356,7 +351,7 @@ class PharmaProvider extends Component {
             id: id
         }
         axios.post('/mail/activate', newMail).then(res => {
-           console.log(res)
+          
         }).catch(err => console.log(err))
     }
 
@@ -432,7 +427,6 @@ class PharmaProvider extends Component {
 }
 
 export default PharmaProvider
-
 
 export const withPharma = C => props => (
     <PharmaContext.Consumer>

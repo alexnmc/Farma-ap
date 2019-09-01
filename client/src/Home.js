@@ -14,7 +14,6 @@ class Home extends Component {
     constructor(props){
         super(props)
         this.state = {
-           city: this.props.city,
            sendTo:[],
            enlargeToggle: false
         }
@@ -41,7 +40,6 @@ class Home extends Component {
             sendTo: this.state.sendTo
         }
         axios.post('/mail', newMail).then(res => {
-          console.log(res)
         }).catch(err => alert(err))
     }
     

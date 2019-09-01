@@ -11,16 +11,14 @@ class UncontrolledLottie extends Component {
       loop: false,
       autoplay: true, 
       animationData: animationData,
-      rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice'
-      }
+      rendererSettings: { preserveAspectRatio: 'xMidYMid slice'}
     }
 
     return(
       <div>
         <Lottie options={defaultOptions}
-                height={document.documentElement.clientWidth < 1000 ? 50 : 90}
-                width={document.documentElement.clientWidth < 1000 ? 50 : 90}
+                height={document.documentElement.clientWidth < 1000 ? 60 : 90}
+                width={document.documentElement.clientWidth < 1000 ? 60 : 90}
         />
       </div>
     )

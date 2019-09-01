@@ -12,11 +12,8 @@ ReactDOM.render(
         
         <BrowserRouter>
         <PharmaProvider>
-
         <App/>
-        
         </PharmaProvider>
         </BrowserRouter>,
         
-   
 document.getElementById('root'))
