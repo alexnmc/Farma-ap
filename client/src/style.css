@@ -839,7 +839,7 @@ span{
     .input{
         width: 65vw;
         height: 35pt;
-        font-size: 9pt;
+        font-size: 12pt;
         font-weight: 900;
         padding-left:7pt; 
         font-family: arial;
@@ -848,22 +848,20 @@ span{
     input{
         width: 65vw;
         height: 35pt;
-        font-size: 9pt;
+        font-size: 12pt;
         padding-left:7pt;
         font-family: arial;
         border:none;
     }
 
     input::placeholder{
-        font-size:11pt;
-        margin:auto;
-        position:fixed;
+        font-size:12pt;
     }
 
     .inputS{
         width: 52vw;
         height: 35pt;
-        font-size: 9pt;
+        font-size: 12pt;
         border:none
     }
 
