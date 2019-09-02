@@ -223,7 +223,7 @@ p{
     margin:auto;
     margin-bottom:10pt;
     font-size: 13pt;
-    color:  rgb(0, 9, 58);
+    color: rgb(0, 9, 58);
     border: 0px solid  rgba(71, 124, 173, 0.733);
     padding-left:5pt;
     font-family: 'arial';
@@ -264,7 +264,7 @@ input{
     height: 40pt;
     margin-top:10pt;
     font-size: 15pt;
-    border: 0px solid  rgba(71, 124, 173, 0.733);
+    border: 0px solid rgba(71, 124, 173, 0.733);
     padding-left:5pt;
     font-family: 'arial';
     color:rgb(0, 0, 34);
@@ -277,14 +277,14 @@ input{
     background-color: rgb(230, 230, 230);
 }
 
-@keyframes fade{
-    from {  opacity: 0}
-    to   {  opacity: 1}
-}
-
 input::placeholder{
     color: rgb(0, 9, 58);
     font-size: 13pt;
+}
+
+@keyframes fade{
+    from {  opacity: 0}
+    to   {  opacity: 1}
 }
 
 button{
@@ -430,7 +430,7 @@ h4{
     padding-left:3.5pt;
     font-size:12pt;
     animation: none !important;
-    border-radius: 0px
+    border-radius: 0px;
 }
 
 .login1::placeholder{color:rgb(177, 177, 177)}
@@ -852,6 +852,11 @@ span{
         padding-left:7pt;
         font-family: arial;
         border:none;
+    }
+
+    input::placeholder{
+        color: rgb(0, 9, 58);
+        font-size: 11pt;
     }
 
     .inputS{
