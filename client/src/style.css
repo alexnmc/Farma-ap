@@ -424,7 +424,7 @@ h4{
     width: 90%;
     height: 35pt;
     border-bottom: 2px solid  rgb(0, 0, 0);
-    background-color:  rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0);
     color:rgb(255, 255, 255);
     margin-top:5pt;
     padding-left:3.5pt;
@@ -943,7 +943,7 @@ span{
         border-radius: 3px;
         margin-top: 0pt;
         padding-left:3.5pt;
-        font-size:11pt;
+        
     }
 
     .login11{
@@ -951,7 +951,7 @@ span{
         height: 30pt;
         margin-top:0pt;
         padding-left:3.5pt;
-        font-size:11pt;
+        
     }
 
     .searchIn2{
