@@ -42,7 +42,7 @@ const PharmaLogin = props =>  {
                                     <p className = "alert" style = {props.alert2 ? {color:'blue'} : null}>{props.alert || props.alert2}</p>
                                     :
                                     <div className = "resetLoading" style = {{marginTop: "10pt"}}>
-                                      <ReactLoading  type={'spin'} color={'rgba(65, 139, 42, 0.966)'} height={'20pt'} width={'20pt'}/>
+                                      <ReactLoading  type={'spin'} color={'rgb(0, 121, 151)'} height={'20pt'} width={'20pt'}/>
                                     </div>
                                     }
                                     <button className = 'loginButton' onClick={props.handleLogin}>Autentificare</button>
@@ -75,9 +75,9 @@ const PharmaLogin = props =>  {
                                 </div>
                                 }
                                 {props.toggle2?
-                                 <p className = 'cont2'>Ai uitat parola? <span className = 'link' onClick={props.editToggler2}>Reseteazã</span></p>
+                                 <p className = 'cont'>Ai uitat parola? <span className = 'link' onClick={props.editToggler2}>Reseteazã</span></p>
                                 :
-                                 <p className = 'cont2'>Ți-ai amintit parola? <span className = 'link' onClick={props.editToggler2}>Login</span></p>
+                                 <p className = 'cont'>Ți-ai amintit parola? <span className = 'link' onClick={props.editToggler2}>Login</span></p>
                                 }
                             </div>
                    

@@ -304,7 +304,6 @@ button{
     border-radius:15pt;
 }
 
-
 .photoButton{
     background-color: rgb(0, 121, 151);
     margin-top:14pt;
@@ -318,7 +317,6 @@ button{
     margin:2pt;
     padding-bottom: 2px;
     border-radius: 2pt
-   
 }
 
 .react-html5-camera-photo>video {
@@ -338,6 +336,7 @@ button{
    margin-top:10pt;
    animation:none;
    border-radius:1px;
+   background-color: rgb(0, 135, 168);
 }
 
 .logout{
@@ -524,20 +523,9 @@ h4{
    font-family: 'arial';
    font-size: 11pt;
    font-weight: 400;
-   color:rgb(57, 189, 33);
+   color:  rgb(119, 203, 224);
    cursor: pointer;
    margin-bottom:auto;
-}
-
-.cont2{
-   display: flex;
-   width:auto;
-   font-family: 'arial';
-   font-size: 11pt;
-   font-weight: 400;
-   color:rgb(57, 189, 33);
-   margin-top:10pt;
-   cursor: pointer;
 }
 
 .login33{
@@ -577,7 +565,7 @@ h4{
 .img1{
     width: 55px;
     height: 55px;
-    background-image: url('https://cdn.pixabay.com/photo/2017/05/15/21/58/drug-icon-2316244__340.png');
+    background-image: url('./Photos/farma3.png');
     background-size: cover;
     background-position: center;
     animation: move1 0.7s;
@@ -708,21 +696,24 @@ h4{
 
 @keyframes move1{
     from{margin-right: 100vw}
-    to{margin-right: 10pt}
+    to{margin-right: 0pt}
 }
-
 
 .farmaup{
     font-family: 'arial';
-    color: rgb(57, 189, 33);
-    font-size: 15pt;
+    color: rgb(0, 173, 216);
+    font-size: 17pt;
     text-align: center;
     font-weight:900;
     animation: pop2 0.5s linear 1;
 }
 
-
 .img2{
+   width:37pt;
+   height:37pt;
+   background-image: url('./Photos/farma3.png');
+   background-size: cover;
+   background-position: center;
    margin: 20pt;
    margin-bottom: 26pt;
 }
@@ -736,6 +727,9 @@ h4{
   }
 
 .loginLogo{
+    background-image: url('./Photos/farma3.png');
+    background-size: cover;
+    background-position: center;
     width: 27pt;
     height: 27pt;
     margin-left:-5px;
