@@ -72,7 +72,7 @@ class Home extends Component {
                 <div className = 'home'>
                     <CookieConsent
                     style={{ background: "white" }}
-                    buttonStyle={{ color: "rgb(0, 135, 168)", fontSize: "12px" , width: "200pt", height:"40pt"}}
+                    buttonStyle={{ color: "rgb(0, 135, 168)", fontSize: "17px" , width: "200pt", height:"40pt"}}
                     buttonText="De acord!"
                     >
                     <h1 style = {{color:"rgb(15, 28, 51)", fontFamily: "arial", fontSize: "12pt"}}>Acest site foloseşte cookies! Continuarea navigării implică acceptarea lor.</h1>
