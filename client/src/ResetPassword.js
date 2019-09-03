@@ -83,7 +83,7 @@ class Activation extends Component{
                         <p className = "alert" style = {this.props.alert2 ? {color:'blue'} : null}>{this.props.alert || this.props.alert2}</p>
                         :
                         <div className = "resetLoading" style = {{marginTop: "10pt"}}>
-                            <ReactLoading  type={'spin'} color={'rgba(65, 139, 42, 0.966)'} height={'20pt'} width={'20pt'}/>
+                            <ReactLoading  type={'spin'} color={'rgb(0, 121, 151)'} height={'20pt'} width={'20pt'}/>
                         </div>
                         }
                         <button className = 'loginButton' onClick={() => this.resetAndDelete()}>Trimite</button>

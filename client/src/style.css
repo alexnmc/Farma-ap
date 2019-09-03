@@ -800,6 +800,10 @@ span{
     font-size: 11pt;
 }
 
+.link:hover{
+    color: rgb(0, 224, 0)
+}
+
 .messageWrap{
     width: 100%;
     height: auto;
