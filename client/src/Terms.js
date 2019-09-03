@@ -65,9 +65,9 @@ Ulterior desfășurării comunicării inițiale, Farmaapp.eu  își stabilește 
 În acest sens Farmaapp.eu și-a stabilit un termen rezonabil de prelucrare ulterioară de 18 luni de la data inițierii comunicării.
 
 <p className = 'titlu'>LEGĂTURA CU ALTE SITE-URI</p>
-Prezentul site poate conţine legături sau trimiteri către alte site-uri considerate de Amplusnet utile în legătură cu conţinutul site-ului său şi care nu se află sub controlul sau îndrumarea sa. În cazul utilizării acestor legături sau trimiteri se vor aplica condiţiile generale de utilizare corespunzătoare acelor site-uri.
+Prezentul site poate conţine legături sau trimiteri către alte site-uri considerate de Farmaapp.eu utile în legătură cu conţinutul site-ului său şi care nu se află sub controlul sau îndrumarea sa. În cazul utilizării acestor legături sau trimiteri se vor aplica condiţiile generale de utilizare corespunzătoare acelor site-uri.
 
-Amplusnet nu poate garanta/controla actualitatea/exactitatea informaţiilor prezente pe site-urile unor terţi, la care se face trimitere de pe site-ul său.
+Farmaapp.eu nu poate garanta/controla actualitatea/exactitatea informaţiilor prezente pe site-urile unor terţi, la care se face trimitere de pe site-ul său.
 
 <p className = 'titlu'>INFORMAŢIILE OFERITE PRIN INTERMEDIUL SITE-ULUI</p>
 Orice persoană care vizitează site-ul www.farmaapp.eu şi care oferă date sau informaţii cu caracter personal prin intermediul acestui site îşi manifestă acordul în mod expres şi neechivoc pentru următoarele: prelucrarea acestor date şi informaţii personale de către Farma-up în vederea efectuării de studii de piaţă; transmiterii de materiale promoţionale specifice operaţiunilor de marketing direct; soluţionarea de către Amplusnet a cererilor, întrebărilor şi reclamaţiilor adresate (a se vedea pagina Contact din site); alte activităţi întreprinse de Amplusnet şi permise de lege, ce nu fac obiectul unei aprobări din partea destinatarului.
