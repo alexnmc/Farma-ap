@@ -293,7 +293,7 @@ button{
     align-items: center;
     justify-content: center;
     width: 270pt;
-    height: 37pt;
+    height: 40pt;
     background-color: rgba(65, 139, 42, 0.966);
     font-size: 13pt;
     color: white;
@@ -921,7 +921,7 @@ span{
 
     .loginButton{
        width: 85%;
-       height: 32pt;
+       height: 35pt;
        font-size:12pt;
        margin-top:5pt;
        margin-bottom:15pt;
