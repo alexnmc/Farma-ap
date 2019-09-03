@@ -16,11 +16,11 @@ Alexander Nemechek deţine drepturi complete şi depline asupra titlului de prop
 
 Toate informaţiile, produsele sau aplicaţiile conţinute în acest site sunt proprietatea Amplusnet, care îşi rezervă dreptul de a modifica conţinutul şi/sau structura site-ului în orice moment şi fară nici o informare prealabilă.
 
-Întregul conţinut al site-ului www.gdprcomplet.ro este protejat prin Legea drepturilor de autor, toate drepturile fiind rezervate. Toate drepturile referitoare la pagini, conţinutul şi prezentarea site-ului sunt deţinute de Amplusnet. Este interzisă copierea, modificarea, afişarea, distribuirea, transmiterea, publicarea, comercializarea, licenţierea, crearea unor materiale derivate sau utilizarea conţinutului site-ului în orice scop fară confirmarea scrisă din partea Amplusnet.
+Întregul conţinut al site-ului www.farmaapp.eu este protejat prin Legea drepturilor de autor, toate drepturile fiind rezervate. Toate drepturile referitoare la pagini, conţinutul şi prezentarea site-ului sunt deţinute de Farmaapp.eu. Este interzisă copierea, modificarea, afişarea, distribuirea, transmiterea, publicarea, comercializarea, licenţierea, crearea unor materiale derivate sau utilizarea conţinutului site-ului în orice scop fară confirmarea scrisă din partea Farmaapp.eu.
 
 Accesul si utilizarea paginii https://www.faramaapp.eu sunt gratuite si au scopul de a veni in ajutorul utilizatorilor pentru a găsi informațiile necesare în cel mai ușor si rapid mod posibil, conform cerințelor fiecăruia.
 
-Informațiile si serviccile prezente sunt de interes general și sunt puse la dispoziția utilizatorilor în mod gratuit. Prin termenul „utilizator” al acestei pagini se înțelege orice persoana fizică sau juridică care va accesa pagina. Puteți copia și tipări conținutul paginii Comunitatea DPO pentru folosința dumneavoastră personală, fără intenții comerciale. În orice alte situații, conținutul Comunitatea DPO nu poate fi reprodus, modificat sau exploatat fără consimțământul explicit al reprezentanților Comunității DPO.
+Informațiile si serviccile prezente sunt de interes general și sunt puse la dispoziția utilizatorilor în mod gratuit. Prin termenul „utilizator” al acestei pagini se înțelege orice persoana fizică sau juridică care va accesa pagina.  
 
 <p className = 'titlu'>NEANGAJAREA RĂSPUNDERII</p>
 Conţinutul informaţiilor se referă la descrierea într-un anumit grad de detaliere a activităţilor, produselor şi serviciilor Farmaapp.eu. Farmaapp.eu nu va acorda nici o garanţie referitoare la:
@@ -45,7 +45,7 @@ Obiectivul conţinutului site-ului este de a transmite informaţii actualizate �
 
 Farmaapp.eu nu poate garanta că prezentele pagini nu conţin erori, şi asigură că va depune toate diligenţele pentru realizarea unei informări corecte şi remedierea eventualelor erori.
 
-Orice persoană care doreşte să-şi procure unul din serviciile sau produsele prezentate în site este rugată să contacteze Amplusnet prin unul din mijloacele afişate în pagina de Contact a site-ului, pentru a se informa atât asupra disponibilităţii serviciului sau produsului în cauză cât şi asupra condiţiilor contractuale, tarifelor şi informaţiilor tehnice sau de altă natură.
+Orice persoană care doreşte să-şi procure unul din serviciile sau produsele prezentate în site este rugată să contacteze Farmaapp.eu prin unul din mijloacele afişate în pagina de Contact a site-ului, pentru a se informa atât asupra disponibilităţii serviciului sau produsului în cauză cât şi asupra condiţiilor contractuale, tarifelor şi informaţiilor tehnice sau de altă natură.
 
 <p className = 'titlu'>INFORMAŢII PERSONALE</p>
 Când prin intermediul prezentului site vă sunt solicitate informaţii, aceasta are ca scop identificarea dumneavoastră sau posibilitatea de a vă contacta. Acest lucru este cu atât mai necesar în cazul folosirii aplicaţiilor disponibile pe site.
