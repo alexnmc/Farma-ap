@@ -149,7 +149,7 @@ authRouter.put('/activate/:id', (req, res, next) => {    // activate user
     )
 })
 
-authRouter.delete('/', (req, res, next) => {
+/*authRouter.delete('/', (req, res, next) => {
     User.remove((err, data) => {      // for testing, deletes everything on the /auth endpoint!
         if (err) {
             res.status(500)
@@ -157,7 +157,7 @@ authRouter.delete('/', (req, res, next) => {
         }
         return res.status(202).send(` all users were succesfully deleted `)
     })
-})
+})*/
 
 authRouter.delete('/:id', (req, res, next) => {    
     User.findOneAndDelete({_id: req.params.id} , (err, data) => {
