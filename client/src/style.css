@@ -738,7 +738,7 @@ h4{
 
 .imgWrap{
     width:100vw;
-    margin-bottom: 30pt;
+    margin-bottom: 10pt;
     margin-top: -12vh;
     display: flex;
     align-items: center;
@@ -1175,7 +1175,7 @@ span{
     }
 
     .imgWrap{
-        margin-bottom: 4vh;
+        margin-bottom: 1vh;
         margin-top: 4vh;
         display: flex;
         align-items: center;

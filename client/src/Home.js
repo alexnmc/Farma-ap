@@ -6,6 +6,9 @@ import Search from './Search'
 import camera from './Photos/camera.png'
 import PhotoCamera from './Camera'
 import CookieConsent from "react-cookie-consent"
+import euflag from './Photos/euflag.png'
+import roflag from "./Photos/roflag.png"
+
 
 
 
@@ -78,6 +81,7 @@ class Home extends Component {
                     >
                     <h1 style = {{color:"rgb(15, 28, 51)", fontFamily: "arial", fontSize: "12pt"}}>Acest site foloseşte cookies! Continuarea navigării implică acceptarea lor.</h1>
                     </CookieConsent>
+                    
                     <div className='bookingContainer'>
                         {this.props.toggleHome ? 
                             <div className = "imgWrap">
@@ -89,6 +93,10 @@ class Home extends Component {
                                 <h1 className = 'cauta3'>{!this.state.enlargeToggle ? "Fotografiați rețeta sau produsul cãutat:" : "Poza salvatã:"}</h1>
                             </div>
                         }
+                        <div style = {{display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '20pt'}}>
+                            <img alt = '' src = {euflag} style = {{ height: "25pt"}}/>
+                            <img alt = '' src = {roflag} style = {{ height: "17pt"}}/>
+                        </div>
                         <form className = 'bookingForm' onSubmit={this.getFarmacies}  >
                         { this.props.toggleHome ?
                             <div>

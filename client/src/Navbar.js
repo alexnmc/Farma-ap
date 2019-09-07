@@ -1,14 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import {withPharma} from './PharmaProvider'
-import flag from './Photos/euflag.png'
 
 
 
 const Navbar = (props) => {
     return (
         <div className="navbar">
-             <img alt = '' src = {flag} style = {{ height: "25pt", margin:'-10pt'}}/>
             <Link onClick = {() => props.reloadRender2()} to="/">Cautã</Link>
             <Link to="/about">Despre</Link>
             <Link to="/contact">Contact</Link>
