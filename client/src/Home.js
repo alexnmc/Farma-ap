@@ -5,7 +5,8 @@ import axios from 'axios'
 import Search from './Search'
 import camera from './Photos/camera.png'
 import PhotoCamera from './Camera'
-import CookieConsent from "react-cookie-consent";
+import CookieConsent from "react-cookie-consent"
+
 
 
 
