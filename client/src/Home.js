@@ -95,7 +95,7 @@ class Home extends Component {
                         }
                         <div style = {{display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '20pt'}}>
                             <img alt = '' src = {euflag} style = {{ height: "25pt"}}/>
-                            <img alt = '' src = {roflag} style = {{ height: "17pt"}}/>
+                            <img alt = '' src = {roflag} style = {{ height: "27pt"}}/>
                         </div>
                         <form className = 'bookingForm' onSubmit={this.getFarmacies}  >
                         { this.props.toggleHome ?
