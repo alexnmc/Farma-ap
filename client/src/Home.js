@@ -86,7 +86,7 @@ class Home extends Component {
                         {this.props.toggleHome ? 
                             <div className = "imgWrap">
                                 <div className = "img1"></div>
-                               <h1 className = 'cauta'>Caută produsul dorit:</h1>
+                                <h1 className = 'cauta'>Caută produsul dorit:</h1>
                             </div>
                             : 
                             <div className = "imgWrap">
@@ -94,8 +94,8 @@ class Home extends Component {
                             </div>
                         }
                         <div style = {{display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '20pt'}}>
-                            <img alt = '' src = {euflag} style = {{ height: "25pt"}}/>
-                            <img alt = '' src = {roflag} style = {{ height: "27pt"}}/>
+                            <img alt = '' src = {euflag} style = {{ height: "23pt"}}/>
+                            <img alt = '' src = {roflag} style = {{ height: "25pt"}}/>
                         </div>
                         <form className = 'bookingForm' onSubmit={this.getFarmacies}  >
                         { this.props.toggleHome ?
