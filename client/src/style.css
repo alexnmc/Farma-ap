@@ -464,7 +464,7 @@ h4{
 }
 
 .admin{
-    background-color: rgba(235, 235, 235, 0.726);
+    background-color:  rgb(15, 28, 51);
     min-height: 91vh;
     width: 100vw;
     display:flex;
