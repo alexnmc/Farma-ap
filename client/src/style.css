@@ -43,7 +43,7 @@ body::before {
 .alert{
     font-family: arial;
     font-size: 11pt;
-    color: rgb(255, 6, 6);
+    color: rgb(255, 119, 119);
     font-weight: 500;
     height:20pt;
     display:flex;
