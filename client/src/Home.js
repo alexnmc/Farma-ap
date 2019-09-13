@@ -93,7 +93,7 @@ class Home extends Component {
                                 <h1 className = 'cauta3'>{!this.state.enlargeToggle ? "Fotografiați rețeta sau produsul cãutat:" : "Poza salvatã:"}</h1>
                             </div>
                         }
-                        <div style = {{display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '20pt'}}>
+                        <div style = {{display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '20pt', opacity: this.props.toggleHome ? 1 : 0}}>
                             <img alt = '' src = {euflag} style = {{ height: "23pt"}}/>
                             <img alt = '' src = {roflag} style = {{ height: "25pt"}}/>
                         </div>
