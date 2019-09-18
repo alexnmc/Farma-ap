@@ -80,8 +80,6 @@ mailRouter.post('/activate', (req, res) => {
           <h4>Vã rugãm sã activați contul: <a href="https://www.farmaapp.eu/activation/${req.body.id}">click aici</a></h4>
         
     `
-  
-   
     let transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
@@ -90,7 +88,6 @@ mailRouter.post('/activate', (req, res) => {
       }
     })
   
-   
     let mailOptions = {
         from: 'farmacieup@gmail.com', // sender address
         to: req.body.sendTo, // list of receivers
