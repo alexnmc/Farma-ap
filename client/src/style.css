@@ -54,13 +54,13 @@ body::before {
 
 .navbar {
     width: 100vw;
-    height: 80px;
-    background-color: rgb(14, 25, 47);
+    height: 60px;
+    background-color: rgb(19, 32, 56);
     display:flex;
     position: relative;
     align-items: center;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 600;
     display:flex;
     justify-content: space-around;
 }
@@ -144,7 +144,7 @@ p{
 }
 
 .home{
-    min-height: 91vh;
+    min-height: 94vh;
     width: 100vw;
     display:flex;
     flex-direction: column;
@@ -155,7 +155,7 @@ p{
 }
 
 .contact{
-    height: 91vh;
+    height: 94vh;
     width: 100vw;
     display:flex;
     flex-direction: column;
@@ -466,7 +466,7 @@ h4{
 
 .admin{
     background-color:  rgb(15, 28, 51);
-    min-height: 91vh;
+    min-height: 94vh;
     width: 100vw;
     display:flex;
     align-items: center;
