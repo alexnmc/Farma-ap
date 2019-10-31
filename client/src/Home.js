@@ -90,8 +90,8 @@ class Home extends Component {
                                     <h1 className = 'cauta'>Caută produsul dorit:</h1>
                                 </div>
                                 <div style = {{display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '20pt'}}>
-                                    <img alt = '' src = {euflag} style = {{ height: "23pt"}}/>
-                                    <img alt = '' src = {roflag} style = {{ height: "25pt"}}/>
+                                    <img alt = '' src = {euflag} style = {{ height: "20pt"}}/>
+                                    <img alt = '' src = {roflag} style = {{ height: "22pt"}}/>
                                 </div>
                             </div>
                             : 

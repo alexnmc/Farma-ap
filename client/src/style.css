@@ -196,12 +196,12 @@ p{
     display:flex;
     align-items: center;
     justify-content: center;
-    width:270pt;
+    width:240pt;
     height:auto;
 }
 
 .input{
-    width:270pt;
+    width:240pt;
     height: 40pt;
     margin:auto;
     margin-bottom:10pt;
@@ -235,7 +235,7 @@ p{
 }
 
 .searchIn{
-    width:270pt;
+    width:240pt;
     height: 40pt;
     display: flex;
     justify-content:space-between;
@@ -260,7 +260,7 @@ p{
 }
 
 input{
-    width:270pt;
+    width:240pt;
     height: 40pt;
     margin-top:10pt;
     font-size: 15pt;
@@ -292,7 +292,7 @@ button{
     display:flex;
     align-items: center;
     justify-content: center;
-    width: 270pt;
+    width: 240pt;
     height: 40pt;
     background-color: rgba(65, 139, 42, 0.966);
     font-size: 13pt;
@@ -565,8 +565,8 @@ h4{
 }
 
 .img1{
-    width: 50px;
-    height: 50px;
+    width: 42px;
+    height: 42px;
     background-image: url('./Photos/farma3.png');
     background-size: cover;
     background-position: center;
@@ -711,8 +711,8 @@ h4{
 }
 
 .img2{
-   width:37pt;
-   height:37pt;
+   width:30pt;
+   height:30pt;
    background-image: url('./Photos/farma3.png');
    background-size: cover;
    background-position: center;
