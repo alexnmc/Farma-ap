@@ -69,7 +69,7 @@ authRouter.post("/login", (req, res, next) => {
 
 
 authRouter.get('/:city', (req, res, next) => {    // get all for testing with postman 
-    User.find({city: req.params.city}, (err, data) => {
+    User.find({city: req.params.city, confirmed: true}, (err, data) => {
         if(err) {
             res.status(500)
             return next(err)
