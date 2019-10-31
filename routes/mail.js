@@ -93,7 +93,6 @@ mailRouter.post('/activate', (req, res) => {
         to: req.body.sendTo, // list of receivers
         subject: 'Activare cont', // Subject line
         html: output, // html body
-        
     }
 
     transporter.sendMail(mailOptions, function(error, info){

@@ -10,8 +10,8 @@ const PORT = process.env.PORT || 8000
 const secret = process.env.SECRET || "some secret passphrase here for local development"
 
 
-app.use(forceSsl);
-app.use(express.json({limit: '50mb'})) 
+app.use(forceSsl); // ssl certificate settings
+app.use(express.json({limit: '50mb'})) // set larger data fro the photo
 app.use(morgan('dev'))  
 app.use("/api", expressJwt({secret})) //req.user === {username, password, _id}
 app.use(express.static(path.join(__dirname, "client", "build")))
@@ -39,7 +39,6 @@ app.use((err, req, res, next) => {
     }
     return res.send({errMsg: err.message})
 })
-
 
 
 
