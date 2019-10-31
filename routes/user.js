@@ -142,7 +142,7 @@ authRouter.put('/activate/:id', (req, res, next) => {    // activate user
                 res.status(500)
                 return next(err)
             }
-            return res.status(201).send("Activated!")
+            return res.status(201).send("User Activated")
         }
     )
 })
