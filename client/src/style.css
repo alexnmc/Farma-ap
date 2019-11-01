@@ -202,7 +202,7 @@ p{
 
 .input{
     width:240pt;
-    height: 40pt;
+    height: 38pt;
     margin:auto;
     margin-bottom:10pt;
     font-size: 12pt;
@@ -219,10 +219,10 @@ p{
 
 .inputS{
     width:240pt;
-    height: 40pt;
+    height: 38pt;
     margin:auto;
     margin-bottom:10pt;
-    font-size: 13pt;
+    font-size: 12pt;
     color: rgb(0, 9, 58);
     border: 0px solid  rgba(71, 124, 173, 0.733);
     padding-left:5pt;
@@ -236,7 +236,7 @@ p{
 
 .searchIn{
     width:240pt;
-    height: 40pt;
+    height: 38pt;
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -246,7 +246,7 @@ p{
 }
 
 .searchLogo{
-    height: 40pt;
+    height: 38pt;
     width: 50pt;
     background-color:rgb(32, 53, 87);
     border:10px solid rgb(32, 53, 87);
@@ -261,7 +261,7 @@ p{
 
 input{
     width:240pt;
-    height: 40pt;
+    height: 38pt;
     margin-top:10pt;
     font-size: 15pt;
     border: 0px solid rgba(71, 124, 173, 0.733);
