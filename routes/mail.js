@@ -15,8 +15,8 @@ mailRouter.post('/', (req, res) => {
     let transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: 'farmacieup@gmail.com', // generated ethereal user
-        pass: 'farmaup123'  // generated ethereal password
+        user: 'farmaapp.eu@gmail.com', 
+        pass: 'farmachia123'  
       }
     })
   
@@ -46,12 +46,11 @@ mailRouter.post('/reset', (req, res) => {
      
     <h4>Pentru resetarea parolei: <a href="https://www.farmaapp.eu/resetpassword/${req.body.linkID}">click aici</a></h4>
     `
-    
     let transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: 'farmacieup@gmail.com', // generated ethereal user
-        pass: 'farmaup123'  // generated ethereal password
+        user: 'farmaapp.eu@gmail.com', 
+        pass: 'farmachia123'  
       }
     })
   
@@ -83,8 +82,8 @@ mailRouter.post('/activate', (req, res) => {
     let transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: 'farmacieup@gmail.com', // generated ethereal user
-        pass: 'farmaup123'  // generated ethereal password
+        user: 'farmaapp.eu@gmail.com', 
+        pass: 'farmachia123'  
       }
     })
   
@@ -103,9 +102,6 @@ mailRouter.post('/activate', (req, res) => {
     }
     })
 })
-
-
-
 
 
 module.exports = mailRouter
