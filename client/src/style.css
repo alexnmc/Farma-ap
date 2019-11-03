@@ -395,21 +395,20 @@ button{
 .alertH1{
     margin-bottom: 20px;
     font-family: "arial";
-    color: rgb(1, 1, 117)
+    color: rgb(19, 32, 56)
 }
 
 .alertP{
     margin: 4px;
     font-family: "arial";
-    color: rgb(0, 0, 93)
+    color: rgb(19, 32, 56)
 }
 
 .alertP2{
     margin: 4px;
     font-family: "arial";
-    color: rgb(0, 0, 93);
+    color:  rgb(19, 32, 56);
     max-width: 80vw;
-   
 }
 
 .spc{
@@ -1060,7 +1059,6 @@ span{
     .p2{
         margin: 1pt;
         font-family:"Open Sans", Arial, sans-serif;
-       
     }
 
     .p3{
@@ -1075,11 +1073,15 @@ span{
     .p5{
         margin: 0pt;
         font-family: "Open Sans", Arial, sans-serif;
+        font-weight: 900;
+    }
+    
+    .p1{
+       font-weight: 900;
     }
     
     span{
         font-size:11pt;
-        
     }
 
     .cauta{
@@ -1151,22 +1153,26 @@ span{
     .logout{
         width: 90pt;
         height: 21pt;
-        font-size: 11pt;
+        font-size: 10pt;
         margin:5pt;
     }
 
      .input2{
-        width:105pt;
+        width:90pt;
         height: 22pt;
-        font-size: 11pt;
+        font-size: 10pt;
         border: 0px solid #0061cf6e;
         margin:5pt;
-        margin-right: 12pt;
+        margin-right: 0pt;
         font-family: arial
     }
 
+    .input2::placeholder{
+        font-size: 10pt;
+    }
+
     .h1{
-        font-size: 11pt;
+        font-size: 10pt;
         margin: 2pt;
         font-weight: 600;
         text-align: center;
@@ -1176,7 +1182,7 @@ span{
 
     .h1A{
         font-family: 'trebuchet ms';
-        font-size:11pt;
+        font-size:10pt;
         font-weight:600;
         min-width:40pt;
     }

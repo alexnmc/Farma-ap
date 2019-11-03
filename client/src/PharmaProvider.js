@@ -217,7 +217,7 @@ class PharmaProvider extends Component {
               <p className = "alertP">{phone}</p>
               <p className = "spc">Email:</p>
               <p className = "alertP">{email}</p>
-              <p className = "spc">Produs cãutat</p>
+              <p className = "spc">Produs cãutat:</p>
               <p className = "alertP">{med}</p>
               <button style = {{marginBottom: "30pt"}} className = 'photoButton' onClick={onClose}>închide</button>
               <p className = "alertP2">Veți fi contactat direct de farmaciile care oferă produsul!</p>
