@@ -215,8 +215,12 @@ class PharmaProvider extends Component {
               <h1 className = "alertH1">{data}</h1>
               <p className = "spc">Telefon:</p>
               <p className = "alertP">{phone}</p>
-              <p className = "spc">Email:</p>
-              <p className = "alertP">{email}</p>
+              {email.length > 0 &&
+                <div className='customAlert'>
+                    <p className = "spc">Email:</p>
+                    <p className = "alertP">{email}</p>
+                </div>
+              }
               <p className = "spc">Produs cãutat:</p>
               <p className = "alertP">{med}</p>
               <button style = {{marginBottom: "30pt"}} className = 'photoButton' onClick={onClose}>închide</button>
