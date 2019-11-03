@@ -2,7 +2,10 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import ring from './Sound/Sound.mp3'
 import cities from './cities'
+import { confirmAlert } from 'react-confirm-alert'; // Import
+import 'react-confirm-alert/src/react-confirm-alert.css'; // Import css
 const uuidv1 = require('uuid/v1')
+
 
 const PharmaContext = React.createContext()
 const sound = new Audio(ring)
@@ -203,8 +206,21 @@ class PharmaProvider extends Component {
         }
     }
 
-    alertCallBack = (data, email, med) => {
-        alert(data +' Email: ' + email +'  medicament: '+ med)
+    alertCallBack = (data, email, med, phone) => {
+       // alert(data +' Email: ' + email +'  medicament: '+ med)
+       confirmAlert({
+        customUI: ({ onClose }) => {
+          return (
+            <div className='customAlert'>
+              <h1 className = "alertH1">{data}</h1>
+              <p className = "alertP"><span className = "spc">Telefon: </span> {phone}</p>
+              <p className = "alertP"><span className = "spc">Email: </span> {email}</p>
+              <p className = "alertP"><span className = "spc">Produs cãutat: </span> {med}</p>
+              <button className = 'photoButton' onClick={onClose}>închide</button>
+            </div>
+          );
+        }
+      });
     }
     
     handleSubmit = () => {  // on submit we are sending a new message object to the database
@@ -215,7 +231,7 @@ class PharmaProvider extends Component {
             axios.post('/message', {date, email, phone, medication, img, city, county}).then(res => {
                 this.setState(
                 {loading: false},
-                this.alertCallBack(res.data, email, medication)
+                this.alertCallBack(res.data, email, medication, phone)
                 )
             })
             
