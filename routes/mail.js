@@ -22,7 +22,7 @@ mailRouter.post('/', (req, res) => {
   
     // setup email data with unicode symbols
     let mailOptions = {
-        from: 'farmacieup@gmail.com', // sender address
+        from: 'farmaapp.eu@gmail.com', // sender address
         to: req.body.sendTo.join(','), // list of receivers
         subject: req.body.medication, // Subject line
         html: output, // html body
@@ -56,7 +56,7 @@ mailRouter.post('/reset', (req, res) => {
   
     
     let mailOptions = {
-        from: 'farmacieup@gmail.com', // sender address
+        from: 'farmaapp.eu@gmail.com', // sender address
         to: req.body.sendTo, // list of receivers
         subject: 'Resetare parolã', // Subject line
         html: output, // html body
@@ -88,7 +88,7 @@ mailRouter.post('/activate', (req, res) => {
     })
   
     let mailOptions = {
-        from: 'farmacieup@gmail.com', // sender address
+        from: 'farmaapp.eu@gmail.com', // sender address
         to: req.body.sendTo, // list of receivers
         subject: 'Activare cont', // Subject line
         html: output, // html body
