@@ -213,10 +213,14 @@ class PharmaProvider extends Component {
           return (
             <div className='customAlert'>
               <h1 className = "alertH1">{data}</h1>
-              <p className = "alertP"><span className = "spc">Telefon: </span> {phone}</p>
-              <p className = "alertP"><span className = "spc">Email: </span> {email}</p>
-              <p className = "alertP"><span className = "spc">Produs cãutat: </span> {med}</p>
-              <button className = 'photoButton' onClick={onClose}>închide</button>
+              <p className = "spc">Telefon:</p>
+              <p className = "alertP">{phone}</p>
+              <p className = "spc">Email:</p>
+              <p className = "alertP">{email}</p>
+              <p className = "spc">Produs cãutat</p>
+              <p className = "alertP">{med}</p>
+              <button style = {{marginBottom: "30pt"}} className = 'photoButton' onClick={onClose}>închide</button>
+              <p className = "alertP2">Veți fi contactat direct de farmaciile care oferă produsul!</p>
             </div>
           )
         }

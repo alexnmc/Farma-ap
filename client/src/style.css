@@ -395,18 +395,26 @@ button{
 .alertH1{
     margin-bottom: 20px;
     font-family: "arial";
-    color: rgb(0, 0, 133)
+    color: rgb(1, 1, 117)
 }
 
 .alertP{
     margin: 4px;
     font-family: "arial";
-    width: 200pt;
-    color: rgb(0, 0, 133)
+    color: rgb(0, 0, 93)
+}
+
+.alertP2{
+    margin: 4px;
+    font-family: "arial";
+    color: rgb(0, 0, 93);
+    max-width: 90vw;
 }
 
 .spc{
-    color: red
+    color: rgb(173, 2, 2);
+    font-family: "verdana";
+    margin-top: 15pt
 }
 
 .h1{
