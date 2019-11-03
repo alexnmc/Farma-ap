@@ -70,11 +70,11 @@ a{
     text-decoration: none;
     font-family: 'arial';
     cursor: pointer;
-    color:rgb(0, 204, 255);
+    color:rgba(98, 224, 255, 0.938);
 }
 
 a:hover{
-    color:rgb(0, 224, 0);
+    color:rgba(0, 224, 0, 0.924);
 }
 
 .b{
