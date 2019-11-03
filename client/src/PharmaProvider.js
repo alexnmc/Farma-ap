@@ -218,9 +218,9 @@ class PharmaProvider extends Component {
               <p className = "alertP"><span className = "spc">Produs cãutat: </span> {med}</p>
               <button className = 'photoButton' onClick={onClose}>închide</button>
             </div>
-          );
+          )
         }
-      });
+      })
     }
     
     handleSubmit = () => {  // on submit we are sending a new message object to the database

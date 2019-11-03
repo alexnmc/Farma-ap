@@ -82,7 +82,7 @@ class PharmaPortal extends Component {
                 <div style = {{margin: "auto" , width: "97%" , display:'flex', alignItems: 'center', justifyContent: 'space-evenly', marginBottom: '5pt'}}>
                     <p className = 'h1A' style = {{cursor: 'pointer' , color:"red"}}  onClick = {() => this.helpToggle()}>{this.state.helpToggle ? "utilizare" : "înapoi"}</p>
                     <div style = {{display: "flex"}}>
-                        <FaUser />
+                        <FaUser/>
                         <p className = 'h1A' style = {{marginLeft:'3pt'}}>{this.props.user.username}</p>
                     </div>
                 </div>
