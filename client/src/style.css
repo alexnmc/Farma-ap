@@ -408,7 +408,8 @@ button{
     margin: 4px;
     font-family: "arial";
     color: rgb(0, 0, 93);
-    max-width: 90vw;
+    max-width: 80vw;
+   
 }
 
 .spc{
