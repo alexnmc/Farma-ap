@@ -67,8 +67,8 @@ const PharmaLogin = props =>  {
                                     </div>
                                 
                                 :
-                                    <div className = "loginForm">
-                                        <h4>Vã rugãm sã resetați parola prin link-ul primit în email.</h4>
+                                    <div style = {{height: '20rem'}} className = "loginForm">
+                                        <h4 className = "resetH4">Vã rugãm sã resetați parola prin link-ul primit în email.</h4>
                                         <h4>Mulțumim!</h4>
                                     </div>
                                 }

@@ -49,6 +49,7 @@ class Activation extends Component{
                 
                 <div className = "contact">
                     <div className = "loginForm2" style = {{width:'auto'}}>
+                        <div className = "img2"></div>
                         <h2 className = "activH1">Mulțumim! Parola a fost schimbatã.</h2>
                         <CheckAnimation/>
                         <Link style = {{fontSize: '15pt', fontWeight: '900', marginTop: '15pt'}} to = "/pharma">Login</Link>

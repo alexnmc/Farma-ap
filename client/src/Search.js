@@ -11,7 +11,7 @@ const Search = (props) => {
             <datalist id="mylist" >
               {props.cities.map((city, index) => <option key={city} value={city} className = {index}>{city}</option>)}
             </datalist>
-        <div className = 'searchLogo'></div>
+            <div className = 'searchLogo'></div>
         </div>
      
     )
