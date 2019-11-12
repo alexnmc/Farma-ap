@@ -41,6 +41,7 @@ class PharmaProvider extends Component {
             loading: false,
             alert: '',
             alert2:'',
+            messageLoading: false
         }
     }
 
@@ -296,9 +297,11 @@ class PharmaProvider extends Component {
     }
 
     getMessage2 = () => {
+        this.setState({messageLoading: true})
         axios.get(`/message/2/${this.state.currentCity}`).then(res => {  
             this.setState({
-                messages: res.data 
+                messages: res.data,
+                messageLoading: false
             })
         })
     }

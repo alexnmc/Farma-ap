@@ -2,12 +2,12 @@ import React, {Component} from 'react'
 import {withPharma} from './PharmaProvider'
 import moment from 'moment'
 import { FaUser } from 'react-icons/fa'
+import ReactLoading from "react-loading"
 
 
 class PharmaPortal extends Component {
     constructor(props){
         super(props)
-        
         this.state = {
            userCity: this.props.user.city,
            messages: this.props.messages,
@@ -15,7 +15,6 @@ class PharmaPortal extends Component {
         }
     }
 
-    
     componentDidMount(){
         this.props.getMessages(this.state.userCity)
         setInterval(this.props.updateMessage, 100000)
@@ -28,9 +27,7 @@ class PharmaPortal extends Component {
         })
     }
 
-
     render(){
-        
         let arr = this.props.messages
 
         arr.sort(function (a, b) {
@@ -96,7 +93,15 @@ class PharmaPortal extends Component {
                 </div>
                 {this.state.helpToggle ? 
                     
-                    <div>{messages}</div>
+                    <div>
+                        {this.props.messageLoading ? 
+                        <div style = {{height: "50vh", width: "100vw", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}>
+                            <ReactLoading  type={'balls'} color={'rgb(14, 25, 47)'} height={'40pt'} width={'40pt'} margin = {"auto"}/>
+                        </div>
+                        : 
+                        messages
+                        }
+                    </div>
 
                     :
 
