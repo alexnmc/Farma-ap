@@ -92,7 +92,6 @@ class PharmaPortal extends Component {
                     <button className = "logout" onClick = {this.props.logout}>ieșire</button>
                 </div>
                 {this.state.helpToggle ? 
-                    
                     <div>
                         {this.props.messageLoading ? 
                         <div style = {{height: "50vh", width: "100vw", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}>
