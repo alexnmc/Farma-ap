@@ -54,7 +54,7 @@ body::before {
 
 .navbar {
     width: 100vw;
-    height: 60px;
+    height: 4.5rem;
     background-color: rgb(19, 32, 56);
     display:flex;
     position: relative;
@@ -760,11 +760,11 @@ h4{
 
 @keyframes pop{
     50%  {transform: scale(1.2);}
-  }
+}
 
-  @keyframes pop2{
+@keyframes pop2{
     50%  {transform: scale(1.1);}
-  }
+}
 
 .loginLogo{
     background-image: url('./Photos/farma3.png');
