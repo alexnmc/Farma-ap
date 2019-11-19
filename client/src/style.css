@@ -54,7 +54,7 @@ body::before {
 
 .navbar {
     width: 100vw;
-    height: 4.5rem;
+    height: 4rem;
     background-color: rgb(19, 32, 56);
     display:flex;
     position: relative;
@@ -112,14 +112,19 @@ p{
     width: 260pt;
     text-align: start;
     margin:1pt;
-    font-weight: 500
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    
 }
 
 .p5{
     width: 150pt;
     text-align: start;
     margin-left: -25pt;
-    font-weight: 500
+    font-weight: 800;
+    display: flex;
+    align-items: center;
 }
 
 .p3{
@@ -128,7 +133,7 @@ p{
     margin-left:40pt;
     text-align: start;
     color: red;
-    font-size: 12pt;
+    font-size: 11.5pt;
 }
 
 .p4{
@@ -815,7 +820,8 @@ h4{
     margin:auto;
     margin-top: 4pt;
     padding-left:4pt;
-    font-size: 11pt;
+    font-size: 10.5pt;
+    font-weight:500;
 }
 
 span{
