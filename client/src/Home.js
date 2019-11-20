@@ -10,8 +10,6 @@ import euflag from './Photos/euflag.png'
 import roflag from "./Photos/roflag.png"
 
 
-
-
 class Home extends Component {
     constructor(props){
         super(props)
@@ -20,6 +18,7 @@ class Home extends Component {
            enlargeToggle: false
         }
     }
+
 
     getFarmacies = (e) => {
         e.preventDefault()
