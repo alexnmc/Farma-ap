@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import {withPharma} from './PharmaProvider'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
-import CheckAnimation from './UncontrolledLottie.jsx'
+import CheckAnimation from './Animations/UncontrolledLottie.jsx'
 
 
 

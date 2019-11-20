@@ -112,7 +112,7 @@ p{
     width: 260pt;
     text-align: start;
     margin:1pt;
-    font-weight: 800;
+    font-weight: 600;
     display: flex;
     align-items: center;
     
@@ -122,7 +122,7 @@ p{
     width: 150pt;
     text-align: start;
     margin-left: -25pt;
-    font-weight: 800;
+    font-weight: 600;
     display: flex;
     align-items: center;
 }
@@ -149,7 +149,7 @@ p{
 }
 
 .home{
-    min-height: 94vh;
+    min-height: 93vh;
     width: 100vw;
     display:flex;
     flex-direction: column;
@@ -160,7 +160,7 @@ p{
 }
 
 .contact{
-    height: 94vh;
+    height: 93vh;
     width: 100vw;
     display:flex;
     flex-direction: column;
@@ -205,25 +205,8 @@ p{
     height:auto;
 }
 
-.input{
-    width:20rem;
-    height: 4rem;
-    margin:auto;
-    margin-bottom:10pt;
-    font-size: 10pt;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color:rgb(0, 0, 34);
-    padding-left:5pt;
-    font-family: 'arial';
-    border-radius: 9pt;
-    -webkit-appearance: none;
-    animation: fade 2s;
-}
-
 .inputS{
-    width:16.5rem;
+    width:15.5rem;
     height: 3.3rem;
     margin:auto;
     margin-bottom:10pt;
@@ -240,7 +223,7 @@ p{
 }
 
 .searchIn{
-    width: 20rem;
+    width: 19rem;
     height: 3.3rem;
     display: flex;
     justify-content:space-between;
@@ -265,7 +248,7 @@ p{
 }
 
 input{
-    width: 20rem;
+    width: 19rem;
     height: 3.3rem;
     margin-top:10pt;
     font-size: 12pt;
@@ -297,7 +280,7 @@ button{
     display:flex;
     align-items: center;
     justify-content: center;
-    width: 20rem;
+    width: 19rem;
     height: 3.3rem;
     background-color: rgba(65, 139, 42, 0.966);
     font-size: 13pt;
@@ -336,7 +319,7 @@ button{
 }
 
 .loginButton{
-   width: 90%;
+   width: 80%;
    height: 35pt;
    font-size:12pt;
    margin-top:10pt;
@@ -459,7 +442,7 @@ h4{
 }
 
 .login1{
-    width: 90%;
+    width: 80%;
     height: 35pt;
     border-bottom: 2px solid  rgb(0, 0, 0);
     background-color: rgba(255, 255, 255, 0);
@@ -485,7 +468,6 @@ h4{
     margin-bottom: 0px !important;
     border-radius: 0px;
     height:35pt;
-   
 }
 
 .login11::placeholder{color: rgb(177, 177, 177)}
@@ -503,7 +485,7 @@ h4{
 
 .admin{
     background-color:  rgb(15, 28, 51);
-    height:94vh;
+    height:93vh;
     min-height: 500pt;
     width: 100vw;
     display:flex;
@@ -615,7 +597,7 @@ h4{
 .cauta{
     font-family: 'arial';
     color: rgb(255, 255, 255);
-    font-size: 16pt;
+    font-size: 15.5pt;
     text-align: center;
     animation: move2 0.7s;
     font-weight: 600;
@@ -884,14 +866,6 @@ span{
         margin-top: 0pt;
     }
     
-    .input{
-        width: 65vw;
-        height: 35pt;
-        font-size: 12pt;
-        font-weight: 900;
-        padding-left:7pt; 
-        font-family: arial;
-    }
     
     input{
         width: 65vw;
@@ -959,7 +933,6 @@ span{
         color: white;
         cursor: pointer;
         margin-top: 12%;
-       
     }
 
     .button2{
@@ -968,7 +941,7 @@ span{
     }
 
     .loginButton{
-       width: 85%;
+       width: 80%;
        height: 35pt;
        font-size:12pt;
        margin-top:5pt;
@@ -990,12 +963,11 @@ span{
     }
     
     .login1{
-        width: 85%;
+        width: 80%;
         height: 30pt;
         border-radius: 3px;
         margin-top: 0pt;
         padding-left:3.5pt;
-        
     }
 
     .login11{
@@ -1003,7 +975,6 @@ span{
         height: 30pt;
         margin-top:0pt;
         padding-left:3.5pt;
-        
     }
 
     .searchIn2{

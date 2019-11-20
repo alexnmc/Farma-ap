@@ -47,7 +47,7 @@ class PharmaPortal extends Component {
                     <p className = "p5"><FaPhone/><a href = {`tel: ${item.phone}`} style = {!item.rezolvat ? {color: "blue", marginLeft: "5pt"} : {color:"black", marginLeft: "5pt"}}>{`0${item.phone}`}</a></p> 
                     {item.img ? <img onClick = {!item.rezolvat ? () => this.props.enlarge(item._id) : null} className = 'myImg' alt = '' src = {item.img} style = {item.rezolvat ? {cursor:'none'}: null}/> : <div style = {{width:'30pt', height: '20pt'}}></div>}
                     <p className = "p3" style = {item.rezolvat ?  {color: "black"} : null}><span>Cautã: </span>{item.medication}</p>
-                    <p className = "p4"> {moment(item.date).format('MMMM Do YYYY, HH:mm:ss ')}</p>
+                    <p className = "p4"> {moment(item.date).format('ll, HH:mm:ss ')}</p>
                     <p className = 'rezolvat' onClick = {!item.rezolvat ? () => this.props.rezolvat(item._id, item.email) : null} style = {item.rezolvat ? {cursor:'none', color: "white"} : null}>{!item.rezolvat ? "închide" : "rezolvat"}</p>
                 </div>
 
@@ -66,7 +66,7 @@ class PharmaPortal extends Component {
                             src = {item.img}/>
                     <p className = "p33"></p>
                     {document.documentElement.clientWidth < 1000 ? <p className = "p3"><span>Cautã: </span>{item.medication}</p> : <p style = {{width: '300pt'}}></p>}
-                    <p className = "p4"> {moment(item.date).format('MMMM Do YYYY, HH:mm:ss')}</p>
+                    <p className = "p4"> {moment(item.date).format('DD/MMM/YY, HH:mm:ss')}</p>
                     <p className = 'rezolvat'>închide</p>
                 </div>
             )

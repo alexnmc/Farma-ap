@@ -1,6 +1,6 @@
 import React from 'react'
 import { withPharma } from './PharmaProvider'
-import CheckAnimation from './UncontrolledLottie.jsx'
+import CheckAnimation from './Animations/UncontrolledLottie.jsx'
 import ReactLoading from "react-loading"
 import LoginSearch from './LoginSearch'
 

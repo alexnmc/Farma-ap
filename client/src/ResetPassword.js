@@ -3,7 +3,7 @@ import {withPharma} from './PharmaProvider'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 import ReactLoading from "react-loading"
-import CheckAnimation from './UncontrolledLottie.jsx'
+import CheckAnimation from './Animations//UncontrolledLottie.jsx'
 
 
 class Activation extends Component{

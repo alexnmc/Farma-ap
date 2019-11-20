@@ -7,13 +7,12 @@ import './style.css'
 
 
 
-
 ReactDOM.render(
         
         <BrowserRouter>
-        <PharmaProvider>
-        <App/>
-        </PharmaProvider>
+                <PharmaProvider>
+                        <App/>
+                </PharmaProvider>
         </BrowserRouter>,
         
 document.getElementById('root'))
