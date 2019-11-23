@@ -887,7 +887,7 @@ span{
     }
 
     .inputS{
-        width: 52vw;
+        width: 52.5vw;
         height: 35pt;
         font-size: 12pt;
         border:none
@@ -903,7 +903,7 @@ span{
 
     .searchLogo{
         height: 35pt;
-        width: 10vw;
+        width: 12.5vw;
         background-image: url('./Photos/search.gif');
         background-position: center;
         background-size: contain;
@@ -1225,7 +1225,7 @@ span{
 
     .home{
         width: 100vw;
-        height: 85vh;
+        height: 90vh;
         display:flex;
         flex-direction: column;
         align-items: center;
@@ -1323,6 +1323,7 @@ span{
     }
 
     .footer{
-        height:20pt
+        height: 4vh;
+        max-height:20pt;
     }
 }
