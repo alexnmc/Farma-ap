@@ -119,7 +119,7 @@ class PharmaPortal extends Component {
                     }
                 </div>
             </div>
-            <Footer color = {"rgb(14, 25, 47)" }/>
+            <Footer/>
             </>
         )
     }

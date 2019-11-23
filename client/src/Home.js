@@ -172,7 +172,7 @@ class Home extends Component {
                         </form>
                     </div>
                  </div>
-                 <Footer color = {"rgb(14, 25, 47)"}/> 
+                 <Footer/> 
                  </>            
             )
     }
