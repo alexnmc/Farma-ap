@@ -1224,7 +1224,7 @@ span{
 
     .home{
         width: 100vw;
-        height: 90vh;
+        height: auto;
         display:flex;
         flex-direction: column;
         align-items: center;
