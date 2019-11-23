@@ -58,17 +58,17 @@ class PharmaPortal extends Component {
                     <p className = "p1"><FaEnvelope/><a href = {`mailto:${item.email}`} style = {{color: "blue", marginLeft: "5pt"}}>{item.email}</a></p>
                     <p className = "p5"><FaPhone/><a href = {`tel: ${item.phone}`} style = {{color: "blue", marginLeft: "5pt"}}>{`0${item.phone}`}</a></p> 
                     <img    style = {document.documentElement.clientWidth < 1100 ?  
-                                        {width: '100%' , height: '60vh', marginTop: '1%'} 
+                                        {width: '100%' , height: '55vh', marginTop: '1%'} 
                                         : 
-                                        {position: 'absolute' , border: "2px solid white", marginTop: '20pt', marginLeft: '40pt' , width: '320pt' , height: '300pt'}}  
+                                        {position: 'absolute' , border: "2px solid white", marginTop: '20pt', marginLeft: '40pt' , width: '320pt' , height: '350pt'}}  
                             onClick = {() => this.props.enlarge(item._id)} 
                             className = 'myImg' 
                             alt = '' 
                             src = {item.img}/>
                     <p className = "p33"></p>
                     {document.documentElement.clientWidth < 1000 ? <p className = "p3"><span>Cautã: </span>{item.medication}</p> : <p style = {{width: '300pt'}}></p>}
-                    <p className = "p4"> {moment(item.date).format('DD/MMM/YY, HH:mm:ss')}</p>
-                    <p className = 'rezolvat'>închide</p>
+                    <p className = "p4"> {moment(item.date).format('ll, HH:mm:ss')}</p>
+                    <p className = 'rezolvat'></p>
                 </div>
             )
         })
