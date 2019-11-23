@@ -88,6 +88,7 @@ a:hover{
     position: absolute;
     margin-top: -20pt;
     width: 100vw;
+    
 }
 .rezolvat{
     color:rgb(224, 45, 0);
@@ -370,7 +371,7 @@ button{
     justify-content: center;
     align-items: center;
     margin:auto;
-    margin-bottom: 20pt;
+    margin-bottom: 5pt;
 }
 
 .customAlert{
@@ -781,13 +782,19 @@ h4{
 
 .pharmaport{
     display: flex;
+    overflow: hidden;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    min-height: 100vh;
+    height: 92vh;
     width: 100vw;
     background-color: white;
-    padding-bottom:20pt;
+   
+}
+
+.scrollDiv{
+    overflow: scroll;
+    height: 76vh
 }
 
 .messageContainer{
@@ -856,7 +863,7 @@ span{
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 
     .bookingContainer{
         display: flex;
@@ -1172,7 +1179,7 @@ span{
         display:flex;
         justify-content: space-evenly;
         align-items: center;
-        margin-bottom: 20pt;
+        margin-bottom: 2pt;
     }
 
     .messageWrap{
@@ -1292,4 +1299,19 @@ span{
         font-size:10pt;
     }
 
+    .pharmaport{
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        height: 90vh;
+        width: 100vw;
+        background-color: white;
+        padding-bottom:10pt;
+    }
+
+    .scrollDiv{
+       height: 67vh
+    }
 }
