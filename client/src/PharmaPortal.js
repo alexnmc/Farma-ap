@@ -58,7 +58,7 @@ class PharmaPortal extends Component {
                     <p className = "p1"><FaEnvelope/><a href = {`mailto:${item.email}`} style = {{color: "blue", marginLeft: "5pt"}}>{item.email}</a></p>
                     <p className = "p5"><FaPhone/><a href = {`tel: ${item.phone}`} style = {{color: "blue", marginLeft: "5pt"}}>{`0${item.phone}`}</a></p> 
                     <img    style = {document.documentElement.clientWidth < 1100 ?  
-                                        {width: '100%' , height: '55vh', marginTop: '1%'} 
+                                        {width: '100%' , height: '50vh', marginTop: '1%'} 
                                         : 
                                         {position: 'absolute' , border: "2px solid white", marginTop: '20pt', marginLeft: '40pt' , width: '320pt' , height: '350pt'}}  
                             onClick = {() => this.props.enlarge(item._id)} 
