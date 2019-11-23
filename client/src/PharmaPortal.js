@@ -44,30 +44,30 @@ class PharmaPortal extends Component {
                 item.toggle ?
                 
                 <div className = "messageContainer" key = {item._id} style = {{backgroundColor: item.rezolvat ? "rgb(38, 55, 82)" : null}}>
-                    <p className = "p1"><FaEnvelope/><a href = {`mailto:${item.email}`} style = {!item.rezolvat ? {color: "blue", marginLeft: "5pt"} : {color:'black', marginLeft: "5pt"}}>{item.email}</a></p>
-                    <p className = "p5"><FaPhone/><a href = {`tel: ${item.phone}`} style = {!item.rezolvat ? {color: "blue", marginLeft: "5pt"} : {color:"black", marginLeft: "5pt"}}>{`0${item.phone}`}</a></p> 
+                    <p className = "p4"> {moment(item.date).format('ll, HH:mm:ss ')}</p>
                     {item.img ? <img onClick = {!item.rezolvat ? () => this.props.enlarge(item._id) : null} className = 'myImg' alt = '' src = {item.img} style = {item.rezolvat ? {cursor:'none'}: null}/> : <div style = {{width:'30pt', height: '20pt'}}></div>}
                     <p className = "p3" style = {item.rezolvat ?  {color: "black"} : null}><span>Cautã: </span>{item.medication}</p>
-                    <p className = "p4"> {moment(item.date).format('ll, HH:mm:ss ')}</p>
+                    <p className = "p1"><FaEnvelope/><a href = {`mailto:${item.email}`} style = {!item.rezolvat ? {color: "blue", marginLeft: "5pt"} : {color:'black', marginLeft: "5pt"}}>{item.email}</a></p>
+                    <p className = "p5"><FaPhone/><a href = {`tel: ${item.phone}`} style = {!item.rezolvat ? {color: "blue", marginLeft: "5pt"} : {color:"black", marginLeft: "5pt"}}>{`0${item.phone}`}</a></p> 
                     <p className = 'rezolvat' onClick = {!item.rezolvat ? () => this.props.rezolvat(item._id, item.email) : null} style = {item.rezolvat ? {cursor:'none', color: "white"} : null}>{!item.rezolvat ? "închide" : "rezolvat"}</p>
                 </div>
 
                 :
                  
                 <div className = "messageContainer" key = {item._id} style = {{position: 'relative' , backgroundColor : 'lightgrey'}}>
-                    <p className = "p1"><FaEnvelope/><a href = {`mailto:${item.email}`} style = {{color: "blue", marginLeft: "5pt"}}>{item.email}</a></p>
-                    <p className = "p5"><FaPhone/><a href = {`tel: ${item.phone}`} style = {{color: "blue", marginLeft: "5pt"}}>{`0${item.phone}`}</a></p> 
+                    <p className = "p4"> {moment(item.date).format('ll, HH:mm:ss ')}</p>
+                    {document.documentElement.clientWidth < 1000 ? <p className = "p3"><span>Cautã: </span>{item.medication}</p> : <p style = {{width: '300pt'}}></p>}
                     <img    style = {document.documentElement.clientWidth < 1100 ?  
                                         {width: '100%' , height: '50vh', marginTop: '1%'} 
                                         : 
-                                        {position: 'absolute' , border: "2px solid white", marginTop: '20pt', marginLeft: '40pt' , width: '320pt' , height: '350pt'}}  
+                                        {position: 'absolute' , border: "2px solid white", marginTop: '20pt', marginLeft: '-170pt' , width: '320pt' , height: '350pt'}}  
                             onClick = {() => this.props.enlarge(item._id)} 
                             className = 'myImg' 
                             alt = '' 
                             src = {item.img}/>
-                    <p className = "p33"></p>
-                    {document.documentElement.clientWidth < 1000 ? <p className = "p3"><span>Cautã: </span>{item.medication}</p> : <p style = {{width: '300pt'}}></p>}
-                    <p className = "p4"> {moment(item.date).format('ll, HH:mm:ss')}</p>
+                    {document.documentElement.clientWidth < 1000 ? null : <p className = 'p33'></p>}
+                    <p className = "p1"><FaEnvelope/><a href = {`mailto:${item.email}`} style = {{color: "blue", marginLeft: "5pt"}}>{item.email}</a></p>
+                    <p className = "p5"><FaPhone/><a href = {`tel: ${item.phone}`} style = {{color: "blue", marginLeft: "5pt"}}>{`0${item.phone}`}</a></p> 
                     <p className = 'rezolvat'></p>
                 </div>
             )
@@ -101,8 +101,8 @@ class PharmaPortal extends Component {
                             </div>
                             : 
                             <div className = "scrollDiv">
-                            {messages}
-                          </div>
+                                {messages}
+                            </div>
                             }
                         </div>
 
