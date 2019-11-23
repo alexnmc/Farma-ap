@@ -86,7 +86,7 @@ a:hover{
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 20pt;
+    height: 3vh;
 }
 .rezolvat{
     color:rgb(224, 45, 0);
@@ -148,7 +148,7 @@ p{
 }
 
 .home{
-    min-height: 93vh;
+    min-height: 89vh;
     width: 100vw;
     display:flex;
     flex-direction: column;
@@ -159,7 +159,7 @@ p{
 }
 
 .contact{
-    height: 93vh;
+    height: 89vh;
     width: 100vw;
     display:flex;
     flex-direction: column;
@@ -484,7 +484,7 @@ h4{
 
 .admin{
     background-color:  rgb(15, 28, 51);
-    height:93vh;
+    height:89vh;
     min-height: 500pt;
     width: 100vw;
     display:flex;
@@ -784,7 +784,7 @@ h4{
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    height: 92vh;
+    height: 89vh;
     width: 100vw;
     background-color: white;
    
@@ -1203,8 +1203,8 @@ span{
     }
 
     .imgWrap{
-        margin-bottom: 1vh;
-        margin-top: 20pt;
+        margin-bottom: 5pt;
+        margin-top: 15pt;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1300,11 +1300,8 @@ span{
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        height: 90vh;
         width: 100vw;
         background-color: white;
         padding-bottom:10pt;
     }
-
-    
 }
