@@ -101,7 +101,7 @@ class Home extends Component {
                         }
                        
                         <form className = 'bookingForm' onSubmit={this.getFarmacies}  >
-                        { this.props.toggleHome ?
+                        {this.props.toggleHome ?
                             <div>
                                 {!this.props.loading ?
                                 <div>
@@ -134,17 +134,14 @@ class Home extends Component {
                                 </div>
                                 
                                 :
-                                
-                                <div>
-                                    <Loading/>
-                                </div>
+                                <Loading/>
                                 }
                             </div>
                            
                            :
                             
                             <div className = "cameraWrap"> 
-                            { this.props.img ?  
+                            {this.props.img ?  
                                 <div className = "savedImgWrap">
                                     { !this.state.enlargeToggle && this.props.img.length && <h2 className = "savedImg">Pozã salvatã:</h2>}
                                         <div style = {{display: "block", margin:"auto"}}>
