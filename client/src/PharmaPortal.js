@@ -3,6 +3,7 @@ import {withPharma} from './PharmaProvider'
 import moment from 'moment'
 import { FaUser, FaPhone, FaEnvelope} from 'react-icons/fa'
 import ReactLoading from "react-loading"
+import Footer from './Footer'
 
 
 class PharmaPortal extends Component {
@@ -74,6 +75,7 @@ class PharmaPortal extends Component {
 
        
         return(
+            <>
             <div className = 'pharmaport'>
                 <div className = 'messageWrap'>
                     <div style = {{margin: "auto" , width: "97%" , display:'flex', alignItems: 'center', justifyContent: 'space-evenly', marginBottom: '5pt'}}>
@@ -117,6 +119,8 @@ class PharmaPortal extends Component {
                     }
                 </div>
             </div>
+            <Footer color = {"rgb(14, 25, 47)" }/>
+            </>
         )
     }
 }

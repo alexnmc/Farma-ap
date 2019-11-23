@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import Footer from './Footer'
 
 
 class About extends Component {
@@ -11,6 +12,7 @@ class About extends Component {
 
 render(){
     return(
+        <>
         <div className = "contact">
             <div className = "imgWrap2">
                 <div className = "img2"></div>
@@ -20,6 +22,8 @@ render(){
             <h1 className = 'h6'>Cum funcționeazã ? </h1>
             <h1 className = 'h6'>Completați formularul de pe pagina Cautã si o sã fiți contactat direct de farmaciile locale care oferã produsul.</h1>
         </div>
+        <Footer color = {"rgb(14, 25, 47)" }/>
+        </>
     )
 }
 }

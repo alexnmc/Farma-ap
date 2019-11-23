@@ -85,10 +85,8 @@ a:hover{
     display:flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    margin-top: -20pt;
     width: 100vw;
-    
+    height: 20pt;
 }
 .rezolvat{
     color:rgb(224, 45, 0);
@@ -1206,7 +1204,7 @@ span{
 
     .imgWrap{
         margin-bottom: 1vh;
-        margin-top: 4vh;
+        margin-top: 20pt;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1261,10 +1259,7 @@ span{
         font-size: 10pt;
     }
 
-    .footer{
-        margin-top:-17pt
-    }
-
+    
     .deletePic{
         width: 50pt;
         height:17pt;
@@ -1311,7 +1306,5 @@ span{
         padding-bottom:10pt;
     }
 
-    .scrollDiv{
-       height: 67vh
-    }
+    
 }

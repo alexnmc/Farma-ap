@@ -8,6 +8,7 @@ import PhotoCamera from './Camera'
 import CookieConsent from "react-cookie-consent"
 import euflag from './Photos/euflag.png'
 import roflag from "./Photos/roflag.png"
+import Footer from './Footer'
 
 
 class Home extends Component {
@@ -71,6 +72,7 @@ class Home extends Component {
     
     render(){
             return(
+                <>
                 <div className = 'home'>
                     <CookieConsent
                         style={{ background: "white" }}
@@ -169,7 +171,9 @@ class Home extends Component {
                             }
                         </form>
                     </div>
-                 </div>              
+                 </div>
+                 <Footer color = {"rgb(14, 25, 47)"}/> 
+                 </>            
             )
     }
 }

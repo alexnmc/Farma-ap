@@ -45,7 +45,6 @@ class App extends Component {
                     <Route path = "/activation/:id"  component = {Activation}/>
                     <Route path = "/terms"  component = {Terms}/>
                 </Switch>
-                <Footer/>
             </div>
         )
     }
