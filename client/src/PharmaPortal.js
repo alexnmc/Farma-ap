@@ -60,7 +60,7 @@ class PharmaPortal extends Component {
                     <img    style = {document.documentElement.clientWidth < 1100 ?  
                                         {width: '100%' , height: '50vh', marginTop: '1%'} 
                                         : 
-                                        {position: 'absolute' , border: "2px solid white", marginTop: '20pt', marginLeft: '-170pt' , width: '320pt' , height: '350pt'}}  
+                                        {position: 'fixed' , border: "2px solid white", marginTop: '20pt', marginLeft: '-20%' , width: '320pt' , height: '300pt'}}  
                             onClick = {() => this.props.enlarge(item._id)} 
                             className = 'myImg' 
                             alt = '' 
@@ -102,6 +102,7 @@ class PharmaPortal extends Component {
                             : 
                             <div className = "scrollDiv">
                                 {messages}
+                                <div style = {{height: "20pt"}}></div>
                             </div>
                             }
                         </div>

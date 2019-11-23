@@ -3,12 +3,14 @@ import { withPharma } from './PharmaProvider'
 import CheckAnimation from './Animations/UncontrolledLottie.jsx'
 import ReactLoading from "react-loading"
 import LoginSearch from './LoginSearch'
+import Footer from './Footer'
 
 
 
 const PharmaLogin = props =>  {
     
         return(
+            <>
             <div className="admin">
                 <div className = "loginContainer">
                     {props.toggle ?
@@ -147,6 +149,8 @@ const PharmaLogin = props =>  {
                     }
                 </div>
             </div>
+            <Footer/>
+            </>
                 
            
         )

@@ -474,7 +474,7 @@ h4{
     display: flex;
     justify-content:space-between;
     align-items: center;
-    width: 90%;
+    width: 80%;
     height: 35pt;
     border-bottom: 2px solid rgb(0, 0, 0);
     animation: none !important;
@@ -800,6 +800,7 @@ h4{
     align-items: center;
     justify-content: space-around;
     width: 96%;
+    max-width: 2000px;
     min-height: 25pt;
     font-family: 'arial';
     border: 1px solid rgba(29, 29, 29, 0.178);
@@ -860,7 +861,7 @@ span{
    
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
 
     .bookingContainer{
         display: flex;
@@ -873,6 +874,7 @@ span{
     
     input{
         width: 65vw;
+        max-width: 250pt;
         height: 35pt;
         font-size: 12pt;
         padding-left:7pt;
@@ -893,6 +895,7 @@ span{
 
     .searchIn{
         width:65vw;
+        max-width: 250pt;
         height: 35pt;
         border-radius: 8pt;
         margin:auto;
@@ -900,13 +903,13 @@ span{
 
     .searchLogo{
         height: 35pt;
-        width: 13vw;
+        width: 10vw;
         background-image: url('./Photos/search.gif');
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
         cursor: pointer;
-        margin: auto;
+       
     }
 
     .cameraWrap{
@@ -932,6 +935,7 @@ span{
         align-items: center;
         justify-content: center;
         width: 65vw;
+        max-width: 250pt;
         height: 35pt;
         font-size: 12pt;
         color: white;
@@ -946,7 +950,7 @@ span{
 
     .loginButton{
        width: 80%;
-       height: 35pt;
+       height: 32pt;
        font-size:12pt;
        margin-top:5pt;
        margin-bottom:15pt;
@@ -975,14 +979,15 @@ span{
     }
 
     .login11{
-        width: 85%;
+        width: 80%;
         height: 30pt;
         margin-top:0pt;
         padding-left:3.5pt;
     }
 
     .searchIn2{
-        width: 85%;
+        width: 80%;
+        max-width: 333px;
         margin-bottom: 0pt;
     }
     
@@ -1055,7 +1060,9 @@ span{
     }
 
     .p5{
-        margin: 0pt;
+        margin:0pt;
+        margin-top: 5pt;
+        width: 70vw;
         font-family: "Open Sans", Arial, sans-serif;
         font-weight: 900;
     }
@@ -1311,10 +1318,11 @@ span{
     }
     
     .scrollDiv{
-       padding-bottom: 12pt;
+       height: 75vh;
+    
     }
 
     .footer{
-        height: 4vh
+        height:20pt
     }
 }
