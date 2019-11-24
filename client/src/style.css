@@ -788,11 +788,17 @@ h4{
     background-color: white;
    
 }
+.wrapDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
 
 .scrollDiv{
     overflow: scroll;
-    height: 76vh;
-    padding-bottom: 10pt;
+    height: 77vh;
 }
 
 .messageContainer{

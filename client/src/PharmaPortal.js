@@ -94,18 +94,26 @@ class PharmaPortal extends Component {
                         <button className = "logout" onClick = {this.props.logout}>ieșire</button>
                     </div>
                     {this.state.helpToggle ? 
-                        <div>
+                        <>
                             {this.props.messageLoading ? 
-                            <div style = {{height: "50vh", width: "100vw", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}>
-                                <ReactLoading  type={'balls'} color={'rgb(14, 25, 47)'} height={'40pt'} width={'40pt'} margin = {"auto"}/>
-                            </div>
-                            : 
-                            <div className = "scrollDiv">
-                                {messages}
-                                <div style = {{height: "20pt"}}></div>
-                            </div>
+                                <div style = {{height: "50vh", width: "100vw", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}>
+                                    <ReactLoading  type={'balls'} color={'rgb(14, 25, 47)'} height={'40pt'} width={'40pt'} margin = {"auto"}/>
+                                </div>
+                            :
+                                <> 
+                                {this.props.messages.length ?
+                                    <div className = "scrollDiv">
+                                        {messages}
+                                        <div style = {{height: "20pt"}}></div>
+                                    </div>
+                                    :
+                                    <div className = "wrapDiv">
+                                        <p style = {{fontSize: "12.5pt", fontFamily: "arial"}}>nici un mesaj</p>
+                                    </div>
+                                }
+                                </>
                             }
-                        </div>
+                        </>
 
                         :
 
