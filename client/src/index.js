@@ -7,11 +7,12 @@ import './style.css'
 
 
 
+
 ReactDOM.render(
         
         <BrowserRouter>
                 <PharmaProvider>
-                        <App/>
+                        <App />
                 </PharmaProvider>
         </BrowserRouter>,
         

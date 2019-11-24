@@ -22,11 +22,6 @@ class PharmaPortal extends Component {
         setInterval(this.props.updateMessage, 100000)
     }
 
-    componentWillUnmount(){
-        window.location.host !== "www.farmaapp.eu" && this.props.leavePage()
-    }
-
-    
     helpToggle = () => {
         this.setState({
             helpToggle: !this.state.helpToggle
