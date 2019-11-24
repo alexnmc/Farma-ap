@@ -54,13 +54,13 @@ class PharmaPortal extends Component {
 
                 :
                  
-                <div className = "messageContainer" key = {item._id} style = {{position: 'relative' , backgroundColor : 'lightgrey'}}>
+                <div className = "messageContainer" key = {item._id} style = {{backgroundColor : 'lightgrey'}}>
                     <p className = "p4"> {moment(item.date).format('ll, HH:mm:ss ')}</p>
                     {document.documentElement.clientWidth < 1000 ? <p className = "p3"><span>Cautã: </span>{item.medication}</p> : <p style = {{width: '300pt'}}></p>}
                     <img    style = {document.documentElement.clientWidth < 1100 ?  
                                         {width: '100%' , height: '50vh', marginTop: '1%'} 
                                         : 
-                                        {position: 'fixed' , border: "2px solid white", marginTop: '20pt', marginLeft: '-20%' , width: '320pt' , height: '300pt'}}  
+                                        {position: 'absolute' , border: "2px solid white", marginTop: '20pt', marginLeft: '-20%' , width: '320pt' , height: '300pt'}}  
                             onClick = {() => this.props.enlarge(item._id)} 
                             className = 'myImg' 
                             alt = '' 
