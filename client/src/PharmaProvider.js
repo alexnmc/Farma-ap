@@ -45,6 +45,16 @@ class PharmaProvider extends Component {
         }
     }
 
+    leavePage = () => {
+        this.setState({
+            user:'',   
+            token: '',
+            toggle: true
+        })
+        localStorage.removeItem("user")
+        localStorage.removeItem("token")
+    }
+
     logout = () => {
         var answer = window.confirm("Ești sigur cã vrei sã ieși din cont?")
             if(answer){
@@ -418,6 +428,7 @@ class PharmaProvider extends Component {
                     handleToggle: this.handleToggle,
                     handleEdit:this.handleEdit,
                     logout: this.logout,
+                    leavePage: this.leavePage,
                     showMessages: this.showMessages,
                     handleDelete: this.handleDelete,
                     signup: this.signup,
