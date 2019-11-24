@@ -23,7 +23,7 @@ class PharmaPortal extends Component {
     }
 
     componentWillUnmount(){
-        window.location.host !== "farmaapp.eu" && this.props.leavePage()
+        window.location.host !== "www.farmaapp.eu" && this.props.leavePage()
     }
 
     
