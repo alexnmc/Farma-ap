@@ -27,7 +27,7 @@ messageRouter.get('/2/:city', (req, res, next) => {
 })
 
 
-/*messageRouter.delete('/', (req, res, next) => {
+messageRouter.delete('/', (req, res, next) => {
     Message.remove((err, data) => {     
         if (err) {
             res.status(500)
@@ -35,7 +35,7 @@ messageRouter.get('/2/:city', (req, res, next) => {
         }
         return res.status(202).send('all messages were succesfully deleted!')
     })
-})*/
+})
 
 
 messageRouter.delete('/:id', (req, res, next) => {
