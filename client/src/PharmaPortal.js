@@ -17,9 +17,7 @@ class PharmaPortal extends Component {
     }
 
     componentDidMount(){
-        console.log(window.location.host)
         this.props.getMessages(this.state.userCity)
-        setInterval(this.props.updateMessage, 100000)
     }
 
     helpToggle = () => {
