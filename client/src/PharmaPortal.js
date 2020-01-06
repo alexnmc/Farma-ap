@@ -6,6 +6,7 @@ import ReactLoading from "react-loading"
 import Footer from './Footer'
 
 
+
 class PharmaPortal extends Component {
     constructor(props){
         super(props)
