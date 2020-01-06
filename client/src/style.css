@@ -108,7 +108,7 @@ p{
 }
    
 .p1{
-    width: 260pt;
+    width: 250pt;
     text-align: start;
     margin:1pt;
     font-weight: 600;
@@ -127,7 +127,7 @@ p{
 }
 
 .p3{
-    width: 270pt;
+    width: 250pt;
     text-align: start;
     margin-left:15pt;
     text-align: start;
@@ -136,7 +136,7 @@ p{
 }
 
 .p4{
-    width: 150pt;
+    width: 120pt;
     text-align: center;
     margin:1pt;
     color:rgb(14, 25, 47)
@@ -838,6 +838,7 @@ span{
     font-weight: 900;
     font-size: 10pt;
     text-align: start;
+    width:200pt;
 }
 
 .link{
@@ -875,7 +876,7 @@ span{
    
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 1200px) {
 
     .bookingContainer{
         display: flex;

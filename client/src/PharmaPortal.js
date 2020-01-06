@@ -17,7 +17,7 @@ class PharmaPortal extends Component {
     }
 
     componentDidMount(){
-        this.props.user.username !== "uj_rudi@hotmail.com" ? this.props.getMessages(this.state.userCity) : this.props.getAllMessage()
+        this.props.user.username !== "cristianlazar2000@yahoo.com" ? this.props.getMessages(this.state.userCity) : this.props.getAllMessage()
     }
 
     helpToggle = () => {
@@ -42,8 +42,8 @@ class PharmaPortal extends Component {
                 item.toggle ?
                 
                 <div className = "messageContainer" key = {item._id} style = {{backgroundColor: item.rezolvat ? "rgb(38, 55, 82)" : null}}>
-                    <p className = "p4"> {moment(item.date).format('ll, HH:mm:ss ')}</p>
                     <p className = "p4"> {item.city}</p>
+                    <p className = "p4"> {moment(item.date).format('ll, HH:mm:ss ')}</p>
                     {item.img ? <img onClick = {!item.rezolvat ? () => this.props.enlarge(item._id) : null} className = 'myImg' alt = '' src = {item.img} style = {item.rezolvat ? {cursor:'none'}: null}/> : <div style = {{width:'30pt', height: '20pt'}}></div>}
                     <p className = "p3" style = {item.rezolvat ?  {color: "black"} : null}><span>Cautã: </span>{item.medication}</p>
                     <p className = "p1"><FaEnvelope/><a href = {`mailto:${item.email}`} style = {!item.rezolvat ? {color: "blue", marginLeft: "5pt"} : {color:'black', marginLeft: "5pt"}}>{item.email}</a></p>
@@ -55,7 +55,7 @@ class PharmaPortal extends Component {
                 :
                  
                 <div className = "messageContainer" key = {item._id} style = {{backgroundColor : 'lightgrey'}}>
-                    <p className = "p4"> {moment(item.date).format('ll, HH:mm:ss ')}</p>
+                    <p className = "p4">{item.city}</p>
                     {document.documentElement.clientWidth < 1000 ? <p className = "p3"><span>Cautã: </span>{item.medication}</p> : <p style = {{width: '300pt'}}></p>}
                     <img    style = {document.documentElement.clientWidth < 1100 ?  
                                         {width: '100%' , height: '50vh', marginTop: '1%'} 
@@ -118,7 +118,7 @@ class PharmaPortal extends Component {
                         </div>
                     </div>
                     <div className = 'portalWrap'>
-                        {this.props.user.username === "uj_rudi@hotmail.com" ?
+                        {this.props.user.username === "uj_r" ?
                             <div className = 'h1'>{this.props.messages.length === 1 ? '1 mesaj' : `${this.props.messages.length + ' mesaje'}`}</div>
                             :
                             <>
@@ -141,7 +141,7 @@ class PharmaPortal extends Component {
                                 <> 
                                 {this.props.messages.length ?
                                     <div className = "scrollDiv">
-                                        {this.props.user.username === "uj_rudi@hotmail.com" ? admin : messages}
+                                        {this.props.user.username === "cristianlazar2000@yahoo.com" ? admin : messages}
                                         <div style = {{height: "20pt"}}></div>
                                     </div>
                                     :
