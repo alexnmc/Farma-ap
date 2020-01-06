@@ -54,7 +54,7 @@ body::before {
 
 .navbar {
     width: 100vw;
-    height: 4rem;
+    height: 8vh;
     background-color:rgb(23, 40, 68);
     display:flex;
     position: relative;
@@ -507,8 +507,8 @@ h4{
 .farmaPhoto{
     background-image: url('./Photos/farma2.jpg');
     background-size: cover;
-    height: 80vh;
-    width: 28vw;
+    height:600px;
+    width: 380px;
     border:3px solid rgb(53, 68, 92);
     border-right: 0pt;
     margin:auto;
@@ -538,8 +538,8 @@ h4{
 
 .loginContainer{
     height:auto;
-    width:38vw;
-    height: 80vh;
+    width:470px;
+    height: 600px;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -1276,7 +1276,7 @@ span{
 
     .home{
         width: 100vw;
-        height: auto;
+        height:auto;
         display:flex;
         flex-direction: column;
         align-items: center;
@@ -1284,7 +1284,7 @@ span{
     }
 
     .contact{
-        height: 90vh
+        height: 89vh
     }
 
     .admin{
