@@ -18,8 +18,7 @@ class PharmaPortal extends Component {
     }
 
     componentDidMount(){
-        this.props.getMessages(this.state.userCity)
-        setInterval(this.props.updateMessage(), 50000)
+        this.props.username === 'uj_rudi@hotmail.com' ? this.props.getMessages(this.state.userCity) : this.props.getAllMessage()
     }
 
     helpToggle = () => {
@@ -38,6 +37,40 @@ class PharmaPortal extends Component {
         arr.sort(function (a, b) {
             return new Date(b.date) - new Date(a.date)
         })  
+
+        const admin = arr.map(item =>{
+            return(
+                item.toggle ?
+                
+                <div className = "messageContainer" key = {item._id} style = {{backgroundColor: item.rezolvat ? "rgb(38, 55, 82)" : null}}>
+                    <p className = "p4"> {moment(item.date).format('ll, HH:mm:ss ')}</p>
+                    {item.img ? <img onClick = {!item.rezolvat ? () => this.props.enlarge(item._id) : null} className = 'myImg' alt = '' src = {item.img} style = {item.rezolvat ? {cursor:'none'}: null}/> : <div style = {{width:'30pt', height: '20pt'}}></div>}
+                    <p className = "p3" style = {item.rezolvat ?  {color: "black"} : null}><span>Cautã: </span>{item.medication}</p>
+                    <p className = "p1"><FaEnvelope/><a href = {`mailto:${item.email}`} style = {!item.rezolvat ? {color: "blue", marginLeft: "5pt"} : {color:'black', marginLeft: "5pt"}}>{item.email}</a></p>
+                    <p className = "p5"><FaPhone/><a href = {`tel: ${item.phone}`} style = {!item.rezolvat ? {color: "blue", marginLeft: "5pt"} : {color:"black", marginLeft: "5pt"}}>{`0${item.phone}`}</a></p> 
+                    <p className = 'rezolvat' onClick = {!item.rezolvat ? () => this.props.rezolvat(item._id, item.email) : null} style = {item.rezolvat ? {cursor:'none', color: "white"} : null}>{!item.rezolvat ? "închide" : "rezolvat"}</p>
+                    <button className = 'sterge' onClick = {this.props.deleteMessage(item._id)}>sterge</button>
+                </div>
+
+                :
+                 
+                <div className = "messageContainer" key = {item._id} style = {{backgroundColor : 'lightgrey'}}>
+                    <p className = "p4"> {moment(item.date).format('ll, HH:mm:ss ')}</p>
+                    {document.documentElement.clientWidth < 1000 ? <p className = "p3"><span>Cautã: </span>{item.medication}</p> : <p style = {{width: '300pt'}}></p>}
+                    <img    style = {document.documentElement.clientWidth < 1100 ?  
+                                        {width: '100%' , height: '50vh', marginTop: '1%'} 
+                                        : 
+                                        {position: 'absolute' , border: "2px solid white", marginTop: '20pt', marginLeft: '-20%' , width: '320pt' , height: '300pt'}}  
+                            onClick = {() => this.props.enlarge(item._id)} 
+                            className = 'myImg' 
+                            alt = '' 
+                            src = {item.img}/>
+                    {document.documentElement.clientWidth < 1000 ? null : <p className = 'p33'></p>}
+                    <p className = "p1"><FaEnvelope/><a href = {`mailto:${item.email}`} style = {{color: "blue", marginLeft: "5pt"}}>{item.email}</a></p>
+                    <p className = "p5"><FaPhone/><a href = {`tel: ${item.phone}`} style = {{color: "blue", marginLeft: "5pt"}}>{`0${item.phone}`}</a></p> 
+                    <p className = 'rezolvat'></p>
+                </div>
+            )})
         
         const messages = arr.map(item =>{
             return(
@@ -86,11 +119,17 @@ class PharmaPortal extends Component {
                         </div>
                     </div>
                     <div className = 'portalWrap'>
-                        <div className = 'h1' style = {this.props.currentCity ? {opacity: 1} : {opacity:0}}>{this.props.messages.length === 1 ? '1 mesaj' : `${this.props.messages.length + ' mesaje'}`}</div>
-                        <input type = "text" className = 'input2' list="mylist" placeholder = 'Alege orașul:' value = {this.props.currentCity} onChange={this.props.handleChange} required/>
-                        <datalist id="mylist" >
+                        {this.props.user.username === 'uj_rudi@hotmail.com' ?
+                            <div className = 'h1'>{this.props.messages.length === 1 ? '1 mesaj' : `${this.props.messages.length + ' mesaje'}`}</div>
+                            :
+                            <>
+                            <div className = 'h1' style = {this.props.currentCity ? {opacity: 1} : {opacity:0}}>{this.props.messages.length === 1 ? '1 mesaj' : `${this.props.messages.length + ' mesaje'}`}</div>
+                            <input type = "text" className = 'input2' list="mylist" placeholder = 'Alege orașul:' value = {this.props.currentCity} onChange={this.props.handleChange} required/>
+                            <datalist id="mylist" >
                             {this.props.cities.map((city, index) => <option key={city} value={city} className = {index}>{city}</option>)}
-                        </datalist>
+                            </datalist>
+                            </>
+                        }  
                         <button className = "logout" onClick = {this.props.logout}>ieșire</button>
                     </div>
                     {this.state.helpToggle ? 
@@ -103,7 +142,7 @@ class PharmaPortal extends Component {
                                 <> 
                                 {this.props.messages.length ?
                                     <div className = "scrollDiv">
-                                        {messages}
+                                        {this.props.user.username === 'uj_rudi@hotmail.com' ? admin : messages}
                                         <div style = {{height: "20pt"}}></div>
                                     </div>
                                     :

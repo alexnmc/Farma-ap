@@ -6,7 +6,6 @@ import Contact from './Contact'
 import About from './About'
 import PharmaLogin from './PharmaLogin'
 import PharmaPortal from './PharmaPortal'
-import Admin from './Admin'
 import Activation from './Activation'
 import ProtectedRoutes from './ProtectedRoutes'
 import {withPharma} from './PharmaProvider'
@@ -37,7 +36,7 @@ class App extends Component {
                     <Route exact path="/pharma" render = {props => this.props.token ? <Redirect to="/portal"/> : <PharmaLogin {...props}/>}/>
                     <ProtectedRoutes
                         redirectTo="/pharma"
-                        component={ this.props.username === "uj_rudi@hotmail.com" ? Admin : PharmaPortal } // prevents users access to the pharmaportal by typing in the url in the browser
+                        component={PharmaPortal}  // prevents users access to the pharmaportal by typing in the url in the browser
                         token={this.props.token}
                         path="/portal"
                     />
