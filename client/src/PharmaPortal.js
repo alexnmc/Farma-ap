@@ -17,7 +17,7 @@ class PharmaPortal extends Component {
     }
 
     componentDidMount(){
-        this.props.user.username !== 'uj_rudi@hotmail.com' ? this.props.getMessages(this.state.userCity) : this.props.getAllMessage()
+        this.props.user.username !== "cristianlazar2000@yahoo.com" ? this.props.getMessages(this.state.userCity) : this.props.getAllMessage()
     }
 
     helpToggle = () => {
@@ -117,7 +117,7 @@ class PharmaPortal extends Component {
                         </div>
                     </div>
                     <div className = 'portalWrap'>
-                        {this.props.user.username === 'uj_rudi@hotmail.com' ?
+                        {this.props.user.username === "cristianlazar2000@yahoo.com" ?
                             <div className = 'h1'>{this.props.messages.length === 1 ? '1 mesaj' : `${this.props.messages.length + ' mesaje'}`}</div>
                             :
                             <>
@@ -140,7 +140,7 @@ class PharmaPortal extends Component {
                                 <> 
                                 {this.props.messages.length ?
                                     <div className = "scrollDiv">
-                                        {this.props.user.username === 'uj_rudi@hotmail.com' ? admin : messages}
+                                        {this.props.user.username === "cristianlazar2000@yahoo.com" ? admin : messages}
                                         <div style = {{height: "20pt"}}></div>
                                     </div>
                                     :
