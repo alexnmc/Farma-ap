@@ -55,7 +55,7 @@ body::before {
 .navbar {
     width: 100vw;
     height: 4rem;
-    background-color: rgb(19, 32, 56);
+    background-color:rgb(23, 40, 68);
     display:flex;
     position: relative;
     align-items: center;
@@ -87,6 +87,7 @@ a:hover{
     justify-content: center;
     width: 100vw;
     height: 3vh;
+    background-color: rgb(236, 236, 236);
 }
 .rezolvat{
     color:rgb(224, 45, 0);
@@ -153,7 +154,7 @@ p{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(19, 32, 56);
+    background-color:rgb(23, 40, 68);
     padding-bottom:20pt;
 }
 
@@ -165,7 +166,7 @@ p{
     align-items: center;
     justify-content: flex-start;
     padding-top:7vh;
-    background-color: rgb(15, 28, 51);
+    background-color:rgb(23, 40, 68);
 }
 
 .terms{
@@ -490,7 +491,6 @@ h4{
 }
 
 .admin{
-    background-color:  rgb(15, 28, 51);
     height:89vh;
     min-height: 500pt;
     width: 100vw;
@@ -498,10 +498,26 @@ h4{
     align-items: center;
     justify-content: center;
     font-family: 'Liberation Sans';
+    background-color:rgb(23, 40, 68);
 }
 
 .admin::-webkit-scrollbar { 
     display: none;  
+}
+
+.farmaPhoto{
+    background-image: url('./Photos/farma2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 70vh;
+    width: 30vw;
+    border:3px solid rgb(53, 68, 92);
+    border-right: 0pt;
+    margin:auto;
+    margin-right: 0pt;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
 }
 
 .loginForm{
@@ -525,24 +541,29 @@ h4{
 
 .loginContainer{
     height:auto;
-    width:27rem;
+    width:32.5vw;
+    height: 70vh;
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin:auto;
+    margin-left: 0pt;
     background-color: rgb(23, 40, 68);
-    margin-top: 10vh;
     padding-bottom:7pt;
     padding-top:7pt;
-    border: 0px solid rgba(165, 165, 165, 0.287);
+    border:3px solid rgb(53, 68, 92);
+    border-left: 0pt;
+    border-top-right-radius:3px;
+    border-bottom-right-radius:3px;
 }
 
 .loginWrap{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width:105%;
+    width:80%;
+    height:15pt;
 }
 
 .cont{
@@ -763,9 +784,9 @@ h4{
     background-image: url('./Photos/farma3.png');
     background-size: cover;
     background-position: center;
-    width: 27pt;
-    height: 27pt;
-    margin-left:-5px;
+    width: 25pt;
+    height: 25pt;
+    
 }
 
 .imgWrap{
@@ -1024,7 +1045,27 @@ span{
         align-items: center;
         justify-content: center;
         margin:auto;
+        border:0px solid rgb(167, 167, 167);
     }
+
+    .farmaPhoto{
+        width: 0vw;
+        border:0px solid rgb(167, 167, 167);
+       
+    }
+
+    .admin::after {
+        content: "";
+        background-image: url('./Photos/farma2.jpg');
+        background-size: cover;
+        opacity: 0.5;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;   
+      }
 
     .cont2,
     .cont{
@@ -1251,9 +1292,13 @@ span{
     }
 
     .admin{
+        background-image: url('./Photos/farma2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
         min-height: 95vh;
         padding-top:10pt;
         padding-bottom: 20pt;
+        background-blend-mode: soft-light;
     }
 
     .link{

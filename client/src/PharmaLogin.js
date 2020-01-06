@@ -12,6 +12,7 @@ const PharmaLogin = props =>  {
         return(
             <>
             <div className="admin">
+                <div className = 'farmaPhoto'></div>
                 <div className = "loginContainer">
                     {props.toggle ?
                             <div  className='loginForm'>
