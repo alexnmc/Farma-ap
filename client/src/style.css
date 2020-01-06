@@ -508,10 +508,8 @@ h4{
 .farmaPhoto{
     background-image: url('./Photos/farma2.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    height: 70vh;
-    width: 30vw;
+    height: 75vh;
+    width: 27vw;
     border:3px solid rgb(53, 68, 92);
     border-right: 0pt;
     margin:auto;
@@ -541,8 +539,8 @@ h4{
 
 .loginContainer{
     height:auto;
-    width:32.5vw;
-    height: 70vh;
+    width:30vw;
+    height: 75vh;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -1051,7 +1049,6 @@ span{
     .farmaPhoto{
         width: 0vw;
         border:0px solid rgb(167, 167, 167);
-       
     }
 
     .admin::after {
