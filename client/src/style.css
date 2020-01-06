@@ -115,7 +115,6 @@ p{
     font-weight: 600;
     display: flex;
     align-items: center;
-    
 }
 
 .p5{
@@ -318,7 +317,7 @@ button{
 }
 
 .loginButton{
-   width: 80%;
+   width: 90%;
    height: 35pt;
    font-size:12pt;
    margin-top:10pt;
@@ -433,23 +432,23 @@ button{
 h4{
     color:white;
     font-family: 'arial';
-    font-size:14pt;
-    margin-bottom: 20pt;
-    margin-top: 30pt;
+    font-size:15pt;
+    margin-bottom: 30pt;
+    margin-top: 50pt;
     text-align: center;
 }
 
 .h4{
     color: white;
     font-family: 'arial';
-    font-size:14pt;
+    font-size:15pt;
     margin-bottom: -4pt;
     margin-top: 30pt;
     text-align: center; 
 }
 
 .login1{
-    width: 80%;
+    width: 90%;
     height: 35pt;
     border-bottom: 2px solid  rgb(0, 0, 0);
     background-color: rgba(255, 255, 255, 0);
@@ -483,7 +482,7 @@ h4{
     display: flex;
     justify-content:space-between;
     align-items: center;
-    width: 80%;
+    width: 90%;
     height: 35pt;
     border-bottom: 2px solid rgb(0, 0, 0);
     animation: none !important;
@@ -508,8 +507,8 @@ h4{
 .farmaPhoto{
     background-image: url('./Photos/farma2.jpg');
     background-size: cover;
-    height: 75vh;
-    width: 27vw;
+    height: 80vh;
+    width: 25vw;
     border:3px solid rgb(53, 68, 92);
     border-right: 0pt;
     margin:auto;
@@ -539,8 +538,8 @@ h4{
 
 .loginContainer{
     height:auto;
-    width:30vw;
-    height: 75vh;
+    width:40vw;
+    height: 80vh;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -560,7 +559,7 @@ h4{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width:80%;
+    width:90%;
     height:15pt;
 }
 
@@ -568,7 +567,7 @@ h4{
    display: flex;
    width:auto;
    font-family: 'arial';
-   font-size: 11pt;
+   font-size: 12.5pt;
    font-weight: 400;
    color:  rgb(119, 203, 224);
    cursor: pointer;
@@ -622,7 +621,7 @@ h4{
 .cauta{
     font-family: 'arial';
     color: rgb(255, 255, 255);
-    font-size: 15.5pt;
+    font-size: 16pt;
     text-align: center;
     animation: move2 0.7s;
     font-weight: 600;
@@ -863,7 +862,7 @@ span{
 .link{
     color: white;
     margin-left: 7pt;
-    font-size: 11pt;
+    font-size: 12.5pt;
 }
 
 .link:hover{
@@ -895,7 +894,7 @@ span{
    
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 950px) {
 
     .bookingContainer{
         display: flex;
