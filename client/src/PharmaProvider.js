@@ -341,12 +341,11 @@ class PharmaProvider extends Component {
     deleteMessage = (id) => {
         var answer = window.confirm("Ești sigur cã vrei sã ștergi mesajul?")
         if(answer){
-        axios.delete(`/message/${id}`).then(res => {
+            axios.delete(`/message/${id}`).then(res => {
                 this.setState(prevState=>({   //I use prevState so the requested note gets deleted without refreshing
                     messages: prevState.messages.filter(item => item._id !== id)
-                                            
-            }))
-        })
+                }))
+            })
         }
     }
 
