@@ -508,7 +508,7 @@ h4{
     background-image: url('./Photos/farma2.jpg');
     background-size: cover;
     height: 80vh;
-    width: 27vw;
+    width: 28vw;
     border:3px solid rgb(53, 68, 92);
     border-right: 0pt;
     margin:auto;
@@ -538,7 +538,7 @@ h4{
 
 .loginContainer{
     height:auto;
-    width:40vw;
+    width:38vw;
     height: 80vh;
     display:flex;
     flex-direction: column;
@@ -546,7 +546,7 @@ h4{
     justify-content: center;
     margin:auto;
     margin-left: 0pt;
-    background-color: rgb(23, 40, 68);
+    background-color: rgb(18, 33, 56);
     padding-bottom:7pt;
     padding-top:7pt;
     border:3px solid rgb(53, 68, 92);
@@ -1255,8 +1255,8 @@ span{
     }
     
     .loginLogo{
-        width: 25pt;
-        height: 25pt;
+        width: 24pt;
+        height: 24pt;
         margin:-1px;
     }
 
@@ -1378,7 +1378,7 @@ span{
     }
 
     .footer{
-        height: 4vh;
+        height: 5vh;
         max-height:20pt;
     }
 }
