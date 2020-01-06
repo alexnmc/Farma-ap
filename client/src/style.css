@@ -508,7 +508,7 @@ h4{
     background-image: url('./Photos/farma2.jpg');
     background-size: cover;
     height:600px;
-    width: 380px;
+    width: 420px;
     border:3px solid rgb(53, 68, 92);
     border-right: 0pt;
     margin:auto;
@@ -538,7 +538,7 @@ h4{
 
 .loginContainer{
     height:auto;
-    width:470px;
+    width:480px;
     height: 600px;
     display:flex;
     flex-direction: column;
