@@ -38,7 +38,6 @@ render(){
             <h1 className = 'h5' style = {this.state.style}>Pentru informații trimiteți email pe adresa:</h1>
             <a className = 'h3' href = {`mailto:farmacieup@gmail.com`} style = {this.state.style2}>farmacieup@gmail.com</a>
         </div>
-        <Footer/>
         </>
     )
 }

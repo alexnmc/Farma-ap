@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Switch, Route, Redirect} from 'react-router-dom'
 import Navbar from './Navbar'
+import Footer from './Footer'
 import Home from './Home'
 import Contact from './Contact'
 import About from './About'
@@ -44,6 +45,7 @@ class App extends Component {
                     <Route path = "/activation/:id"  component = {Activation}/>
                     <Route path = "/terms"  component = {Terms}/>
                 </Switch>
+                <Footer/>
                 </Beforeunload>
             </div>
         )

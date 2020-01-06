@@ -169,7 +169,6 @@ class Home extends Component {
                         </form>
                     </div>
                  </div>
-                 <Footer/> 
                  </>            
             )
     }

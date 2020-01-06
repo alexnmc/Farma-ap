@@ -150,7 +150,6 @@ const PharmaLogin = props =>  {
                     }
                 </div>
             </div>
-            <Footer/>
             </>
                 
            

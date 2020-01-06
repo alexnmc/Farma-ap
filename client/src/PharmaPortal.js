@@ -166,7 +166,6 @@ class PharmaPortal extends Component {
                     }
                 </div>
             </div>
-            <Footer/>
             </>
         )
     }
