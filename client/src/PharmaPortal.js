@@ -12,13 +12,12 @@ class PharmaPortal extends Component {
         super(props)
         this.state = {
            userCity: this.props.user.city,
-           messages: this.props.messages,
            helpToggle: true
         }
     }
 
     componentDidMount(){
-        this.props.username === 'uj_rudi@hotmail.com' ? this.props.getMessages(this.state.userCity) : this.props.getAllMessage()
+        this.props.user.username !== 'uj_rudi@hotmail.com' ? this.props.getMessages(this.state.userCity) : this.props.getAllMessage()
     }
 
     helpToggle = () => {
@@ -49,7 +48,7 @@ class PharmaPortal extends Component {
                     <p className = "p1"><FaEnvelope/><a href = {`mailto:${item.email}`} style = {!item.rezolvat ? {color: "blue", marginLeft: "5pt"} : {color:'black', marginLeft: "5pt"}}>{item.email}</a></p>
                     <p className = "p5"><FaPhone/><a href = {`tel: ${item.phone}`} style = {!item.rezolvat ? {color: "blue", marginLeft: "5pt"} : {color:"black", marginLeft: "5pt"}}>{`0${item.phone}`}</a></p> 
                     <p className = 'rezolvat' onClick = {!item.rezolvat ? () => this.props.rezolvat(item._id, item.email) : null} style = {item.rezolvat ? {cursor:'none', color: "white"} : null}>{!item.rezolvat ? "închide" : "rezolvat"}</p>
-                    <button className = 'sterge' onClick = {this.props.deleteMessage(item._id)}>sterge</button>
+                    <button className = 'sterge' onClick = {() => this.props.deleteMessage(item._id)}>sterge</button>
                 </div>
 
                 :
@@ -105,8 +104,7 @@ class PharmaPortal extends Component {
                 </div>
             )
         })
-
-       
+    
         return(
             <>
             <div className = 'pharmaport'>
