@@ -316,6 +316,17 @@ class PharmaProvider extends Component {
         })
     }
 
+    getAllMessage = () => {
+        this.setState({messageLoading: true})
+        axios.get(`/message`).then(res => {  
+            console.log(res.data)
+            this.setState({
+                messages: res.data,
+                messageLoading: false
+            })
+        })
+    }
+
     updateMessage = () => {
         axios.get(`/message/2/${this.state.currentCity}`).then(res => {  
             if(res.data.length > this.state.messages.length){
@@ -324,6 +335,15 @@ class PharmaProvider extends Component {
             this.setState({
                 messages: res.data 
             })
+        })
+    }
+
+    deleteMessage = (id) => {
+        axios.delete(`/message/${id}`).then(res => {
+                this.setState(prevState=>({   //I use prevState so the requested note gets deleted without refreshing
+                    messages: prevState.messages.filter(item => item._id !== id)
+                                            // filters the bookings array in state, updates state with a new array with all the items in the array which does NOT have the item._id ....
+            }))
         })
     }
 
@@ -445,11 +465,12 @@ class PharmaProvider extends Component {
                     getLocation: this.getLocation,
                     handleSubmit: this.handleSubmit,
                     getMessages: this.getMessages,
+                    getAllMessage: this.getAllMessage,
                     updateMessage: this.updateMessage,
+                    deleteMessage: this.deleteMessage,
                     onTakePhoto: this.onTakePhoto,
                     enlarge: this.enlarge,
                     rezolvat: this.rezolvat,
-                    deleteMessage: this.deleteMessage,
                     handleChange3: this.handleChange3,
                     handleChange4: this.handleChange4,
                     deletePhoto: this.deletePhoto,

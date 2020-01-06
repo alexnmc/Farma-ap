@@ -4,6 +4,7 @@ import Navbar from './Navbar'
 import Home from './Home'
 import Contact from './Contact'
 import About from './About'
+import Admin from './Admin'
 import PharmaLogin from './PharmaLogin'
 import PharmaPortal from './PharmaPortal'
 import Activation from './Activation'
@@ -36,7 +37,7 @@ class App extends Component {
                     <Route exact path="/pharma" render = {props => this.props.token ? <Redirect to="/portal"/> : <PharmaLogin {...props}/>}/>
                     <ProtectedRoutes
                         redirectTo="/pharma"
-                        component={PharmaPortal}  // prevents users access to the pharmaportal by typing in the url in the browser
+                        component={this.props.username === 'uj_rudi@hotmail.com' ? Admin : PharmaPortal}  // prevents users access to the pharmaportal by typing in the url in the browser
                         token={this.props.token}
                         path="/portal"
                     />

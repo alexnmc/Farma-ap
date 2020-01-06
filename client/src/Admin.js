@@ -6,7 +6,7 @@ import ReactLoading from "react-loading"
 import Footer from './Footer'
 
 
-class PharmaPortal extends Component {
+class Admin extends Component {
     constructor(props){
         super(props)
         this.state = {
@@ -17,8 +17,8 @@ class PharmaPortal extends Component {
     }
 
     componentDidMount(){
-        this.props.getMessages(this.state.userCity)
-        setInterval(this.props.updateMessage(), 50000)
+        this.props.getAllMessage()
+        setInterval(this.props.getAllMessage(), 50000)
     }
 
     helpToggle = () => {
@@ -49,6 +49,7 @@ class PharmaPortal extends Component {
                     <p className = "p1"><FaEnvelope/><a href = {`mailto:${item.email}`} style = {!item.rezolvat ? {color: "blue", marginLeft: "5pt"} : {color:'black', marginLeft: "5pt"}}>{item.email}</a></p>
                     <p className = "p5"><FaPhone/><a href = {`tel: ${item.phone}`} style = {!item.rezolvat ? {color: "blue", marginLeft: "5pt"} : {color:"black", marginLeft: "5pt"}}>{`0${item.phone}`}</a></p> 
                     <p className = 'rezolvat' onClick = {!item.rezolvat ? () => this.props.rezolvat(item._id, item.email) : null} style = {item.rezolvat ? {cursor:'none', color: "white"} : null}>{!item.rezolvat ? "închide" : "rezolvat"}</p>
+                    <button className = 'sterge' onClick = {this.props.deleteMessage(item._id)}>sterge</button>
                 </div>
 
                 :
@@ -85,11 +86,7 @@ class PharmaPortal extends Component {
                         </div>
                     </div>
                     <div className = 'portalWrap'>
-                        <div className = 'h1' style = {this.props.currentCity ? {opacity: 1} : {opacity:0}}>{this.props.messages.length === 1 ? '1 mesaj' : `${this.props.messages.length + ' mesaje'}`}</div>
-                        <input type = "text" className = 'input2' list="mylist" placeholder = 'Alege orașul:' value = {this.props.currentCity} onChange={this.props.handleChange} required/>
-                        <datalist id="mylist" >
-                            {this.props.cities.map((city, index) => <option key={city} value={city} className = {index}>{city}</option>)}
-                        </datalist>
+                        <div className = 'h1' >{this.props.messages.length === 1 ? '1 mesaj' : `${this.props.messages.length + ' mesaje'}`}</div>
                         <button className = "logout" onClick = {this.props.logout}>ieșire</button>
                     </div>
                     {this.state.helpToggle ? 
@@ -133,4 +130,4 @@ class PharmaPortal extends Component {
     }
 }
 
-export default  withPharma(PharmaPortal)
+export default  withPharma(Admin)
