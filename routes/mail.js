@@ -16,7 +16,7 @@ mailRouter.post('/', (req, res) => {
       service: 'gmail',
       auth: {
         user: 'farmaapp.eu@gmail.com', 
-        pass: 'farmachia123'  
+        pass: 'Farmachia1'  
       }
     })
   
@@ -50,7 +50,7 @@ mailRouter.post('/reset', (req, res) => {
       service: 'gmail',
       auth: {
         user: 'farmaapp.eu@gmail.com', 
-        pass: 'farmachia123'  
+        pass: 'Farmachia1'  
       }
     })
   
@@ -83,7 +83,7 @@ mailRouter.post('/activate', (req, res) => {
       service: 'gmail',
       auth: {
         user: 'farmaapp.eu@gmail.com', 
-        pass: 'farmachia123'  
+        pass: 'Farmachia1'  
       }
     })
   
