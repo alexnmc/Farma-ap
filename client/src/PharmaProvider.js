@@ -342,7 +342,7 @@ class PharmaProvider extends Component {
         axios.delete(`/message/${id}`).then(res => {
                 this.setState(prevState=>({   //I use prevState so the requested note gets deleted without refreshing
                     messages: prevState.messages.filter(item => item._id !== id)
-                                            // filters the bookings array in state, updates state with a new array with all the items in the array which does NOT have the item._id ....
+                                            
             }))
         })
     }
