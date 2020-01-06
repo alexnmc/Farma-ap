@@ -411,16 +411,6 @@ class PharmaProvider extends Component {
         }).catch(err => console.log(err))
     }
 
-    deleteMessage = (id) => {
-        axios.delete(`/message/${id}`).then(res => {
-            this.setState(prevState => {
-                return {
-                    messages: prevState.messages.map(item => item._id !== id ? item : null ),
-                }
-            })
-        })
-    }
-
     reloadRender = () => {
         this.setState({
             toggleHome: !this.state.toggleHome
