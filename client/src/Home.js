@@ -8,7 +8,7 @@ import PhotoCamera from './Camera'
 import CookieConsent from "react-cookie-consent"
 import euflag from './Photos/euflag.png'
 import roflag from "./Photos/roflag.png"
-import Footer from './Footer'
+
 
 
 class Home extends Component {

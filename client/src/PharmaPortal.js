@@ -3,7 +3,7 @@ import {withPharma} from './PharmaProvider'
 import moment from 'moment'
 import { FaUser, FaPhone, FaEnvelope} from 'react-icons/fa'
 import ReactLoading from "react-loading"
-import Footer from './Footer'
+
 
 
 

@@ -4,7 +4,7 @@ const app = express()
 require ('dotenv').config()
 const morgan = require('morgan')
 const mongoose = require('mongoose')
-const expressJwt = require("express-jwt");
+//const expressJwt = require("express-jwt");
 const path = require("path")
 const PORT = process.env.PORT || 8000
 const secret = process.env.SECRET || "some secret passphrase here for local development"
@@ -13,7 +13,7 @@ const secret = process.env.SECRET || "some secret passphrase here for local deve
 app.use(forceSsl); // ssl certificate settings
 app.use(express.json({limit: '50mb'})) // set larger data fro the photo
 app.use(morgan('dev'))  
-app.use("/api", expressJwt({secret})) //req.user === {username, password, _id}
+//app.use("/api", expressJwt({secret})) //req.user === {username, password, _id}
 app.use(express.static(path.join(__dirname, "client", "build")))
 
 
@@ -33,10 +33,9 @@ mongoose.set('useCreateIndex', true); // stops the error message...
 
 
 app.use((err, req, res, next) => {
-    if (err.name === "UnauthorizedError") {
-        
+    /*if (err.name === "UnauthorizedError") {
         res.status(err.status); //secret error 
-    }
+    }*/
     return res.send({errMsg: err.message})
 })
 

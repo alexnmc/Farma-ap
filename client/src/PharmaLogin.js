@@ -3,7 +3,6 @@ import { withPharma } from './PharmaProvider'
 import CheckAnimation from './Animations/UncontrolledLottie.jsx'
 import ReactLoading from "react-loading"
 import LoginSearch from './LoginSearch'
-import Footer from './Footer'
 
 
 

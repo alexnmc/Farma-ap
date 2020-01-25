@@ -23,7 +23,6 @@ const messageSchema = new Schema({
     city: {
         type: String,
         required: true
-        
     },
 
     medication: {
