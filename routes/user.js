@@ -19,8 +19,8 @@ authRouter.post("/signup", (req, res, next) => {
         const newUser = new User(req.body);
         newUser.save((err, addedUser) => {
             if (err) {
-             res.status(500)
-             return next(err)
+                res.status(500)
+                return next(err)
         }
             return res.status(201).send({user: addedUser.withoutPassword(), success: 'success'})
         });
@@ -32,8 +32,8 @@ authRouter.post("/login", (req, res, next) => {
      User.findOne({username: req.body.username}, (err, user) => {
         
         if (err) {
-        res.status(500)
-        return next(err)
+            res.status(500)
+            return next(err)
         }
 
         if (user && !user.confirmed) {
@@ -83,11 +83,10 @@ authRouter.get('/', (req, res, next) => {    // get all for testing with postman
             return next(err)
         }
         return res.status(200).send(data)
-
     })
 })
 
-authRouter.get('/by/:id', (req, res, next) => {    // get all for testing with postman 
+authRouter.get('/by/:id', (req, res, next) => {  
     User.findOne({_id: req.params.id},(err, data) => {
         if(err) {
             res.status(500)
@@ -98,7 +97,7 @@ authRouter.get('/by/:id', (req, res, next) => {    // get all for testing with p
     })
 })
 
-authRouter.get('/reset/:email', (req, res, next) => {    // get all for testing with postman 
+authRouter.get('/reset/:email', (req, res, next) => {    
     User.findOne({username: req.params.email, confirmed: true} ,(err, data) => {
         if(err) {
             res.status(500)
@@ -115,7 +114,7 @@ authRouter.get('/reset/:email', (req, res, next) => {    // get all for testing 
 authRouter.put('/reset/:id', (req, res, next) => {    // reset password
     bcrypt.hash(req.body.password, 10, (err, hash) => {// encrypts the new password
         if (err) return next(err)
-        req.body.password = hash
+           req.body.password = hash
         
         User.findOneAndUpdate(
         {_id: req.params.id},
@@ -148,7 +147,7 @@ authRouter.put('/activate/:id', (req, res, next) => {    // activate user
 })
 
 /*authRouter.delete('/', (req, res, next) => {
-    User.remove((err, data) => {      // for testing, deletes everything on the /auth endpoint!
+    User.remove((err, data) => {      // for testing, deletes all users !
         if (err) {
             res.status(500)
             return next(err)
