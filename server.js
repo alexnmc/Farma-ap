@@ -21,8 +21,8 @@ app.use(express.static(path.join(__dirname, "client", "build")))
 app.use("/user", require("./routes/user"))
 app.use("/api/message", require("./routes/message"))
 app.use("/messages", require("./routes/post"))
-app.use( "/api/mail", require('./routes/mail'))
-app.use( "/api/link", require('./routes/link'))
+app.use( "/mail", require('./routes/mail'))
+app.use( "/link", require('./routes/link'))
 
 
 

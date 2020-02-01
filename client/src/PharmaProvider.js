@@ -400,14 +400,14 @@ class PharmaProvider extends Component {
             linkID: linkID,
             userID: id,
         }
-        secureAxios.post('api/link', newLink).then(res => {
+        axios.post('/link', newLink).then(res => {
         }).catch(err => console.log(err))
     
         const newMail = {
             sendTo: email,
             linkID: linkID,
         }
-        secureAxios.post('api/mail/reset', newMail).then(res => {
+        axios.post('mail/reset', newMail).then(res => {
         }).catch(err => console.log(err))
     }
 
@@ -416,7 +416,7 @@ class PharmaProvider extends Component {
             sendTo: email,
             id: id
         }
-        secureAxios.post('api/mail/activate', newMail).then(res => {
+        axios.post('mail/activate', newMail).then(res => {
           
         }).catch(err => console.log(err))
     }
