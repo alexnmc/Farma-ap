@@ -316,7 +316,7 @@ class PharmaProvider extends Component {
 
     getMessage2 = () => {
         this.setState({messageLoading: true})
-        secureAxios.get(`/api/message/2/${this.state.currentCity}`).then(res => {  
+        secureAxios.get(`api/message/2/${this.state.currentCity}`).then(res => {  
             this.setState({
                 messages: res.data,
                 messageLoading: false
@@ -326,7 +326,7 @@ class PharmaProvider extends Component {
 
     getAllMessage = () => {
         this.setState({messageLoading: true})
-        secureAxios.get(`/api/message`).then(res => {  
+        secureAxios.get(`api/message`).then(res => {  
             console.log(res.data)
             this.setState({
                 messages: res.data,
@@ -336,7 +336,7 @@ class PharmaProvider extends Component {
     }
 
     updateMessage = () => {
-        secureAxios.get(`/api/message/2/${this.state.currentCity}`).then(res => {  
+        secureAxios.get(`api/message/2/${this.state.currentCity}`).then(res => {  
             if(res.data.length > this.state.messages.length){
                 sound.play()
             }
@@ -349,7 +349,7 @@ class PharmaProvider extends Component {
     deleteMessage = (id) => {
         var answer = window.confirm("Ești sigur cã vrei sã ștergi mesajul?")
         if(answer){
-            secureAxios.delete(`/api/message/${id}`).then(res => {
+            secureAxios.delete(`api/message/${id}`).then(res => {
                 this.setState(prevState=>({   //I use prevState so the requested note gets deleted without refreshing
                     messages: prevState.messages.filter(item => item._id !== id)
                 }))
@@ -381,7 +381,7 @@ class PharmaProvider extends Component {
         var answer = window.confirm("Ești sigur cã vrei sã inchizi mesajul?")
         if(answer){
             const updates = {rezolvat: true}
-            secureAxios.put(`/api/message/${id}`, updates).then(response => {
+            secureAxios.put(`api/message/${id}`, updates).then(response => {
                 const updatedMessage = response.data
                 this.setState(prevState => {
                     return {
@@ -400,14 +400,14 @@ class PharmaProvider extends Component {
             linkID: linkID,
             userID: id,
         }
-        secureAxios.post('/api/link', newLink).then(res => {
+        secureAxios.post('api/link', newLink).then(res => {
         }).catch(err => console.log(err))
     
         const newMail = {
             sendTo: email,
             linkID: linkID,
         }
-        secureAxios.post('/api/mail/reset', newMail).then(res => {
+        secureAxios.post('api/mail/reset', newMail).then(res => {
         }).catch(err => console.log(err))
     }
 
@@ -416,7 +416,7 @@ class PharmaProvider extends Component {
             sendTo: email,
             id: id
         }
-        secureAxios.post('/api/mail/activate', newMail).then(res => {
+        secureAxios.post('api/mail/activate', newMail).then(res => {
           
         }).catch(err => console.log(err))
     }
