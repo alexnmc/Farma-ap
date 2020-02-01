@@ -487,6 +487,7 @@ class PharmaProvider extends Component {
                     onTakePhoto: this.onTakePhoto,
                     enlarge: this.enlarge,
                     rezolvat: this.rezolvat,
+                    deschide: this.deschide,
                     handleChange3: this.handleChange3,
                     handleChange4: this.handleChange4,
                     deletePhoto: this.deletePhoto,

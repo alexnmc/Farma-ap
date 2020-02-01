@@ -12,12 +12,13 @@ class PharmaPortal extends Component {
         super(props)
         this.state = {
            userCity: this.props.user.city,
-           helpToggle: true
+           helpToggle: true,
+           admin: "cristianlazar2000@yahoo.com"
         }
     }
 
     componentDidMount(){
-        this.props.user.username !== "cristianlazar2000@yahoo.com" ? this.props.getMessages(this.state.userCity) : this.props.getAllMessage()
+        this.props.user.username !== this.state.admin ? this.props.getMessages(this.state.userCity) : this.props.getAllMessage()
     }
 
     helpToggle = () => {
@@ -48,13 +49,13 @@ class PharmaPortal extends Component {
                     <p className = "p3" style = {item.rezolvat ?  {color: "black"} : null}><span>Cautã: </span>{item.medication}</p>
                     <p className = "p1"><FaEnvelope/>{item.rezolvat ? <p style = {{color:'black', marginLeft: "5pt"}}>{item.email}</p> : <a href = {`mailto:${item.email}`} style = {{color: "blue", marginLeft: "5pt"}}>{item.email}</a>}</p>
                     <p className = "p5"><FaPhone/>{item.rezolvat ? <p style = {{color:'black', marginLeft: "5pt"}}>{`0${item.phone}`}</p> : <a href = {`tel: ${item.phone}`} style = {{color: "blue", marginLeft: "5pt"}}>{`0${item.phone}`}</a>}</p>
-                    <p className = 'rezolvat' onClick = {!item.rezolvat ? () => this.props.rezolvat(item._id) : () => this.props.deschide(item._id)} style = {item.rezolvat ? {cursor:'none', color: "white"} : null}>{!item.rezolvat ? "închide" : "deschide"}</p>
+                    <p className = 'rezolvat' onClick = {!item.rezolvat ? () => this.props.rezolvat(item._id) : () => this.props.deschide(item._id)} style = {item.rezolvat ? {color: "white"} : null}>{!item.rezolvat ? "închide" : "deschide "}</p>
                     <button className = 'sterge' onClick = {() => this.props.deleteMessage(item._id)}>șterge</button>
                 </div>
 
                 :
                  
-                <div className = "messageContainer" key = {item._id} style = {{backgroundColor : 'lightgrey'}}>
+                <div className = "messageContainer" key = {item._id} style = {{backgroundColor : 'lightgrey' , padding: "7pt"}}>
                     <p className = "p4">{item.city}</p>
                     {document.documentElement.clientWidth < 1000 ? <p className = "p3"><span>Cautã: </span>{item.medication}</p> : <p style = {{width: '300pt'}}></p>}
                     <img    style = {document.documentElement.clientWidth < 1100 ?  
@@ -66,9 +67,11 @@ class PharmaPortal extends Component {
                             alt = '' 
                             src = {item.img}/>
                     {document.documentElement.clientWidth < 1000 ? null : <p className = 'p33'></p>}
+                    <p className = "p3" style = {{width: "85pt"}}></p>
                     <p className = "p1"><FaEnvelope/><a href = {`mailto:${item.email}`} style = {{color: "blue", marginLeft: "5pt"}}>{item.email}</a></p>
                     <p className = "p5"><FaPhone/><a href = {`tel: ${item.phone}`} style = {{color: "blue", marginLeft: "5pt"}}>{`0${item.phone}`}</a></p> 
-                    <p className = 'rezolvat'></p>
+                    <p className = 'rezolvat' onClick = {!item.rezolvat ? () => this.props.rezolvat(item._id) : () => this.props.deschide(item._id)} style = {item.rezolvat ? {color: "white"} : null}>{!item.rezolvat ? "închide" : "deschide "}</p>
+                    <button className = 'sterge' onClick = {() => this.props.deleteMessage(item._id)}>șterge</button>
                 </div>
             )})
         
@@ -87,7 +90,7 @@ class PharmaPortal extends Component {
 
                 :
                  
-                <div className = "messageContainer" key = {item._id} style = {{backgroundColor : 'lightgrey'}}>
+                <div className = "messageContainer" key = {item._id} style = {{backgroundColor : 'lightgrey', padding: "7pt"}}>
                     <p className = "p4"> {moment(item.date).format('ll, HH:mm:ss ')}</p>
                     {document.documentElement.clientWidth < 1000 ? <p className = "p3"><span>Cautã: </span>{item.medication}</p> : <p style = {{width: '300pt'}}></p>}
                     <img    style = {document.documentElement.clientWidth < 1100 ?  
@@ -99,9 +102,11 @@ class PharmaPortal extends Component {
                             alt = '' 
                             src = {item.img}/>
                     {document.documentElement.clientWidth < 1000 ? null : <p className = 'p33'></p>}
+                    <p className = "p3" style = {{width: "85pt"}}></p>
                     <p className = "p1"><FaEnvelope/><a href = {`mailto:${item.email}`} style = {{color: "blue", marginLeft: "5pt"}}>{item.email}</a></p>
                     <p className = "p5"><FaPhone/><a href = {`tel: ${item.phone}`} style = {{color: "blue", marginLeft: "5pt"}}>{`0${item.phone}`}</a></p> 
-                    <p className = 'rezolvat'></p>
+                    <p className = 'rezolvat' onClick = {!item.rezolvat ? () => this.props.rezolvat(item._id) : () => this.props.deschide(item._id)} style = {item.rezolvat ? {color: "white"} : null}>{!item.rezolvat ? "închide" : "deschide "}</p>
+                    <button className = 'sterge' onClick = {() => this.props.deleteMessage(item._id)}>șterge</button>
                 </div>
             )
         })
@@ -118,7 +123,7 @@ class PharmaPortal extends Component {
                         </div>
                     </div>
                     <div className = 'portalWrap'>
-                        {this.props.user.username === "uj_r" ?
+                        {this.props.user.username === this.state.admin ?
                             <div className = 'h1'>{this.props.messages.length === 1 ? '1 mesaj' : `${this.props.messages.length + ' mesaje'}`}</div>
                             :
                             <>
@@ -141,7 +146,7 @@ class PharmaPortal extends Component {
                                 <> 
                                 {this.props.messages.length ?
                                     <div className = "scrollDiv">
-                                        {this.props.user.username === "cristianlazar2000@yahoo.com" ? admin : messages}
+                                        {this.props.user.username === this.state.admin ? admin : messages}
                                         <div style = {{height: "20pt"}}></div>
                                     </div>
                                     :
