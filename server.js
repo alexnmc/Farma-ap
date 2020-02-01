@@ -4,7 +4,7 @@ const app = express()
 require ('dotenv').config()
 const morgan = require('morgan')
 const mongoose = require('mongoose')
-//const expressJwt = require("express-jwt");
+const expressJwt = require("express-jwt");
 const path = require("path")
 const PORT = process.env.PORT || 8000
 const secret = process.env.SECRET || "some secret passphrase here for local development"
@@ -13,15 +13,16 @@ const secret = process.env.SECRET || "some secret passphrase here for local deve
 app.use(forceSsl); // ssl certificate settings
 app.use(express.json({limit: '50mb'})) // set larger data fro the photo
 app.use(morgan('dev'))  
-//app.use("/api", expressJwt({secret})) //req.user === {username, password, _id}
+app.use("/api", expressJwt({secret})) 
 app.use(express.static(path.join(__dirname, "client", "build")))
 
 
 //routes
 app.use("/user", require("./routes/user"))
-app.use("/message", require("./routes/message"))
-app.use( "/mail", require('./routes/mail'))
-app.use( "/link", require('./routes/link'))
+app.use("/apimessage", require("./routes/message"))
+app.use("/messages", require("./routes/post"))
+app.use( "/apimail", require('./routes/mail'))
+app.use( "/apilink", require('./routes/link'))
 
 
 

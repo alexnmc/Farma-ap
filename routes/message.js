@@ -4,7 +4,7 @@ const Message = require("../models/message")
 
 
 
-messageRouter.get('/', (req, res) => {    // get all for testing with postman 
+messageRouter.get('/', (req, res) => {    
     Message.find((err, data) => {
         if(err) {
             res.status(500)

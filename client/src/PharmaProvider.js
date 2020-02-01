@@ -6,6 +6,14 @@ import { confirmAlert } from 'react-confirm-alert'; // Import
 import 'react-confirm-alert/src/react-confirm-alert.css'; // Import css
 const uuidv1 = require('uuid/v1')
 
+const secureAxios = axios.create();
+
+secureAxios.interceptors.request.use((config)=>{
+    const token = localStorage.getItem("token");
+    config.headers.Authorization = `Bearer ${token}`;
+    return config;
+})
+
 
 const PharmaContext = React.createContext()
 const sound = new Audio(ring)
@@ -247,7 +255,7 @@ class PharmaProvider extends Component {
             const { email, phone, medication, img, county} = this.state
             const city = this.state.city2
             const date = new Date()
-            axios.post('/message', {date, email, phone, medication, img, city, county}).then(res => {
+            axios.post('/messages', {date, email, phone, medication, img, city, county}).then(res => {
                 this.setState(
                 {loading: false},
                 this.alertCallBack(res.data, email, medication, phone)
@@ -308,7 +316,7 @@ class PharmaProvider extends Component {
 
     getMessage2 = () => {
         this.setState({messageLoading: true})
-        axios.get(`/message/2/${this.state.currentCity}`).then(res => {  
+        secureAxios.get(`/apimessage/2/${this.state.currentCity}`).then(res => {  
             this.setState({
                 messages: res.data,
                 messageLoading: false
@@ -318,7 +326,7 @@ class PharmaProvider extends Component {
 
     getAllMessage = () => {
         this.setState({messageLoading: true})
-        axios.get(`/message`).then(res => {  
+        secureAxios.get(`/apimessage`).then(res => {  
             console.log(res.data)
             this.setState({
                 messages: res.data,
@@ -328,7 +336,7 @@ class PharmaProvider extends Component {
     }
 
     updateMessage = () => {
-        axios.get(`/message/2/${this.state.currentCity}`).then(res => {  
+        secureAxios.get(`/apimessage/2/${this.state.currentCity}`).then(res => {  
             if(res.data.length > this.state.messages.length){
                 sound.play()
             }
@@ -341,7 +349,7 @@ class PharmaProvider extends Component {
     deleteMessage = (id) => {
         var answer = window.confirm("Ești sigur cã vrei sã ștergi mesajul?")
         if(answer){
-            axios.delete(`/message/${id}`).then(res => {
+            secureAxios.delete(`/message/${id}`).then(res => {
                 this.setState(prevState=>({   //I use prevState so the requested note gets deleted without refreshing
                     messages: prevState.messages.filter(item => item._id !== id)
                 }))
@@ -373,7 +381,7 @@ class PharmaProvider extends Component {
         var answer = window.confirm("Ești sigur cã vrei sã inchizi mesajul?")
         if(answer){
             const updates = {rezolvat: true}
-            axios.put(`/message/${id}`, updates).then(response => {
+            secureAxios.put(`/apimessage/${id}`, updates).then(response => {
                 const updatedMessage = response.data
                 this.setState(prevState => {
                     return {
@@ -392,14 +400,14 @@ class PharmaProvider extends Component {
             linkID: linkID,
             userID: id,
         }
-        axios.post('/link', newLink).then(res => {
+        secureAxios.post('/apilink', newLink).then(res => {
         }).catch(err => console.log(err))
     
         const newMail = {
             sendTo: email,
             linkID: linkID,
         }
-        axios.post('/mail/reset', newMail).then(res => {
+        secureAxios.post('/apimail/reset', newMail).then(res => {
         }).catch(err => console.log(err))
     }
 
@@ -408,7 +416,7 @@ class PharmaProvider extends Component {
             sendTo: email,
             id: id
         }
-        axios.post('/mail/activate', newMail).then(res => {
+        secureAxios.post('/apimail/activate', newMail).then(res => {
           
         }).catch(err => console.log(err))
     }
