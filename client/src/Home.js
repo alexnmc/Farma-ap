@@ -9,6 +9,14 @@ import CookieConsent from "react-cookie-consent"
 import euflag from './Photos/euflag.png'
 import roflag from "./Photos/roflag.png"
 
+const secureAxios = axios.create();
+
+secureAxios.interceptors.request.use((config)=>{
+    const token = localStorage.getItem("token");
+    config.headers.Authorization = `Bearer ${token}`;
+    return config;
+})
+
 
 
 class Home extends Component {
@@ -41,8 +49,8 @@ class Home extends Component {
             img: this.props.img || '',
             sendTo: this.state.sendTo
         }
-        axios.post('/mail', newMail).then(res => {
-        }).catch(err => alert(err))
+        secureAxios.post('/api/mail', newMail).then(res => {
+        }).catch(err => console.log(err))
     }
     
     toggle = () => {
