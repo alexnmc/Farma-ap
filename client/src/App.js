@@ -12,8 +12,6 @@ import ProtectedRoutes from './ProtectedRoutes'
 import {withPharma} from './PharmaProvider'
 import ResetPassword from './ResetPassword'
 import Terms from './Terms'
-import { Beforeunload } from 'react-beforeunload'
-
 
 
 class App extends Component {
@@ -28,7 +26,6 @@ class App extends Component {
     render(){
         return (
             <div>
-                <Beforeunload onBeforeunload={() => this.props.leavePage()}>
                 <Navbar/>
                 <Switch>
                     <Route exact path="/" component={Home}/>
@@ -46,7 +43,6 @@ class App extends Component {
                     <Route path = "/terms"  component = {Terms}/>
                 </Switch>
                 <Footer/>
-                </Beforeunload>
             </div>
         )
     }

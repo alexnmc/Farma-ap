@@ -35,7 +35,7 @@ class Activation extends Component{
         arr.splice(0,15)
         let final = arr.join('')
         axios.get(`/link/${final}`).then(res =>{
-           this.props.resetPassword(res.data[0].userID)
+            this.props.resetPassword(res.data[0].userID)
             axios.delete(`/link/${res.data[0].linkID}`).then(res => {
                this.setState({loading: 'off', toggle2: this.props.alert2})
             })

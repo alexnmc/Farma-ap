@@ -53,7 +53,7 @@ class PharmaProvider extends Component {
         }
     }
 
-    leavePage = () => {
+    leavePage = () => {  // not using it for now
         this.setState({
             user:'',   
             token: '',
@@ -377,10 +377,26 @@ class PharmaProvider extends Component {
         })
     }
 
-    rezolvat = (id, email) => {
+    rezolvat = (id) => {
         var answer = window.confirm("Ești sigur cã vrei sã inchizi mesajul?")
         if(answer){
             const updates = {rezolvat: true}
+            secureAxios.put(`api/message/${id}`, updates).then(response => {
+                const updatedMessage = response.data
+                this.setState(prevState => {
+                    return {
+                        messages: prevState.messages.map(item => item._id === id ? updatedMessage : item ),
+                        
+                        }
+                    })
+            })
+        }
+    }
+
+    deschide = (id) => {
+        var answer = window.confirm("Ești sigur cã vrei sã deschizi mesajul?")
+        if(answer){
+            const updates = {rezolvat: false}
             secureAxios.put(`api/message/${id}`, updates).then(response => {
                 const updatedMessage = response.data
                 this.setState(prevState => {
