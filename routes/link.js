@@ -16,9 +16,8 @@ linkRouter.post('/',  (req, res, next) => {
 })
 
 
-linkRouter.get('/:id', (req, res) => {    // get all for testing with postman 
+linkRouter.get('/:id', (req, res) => {    
     Link.find({linkID: req.params.id}, (err, data) => {
-        
         if(err) {
             res.status(500)
             return next(err)
