@@ -19,10 +19,10 @@ app.use(express.static(path.join(__dirname, "client", "build")))
 
 //routes
 app.use("/user", require("./routes/user"))
-app.use("/apimessage", require("./routes/message"))
+app.use("/api/message", require("./routes/message"))
 app.use("/messages", require("./routes/post"))
-app.use( "/apimail", require('./routes/mail'))
-app.use( "/apilink", require('./routes/link'))
+app.use( "/api/mail", require('./routes/mail'))
+app.use( "/api/link", require('./routes/link'))
 
 
 
@@ -34,9 +34,9 @@ mongoose.set('useCreateIndex', true); // stops the error message...
 
 
 app.use((err, req, res, next) => {
-    /*if (err.name === "UnauthorizedError") {
+    if (err.name === "UnauthorizedError") {
         res.status(err.status); //secret error 
-    }*/
+    }
     return res.send({errMsg: err.message})
 })
 
