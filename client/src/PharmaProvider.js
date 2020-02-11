@@ -327,7 +327,6 @@ class PharmaProvider extends Component {
     getAllMessage = () => {
         this.setState({messageLoading: true})
         secureAxios.get(`api/message`).then(res => {  
-            console.log(res.data)
             this.setState({
                 messages: res.data,
                 messageLoading: false

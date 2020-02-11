@@ -13,12 +13,20 @@ class PharmaPortal extends Component {
         this.state = {
            userCity: this.props.user.city,
            helpToggle: true,
-           admin: "cristianlazar2000@yahoo.com"
+           admin: "cristianlazar2000@yahoo.com",
         }
     }
 
+    
+    getData = () => this.props.user.username !== this.state.admin ? this.props.getMessages(this.state.userCity) : this.props.getAllMessage()
+    
     componentDidMount(){
-        this.props.user.username !== this.state.admin ? this.props.getMessages(this.state.userCity) : this.props.getAllMessage()
+        this.getData()
+        this.interval = setInterval(this.props.updateMessage() , 15000)
+    }
+
+    componentWillUnmount(){
+        clearInterval(this.interval)
     }
 
     helpToggle = () => {
