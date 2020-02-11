@@ -22,7 +22,7 @@ class PharmaPortal extends Component {
     
     componentDidMount(){
         this.getData()
-        this.interval = setInterval(this.props.updateMessage() , 15000)
+        setTimeout(this.interval = setInterval(this.props.updateMessage() , 15000), 15000)
     }
 
     componentWillUnmount(){
