@@ -10,7 +10,6 @@ import ReactLoading from "react-loading"
 class PharmaPortal extends Component {
     constructor(props){
         super(props)
-        this.interval = () => setInterval(this.props.updateMessage() , 15000)
         this.state = {
            userCity: this.props.user.city,
            helpToggle: true,
@@ -23,11 +22,11 @@ class PharmaPortal extends Component {
     
     componentDidMount(){
         this.getData()
-        this.interval()
+        setInterval(this.props.updateMessage() , 15000)
     }
 
     componentWillUnmount(){
-        clearInterval(this.interval)
+       
     }
 
     helpToggle = () => {
