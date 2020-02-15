@@ -226,7 +226,7 @@ class PharmaProvider extends Component {
     }
 
     alertCallBack = (data, email, med, phone) => {
-       // alert(data +' Email: ' + email +'  medicament: '+ med)
+       
        confirmAlert({
         customUI: ({ onClose }) => {
           return (
@@ -363,7 +363,7 @@ class PharmaProvider extends Component {
     }
 
     enlarge = (id) => {
-        let newArr = this.state.messages // not mutating state
+        let newArr = [...this.state.messages] // not mutating state
         newArr.map(item => item._id === id ? item.toggle = !item.toggle : item.toggle = true) 
         this.setState({
             messages: newArr

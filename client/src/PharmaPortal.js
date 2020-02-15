@@ -35,7 +35,7 @@ class PharmaPortal extends Component {
     }
 
     render(){
-        let arr = this.props.messages
+        let arr = [...this.props.messages]
 
         arr.sort(function (a, b) {
             return new Date(b.time) - new Date(a.time)
