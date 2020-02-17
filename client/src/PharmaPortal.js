@@ -24,10 +24,6 @@ class PharmaPortal extends Component {
         this.getData()
     }
 
-    componentWillUnmount(){
-       
-    }
-
     helpToggle = () => {
         this.setState({
             helpToggle: !this.state.helpToggle
