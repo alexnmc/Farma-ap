@@ -256,10 +256,7 @@ class PharmaProvider extends Component {
             const city = this.state.city2
             const date = new Date()
             axios.post('/messages', {date, email, phone, medication, img, city, county}).then(res => {
-                this.setState(
-                {loading: false},
-                this.alertCallBack(res.data, email, medication, phone)
-                )
+                this.setState({loading: false}, this.alertCallBack(res.data, email, medication, phone))
             })
             
             this.setState({
@@ -363,7 +360,7 @@ class PharmaProvider extends Component {
     }
 
     enlarge = (id) => {
-        let newArr = [...this.state.messages] // not mutating state
+        let newArr = [...this.state.messages] 
         newArr.map(item => item._id === id ? item.toggle = !item.toggle : item.toggle = true) 
         this.setState({
             messages: newArr
@@ -385,8 +382,7 @@ class PharmaProvider extends Component {
                 this.setState(prevState => {
                     return {
                         messages: prevState.messages.map(item => item._id === id ? updatedMessage : item ),
-                        
-                        }
+                    }
                     })
             })
         }
@@ -415,6 +411,7 @@ class PharmaProvider extends Component {
             linkID: linkID,
             userID: id,
         }
+        
         axios.post('/link', newLink).then(res => {
         }).catch(err => console.log(err))
     

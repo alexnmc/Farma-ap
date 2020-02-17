@@ -45,7 +45,7 @@ class PharmaPortal extends Component {
             return new Date(b.date) - new Date(a.date)
         })  
 
-        const admin = arr.map(item =>{
+        const admin = () =>  arr.map(item =>{
             return(
                 item.toggle ?
                 
@@ -82,7 +82,7 @@ class PharmaPortal extends Component {
                 </div>
             )})
         
-        const messages = arr.map(item =>{
+        const messages = () => arr.map(item =>{
             return(
                 item.toggle ?
                 
@@ -113,7 +113,6 @@ class PharmaPortal extends Component {
                     <p className = "p1"><FaEnvelope/><a href = {`mailto:${item.email}`} style = {{color: "blue", marginLeft: "5pt"}}>{item.email}</a></p>
                     <p className = "p5"><FaPhone/><a href = {`tel: ${item.phone}`} style = {{color: "blue", marginLeft: "5pt"}}>{`0${item.phone}`}</a></p> 
                     <p className = 'rezolvat' onClick = {!item.rezolvat ? () => this.props.rezolvat(item._id) : () => this.props.deschide(item._id)} style = {item.rezolvat ? {color: "white"} : null}>{!item.rezolvat ? "închide" : "deschide "}</p>
-                    <button className = 'sterge' onClick = {() => this.props.deleteMessage(item._id)}>șterge</button>
                 </div>
             )
         })
@@ -153,7 +152,7 @@ class PharmaPortal extends Component {
                                 <> 
                                 {this.props.messages.length ?
                                     <div className = "scrollDiv">
-                                        {this.props.user.username === this.state.admin ? admin : messages}
+                                        {this.props.user.username === this.state.admin ? admin() : messages()}
                                         <div style = {{height: "20pt"}}></div>
                                     </div>
                                     :
