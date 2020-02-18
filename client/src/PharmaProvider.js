@@ -53,14 +53,17 @@ class PharmaProvider extends Component {
         }
     }
 
-    leavePage = () => {  // not using it for now
-        this.setState({
-            user:'',   
-            token: '',
-            toggle: true
-        })
-        localStorage.removeItem("user")
-        localStorage.removeItem("token")
+    leavePage = () => {  
+        var answer = window.confirm("Vrei sã iesi din cont?")
+            if(answer){
+                this.setState({
+                    user:'',   
+                    token: '',
+                    toggle: true
+                })
+                localStorage.removeItem("user")
+                localStorage.removeItem("token")
+            }
     }
 
     logout = () => {
@@ -226,7 +229,6 @@ class PharmaProvider extends Component {
     }
 
     alertCallBack = (data, email, med, phone) => {
-       
        confirmAlert({
         customUI: ({ onClose }) => {
           return (

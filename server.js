@@ -32,7 +32,6 @@ mongoose.connect(process.env.MONGODB_URI ||'mongodb://localhost:27017/messages',
 mongoose.set('useCreateIndex', true); // stops the error message...
 
 
-
 app.use((err, req, res, next) => {
     if (err.name === "UnauthorizedError") {
         res.status(err.status); //secret error 
@@ -41,11 +40,9 @@ app.use((err, req, res, next) => {
 })
 
 
-
 app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "client", "build", "index.html"));
 });
-
 
 
 app.listen(PORT, () => {
