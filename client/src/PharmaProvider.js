@@ -53,17 +53,16 @@ class PharmaProvider extends Component {
         }
     }
 
-    leavePage = () => {  
-        var answer = window.confirm("Vrei sã iesi din cont?")
-            if(answer){
-                this.setState({
-                    user:'',   
-                    token: '',
-                    toggle: true
-                })
-                localStorage.removeItem("user")
-                localStorage.removeItem("token")
-            }
+    leavePage = () => { 
+        if(window.performance.navigation.type !== PerformanceNavigation.TYPE_RELOAD){
+            this.setState({
+                user:'',   
+                token: '',
+                toggle: true
+            })
+            localStorage.removeItem("user")
+            localStorage.removeItem("token")
+        }
     }
 
     logout = () => {
