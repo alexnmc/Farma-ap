@@ -60,7 +60,7 @@ body::before {
     position: relative;
     align-items: center;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 300;
     display:flex;
     justify-content: space-around;
 }
@@ -68,7 +68,7 @@ body::before {
 
 a{
     text-decoration: none;
-    font-family: 'arial';
+    font-family: 'Bevan';
     cursor: pointer;
     color:rgb(119, 203, 224);
 }
@@ -614,12 +614,12 @@ h4{
 
 .cauta3,
 .cauta{
-    font-family: 'arial';
-    color: rgb(255, 255, 255);
-    font-size: 19pt;
+    font-family: Bevan;
+    color: rgb(11, 178, 219);
+    font-size: 20pt;
     text-align: center;
     animation: move2 0.7s;
-    font-weight: 600;
+    font-weight: normal;
     margin:10pt;
 }
 
@@ -741,9 +741,9 @@ h4{
 }
 
 .farmaup{
-    font-family: 'arial';
+    font-family: 'Bevan';
     color: rgb(0, 173, 216);
-    font-size: 17pt;
+    font-size: 18pt;
     text-align: center;
     font-weight:900;
     animation: pop2 0.5s linear 1;
@@ -755,8 +755,8 @@ h4{
 }
 
 .img2{
-   width:30pt;
-   height:30pt;
+   width:28pt;
+   height:28pt;
    background-image: url('./Photos/farma3.png');
    background-size: cover;
    background-position: center;
