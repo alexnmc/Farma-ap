@@ -604,8 +604,8 @@ h4{
 }
 
 .img1{
-    width: 42px;
-    height: 42px;
+    width: 38px;
+    height: 38px;
     background-image: url('./Photos/farma3.png');
     background-size: cover;
     background-position: center;
@@ -616,7 +616,7 @@ h4{
 .cauta{
     font-family: 'arial';
     color: rgb(255, 255, 255);
-    font-size: 16pt;
+    font-size: 19pt;
     text-align: center;
     animation: move2 0.7s;
     font-weight: 600;
@@ -1056,7 +1056,7 @@ span{
         right: 0;
         position: absolute;
         z-index: -1;   
-      }
+    }
 
     .cont2,
     .cont{
@@ -1134,7 +1134,7 @@ span{
     }
 
     .cauta{
-        font-size: 14pt;
+        font-size: 18pt;
         text-align: center;
         animation: fade 2.5s;
     }
@@ -1163,8 +1163,8 @@ span{
     }
 
     .img1{
-        width: 32pt;
-        height: 32pt;
+        width: 28pt;
+        height: 28pt;
         animation: fade 2.5s;
     }
 
@@ -1392,4 +1392,20 @@ span{
         height: 5vh;
         max-height:20pt;
     }
+}
+
+
+@media only screen and (max-width: 400px) {
+    .img1{
+        width: 28pt;
+        height: 28pt;
+        animation: fade 2.5s;
+    }
+
+    .cauta{
+        font-size: 17pt;
+        text-align: center;
+        animation: fade 2.5s;
+    }
+
 }

@@ -89,10 +89,10 @@ class Home extends Component {
                                     <div className = "img1"></div>
                                     <h1 className = 'cauta'>Caută produsul dorit:</h1>
                                 </div>
-                                <div style = {{display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '19pt'}}>
-                                    <img alt = '' src = {euflag} style = {{ height: "17pt", margin: "2pt"}}/>
-                                    <img alt = '' src = {roflag} style = {{ height: "19pt", margin: "2pt"}}/>
-                                </div>
+                                { <div style = {{display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '19pt'}}>
+                                    <img alt = '' src = {euflag} style = {{ height: "15pt", margin: "2pt"}}/>
+                                    <img alt = '' src = {roflag} style = {{ height: "17pt", margin: "2pt"}}/>
+                                </div>}
                             </div>
                             : 
                             <div className = "imgWrap">
