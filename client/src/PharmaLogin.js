@@ -14,13 +14,13 @@ const PharmaLogin = props =>  {
                 <div className = 'farmaPhoto'></div>
                 <div className = "loginContainer">
                     {props.toggle ?
-                            <div  className='loginForm'>
+                            <div  className='loginFormWrapper'>
                                 <div className = "loginWrap">
                                     <div className = "loginLogo"></div>
                                     <p className = 'cont'>Alãturați-vã rețelei noastre! <span className = 'link' onClick={props.editToggler}>Înregistrare</span></p>
                                 </div>
                                 {props.toggle2 ?
-                                <div className = "loginForm">
+                                <div className = "initialLoginContainer">
                                     <h4>Intrare în cont:</h4>
                                     <input
                                         className = "login1"
@@ -85,7 +85,7 @@ const PharmaLogin = props =>  {
                    
                             :     
 
-                            <div className='loginForm'>
+                            <div className='loginFormWrapper'>
                                     <div className = "loginWrap">
                                         <div className = "loginLogo"></div>
                                         <p className = 'cont'>Aveți deja cont? <span className = 'link' onClick={props.editToggler}>Login</span></p>
@@ -99,7 +99,7 @@ const PharmaLogin = props =>  {
                                     <h4>Mulțumim!</h4>
                                 </div>
                                 :
-                                <div className = "loginForm">
+                                <div className = "initialLoginContainer">
                                     <h4> Creeazã cont nou:</h4>
                                     
                                     <LoginSearch/>

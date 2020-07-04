@@ -512,6 +512,26 @@ h4{
     border-bottom-left-radius:3px;
 }
 
+.loginFormWrapper{
+    height:92%;
+    width:290pt;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+}
+
+.initialLoginContainer{
+    height:95%;
+    width:290pt;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+}
+
 .loginForm{
     height:auto;
     width:290pt;
@@ -565,7 +585,6 @@ h4{
    font-size: 12.5pt;
    font-weight: 400;
    color:  rgb(119, 203, 224);
-   cursor: pointer;
    margin-bottom:auto;
 }
 
@@ -615,7 +634,7 @@ h4{
 .cauta3,
 .cauta{
     font-family: Bevan;
-    color: rgb(11, 178, 219);
+    color:rgb(119, 203, 224);
     font-size: 20pt;
     text-align: center;
     animation: move2 0.7s;
@@ -858,6 +877,7 @@ span{
     color: white;
     margin-left: 7pt;
     font-size: 12.5pt;
+    cursor: pointer;
 }
 
 .link:hover{
@@ -1028,10 +1048,19 @@ span{
         align-items: center;
         justify-content: center;
     }
+
+    .initialLoginContainer{
+        height:90%;
+        width:72vw;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
     
     .loginContainer{
-        height:auto;
-        width: 86vw;
+        height:90vh;
+        width: 90vw;
         display:flex;
         flex-direction: column;
         align-items: center;
@@ -1062,7 +1091,7 @@ span{
     .cont{
        display: flex;
        width:auto;
-       font-size: 3.5vw;
+       font-size: 3vw;
        font-weight: 400;
     }
 
@@ -1134,7 +1163,7 @@ span{
     }
 
     .cauta{
-        font-size: 18pt;
+        font-size: 16pt;
         text-align: center;
         animation: fade 2.5s;
     }
@@ -1163,8 +1192,8 @@ span{
     }
 
     .img1{
-        width: 28pt;
-        height: 28pt;
+        width: 26pt;
+        height: 26pt;
         animation: fade 2.5s;
     }
 
@@ -1260,9 +1289,8 @@ span{
     }
     
     .loginLogo{
-        width: 24pt;
-        height: 24pt;
-        margin:-1px;
+        width: 20pt;
+        height: 20pt;
     }
 
     .imgWrap{
@@ -1304,15 +1332,16 @@ span{
 
     .link{
         margin-left: 7pt;
-        font-size: 3.5vw;
+        font-size: 3vw;
         font-family: arial
     }
+
 
     .loginWrap{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width:115%;
+        width:80%;
     }
 
     .loading{
@@ -1397,13 +1426,13 @@ span{
 
 @media only screen and (max-width: 400px) {
     .img1{
-        width: 28pt;
-        height: 28pt;
+        width: 20pt;
+        height: 20pt;
         animation: fade 2.5s;
     }
 
     .cauta{
-        font-size: 17pt;
+        font-size: 14pt;
         text-align: center;
         animation: fade 2.5s;
     }
