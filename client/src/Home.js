@@ -28,7 +28,7 @@ class Home extends Component {
            let newArr = res.data.map(item =>  item = item.username) 
             this.setState({
                 sendTo: newArr
-            }, this.sendEmail)
+            }, this.sendEmail())
         })
     }
     
