@@ -13,7 +13,7 @@ class PharmaPortal extends Component {
         this.state = {
            userCity: this.props.user.city,
            helpToggle: true,
-           admin: "cristianlazar2000@yahoo.com",
+           admin: "nemechekalexander@gmail.com",
         }
     }
 
@@ -129,11 +129,11 @@ class PharmaPortal extends Component {
                             <div className = 'h1'>{this.props.messages.length === 1 ? '1 mesaj' : `${this.props.messages.length + ' mesaje'}`}</div>
                             :
                             <>
-                            <div className = 'h1' style = {this.props.currentCity ? {opacity: 1} : {opacity:0}}>{this.props.messages.length === 1 ? '1 mesaj' : `${this.props.messages.length + ' mesaje'}`}</div>
-                            <input type = "text" className = 'input2' list="mylist" placeholder = 'Alege orașul:' value = {this.props.currentCity} onChange={this.props.handleChange} required/>
-                            <datalist id="mylist" >
-                            {this.props.cities.map((city, index) => <option key={city} value={city} className = {index}>{city}</option>)}
-                            </datalist>
+                                <div className = 'h1' style = {this.props.currentCity ? {opacity: 1} : {opacity:0}}>{this.props.messages.length === 1 ? '1 mesaj' : `${this.props.messages.length + ' mesaje'}`}</div>
+                                <input type = "text" className = 'input2' list="mylist" placeholder = 'Alege orașul:' value = {this.props.currentCity} onChange={this.props.handleChange} required/>
+                                <datalist id="mylist" >
+                                {this.props.cities.map((city, index) => <option key={city} value={city} className = {index}>{city}</option>)}
+                                </datalist>
                             </>
                         }  
                         <button className = "logout" onClick = {this.props.logout}>ieșire</button>
@@ -168,6 +168,7 @@ class PharmaPortal extends Component {
                                 <li className = "help">După rezolvarea unui mesaj dați click pe <span style = {{color: "red"}}>închide</span></li>
                                 <li className = "help">Mesajele închise nu se pot re-deschide</li>
                                 <li className = "help">Pentru a mãri poza din mesaj dați click pe pozã</li>
+                                <li className = "help">Pentru ștergerea contului contactați <a href = "mailto:farmaapp.eu@gmail.com">farmaapp.eu@gmail.com</a></li>
                             </ul>
                         </div>
                     }

@@ -36,7 +36,7 @@ render(){
         <div className = "contact">
             <div className = "img1"></div>
             <h1 className = 'h5' style = {this.state.style}>Pentru informații trimiteți email pe adresa:</h1>
-            <a className = 'h3' href = {`mailto:farmacieup@gmail.com`} style = {this.state.style2}>farmaapp.eu@gmail.com</a>
+            <a className = 'h3' href = "mailto:farmaapp.eu@gmail.com" style = {this.state.style2}>farmaapp.eu@gmail.com</a>
         </div>
         </>
     )

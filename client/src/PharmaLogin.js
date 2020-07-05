@@ -13,7 +13,7 @@ const PharmaLogin = props =>  {
             <div className="admin">
                 <div className = 'farmaPhoto'></div>
                 <div className = "loginContainer">
-                    {props.toggle ?
+                        {props.toggle ?
                             <div  className='loginFormWrapper'>
                                 <div className = "loginWrap">
                                     <div className = "loginLogo"></div>
@@ -90,7 +90,7 @@ const PharmaLogin = props =>  {
                                         <div className = "loginLogo"></div>
                                         <p className = 'cont'>Aveți deja cont? <span className = 'link' onClick={props.editToggler}>Login</span></p>
                                     </div>
-                                {props.toggle3 === 'success' ?
+                            {props.toggle3 === 'success' ?
 
                                 <div style = {{height: '300pt'}}>
                                     <h4>Contul dumneavoastrã a fost creat!</h4>
@@ -146,7 +146,7 @@ const PharmaLogin = props =>  {
                                 </div>
                             }
                             </div>
-                    }
+                        }
                 </div>
             </div>
             </>

@@ -2,7 +2,7 @@
 
 const openGeocoder = require('node-open-geocoder');
 
-getLocation = () => {
+const getLocation = () => {
         navigator.geolocation.getCurrentPosition(
         function(position) {
             openGeocoder().reverse(position.coords.longitude, position.coords.latitude)
