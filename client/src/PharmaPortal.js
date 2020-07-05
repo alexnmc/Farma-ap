@@ -168,7 +168,7 @@ class PharmaPortal extends Component {
                                 <li className = "help">După rezolvarea unui mesaj dați click pe <span style = {{color: "red"}}>închide</span></li>
                                 <li className = "help">Mesajele închise nu se pot re-deschide</li>
                                 <li className = "help">Pentru a mãri poza din mesaj dați click pe pozã</li>
-                                <li className = "help">Pentru ștergerea contului contactați <a href = "mailto:farmaapp.eu@gmail.com">farmaapp.eu@gmail.com</a></li>
+                                <li className = "help">Pentru ștergerea contului contactați <a className = 'h3' href = "mailto:farmaapp.eu@gmail.com">farmaapp.eu@gmail.com</a></li>
                             </ul>
                         </div>
                     }
